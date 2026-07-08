@@ -1,6 +1,6 @@
 ENACT Replication Package
 
-Replication package for:
+This repository contains the code, processed inputs, experiment outputs, and analysis artifacts for the paper:
 
 Energy-Aware Test Prioritization for High-Performance Computing: A Multi-Objective Approach
 
@@ -9,91 +9,117 @@ ENACT uses NSGA-II to select and order tests for LAMMPS while optimizing four ob
 * maximize modified-statement coverage
 * minimize energy consumption
 * minimize execution time
-* minimize the number of selected tests
+* minimize selected test count
 
-Main files
+Main implementation
 
-Primary implementation:
+The primary ENACT implementation is:
 
 nsga2_runs/scripts/nsga2_final.py
 
-Canonical results:
+The main baseline and preprocessing scripts are also under:
 
-nsga2_runs/out/nsga2_canonB/
+nsga2_runs/scripts/
 
-The included result set contains outputs for 1,257 retained changes and 613 tests.
+This directory includes:
 
-Full-suite reference values:
+* baselines.py
+* build_line_index.py
+* nsga2_all_prs.py
+* nsga2_with_order.py
+* nsga_calculate_en.py
 
-* Energy: 188,600.30 J
-* Time: 5,812.09 s
-* Tests: 613
+Experiment configuration
+
+The paper configuration uses:
+
+Population size: 80
+Generations: 120
+
+The full test suite contains 613 tests.
+
+The canonical result set contains successful outputs for 1,257 retained changes.
+
+The full-suite reference values used in the analysis are:
+
+Energy: 188,600.30 J
+Execution time: 5,812.09 s
+Test count: 613
 
 Repository structure
 
 Path	Contents
-nsga2_runs/scripts/	ENACT, baselines, and preprocessing scripts
-nsga2_runs/out/	Pareto fronts, summaries, tables, and figures
+nsga2_runs/scripts/	ENACT, baseline, and preprocessing scripts
+nsga2_runs/out/	Runtime inputs, Pareto fronts, summaries, tables, and figures
 Workflow_runs/	GitHub Actions workflow metadata
-Workflow_Energy_Consumption/	Per-test energy summaries
-energy_results/	Energy measurement results
-coverage_results/	Coverage measurement results
-unittest_linux_bigbig_coverage/	Test lists and processed coverage data
+Workflow_Energy_Consumption/	Per-test energy summaries and utilities
+energy_results/	Energy measurement results and logs
+coverage_results/	Coverage collection results
+unittest_linux_bigbig_coverage/	Test lists and processed coverage artifacts
 
 Setup
+
+Create a Python virtual environment and install the required packages:
 
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-To view the available ENACT options:
+To view the available command-line options:
 
 python nsga2_runs/scripts/nsga2_final.py --help
 
-The paper configuration uses a population size of 80 and 120 generations.
-
 Runtime inputs
 
-The optimizer uses the compact line-to-test index:
+The optimizer uses the compact line-to-test index stored in:
 
 nsga2_runs/out/line_index.npz
 nsga2_runs/out/line_index_tests.txt
 nsga2_runs/out/line_index_lines.txt
 
-The original line_to_tests.csv file is about 249 MB and is not included in Git. It is only needed to rebuild the compact index above.
+These files contain the processed mapping between modified lines and tests and are sufficient to run ENACT and the included baselines.
+
+The larger intermediate file used to build this index, line_to_tests.csv, is stored with the raw data archive rather than in GitHub.
 
 Results
 
-Per-change Pareto fronts:
+The canonical result directory is:
+
+nsga2_runs/out/nsga2_canonB/
+
+Per-change Pareto fronts are available under:
 
 nsga2_runs/out/nsga2_canonB/pareto/
 
-Aggregate summary:
+The aggregate result summary is:
 
 nsga2_runs/out/nsga2_canonB/summary.csv
 
-Additional tables and figures are available under nsga2_runs/out/.
+Additional outputs, including baseline results, tables, figures, and analysis files, are available under:
 
-Data notes
+nsga2_runs/out/
 
-Large raw coverage files, verbose logs, virtual environments, and archive files are excluded from Git because the full experiment data is about 45 GB.
+Raw data archive
 
-The repository includes the main code, compact processed inputs, canonical outputs, and analysis files. Large raw artifacts will be archived separately.
+The large raw coverage and energy artifacts are hosted separately on Zenodo:
 
-Two provenance issues are still being checked:
+https://doi.org/10.5281/zenodo.21266181
 
-* project notes mention 2,746 executions, while the included workflow CSV currently has 2,718 rows
-* some separately named seed directories appear incomplete, although the canonical result set is complete
+The Zenodo archive contains:
 
-More details are available in:
-
-REPOSITORY_AUDIT.md
-UNRESOLVED_ISSUES.md
+* raw per-test coverage files
+* coverage matrices
+* the line-to-test mapping
+* verbose coverage logs
+* energy measurement artifacts
+* checksums for the uploaded archives
 
 License
 
-The source code is released under the MIT License.
+The source code in this repository is released under the MIT License.
 
 Citation
 
-Please cite the associated paper when using ENACT or this repository. Machine-readable citation information is available in CITATION.cff.
+Citation metadata is available in:
+
+CITATION.cff
