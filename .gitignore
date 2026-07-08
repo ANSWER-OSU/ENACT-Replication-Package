@@ -100,3 +100,7 @@ energy_results/**/*.tar
 # external data archive for users who want to rebuild the index from
 # scratch; see REPOSITORY_AUDIT.md.
 unittest_linux_bigbig_coverage/matrix/line_to_tests.csv
+
+# Internal preparation notes
+REPOSITORY_AUDIT.md
+UNRESOLVED_ISSUES.md
