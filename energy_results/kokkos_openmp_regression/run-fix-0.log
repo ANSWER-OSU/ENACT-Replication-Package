@@ -1,0 +1,1375 @@
+INFO:__main__:
+There are 50 input scripts listed in input-list-fix-0-kk.txt.
+INFO:__main__:     Executing for reference walltime: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/../bench/in.lj -v x 2 -v y 2 -v z 1 -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half
+INFO:__main__:     Reference walltime, sec = 2.0
+INFO:__main__:Entering examples/controller
+INFO:__main__:   + in.controller.temp (1/1)
+INFO:__main__:     Using 2 nprocs for in.controller.temp as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.controller.temp -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.controller.temp.2
+INFO:__main__:     Comparing thermo output from log.controller.temp.2 against the reference log file log.27Nov18.controller.temp.g++.4
+INFO:__main__:     6 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (8.91e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (2.50e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (6.70e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (1.55e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (7.03e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (2.80e-01) > expected (1.00e-04)
+INFO:__main__:     6 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.75e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (4.65e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (3.30e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (1.03e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: TotEng: actual (2.69e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (5.35e-02) > expected (1.00e-06)
+INFO:__main__:Entering examples/amoeba
+INFO:__main__:   + in.water_box.amoeba (1/6)
+INFO:__main__:     Using 2 nprocs for in.water_box.amoeba as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.water_box.amoeba -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_box.amoeba.2
+INFO:__main__:     The run terminated with in.water_box.amoeba gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_box.amoeba.
+
+INFO:__main__:   + in.water_box.hippo (2/6)
+INFO:__main__:     Using 2 nprocs for in.water_box.hippo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.water_box.hippo -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_box.hippo.2
+INFO:__main__:     The run terminated with in.water_box.hippo gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_box.hippo.
+
+INFO:__main__:   + in.water_dimer.amoeba (3/6)
+INFO:__main__:     Using 2 nprocs for in.water_dimer.amoeba as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.water_dimer.amoeba -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_dimer.amoeba.2
+INFO:__main__:     The run terminated with in.water_dimer.amoeba gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_dimer.amoeba.
+
+INFO:__main__:   + in.water_dimer.hippo (4/6)
+INFO:__main__:     Using 2 nprocs for in.water_dimer.hippo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.water_dimer.hippo -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_dimer.hippo.2
+INFO:__main__:     The run terminated with in.water_dimer.hippo gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_dimer.hippo.
+
+INFO:__main__:   + in.water_hexamer.amoeba (5/6)
+INFO:__main__:     Using 2 nprocs for in.water_hexamer.amoeba as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.water_hexamer.amoeba -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_hexamer.amoeba.2
+INFO:__main__:     The run terminated with in.water_hexamer.amoeba gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_hexamer.amoeba.
+
+INFO:__main__:   + in.water_hexamer.hippo (6/6)
+INFO:__main__:     Using 2 nprocs for in.water_hexamer.hippo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.water_hexamer.hippo -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_hexamer.hippo.2
+INFO:__main__:     The run terminated with in.water_hexamer.hippo gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_hexamer.hippo.
+
+INFO:__main__:Entering examples/peri
+INFO:__main__:   + in.peri.ves (1/1)
+INFO:__main__:     Using 2 nprocs for in.peri.ves as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.peri.ves -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.peri.ves.2
+INFO:__main__:     The run terminated with in.peri.ves gives the following output:
+INFO:__main__:       ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary.
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary.
+For more information see https://docs.lammps.org/err0010 (src/atom.cpp:751)
+Last input line: atom_style peri
+
+INFO:__main__:     Failed with in.peri.ves.
+
+INFO:__main__:Entering examples/kim
+INFO:__main__:   + in.kim-ex.melt (1/2)
+INFO:__main__:     Using 2 nprocs for in.kim-ex.melt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.kim-ex.melt -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.kim-ex.melt.2
+INFO:__main__:     The run terminated with in.kim-ex.melt gives the following output:
+INFO:__main__:       ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)
+Last input line: kim init LennardJones_Ar real 
+                 ^^^
+
+INFO:__main__:     Failed with in.kim-ex.melt.
+
+INFO:__main__:   + in.kim-sm.melt (2/2)
+INFO:__main__:     Using 2 nprocs for in.kim-sm.melt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.kim-sm.melt -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.kim-sm.melt.2
+INFO:__main__:     The run terminated with in.kim-sm.melt gives the following output:
+INFO:__main__:       ERROR: Unknown command: kim          init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real (src/input.cpp:316)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: Unknown command: kim          init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real (src/input.cpp:316)
+Last input line: kim init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real 
+                 ^^^
+
+INFO:__main__:     Failed with in.kim-sm.melt.
+
+INFO:__main__:Entering examples/replicate
+INFO:__main__:   + in.replicate.bond.x (1/4)
+INFO:__main__:     Using 2 nprocs for in.replicate.bond.x as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.replicate.bond.x -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.bond.x.2
+INFO:__main__:     Comparing thermo output from log.replicate.bond.x.2 against the reference log file log.6May24.replicate.bond.x.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (8.92e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.01e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.44e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.75e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (9.24e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (3.46e-01) > expected (1.00e-06)
+INFO:__main__:   + in.replicate.bond.x.noloop (2/4)
+INFO:__main__:     Using 2 nprocs for in.replicate.bond.x.noloop as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.replicate.bond.x.noloop -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.bond.x.noloop.2
+INFO:__main__:     Comparing thermo output from log.replicate.bond.x.noloop.2 against the reference log file log.6May24.replicate.bond.x.noloop.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (6.15e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.88e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (8.51e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (8.20e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (1.69e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.51e-01) > expected (1.00e-06)
+INFO:__main__:   + in.replicate.bond.xy (3/4)
+INFO:__main__:     Using 2 nprocs for in.replicate.bond.xy as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.replicate.bond.xy -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.bond.xy.2
+INFO:__main__:     Comparing thermo output from log.replicate.bond.xy.2 against the reference log file log.6May24.replicate.bond.xy.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.replicate.cnt (4/4)
+INFO:__main__:     Using 2 nprocs for in.replicate.cnt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.replicate.cnt -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.cnt.2
+INFO:__main__:     Comparing thermo output from log.replicate.cnt.2 against the reference log file log.6May24.replicate.cnt.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/granular
+INFO:__main__:   + in.sync_verlet (1/3)
+INFO:__main__:     Using 2 nprocs for in.sync_verlet as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.sync_verlet -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.sync_verlet.2
+INFO:__main__:     The run terminated with in.sync_verlet gives the following output:
+INFO:__main__:       ERROR: Illegal wall/gran command, unrecognized damping model (src/KOKKOS/fix_wall_gran_old.cpp:203)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-0.03 -0.02 -0.02) to (0.03 0.02 0.02)
+  2 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3 atoms
+  reading velocities ...
+  3 velocities
+  read_data CPU = 0.003 seconds
+2 atoms in group ps
+1 atoms in group fine
+ERROR: Illegal wall/gran command, unrecognized damping model (src/KOKKOS/fix_wall_gran_old.cpp:203)
+Last input line: fix 2 all wall/gran granular hooke 1e4 0.5 tangential linear_history 8235 0 0.5 damping coeff_restitution zplane $(zlo) $(zhi)
+
+INFO:__main__:     Failed with in.sync_verlet.
+
+INFO:__main__:   + in.tableting.200 (2/3)
+INFO:__main__:     Using 2 nprocs for in.tableting.200 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.tableting.200 -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.tableting.200.2
+INFO:__main__:     Comparing thermo output from log.tableting.200.2 against the reference log file log.4Feb25.tableting.200.g++.1
+INFO:__main__:     all 0 checks passed.
+INFO:__main__:   + in.triaxial.compaction.12 (3/3)
+INFO:__main__:     Using 2 nprocs for in.triaxial.compaction.12 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.triaxial.compaction.12 -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.triaxial.compaction.12.2
+INFO:__main__:     Comparing thermo output from log.triaxial.compaction.12.2 against the reference log file log.4Feb25.triaxial.compaction.12.g++.1
+INFO:__main__:     all 0 checks passed.
+INFO:__main__:Entering examples/airebo
+INFO:__main__:   + in.airebo (1/2)
+INFO:__main__:     Using 2 nprocs for in.airebo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.airebo -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.airebo.2
+INFO:__main__:     Comparing thermo output from log.airebo.2 against the reference log file log.30Apr2019.airebo.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.rebo2 (2/2)
+INFO:__main__:     Using 2 nprocs for in.rebo2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.rebo2 -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.rebo2.2
+INFO:__main__:     Comparing thermo output from log.rebo2.2 against the reference log file log.30Apr2019.rebo2.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/obstacle
+INFO:__main__:   + in.obstacle (1/1)
+INFO:__main__:     Using 2 nprocs for in.obstacle as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.obstacle -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.obstacle.2
+INFO:__main__:     Comparing thermo output from log.obstacle.2 against the reference log file log.27Nov18.obstacle.g++.4
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.68e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (4.98e-02) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (5.43e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (4.73e-02) > expected (1.00e-06)
+INFO:__main__:Entering examples/UNITS
+INFO:__main__:   + in.ar.lj (1/2)
+INFO:__main__:     Using 2 nprocs for in.ar.lj as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.ar.lj -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.ar.lj.2
+INFO:__main__:       failed, cannot find the reference log file for in.ar.lj with the expected format log.[date].ar.lj.*.[nprocs]
+INFO:__main__:       thermo.in.ar.lj.yaml also does not exist in the working directory.
+INFO:__main__:   + in.ar.real (2/2)
+INFO:__main__:     Using 2 nprocs for in.ar.real as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.ar.real -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.ar.real.2
+INFO:__main__:       failed, cannot find the reference log file for in.ar.real with the expected format log.[date].ar.real.*.[nprocs]
+INFO:__main__:       thermo.in.ar.real.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/wall
+INFO:__main__:   + in.wall.harmonic.2d (1/3)
+INFO:__main__:     Using 2 nprocs for in.wall.harmonic.2d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.wall.harmonic.2d -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.wall.harmonic.2d.2
+INFO:__main__:       failed, cannot find the reference log file for in.wall.harmonic.2d with the expected format log.[date].wall.harmonic.2d.*.[nprocs]
+INFO:__main__:       thermo.in.wall.harmonic.2d.yaml also does not exist in the working directory.
+INFO:__main__:   + in.wall.harmonic.outside.2d (2/3)
+INFO:__main__:     Using 2 nprocs for in.wall.harmonic.outside.2d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.wall.harmonic.outside.2d -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.wall.harmonic.outside.2d.2
+INFO:__main__:       failed, cannot find the reference log file for in.wall.harmonic.outside.2d with the expected format log.[date].wall.harmonic.outside.2d.*.[nprocs]
+INFO:__main__:       thermo.in.wall.harmonic.outside.2d.yaml also does not exist in the working directory.
+INFO:__main__:   + in.wall.sphere (3/3)
+INFO:__main__:     Using 2 nprocs for in.wall.sphere as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.wall.sphere -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.wall.sphere.2
+INFO:__main__:     The run terminated with in.wall.sphere gives the following output:
+INFO:__main__:       ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Read molecule template water:
+# Water molecule. TIP3P geometry
+  1 molecules
+  0 fragments
+  0 bodies
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+Created orthogonal box = (-100 -100 -100) to (100 100 100)
+  1 by 1 by 2 MPI processor grid
+Created 15000 atoms
+  using lattice units in orthogonal box = (-100 -100 -100) to (100 100 100)
+  create_atoms CPU = 2.448 seconds
+Finding SHAKE clusters ...
+       0 = # of size 2 clusters
+       0 = # of size 3 clusters
+       0 = # of size 4 clusters
+    5000 = # of frozen angles
+  find clusters CPU = 0.002 seconds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Generated 1 of 1 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 10
+  ghost atom cutoff = 10
+  binsize = 5, bins = 40 40 40
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/coul/cut/kk, perpetual
+      attributes: half, newton on, kokkos_device
+      pair build: half/bin/newton/kk/device
+      stencil: half/bin/3d
+      bin: kk/device
+ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)
+
+INFO:__main__:     Failed with in.wall.sphere.
+
+INFO:__main__:Entering examples/comb
+INFO:__main__:   + in.comb.Si.elastic (1/1)
+INFO:__main__:     Using 2 nprocs for in.comb.Si.elastic as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.comb.Si.elastic -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.comb.Si.elastic.2
+INFO:__main__:     Comparing thermo output from log.comb.Si.elastic.2 against the reference log file log.27Nov18.comb.Si.elastic.g++.4
+INFO:__main__:     failed: Number of thermo steps in log.comb.Si.elastic.2 (6)
+INFO:__main__:     is different from that in the reference log (4) in run 0.
+INFO:__main__:     mismatched num steps in the log files. Check both log files for more details.
+INFO:__main__:Entering examples/relres
+INFO:__main__:   + in.22DMH.real (1/1)
+INFO:__main__:     Using 2 nprocs for in.22DMH.real as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.22DMH.real -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.22DMH.real.2
+INFO:__main__:     Comparing thermo output from log.22DMH.real.2 against the reference log file log.05Mar21.22DMH.real.g++.4
+INFO:__main__:     12 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.94e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.69e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (5.15e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (9.78e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Temp: actual (2.66e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Press: actual (2.13e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 2: PotEng: actual (4.73e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: TotEng: actual (4.09e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 3: Temp: actual (2.96e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 3: Press: actual (6.94e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 3: PotEng: actual (3.96e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 3: TotEng: actual (1.10e+02) > expected (1.00e-04)
+INFO:__main__:     12 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (6.76e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (3.93e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (1.50e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: TotEng: actual (9.51e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 2: Temp: actual (9.23e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 2: Press: actual (4.53e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 2: PotEng: actual (1.39e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 2: TotEng: actual (3.98e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 3: Temp: actual (1.03e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 3: Press: actual (1.45e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 3: PotEng: actual (1.18e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 3: TotEng: actual (1.08e-02) > expected (1.00e-06)
+INFO:__main__:Entering examples/nemd
+INFO:__main__:   + in.nemd (1/1)
+INFO:__main__:     Using 2 nprocs for in.nemd as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.nemd -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.nemd.2
+INFO:__main__:     Comparing thermo output from log.nemd.2 against the reference log file log.30Sep24.nemd.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/grid
+INFO:__main__:   + in.grid.2d (1/3)
+INFO:__main__:     Using 2 nprocs for in.grid.2d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 12.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.grid.2d -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.grid.2d.2
+INFO:__main__:     Comparing thermo output from log.grid.2d.2 against the reference log file log.1Dec22.grid.2d.g++.12
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.grid.3d (2/3)
+INFO:__main__:     Using 2 nprocs for in.grid.3d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 10.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.grid.3d -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.grid.3d.2
+INFO:__main__:     Comparing thermo output from log.grid.3d.2 against the reference log file log.1Dec22.grid.3d.g++.10
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.sph (3/3)
+INFO:__main__:     Using 2 nprocs for in.sph as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 12.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.sph -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.sph.2
+INFO:__main__:     The run terminated with in.sph gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style sph
+
+INFO:__main__:     Failed with in.sph.
+
+INFO:__main__:Entering examples/KAPPA
+INFO:__main__:   + in.heatflux (1/1)
+INFO:__main__:     Using 2 nprocs for in.heatflux as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 8.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.heatflux -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.heatflux.2
+INFO:__main__:     Comparing thermo output from log.heatflux.2 against the reference log file log.15May22.heatflux.g++.8
+INFO:__main__:     4 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.27e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (2.67e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (4.78e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (1.58e-02) > expected (1.00e-04)
+INFO:__main__:     4 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (9.29e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (1.61e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (5.51e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (1.17e-02) > expected (1.00e-06)
+INFO:__main__:Entering examples/template
+INFO:__main__:   + in.mol-data-mix (1/2)
+INFO:__main__:     Using 2 nprocs for in.mol-data-mix as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.mol-data-mix -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.mol-data-mix.2
+INFO:__main__:     Comparing thermo output from log.mol-data-mix.2 against the reference log file log.22Oct20.mol-data-mix.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (3.98e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (4.29e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.88e+02) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.29e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (1.39e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.67e-02) > expected (1.00e-06)
+INFO:__main__:   + in.template-mix (2/2)
+INFO:__main__:     Using 2 nprocs for in.template-mix as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.template-mix -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.template-mix.2
+INFO:__main__:     The run terminated with in.template-mix gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Read molecule template cychex:
+LAMMPS molecule file. Cyclohexane(UA)
+  1 molecules
+  0 fragments
+  0 bodies
+  6 atoms with max type 1
+  6 bonds with max type 1
+  6 angles with max type 1
+  6 dihedrals with max type 1
+  0 impropers with max type 0
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style template cychex
+
+INFO:__main__:     Failed with in.template-mix.
+
+INFO:__main__:Entering examples/VISCOSITY
+INFO:__main__:   + in.cos.1000SPCE (1/3)
+INFO:__main__:     Using 2 nprocs for in.cos.1000SPCE as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.cos.1000SPCE -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.cos.1000SPCE.2
+INFO:__main__:     The run terminated with in.cos.1000SPCE gives the following output:
+INFO:__main__:       ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary.
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (31.043 31.043 31.043)
+  1 by 1 by 2 MPI processor grid
+  reading atoms ...
+  3000 atoms
+  scanning bonds ...
+  2 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  orthogonal box = (0 0 0) to (31.043 31.043 31.043)
+  1 by 1 by 2 MPI processor grid
+  reading bonds ...
+  2000 bonds
+  reading angles ...
+  1000 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0.5     
+  special bond factors coul:  0        0        0.8333333333333334
+     2 = max # of 1-2 neighbors
+     1 = max # of 1-3 neighbors
+     1 = max # of 1-4 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.028 seconds
+Finding SHAKE clusters ...
+       0 = # of size 2 clusters
+       0 = # of size 3 clusters
+       0 = # of size 4 clusters
+    1000 = # of frozen angles
+  find clusters CPU = 0.000 seconds
+ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary.
+For more information see https://docs.lammps.org/err0010 (src/modify.cpp:930)
+Last input line: fix cos all accelerate/cos ${A}
+--> parsed line: fix cos all accelerate/cos 5e-07 
+                             ^^^^^^^^^^^^^^
+
+INFO:__main__:     Failed with in.cos.1000SPCE.
+
+INFO:__main__:   + in.mp.2d (2/3)
+INFO:__main__:     Using 2 nprocs for in.mp.2d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.mp.2d -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.mp.2d.2
+INFO:__main__:     Comparing thermo output from log.mp.2d.2 against the reference log file log.13Oct16.mp.2d.g++.1
+INFO:__main__:     7 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.19e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.47e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (2.09e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (4.69e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (2.70e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (2.52e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Temp: actual (4.01e-02) > expected (1.00e-04)
+INFO:__main__:     7 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.27e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (2.17e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (2.64e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (4.76e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: TotEng: actual (4.38e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (2.47e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 2: Temp: actual (3.88e-02) > expected (1.00e-06)
+INFO:__main__:   + in.wall.2d (3/3)
+INFO:__main__:     Using 2 nprocs for in.wall.2d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.wall.2d -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.wall.2d.2
+INFO:__main__:     Comparing thermo output from log.wall.2d.2 against the reference log file log.13Oct16.wall.2d.g++.1
+INFO:__main__:     4 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (2.33e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.62e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.58e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (3.84e-02) > expected (1.00e-04)
+INFO:__main__:     4 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.27e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (4.88e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.10e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (3.92e-02) > expected (1.00e-06)
+INFO:__main__:Entering examples/srd
+INFO:__main__:   + in.srd.mixture (1/1)
+INFO:__main__:     Using 2 nprocs for in.srd.mixture as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.srd.mixture -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.srd.mixture.2
+INFO:__main__:     The run terminated with in.srd.mixture gives the following output:
+INFO:__main__:       ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 1.5811388 1.5811388 1.5811388
+Created orthogonal box = (0 0 -0.79056942) to (15.811388 15.811388 0.79056942)
+  2 by 1 by 1 MPI processor grid
+Created 100 atoms
+  using lattice units in orthogonal box = (0 0 -0.79056942) to (15.811388 15.811388 0.79056942)
+  create_atoms CPU = 0.003 seconds
+Setting atom values ...
+  100 settings made for mass
+Setting atom values ...
+  100 settings made for diameter
+100 atoms in group big
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2.8
+  ghost atom cutoff = 2.8
+  binsize = 1.4, bins = 12 12 2
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/kk, perpetual
+      attributes: half, newton on, kokkos_device
+      pair build: half/bin/newton/kk/device
+      stencil: half/bin/2d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.005
+Per MPI rank memory allocation (min/avg/max) = 5.915 | 5.915 | 5.915 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   1.44          -0.54272        0              0.88288       -0.041088     
+      1000   1.8791467     -0.97185784     0              0.8884974      0.61487656   
+Loop time of 0.160288 on 4 procs for 1000 steps with 100 atoms
+
+Performance: 2695148.724 tau/day, 6238.770 timesteps/s, 623.877 katom-step/s
+195.9% CPU use with 2 MPI tasks x 2 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.12753    | 0.12764    | 0.12775    |   0.0 | 79.63
+Neigh   | 0.0034254  | 0.0034644  | 0.0035034  |   0.1 |  2.16
+Comm    | 0.0069769  | 0.0071615  | 0.0073461  |   0.2 |  4.47
+Output  | 1.8134e-05 | 2.1642e-05 | 2.5149e-05 |   0.0 |  0.01
+Modify  | 0.0063994  | 0.0064345  | 0.0064696  |   0.0 |  4.01
+Other   |            | 0.01557    |            |       |  9.71
+
+Nlocal:             50 ave          51 max          49 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:           67.5 ave          68 max          67 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:          229.5 ave         235 max         224 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 459
+Ave neighs/atom = 4.59
+Neighbor list builds = 129
+Dangerous builds = 0
+Lattice spacing in x,y,z = 1.5811388 1.5811388 1.5811388
+Lattice spacing in x,y,z = 0.10846523 0.10846523 0.10846523
+Created 21316 atoms
+  using lattice units in orthogonal box = (0 0 -0.79056942) to (15.811388 15.811388 0.79056942)
+  create_atoms CPU = 0.001 seconds
+Setting atom values ...
+  21316 settings made for mass
+Setting atom values ...
+  21316 settings made for diameter
+21316 atoms in group small
+System init for delete_atoms ...
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 2.8
+  ghost atom cutoff = 2.8
+  binsize = 1.4, bins = 12 12 2
+  2 neighbor lists, perpetual/occasional/extra = 1 1 0
+  (1) command delete_atoms, occasional
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/2d
+      bin: standard
+  (2) pair lj/cut/kk, perpetual
+      attributes: half, newton on, kokkos_device
+      pair build: half/bin/newton/kk/device
+      stencil: half/bin/2d
+      bin: kk/device
+WARNING: Delete_atoms cutoff > minimum neighbor cutoff (src/delete_atoms.cpp:410)
+Deleted 6700 atoms, new total = 14716
+WARNING: Temperature for thermo pressure is not for group all (src/thermo.cpp:570)
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- neighbor multi command: https://doi.org/10.1016/j.cpc.2008.03.005, https://doi.org/10.1007/s40571-020-00361-2
+- fix srd command: https://doi.org/10.1063/1.3419070
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Generated 0 of 1 mixed pair_coeff terms from geometric mixing rule
+SRD info:
+  SRD/big particles = 14616 100
+  big particle diameter max/min = 0.88 0.88
+  SRD temperature & lamda = 1 0.2
+  SRD max distance & max velocity = 0.8 40
+  SRD grid counts: 63 63 1
+  SRD grid size: request, actual (xyz) = 0.25, 0.25097442 0.25097442 1.5811388
+  SRD per actual grid cell = 4.8664813
+  SRD viscosity = 0.46344782
+  big/SRD mass density ratio = 2.1280833
+  unbiased profile = no
+WARNING: Fix srd grid size > 1/4 of big particle diameter (src/SRD/fix_srd.cpp:2833)
+  # of rescaled SRD velocities = 0
+  ave/max small velocity = 13.294362 24.261991
+  ave/max big velocity = 1.692844 5.1098925
+ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)
+Last input line: run 5000
+
+INFO:__main__:     Failed with in.srd.mixture.
+
+INFO:__main__:Entering examples/vashishta
+INFO:__main__:   + in.vashishta.sio2 (1/2)
+INFO:__main__:     Using 2 nprocs for in.vashishta.sio2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.vashishta.sio2 -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.vashishta.sio2.2
+INFO:__main__:     Comparing thermo output from log.vashishta.sio2.2 against the reference log file log.27Nov18.vashishta.sio2.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.vashishta.table.sio2 (2/2)
+INFO:__main__:     Using 2 nprocs for in.vashishta.table.sio2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.vashishta.table.sio2 -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.vashishta.table.sio2.2
+INFO:__main__:     Comparing thermo output from log.vashishta.table.sio2.2 against the reference log file log.27Nov18.vashishta.table.sio2.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/colloid
+INFO:__main__:   + in.colloid (1/1)
+INFO:__main__:     Using 2 nprocs for in.colloid as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.colloid -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.colloid.2
+INFO:__main__:     Comparing thermo output from log.colloid.2 against the reference log file log.27Nov18.colloid.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.55e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (8.39e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.37e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (7.64e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (4.02e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.61e-01) > expected (1.00e-06)
+INFO:__main__:Entering examples/coreshell
+INFO:__main__:   + in.coreshell.dsf (1/2)
+INFO:__main__:     Using 2 nprocs for in.coreshell.dsf as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.coreshell.dsf -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.coreshell.dsf.2
+INFO:__main__:     Comparing thermo output from log.coreshell.dsf.2 against the reference log file log.3Jul25.coreshell.dsf.g++.4
+INFO:__main__:     10 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (5.36e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (1.14e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (2.18e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.29e+03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: E_vdwl: actual (2.70e+00) > expected (1.00e-03)
+INFO:__main__:        - Run 1: TotEng: actual (5.59e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (1.50e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (3.39e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (3.04e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (3.49e-01) > expected (1.00e-03)
+INFO:__main__:     10 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (8.59e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: PotEng: actual (1.73e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Temp: actual (1.70e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.40e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 0: E_vdwl: actual (6.27e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (8.96e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (2.27e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (2.51e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (5.32e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 1: E_vdwl: actual (7.78e-03) > expected (1.00e-07)
+INFO:__main__:   + in.coreshell.wolf (2/2)
+INFO:__main__:     Using 2 nprocs for in.coreshell.wolf as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.coreshell.wolf -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.coreshell.wolf.2
+INFO:__main__:     Comparing thermo output from log.coreshell.wolf.2 against the reference log file log.3Jul25.coreshell.wolf.g++.4
+INFO:__main__:     10 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (4.88e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (4.29e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (1.37e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (4.25e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: E_vdwl: actual (8.47e-02) > expected (1.00e-03)
+INFO:__main__:        - Run 1: TotEng: actual (5.65e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (8.75e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (3.35e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.04e+03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (2.24e+00) > expected (1.00e-03)
+INFO:__main__:     10 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (7.82e-06) > expected (1.00e-06)
+INFO:__main__:        - Run 0: PotEng: actual (6.50e-05) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Temp: actual (1.05e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (9.18e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: E_vdwl: actual (1.84e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (9.05e-05) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (1.32e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (2.48e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (2.47e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 1: E_vdwl: actual (4.91e-02) > expected (1.00e-07)
+INFO:__main__:Entering examples/multi
+INFO:__main__:   + in.powerlaw (1/1)
+INFO:__main__:     Using 2 nprocs for in.powerlaw as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.powerlaw -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.powerlaw.2
+INFO:__main__:     Comparing thermo output from log.powerlaw.2 against the reference log file log.30Nov20.powerlaw.intel.4
+INFO:__main__:     failed: Number of thermo steps in log.powerlaw.2 (11)
+INFO:__main__:     is different from that in the reference log (201) in run 0.
+INFO:__main__:     mismatched num steps in the log files. Check both log files for more details.
+INFO:__main__:Entering examples/HEAT
+INFO:__main__:   + in.spce.hex (1/1)
+INFO:__main__:     Using 2 nprocs for in.spce.hex as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 32.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.spce.hex -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.spce.hex.2
+INFO:__main__:     Timeout for: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.spce.hex -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.spce.hex.2 (120s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.spce.hex:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (120s expired)
+INFO:__main__:Entering examples/tad
+INFO:__main__:   + in.tad (1/1)
+INFO:__main__:     Using 2 nprocs for in.tad as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 3.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.tad -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.tad.2
+INFO:__main__:     The run terminated with in.tad gives the following output:
+INFO:__main__:       ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 5.431 5.431 5.431
+Created orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  1 by 1 by 2 MPI processor grid
+Created 512 atoms
+  using lattice units in orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  create_atoms CPU = 0.002 seconds
+512 atoms in group Si
+1 atoms in group del
+Deleted 1 atoms, new total = 511
+Reading sw potential file Si.sw with DATE: 2007-06-11
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Neighbor list info ...
+  update: every = 1 steps, delay = 10 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 4.77118
+  ghost atom cutoff = 4.77118
+  binsize = 2.38559, bins = 10 10 10
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair sw/kk, perpetual
+      attributes: full, newton on, kokkos_device
+      pair build: full/bin/kk/device
+      stencil: full/bin/3d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.25 | 4.25 | 4.25 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   2397.3877     -2211.666       0             -2053.6238      16437.395    
+        10   1391.344      -2139.6752      0             -2047.9541      19400.742    
+        20   1047.803      -2100.7715      0             -2031.6976      17887.657    
+        30   1650.5393     -2125.1606      0             -2016.3526      13421.637    
+        40   1469.4326     -2097.9223      0             -2001.0534      12978.11     
+        50   1412.5196     -2076.9905      0             -1983.8734      14032.579    
+        60   1742.7825     -2082.6982      0             -1967.8093      14622.936    
+        70   1675.7393     -2072.7071      0             -1962.2379      15505.135    
+        80   1690.8297     -2067.5165      0             -1956.0525      17160.066    
+        90   2003.4119     -2078.9388      0             -1946.8685      18284.522    
+       100   1998.4002     -2074.5017      0             -1942.7619      18395.886    
+       110   1931.8071     -2064.282       0             -1936.9321      18327.47     
+       120   1973.6038     -2063.3668      0             -1933.2615      18076.55     
+       130   1943.715      -2059.5959      0             -1931.461       18094.721    
+       140   2082.9634     -2061.549       0             -1924.2344      17723.883    
+       150   2163.2875     -2056.7611      0             -1914.1514      18491.752    
+       160   2119.6518     -2049.6377      0             -1909.9046      20008.264    
+       170   2240.9725     -2049.7165      0             -1901.9856      20163.57     
+       180   2184.0891     -2047.8576      0             -1903.8767      18982.851    
+       190   2247.6404     -2049.4883      0             -1901.3179      18844.683    
+       200   2159.5206     -2044.78        0             -1902.4186      17863.316    
+       210   2107.2713     -2039.4326      0             -1900.5156      17971.552    
+       220   2240.9454     -2042.4119      0             -1894.6828      17792.045    
+       230   2320.4314     -2043.0156      0             -1890.0465      18062.805    
+       240   2222.3785     -2029.9258      0             -1883.4207      19652.184    
+       250   2395.1342     -2031.3823      0             -1873.4887      19981.287    
+       260   2543.2402     -2038.7662      0             -1871.109       18713.576    
+       270   2411.5529     -2029.3399      0             -1870.3639      20522.761    
+       280   2386.2315     -2028.4736      0             -1871.1668      18348.8      
+       290   2382.18       -2028.5701      0             -1871.5304      16874.405    
+       300   2324.8721     -2021.6025      0             -1868.3407      18832.353    
+       310   2278.9182     -2016.8693      0             -1866.6369      19619.775    
+       320   2449.3739     -2027.7806      0             -1866.3113      18951.967    
+       330   2399.8046     -2024.3819      0             -1866.1804      18817.079    
+       340   2368.8632     -2021.6422      0             -1865.4804      18758.298    
+       350   2486.5754     -2029.024       0             -1865.1023      17766.765    
+       360   2437.2627     -2023.8142      0             -1863.1433      18372.953    
+       370   2449.3237     -2021.3514      0             -1859.8855      20245.434    
+       380   2413.8759     -2021.294       0             -1862.1648      19969.324    
+       390   2430.5769     -2025.5464      0             -1865.3163      19844.541    
+       400   2482.0266     -2028.8574      0             -1865.2356      19373.563    
+       410   2562.2659     -2033.8576      0             -1864.9462      18800.792    
+       420   2523.0715     -2030.5211      0             -1864.1934      17736.521    
+       430   2413.1667     -2025.5477      0             -1866.4653      17198.287    
+       440   2422.3705     -2024.8577      0             -1865.1685      18852.408    
+       450   2436.5629     -2025.7033      0             -1865.0786      18868.641    
+       460   2490.6856     -2031.6091      0             -1867.4164      16671.672    
+       470   2345.8313     -2024.8758      0             -1870.2323      17459.837    
+       480   2362.266      -2022.4907      0             -1866.7638      18476.127    
+       490   2548.9529     -2030.2034      0             -1862.1696      16790.382    
+       500   2467.5115     -2026.0668      0             -1863.4018      16301.769    
+       510   2494.132      -2021.9671      0             -1857.5472      17772.434    
+       520   2578.2572     -2030.9975      0             -1861.0319      17652.857    
+       530   2575.2791     -2028.1245      0             -1858.3552      17246.35     
+       540   2329.0487     -2014.1345      0             -1860.5974      17527.941    
+       550   2453.602      -2020.0757      0             -1858.3277      17304.652    
+       560   2516.2421     -2028.5221      0             -1862.6447      15556.039    
+       570   2357.1755     -2020.8528      0             -1865.4615      17182.935    
+       580   2373.2622     -2021.4199      0             -1864.9681      17370.567    
+       590   2343.118      -2023.1968      0             -1868.7321      16599.567    
+       600   2275.1919     -2020.8345      0             -1870.8477      14395.82     
+       610   2312.6736     -2021.0813      0             -1868.6236      13946.57     
+       620   2395.7218     -2026.6777      0             -1868.7453      13802.76     
+       630   2392.4476     -2029.355       0             -1871.6385      15829.853    
+       640   2445.0979     -2031.8776      0             -1870.6902      17489.365    
+       650   2391.4158     -2027.8691      0             -1870.2206      16491.868    
+       660   2543.065      -2035.3635      0             -1867.7179      15011.202    
+       670   2384.3621     -2024.6182      0             -1867.4347      16167.218    
+       680   2454.1703     -2026.9912      0             -1865.2057      17899.169    
+       690   2542.723      -2032.9764      0             -1865.3533      18474.353    
+       700   2405.4358     -2027.2838      0             -1868.7111      17305.006    
+       710   2447.643      -2027.2739      0             -1865.9188      16852.812    
+       720   2406.3442     -2027.0122      0             -1868.3796      14782.132    
+       730   2289.7836     -2021.5356      0             -1870.587       14887.484    
+       740   2444.3647     -2026.7946      0             -1865.6556      15896.374    
+       750   2396.1782     -2026.486       0             -1868.5235      16206.008    
+       760   2489.3853     -2027.0021      0             -1862.8952      18817.971    
+       770   2523.3139     -2028.5209      0             -1862.1773      18612.591    
+       780   2625.0482     -2032.48        0             -1859.4298      17133.056    
+       790   2522.6746     -2024.5049      0             -1858.2034      18419.999    
+       800   2516.4468     -2025.6598      0             -1859.7689      17364.221    
+       810   2468.861      -2022.4408      0             -1859.6869      16939.742    
+       820   2388.4275     -2018.4121      0             -1860.9605      15613.925    
+       830   2426.6725     -2022.7356      0             -1862.7629      14796.524    
+       840   2328.0606     -2019.3659      0             -1865.8939      16431.458    
+       850   2370.1027     -2024.8003      0             -1868.5568      16442.93     
+       860   2480.2028     -2030.2252      0             -1866.7237      15940.429    
+       870   2412.6488     -2024.2257      0             -1865.1775      16906.207    
+       880   2412.212      -2028.3061      0             -1869.2867      17098.732    
+       890   2598.492      -2037.3877      0             -1866.0881      18135.814    
+       900   2651.4149     -2037.1139      0             -1862.3256      18643.547    
+       910   2477.1711     -2027.5652      0             -1864.2634      17480.041    
+       920   2474.9913     -2024.3526      0             -1861.1946      17165.941    
+       930   2604.6651     -2026.6182      0             -1854.9117      19247.285    
+       940   2565.9863     -2028.1692      0             -1859.0125      18097.467    
+       950   2360.5598     -2014.3887      0             -1858.7743      18005.267    
+       960   2444.2566     -2018.5518      0             -1857.4199      17544.794    
+       970   2319.2969     -2012.719       0             -1859.8247      16108.187    
+       980   2361.73       -2013.3432      0             -1857.6517      16030.756    
+       990   2496.8475     -2019.327       0             -1854.7281      16553.643    
+      1000   2364.5411     -2015.3193      0             -1859.4424      16142.797    
+Loop time of 0.716228 on 4 procs for 1000 steps with 511 atoms
+
+Performance: 120.632 ns/day, 0.199 hours/ns, 1396.204 timesteps/s, 713.460 katom-step/s
+198.4% CPU use with 2 MPI tasks x 2 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.57443    | 0.60303    | 0.63162    |   3.7 | 84.19
+Neigh   | 0.015311   | 0.016356   | 0.017402   |   0.8 |  2.28
+Comm    | 0.037127   | 0.067724   | 0.098322   |  11.8 |  9.46
+Output  | 0.0023922  | 0.0026919  | 0.0029916  |   0.6 |  0.38
+Modify  | 0.014117   | 0.015132   | 0.016146   |   0.8 |  2.11
+Other   |            | 0.0113     |            |       |  1.58
+
+Nlocal:          255.5 ave         261 max         250 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:          743.5 ave         749 max         738 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:              0 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+FullNghs:         6490 ave        6633 max        6347 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 12980
+Ave neighs/atom = 25.401174
+Neighbor list builds = 59
+Dangerous builds = 0
+ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79)
+Last input line: tad 2000 50 ${tlo} ${thi} 0.05 1.0 event min ${etol} ${ftol} ${maxiter} ${maxeval} neb 0.0 0.01 200 200 20 neb_style fire neb_log log.neb
+
+INFO:__main__:     Failed with in.tad.
+
+INFO:__main__:Entering examples/micelle
+INFO:__main__:   + in.micelle (1/1)
+INFO:__main__:     Using 2 nprocs for in.micelle as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.micelle -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.micelle.2
+INFO:__main__:     Comparing thermo output from log.micelle.2 against the reference log file log.29Mar2019.micelle.g++.4
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 1: Press: actual (2.00e-06) > expected (1.00e-06)
+INFO:__main__:Entering examples/body
+INFO:__main__:   + in.squares (1/1)
+INFO:__main__:     Using 2 nprocs for in.squares as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.squares -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.squares.2
+INFO:__main__:     The run terminated with in.squares gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style body rounded/polygon 1 6
+
+INFO:__main__:     Failed with in.squares.
+
+INFO:__main__:Entering examples/tersoff
+INFO:__main__:   + in.tersoff (1/1)
+INFO:__main__:     Using 2 nprocs for in.tersoff as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.tersoff -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.tersoff.2
+INFO:__main__:     The run terminated with in.tersoff gives the following output:
+INFO:__main__:       ERROR: Keyword 'shift' not supported for this style (src/MANYBODY/pair_tersoff.cpp:362)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 5.431 5.431 5.431
+Created orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  1 by 1 by 2 MPI processor grid
+Created 512 atoms
+  using lattice units in orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  create_atoms CPU = 0.002 seconds
+Reading tersoff potential file Si.tersoff with DATE: 2007-10-25
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Neighbor list info ...
+  update: every = 1 steps, delay = 10 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 4.2
+  ghost atom cutoff = 4.2
+  binsize = 2.1, bins = 11 11 11
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair tersoff/kk, perpetual
+      attributes: full, newton on, kokkos_device
+      pair build: full/bin/kk/device
+      stencil: full/bin/3d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.25 | 4.25 | 4.25 Mbytes
+   Step          Temp          E_pair         TotEng       Econserve        Press     
+         0   1800          -2370.771      -2251.8775     -2251.8775      12511.419    
+        10   1144.7447     -2327.3227     -2251.7101     -2251.7759      21852.599    
+        20   770.19243     -2302.1547     -2251.282      -2251.7633      22286.587    
+        30   1059.4324     -2320.1988     -2250.2213     -2251.8159      6242.222     
+        40   1000.972      -2314.6531     -2248.5369     -2251.796      -3069.9273    
+        50   803.91758     -2300.1702     -2247.0699     -2251.7834     -7154.1383    
+        60   761.38639     -2296.1731     -2245.882      -2251.7928     -14520.921    
+        70   750.57677     -2294.3086     -2244.7316     -2251.7965     -21400.198    
+        80   676.66672     -2288.2634     -2243.5683     -2251.7899     -23480.201    
+        90   640.24103     -2284.6678     -2242.3786     -2251.7848     -20659.983    
+       100   742.67188     -2290.0616     -2241.0067     -2251.7855     -16211.799    
+Loop time of 0.0659817 on 4 procs for 100 steps with 512 atoms
+
+Performance: 130.945 ns/day, 0.183 hours/ns, 1515.572 timesteps/s, 775.973 katom-step/s
+197.2% CPU use with 2 MPI tasks x 2 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.057669   | 0.058042   | 0.058415   |   0.2 | 87.97
+Neigh   | 0.00064858 | 0.00066648 | 0.00068438 |   0.0 |  1.01
+Comm    | 0.002745   | 0.0031071  | 0.0034693  |   0.6 |  4.71
+Output  | 0.0001779  | 0.00022223 | 0.00026656 |   0.0 |  0.34
+Modify  | 0.0023041  | 0.0023378  | 0.0023715  |   0.1 |  3.54
+Other   |            | 0.001606   |            |       |  2.43
+
+Nlocal:            256 ave         260 max         252 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:          632.5 ave         643 max         622 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:              0 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+FullNghs:         4202 ave        4294 max        4110 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 8404
+Ave neighs/atom = 16.414062
+Neighbor list builds = 2
+Dangerous builds = 0
+System init for write_restart ...
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style atomic/kk from restart
+  orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  1 by 1 by 2 MPI processor grid
+  pair style tersoff stores no restart info
+  512 atoms
+  read_restart CPU = 0.001 seconds
+Reading tersoff/mod potential file Si.tersoff.mod with DATE: 2013-07-26
+Resetting global fix info from restart file:
+  fix style: nvt/kk, fix ID: 1
+All restart file global fix info was re-assigned
+Neighbor list info ...
+  update: every = 1 steps, delay = 10 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 4.3
+  ghost atom cutoff = 4.3
+  binsize = 2.15, bins = 11 11 11
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair tersoff/mod/kk, perpetual
+      attributes: full, newton on, kokkos_device
+      pair build: full/bin/kk/device
+      stencil: full/bin/3d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 100
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.25 | 4.25 | 4.25 Mbytes
+   Step          Temp          E_pair         TotEng       Econserve        Press     
+       100   742.67188     -2210.6446     -2161.5897     -2172.3685     -6444.2163    
+       110   1135.5853     -2234.6974     -2159.6898     -2172.3908      113.80404    
+       120   1462.8415     -2253.8186     -2157.1951     -2172.3853      10922.229    
+       130   1755.9617     -2270.5152     -2154.5306     -2172.3964      18780.707    
+       140   1895.1939     -2277.1484     -2151.9672     -2172.3965      22357.106    
+       150   1869.5375     -2273.2734     -2149.7868     -2172.3851      22616.492    
+       160   1824.0448     -2268.4342     -2147.9525     -2172.393       19254.299    
+       170   1637.9038     -2254.5219     -2146.3352     -2172.3815      15904.928    
+       180   1451.9871     -2240.7199     -2144.8134     -2172.3771      12064.754    
+       190   1362.8248     -2233.1942     -2143.177      -2172.3789      7970.534     
+       200   1341.1467     -2229.8951     -2141.3097     -2172.3717      6244.8542    
+Loop time of 0.0722099 on 4 procs for 100 steps with 512 atoms
+
+Performance: 119.651 ns/day, 0.201 hours/ns, 1384.852 timesteps/s, 709.044 katom-step/s
+196.4% CPU use with 2 MPI tasks x 2 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.063166   | 0.064117   | 0.065069   |   0.4 | 88.79
+Neigh   | 0.0010156  | 0.0010329  | 0.0010502  |   0.1 |  1.43
+Comm    | 0.002471   | 0.0034197  | 0.0043684  |   1.6 |  4.74
+Output  | 0.00016701 | 0.00019382 | 0.00022064 |   0.0 |  0.27
+Modify  | 0.0022892  | 0.0023048  | 0.0023204  |   0.0 |  3.19
+Other   |            | 0.001141   |            |       |  1.58
+
+Nlocal:            256 ave         258 max         254 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:          699.5 ave         701 max         698 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:              0 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+FullNghs:         4622 ave        4649 max        4595 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 9244
+Ave neighs/atom = 18.054688
+Neighbor list builds = 4
+Dangerous builds = 0
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style atomic/kk from restart
+  orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  1 by 1 by 2 MPI processor grid
+  pair style tersoff stores no restart info
+  512 atoms
+  read_restart CPU = 0.001 seconds
+Reading tersoff/mod/c potential file Si.tersoff.modc with DATE: 2016-11-09
+Resetting global fix info from restart file:
+  fix style: nvt/kk, fix ID: 1
+All restart file global fix info was re-assigned
+Neighbor list info ...
+  update: every = 1 steps, delay = 10 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 4.205694
+  ghost atom cutoff = 4.205694
+  binsize = 2.102847, bins = 11 11 11
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair tersoff/mod/c, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 100
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.267 | 4.267 | 4.267 Mbytes
+   Step          Temp          E_pair         TotEng       Econserve        Press     
+       100   742.67188     -2221.9308     -2172.8759     -2183.6547     -11721.269    
+       110   1106.895      -2244.1196     -2171.007      -2183.6843     -2359.7819    
+       120   1327.6674     -2256.3155     -2168.6205     -2183.6767      7904.6604    
+       130   1487.0219     -2264.3656     -2166.1449     -2183.6707      14660.783    
+       140   1709.1746     -2276.4761     -2163.5818     -2183.6886      19298.791    
+       150   1710.6528     -2274.1129     -2161.1209     -2183.6764      22026.559    
+       160   1651.0659     -2267.9877     -2158.9316     -2183.6699      20916.722    
+       170   1632.7705     -2264.7081     -2156.8605     -2183.6777      17339.031    
+       180   1477.693      -2252.4683     -2154.8638     -2183.6706      12563.594    
+       190   1310.8768     -2239.5419     -2152.9559     -2183.6581      9591.0484    
+       200   1356.7172     -2240.5315     -2150.9177     -2183.668       5584.6734    
+Loop time of 0.11563 on 4 procs for 100 steps with 512 atoms
+
+Performance: 74.721 ns/day, 0.321 hours/ns, 864.825 timesteps/s, 442.790 katom-step/s
+199.0% CPU use with 2 MPI tasks x 2 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.10445    | 0.10544    | 0.10644    |   0.3 | 91.19
+Neigh   | 0.0016104  | 0.0016343  | 0.0016581  |   0.1 |  1.41
+Comm    | 0.0022651  | 0.0035614  | 0.0048578  |   2.2 |  3.08
+Output  | 0.00018002 | 0.00021116 | 0.00024229 |   0.0 |  0.18
+Modify  | 0.0025867  | 0.0030285  | 0.0034703  |   0.8 |  2.62
+Other   |            | 0.001751   |            |       |  1.51
+
+Nlocal:            256 ave         257 max         255 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:          657.5 ave         665 max         650 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:              0 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+FullNghs:         4207 ave        4218 max        4196 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 8414
+Ave neighs/atom = 16.433594
+Neighbor list builds = 4
+Dangerous builds = 0
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style atomic/kk from restart
+  orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  1 by 1 by 2 MPI processor grid
+  pair style tersoff stores no restart info
+  512 atoms
+  read_restart CPU = 0.001 seconds
+Changing box ...
+  orthogonal box = (4.3448 0 0) to (17.3792 21.724 21.724)
+  orthogonal box = (4.3448 4.3448 0) to (17.3792 17.3792 21.724)
+  orthogonal box = (4.3448 4.3448 4.3448) to (17.3792 17.3792 17.3792)
+Reading tersoff potential file BNC.tersoff with DATE: 2013-03-21
+Resetting global fix info from restart file:
+  fix style: nvt/kk, fix ID: 1
+All restart file global fix info was re-assigned
+Neighbor list info ...
+  update: every = 1 steps, delay = 10 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 3.1
+  ghost atom cutoff = 3.1
+  binsize = 1.55, bins = 9 9 9
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair tersoff/kk, perpetual
+      attributes: full, newton on, kokkos_device
+      pair build: full/bin/kk/device
+      stencil: full/bin/3d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 100
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 4.25 | 4.25 | 4.25 Mbytes
+   Step          Temp          E_pair         TotEng       Econserve        Press     
+       100   742.67188     -2973.8527     -2924.7978     -2935.5766      3438975.9    
+       110   4061.1085     -3183.2489     -2915.0049     -2930.1208      2211712.7    
+       120   4120.3231     -3187.0108     -2914.8555     -2928.3047      2166764.3    
+       130   3602.7602     -3158.5939     -2920.6246     -2926.6167      2244475.7    
+       140   3222.7773     -3141.7275     -2928.8568     -2925.5369      2161607      
+       150   3487.4703     -3163.7495     -2933.3954     -2921.2462      2222150.2    
+       160   3436.3009     -3169.4234     -2942.449      -2920.8775      2144368.7    
+       170   3308.1796     -3170.3773     -2951.8656     -2920.8967      2223612.9    
+       180   3304.3776     -3178.7805     -2960.52       -2920.102       2072546.6    
+       190   3217.3561     -3180.7963     -2968.2837     -2918.4548      2118776.2    
+       200   3041.6832     -3176.1794     -2975.2703     -2916.5787      2130124.6    
+Loop time of 0.0821959 on 4 procs for 100 steps with 512 atoms
+
+Performance: 105.115 ns/day, 0.228 hours/ns, 1216.606 timesteps/s, 622.902 katom-step/s
+197.9% CPU use with 2 MPI tasks x 2 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.065079   | 0.068817   | 0.072556   |   1.4 | 83.72
+Neigh   | 0.0018915  | 0.0020771  | 0.0022628  |   0.4 |  2.53
+Comm    | 0.0023497  | 0.0066554  | 0.010961   |   5.3 |  8.10
+Output  | 0.00019152 | 0.00023045 | 0.00026938 |   0.0 |  0.28
+Modify  | 0.0027206  | 0.0031428  | 0.003565   |   0.8 |  3.82
+Other   |            | 0.001273   |            |       |  1.55
+
+Nlocal:            256 ave         257 max         255 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:          769.5 ave         773 max         766 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:              0 ave           0 max           0 min
+Histogram: 2 0 0 0 0 0 0 0 0 0
+FullNghs:         7380 ave        7420 max        7340 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 14760
+Ave neighs/atom = 28.828125
+Neighbor list builds = 6
+Dangerous builds = 0
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style atomic/kk from restart
+  orthogonal box = (0 0 0) to (21.724 21.724 21.724)
+  1 by 1 by 2 MPI processor grid
+  pair style tersoff stores no restart info
+  512 atoms
+  read_restart CPU = 0.001 seconds
+Changing box ...
+  orthogonal box = (4.3448 0 0) to (17.3792 21.724 21.724)
+  orthogonal box = (4.3448 4.3448 0) to (17.3792 17.3792 21.724)
+  orthogonal box = (4.3448 4.3448 4.3448) to (17.3792 17.3792 17.3792)
+ERROR: Keyword 'shift' not supported for this style (src/MANYBODY/pair_tersoff.cpp:362)
+Last input line: pair_style tersoff shift 0.05
+
+INFO:__main__:     Failed with in.tersoff.
+
+INFO:__main__:Entering examples/flow
+INFO:__main__:   + in.flow.pois (1/1)
+INFO:__main__:     Using 2 nprocs for in.flow.pois as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-0/build/lmp -in in.flow.pois -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.flow.pois.2
+INFO:__main__:     Comparing thermo output from log.flow.pois.2 against the reference log file log.27Nov18.flow.pois.g++.4
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (2.29e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (3.28e-01) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.21e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.20e-01) > expected (1.00e-06)

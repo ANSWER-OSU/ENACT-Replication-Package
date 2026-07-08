@@ -1,0 +1,1584 @@
+INFO:__main__:
+There are 45 input scripts listed in ../energy_results/quickmax/lists/shards_19848299/shard-00.txt.
+INFO:__main__:     Executing for reference walltime: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/../bench/in.lj -v x 2 -v y 2 -v z 1 -cite none
+INFO:__main__:     Reference walltime, sec = 1.0
+INFO:__main__:Entering examples/ASPHERE/box
+INFO:__main__:   + in.box (1/2)
+INFO:__main__:     Using 1 nprocs for in.box as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.box -cite none -log log.box.1
+INFO:__main__:     Comparing thermo output from log.box.1 against the reference log file log.17Jun21.box.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.24e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (2.52e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.20e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (1.66e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (2.47e-01) > expected (1.00e-07)
+INFO:__main__:   + in.box.mp (2/2)
+INFO:__main__:     Using 1 nprocs for in.box.mp as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.box.mp -cite none -log log.box.mp.1
+INFO:__main__:     Comparing thermo output from log.box.mp.1 against the reference log file log.17Jun21.box.mp.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (5.58e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.39e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (7.14e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.54e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (5.76e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (7.79e-02) > expected (1.00e-07)
+INFO:__main__:Entering examples/ASPHERE/dimer
+INFO:__main__:   + in.dimer (1/2)
+INFO:__main__:     Using 1 nprocs for in.dimer as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dimer -cite none -log log.dimer.1
+INFO:__main__:     Comparing thermo output from log.dimer.1 against the reference log file log.1Feb24.dimer.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.52e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.56e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.48e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.24e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (6.34e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (1.69e-01) > expected (1.00e-07)
+INFO:__main__:   + in.dimer.mp (2/2)
+INFO:__main__:     Using 1 nprocs for in.dimer.mp as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dimer.mp -cite none -log log.dimer.mp.1
+INFO:__main__:     Comparing thermo output from log.dimer.mp.1 against the reference log file log.1Feb24.dimer.mp.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (3.10e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (2.43e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (7.33e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (9.54e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (9.23e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (9.45e-02) > expected (1.00e-07)
+INFO:__main__:Entering examples/ASPHERE/ellipsoid
+INFO:__main__:   + in.ellipsoid (1/2)
+INFO:__main__:     Using 1 nprocs for in.ellipsoid as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.ellipsoid -cite none -log log.ellipsoid.1
+INFO:__main__:     Comparing thermo output from log.ellipsoid.1 against the reference log file log.1Feb24.ellipsoid.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (5.50e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (8.81e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (2.40e-01) > expected (1.00e-04)
+INFO:__main__:     4 rel diff checks failed.
+INFO:__main__:        - Run 0: Press: actual (7.85e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Temp: actual (5.70e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (1.93e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (3.40e-01) > expected (1.00e-07)
+INFO:__main__:   + in.ellipsoid.mp (2/2)
+INFO:__main__:     Using 1 nprocs for in.ellipsoid.mp as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.ellipsoid.mp -cite none -log log.ellipsoid.mp.1
+INFO:__main__:     Comparing thermo output from log.ellipsoid.mp.1 against the reference log file log.1Feb24.ellipsoid.mp.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.53e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.96e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.60e-01) > expected (1.00e-04)
+INFO:__main__:     4 rel diff checks failed.
+INFO:__main__:        - Run 0: Press: actual (7.85e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Temp: actual (5.54e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (9.06e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (2.13e-01) > expected (1.00e-07)
+INFO:__main__:Entering examples/ASPHERE/flat_membrane
+INFO:__main__:   + in.flat_membrane (1/1)
+INFO:__main__:     Using 1 nprocs for in.flat_membrane as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.flat_membrane -cite none -log log.flat_membrane.1
+INFO:__main__:     Comparing thermo output from log.flat_membrane.1 against the reference log file log.3Mar25.flat_membrane.g++.1
+INFO:__main__:     all 4 checks passed.
+INFO:__main__:Entering examples/ASPHERE/poly
+INFO:__main__:   + in.poly (1/2)
+INFO:__main__:     Using 1 nprocs for in.poly as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.poly -cite none -log log.poly.1
+INFO:__main__:     Comparing thermo output from log.poly.1 against the reference log file log.1Feb24.poly.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (2.02e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.21e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.73e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (2.23e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (2.58e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (1.20e-01) > expected (1.00e-07)
+INFO:__main__:   + in.poly.mp (2/2)
+INFO:__main__:     Using 1 nprocs for in.poly.mp as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.poly.mp -cite none -log log.poly.mp.1
+INFO:__main__:     Comparing thermo output from log.poly.mp.1 against the reference log file log.1Feb24.poly.mp.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.84e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.89e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (3.91e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.32e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (2.07e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (1.60e-01) > expected (1.00e-07)
+INFO:__main__:Entering examples/ASPHERE/star
+INFO:__main__:   + in.star (1/2)
+INFO:__main__:     Using 1 nprocs for in.star as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.star -cite none -log log.star.1
+INFO:__main__:     Comparing thermo output from log.star.1 against the reference log file log.1Feb24.star.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (9.18e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (4.59e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (9.53e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (2.25e-05) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (2.62e+00) > expected (1.00e-07)
+INFO:__main__:   + in.star.mp (2/2)
+INFO:__main__:     Using 1 nprocs for in.star.mp as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.star.mp -cite none -log log.star.mp.1
+INFO:__main__:     Comparing thermo output from log.star.mp.1 against the reference log file log.1Feb24.star.mp.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (9.36e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.53e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (4.61e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (2.70e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (6.58e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (8.99e-01) > expected (1.00e-07)
+INFO:__main__:Entering examples/ASPHERE/vesicle
+INFO:__main__:   + in.vesicle (1/1)
+INFO:__main__:     Using 1 nprocs for in.vesicle as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.vesicle -cite none -log log.vesicle.1
+INFO:__main__:     Comparing thermo output from log.vesicle.1 against the reference log file log.18Oct22.vesicle.g++.1
+INFO:__main__:     all 4 checks passed.
+INFO:__main__:Entering examples/COUPLE/python
+INFO:__main__:   + in.fix_external (1/1)
+INFO:__main__:     Using 1 nprocs for in.fix_external as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.fix_external -cite none -log log.fix_external.1
+INFO:__main__:    completed, but no Step nor Loop in the output.
+
+INFO:__main__:
+in.fix_external:
+INFO:__main__:
+    Output:
+LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Lattice spacing in x,y,z = 5.43 5.43 5.43
+Created orthogonal box = (0 0 0) to (5.43 5.43 5.43)
+  1 by 1 by 1 MPI processor grid
+Created 8 atoms
+  using lattice units in orthogonal box = (0 0 0) to (5.43 5.43 5.43)
+  create_atoms CPU = 0.000 seconds
+Total wall time: 0:00:00
+
+INFO:__main__:
+    Error:
+
+INFO:__main__:Entering examples/COUPLE/simple
+INFO:__main__:   + in.lj (1/1)
+INFO:__main__:     Using 1 nprocs for in.lj as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.lj -cite none -log log.lj.1
+INFO:__main__:       failed, cannot find the reference log file for in.lj with the expected format log.[date].lj.*.[nprocs]
+INFO:__main__:       thermo.in.lj.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/ELASTIC_T/DEFORMATION/Silicon
+INFO:__main__:   + in.elastic (1/1)
+INFO:__main__:     Using 1 nprocs for in.elastic as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.elastic -cite none -log log.elastic.1
+INFO:__main__:       failed, cannot find the reference log file for in.elastic with the expected format log.[date].elastic.*.[nprocs]
+INFO:__main__:       thermo.in.elastic.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/MC-LOOP
+INFO:__main__:   + in.mc (1/1)
+INFO:__main__:     Using 1 nprocs for in.mc as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.mc -cite none -log log.mc.1
+INFO:__main__:     Comparing thermo output from log.mc.1 against the reference log file log.13Oct16.mc.g++.1
+INFO:__main__:     all 6010 checks passed.
+INFO:__main__:Entering examples/PACKAGES/agni
+INFO:__main__:   + in.adatom (1/2)
+INFO:__main__:     Using 1 nprocs for in.adatom as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.adatom -cite none -log log.adatom.1
+INFO:__main__:     Comparing thermo output from log.adatom.1 against the reference log file log.20Jan21.adatom.g++.1
+INFO:__main__:     all 2 checks passed.
+INFO:__main__:   + in.vacancy (2/2)
+INFO:__main__:     Using 1 nprocs for in.vacancy as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.vacancy -cite none -log log.vacancy.1
+INFO:__main__:     Comparing thermo output from log.vacancy.1 against the reference log file log.20Jan21.vacancy.g++.1
+INFO:__main__:     1 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (5.70e-04) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (7.12e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Temp: actual (7.16e-07) > expected (1.00e-07)
+INFO:__main__:Entering examples/PACKAGES/bocs
+INFO:__main__:   + in.methanol (1/1)
+INFO:__main__:     Using 1 nprocs for in.methanol as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.methanol -cite none -log log.methanol.1
+INFO:__main__:     Timeout for: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.methanol -cite none -log log.methanol.1 (30s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.methanol:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (30s expired)
+INFO:__main__:Entering examples/PACKAGES/cauchy
+INFO:__main__:   + in.cauchystat (1/1)
+INFO:__main__:     Using 1 nprocs for in.cauchystat as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.cauchystat -cite none -log log.cauchystat.1
+INFO:__main__:     Comparing thermo output from log.cauchystat.1 against the reference log file log.2Jun2020.cauchystat.g++.1
+INFO:__main__:     1 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (6.45e+00) > expected (1.00e-04)
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (8.90e-03) > expected (1.00e-07)
+INFO:__main__:Entering examples/PACKAGES/cgdna/examples/lj_units/oxDNA2/duplex2
+INFO:__main__:   + in.duplex2 (1/1)
+INFO:__main__:     Using 1 nprocs for in.duplex2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.duplex2 -cite none -log log.duplex2.1
+INFO:__main__:     Timeout for: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.duplex2 -cite none -log log.duplex2.1 (30s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.duplex2:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (30s expired)
+INFO:__main__:Entering examples/PACKAGES/cgdna/examples/lj_units/oxDNA2/duplex3
+INFO:__main__:   + in.duplex3 (1/1)
+INFO:__main__:     Using 1 nprocs for in.duplex3 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.duplex3 -cite none -log log.duplex3.1
+INFO:__main__:     Comparing thermo output from log.duplex3.1 against the reference log file log.2Jul21.duplex3.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/cgdna/examples/lj_units/oxDNA2/potential_file
+INFO:__main__:   + in.duplex1 (1/1)
+INFO:__main__:     Using 1 nprocs for in.duplex1 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.duplex1 -cite none -log log.duplex1.1
+INFO:__main__:     Comparing thermo output from log.duplex1.1 against the reference log file log.19May24.duplex1.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/cgspica/sds-monolayer
+INFO:__main__:   + in.sds-hybrid (1/2)
+INFO:__main__:     Using 1 nprocs for in.sds-hybrid as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.sds-hybrid -cite none -log log.sds-hybrid.1
+INFO:__main__:     Comparing thermo output from log.sds-hybrid.1 against the reference log file log.27Nov18.sds-hybrid.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.sds-regular (2/2)
+INFO:__main__:     Using 1 nprocs for in.sds-regular as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.sds-regular -cite none -log log.sds-regular.1
+INFO:__main__:     Comparing thermo output from log.sds-regular.1 against the reference log file log.27Nov18.sds-regular.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/charge_regulation
+INFO:__main__:   + in.chreg-acid (1/3)
+INFO:__main__:     Using 1 nprocs for in.chreg-acid as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.chreg-acid -cite none -log log.chreg-acid.1
+INFO:__main__:     Comparing thermo output from log.chreg-acid.1 against the reference log file log.10Feb21.chreg-acid.g++.1
+INFO:__main__:     1 abs diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (1.92e-02) > expected (1.00e-04)
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (4.09e-01) > expected (1.00e-07)
+INFO:__main__:   + in.chreg-acid-real (2/3)
+INFO:__main__:     Using 1 nprocs for in.chreg-acid-real as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.chreg-acid-real -cite none -log log.chreg-acid-real.1
+INFO:__main__:     Comparing thermo output from log.chreg-acid-real.1 against the reference log file log.11Apr21.chreg-acid-real.g++.1
+INFO:__main__:     1 abs diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (8.78e-01) > expected (1.00e-04)
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (1.54e-01) > expected (1.00e-07)
+INFO:__main__:   + in.chreg-polymer (3/3)
+INFO:__main__:     Using 1 nprocs for in.chreg-polymer as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.chreg-polymer -cite none -log log.chreg-polymer.1
+INFO:__main__:     Comparing thermo output from log.chreg-polymer.1 against the reference log file log.10Feb21.chreg-polymer.g++.1
+INFO:__main__:     1 abs diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (4.23e-02) > expected (1.00e-04)
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (2.56e-01) > expected (1.00e-07)
+INFO:__main__:Entering examples/PACKAGES/cnp
+INFO:__main__:   + in.cnp (1/1)
+INFO:__main__:     Using 1 nprocs for in.cnp as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.cnp -cite none -log log.cnp.1
+INFO:__main__:       failed, cannot find the reference log file for in.cnp with the expected format log.[date].cnp.*.[nprocs]
+INFO:__main__:       thermo.in.cnp.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/colvars
+INFO:__main__:   + in.peptide-colvars (1/4)
+INFO:__main__:     Using 1 nprocs for in.peptide-colvars as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.peptide-colvars -cite none -log log.peptide-colvars.1
+INFO:__main__:    Error parsing log.peptide-colvars.1 at line 4, column 2.
+INFO:__main__:---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, width, =, 1, [default], ]
+ - [#, lowerBoundary, =, 0, [default], ]
+ - [#, upperBoundary, =, 1, [default], ]
+ - [#, hardLowerBoundary, =, on, [default], ]
+ - [#, hardUpperBoundary, =, off, [default], ]
+ - [#, expandBoundaries, =, off, [default], ]
+ - [#, extendedLagrangian, =, off, [default], ]
+ - [#, outputValue, =, on, [default], ]
+ - [#, outputVelocity, =, off, [default], ]
+ - [#, outputTotalForce, =, off, [default], ]
+ - [#, outputAppliedForce, =, off, [default], ]
+ - [#, subtractAppliedForce, =, off, [default], ]
+ - [#, runAve, =, off, [default], ]
+ - [#, corrFunc, =, off, [default], ]
+ - [Initializing, a, new, collective, variable., ]
+ - [Initializing, a, new, "distance", component., ]
+ - [#, name, =, "", [default], ]
+ - [#, componentCoeff, =, 1, [default], ]
+ - [#, componentExp, =, 1, [default], ]
+ - [#, period, =, 0, [default], ]
+ - [#, wrapAround, =, 0, [default], ]
+ - [#, forceNoPBC, =, off, [default], ]
+ - [#, scalable, =, on, [default], ]
+ - [#, name, =, "", [default], ]
+ - [#, centerToOrigin, =, off, [default], ]
+ - [#, centerToReference, =, off, [default], ]
+ - [#, rotateToReference, =, off, [default], ]
+ - [#, atomsOfGroup, =, "", [default], ]
+ - [#, indexGroup, =, "", [default], ]
+ - [#, atomsFile, =, "", [default], ]
+ - [#, enableFitGradients, =, on, [default], ]
+ - [#, printAtomIDs, =, off, [default], ]
+ - [#, name, =, "", [default], ]
+ - [#, centerToOrigin, =, off, [default], ]
+ - [#, centerToReference, =, off, [default], ]
+ - [#, rotateToReference, =, off, [default], ]
+ - [#, atomsOfGroup, =, "", [default], ]
+ - [#, indexGroup, =, "", [default], ]
+ - [#, atomsFile, =, "", [default], ]
+ - [#, enableFitGradients, =, on, [default], ]
+ - [#, printAtomIDs, =, off, [default], ]
+ - [#, oneSiteSystemForce, =, off, [default], ]
+ - [#, oneSiteTotalForce, =, off, [default], ]
+---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, width, =, 1, [default], ]
+ - [#, lowerBoundary, =, 0, [default], ]
+ - [#, upperBoundary, =, 1, [default], ]
+ - [#, hardLowerBoundary, =, on, [default], ]
+ - [#, hardUpperBoundary, =, off, [default], ]
+ - [#, expandBoundaries, =, off, [default], ]
+ - [#, extendedLagrangian, =, off, [default], ]
+ - [#, outputValue, =, on, [default], ]
+ - [#, outputVelocity, =, off, [default], ]
+ - [#, outputTotalForce, =, off, [default], ]
+ - [#, outputAppliedForce, =, off, [default], ]
+ - [#, subtractAppliedForce, =, off, [default], ]
+ - [#, runAve, =, off, [default], ]
+ - [#, corrFunc, =, off, [default], ]
+ - [Initializing, a, new, "harmonic", instance., ]
+ - [#, stepZeroData, =, off, [default], ]
+---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, outputEnergy, =, off, [default], ]
+ - [#, outputFreq, =, 1000, [default], ]
+ - [#, writeTISamples, =, off, [default], ]
+ - [#, writeTIPMF, =, off, [default], ]
+ - [#, outputCenters, =, off, [default], ]
+ - [#, decoupling, =, off, [default], ]
+ - [#, targetForceConstant, =, -1, [default], ]
+ - [Bond:, 4, 1.111, 1.44264e-05, 9, ]
+ - [Bond:, 6, 0.996998, 7.26967e-06, 6, ]
+ - [Bond:, 8, 1.08, 1.32536e-05, 7, ]
+ - [Bond:, 10, 1.111, 1.22749e-05, 8, ]
+ - [Bond:, 12, 1.08, 1.11767e-05, 9, ]
+ - [Bond:, 14, 0.96, 0, 1, ]
+ - [Bond:, 18, 0.957206, 4.37979e-05, 1280, ]
+ - [Angle:, 31, 104.519, 0.00396029, 640, ]
+---
+keywords: ['Step', 'Temp', 'TotEng', 'PotEng', 'KinEng', 'E_pair', 'E_bond', 'f_2', ]
+data:
+ - [0, 282.10052, -5237.458, -6372.3765, 1134.9186, -6442.7679, 16.557152, 292.14604, ]
+ - [10, 305.06149, -5058.8971, -6286.1899, 1227.2929, -6413.1019, 58.8499, 103.38345, ]
+ - [20, 311.00516, -4999.0612, -6250.266, 1251.2048, -6417.1021, 47.695297, 36.699695, ]
+ - [30, 314.22337, -4993.7011, -6257.8532, 1264.152, -6421.9678, 35.344144, 10.563932, ]
+ - [40, 297.87492, -5020.8375, -6219.2181, 1198.3806, -6389.8526, 27.723134, 3.8354514, ]
+ - [50, 304.0207, -5056.2575, -6279.3632, 1223.1057, -6456.8213, 55.459507, 0.20678213, ]
+ - [60, 285.92576, -5104.046, -6254.354, 1150.3079, -6435.5813, 32.76723, 0.69352954, ]
+ - [70, 277.83519, -5163.9756, -6281.7344, 1117.7587, -6447.7031, 39.627168, 11.433604, ]
+ - [80, 267.51495, -5206.4046, -6282.644, 1076.2394, -6456.6369, 31.611883, 6.355418, ]
+ - [90, 278.15579, -5245.3824, -6364.431, 1119.0485, -6499.8063, 28.849773, 0.36941574, ]
+ - [100, 260.10611, -5292.6885, -6339.1214, 1046.4329, -6471.6733, 25.362042, 0.2198733, ]
+...
+---
+keywords: ['Step', 'Temp', 'TotEng', 'PotEng', 'KinEng', 'E_pair', 'E_bond', 'f_2', ]
+data:
+ - [100, 260.10611, -5292.6885, -6339.1214, 1046.4329, -6471.6733, 25.362042, 0.2198733, ]
+ - [110, 266.2644, -5341.199, -6412.4073, 1071.2083, -6552.7551, 33.573175, 1.9229648, ]
+ - [120, 262.66604, -5386.2386, -6442.9703, 1056.7317, -6587.5483, 29.85959, 2.7124806, ]
+ - [130, 252.83384, -5422.54, -6439.7158, 1017.1758, -6580.4705, 25.979344, 1.2031596, ]
+ - [140, 253.85112, -5452.1836, -6473.4521, 1021.2684, -6609.4826, 26.071656, 0.30585544, ]
+ - [150, 261.31822, -5490.4725, -6541.7818, 1051.3093, -6646.6077, 16.258824, 6.9051021, ]
+ - [160, 255.73533, -5521.5935, -6550.4423, 1028.8488, -6658.1373, 19.717409, 12.339682, ]
+ - [170, 253.42528, -5540.0942, -6559.6494, 1019.5552, -6656.6678, 23.293802, 10.290221, ]
+ - [180, 248.51158, -5550.3255, -6550.1124, 999.78692, -6661.4235, 26.200128, 3.4336074, ]
+ - [190, 250.80867, -5555.2555, -6564.2839, 1009.0284, -6666.1643, 25.536353, 3.3494322, ]
+ - [200, 251.5049, -5557.4253, -6569.2547, 1011.8294, -6674.0854, 24.804919, 7.1387631, ]
+...
+---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, width, =, 1, [default], ]
+ - [#, lowerBoundary, =, 0, [default], ]
+ - [#, upperBoundary, =, 1, [default], ]
+ - [#, hardLowerBoundary, =, on, [default], ]
+ - [#, hardUpperBoundary, =, off, [default], ]
+ - [#, expandBoundaries, =, off, [default], ]
+ - [#, extendedLagrangian, =, off, [default], ]
+ - [#, outputValue, =, on, [default], ]
+ - [#, outputVelocity, =, off, [default], ]
+ - [#, outputTotalForce, =, off, [default], ]
+ - [#, outputAppliedForce, =, off, [default], ]
+ - [#, subtractAppliedForce, =, off, [default], ]
+ - [#, runAve, =, off, [default], ]
+ - [#, corrFunc, =, off, [default], ]
+ - [Initializing, a, new, collective, variable., ]
+ - [Initializing, a, new, "distance", component., ]
+ - [#, name, =, "", [default], ]
+ - [#, componentCoeff, =, 1, [default], ]
+ - [#, componentExp, =, 1, [default], ]
+ - [#, period, =, 0, [default], ]
+ - [#, wrapAround, =, 0, [default], ]
+ - [#, forceNoPBC, =, off, [default], ]
+ - [#, scalable, =, on, [default], ]
+ - [#, name, =, "", [default], ]
+ - [#, centerToOrigin, =, off, [default], ]
+ - [#, centerToReference, =, off, [default], ]
+ - [#, rotateToReference, =, off, [default], ]
+ - [#, atomsOfGroup, =, "", [default], ]
+ - [#, indexGroup, =, "", [default], ]
+ - [#, atomsFile, =, "", [default], ]
+ - [#, enableFitGradients, =, on, [default], ]
+ - [#, printAtomIDs, =, off, [default], ]
+ - [#, name, =, "", [default], ]
+ - [#, centerToOrigin, =, off, [default], ]
+ - [#, centerToReference, =, off, [default], ]
+ - [#, rotateToReference, =, off, [default], ]
+ - [#, atomsOfGroup, =, "", [default], ]
+ - [#, indexGroup, =, "", [default], ]
+ - [#, atomsFile, =, "", [default], ]
+ - [#, enableFitGradients, =, on, [default], ]
+ - [#, printAtomIDs, =, off, [default], ]
+ - [#, oneSiteSystemForce, =, off, [default], ]
+ - [#, oneSiteTotalForce, =, off, [default], ]
+---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, width, =, 1, [default], ]
+ - [#, lowerBoundary, =, 0, [default], ]
+ - [#, upperBoundary, =, 1, [default], ]
+ - [#, hardLowerBoundary, =, on, [default], ]
+ - [#, hardUpperBoundary, =, off, [default], ]
+ - [#, expandBoundaries, =, off, [default], ]
+ - [#, extendedLagrangian, =, off, [default], ]
+ - [#, outputValue, =, on, [default], ]
+ - [#, outputVelocity, =, off, [default], ]
+ - [#, outputTotalForce, =, off, [default], ]
+ - [#, outputAppliedForce, =, off, [default], ]
+ - [#, subtractAppliedForce, =, off, [default], ]
+ - [#, runAve, =, off, [default], ]
+ - [#, corrFunc, =, off, [default], ]
+ - [Initializing, a, new, "harmonic", instance., ]
+ - [#, stepZeroData, =, off, [default], ]
+---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, outputEnergy, =, off, [default], ]
+ - [#, outputFreq, =, 1000, [default], ]
+ - [#, writeTISamples, =, off, [default], ]
+ - [#, writeTIPMF, =, off, [default], ]
+ - [#, outputCenters, =, off, [default], ]
+ - [#, decoupling, =, off, [default], ]
+ - [#, targetForceConstant, =, -1, [default], ]
+ - [Bond:, 4, 1.111, 1.81263e-06, 9, ]
+ - [Bond:, 6, 0.997, 7.7941e-07, 6, ]
+ - [Bond:, 8, 1.08, 1.08902e-06, 7, ]
+ - [Bond:, 10, 1.111, 2.96499e-07, 8, ]
+ - [Bond:, 12, 1.08, 4.69032e-07, 9, ]
+ - [Bond:, 14, 0.960001, 0, 1, ]
+ - [Bond:, 18, 0.957201, 3.76469e-06, 1280, ]
+ - [Angle:, 31, 104.52, 0.000411054, 640, ]
+---
+keywords: ['Step', 'Temp', 'TotEng', 'PotEng', 'KinEng', 'E_pair', 'E_bond', 'f_2', ]
+data:
+ - [200, 251.5049, -5557.4253, -6569.2547, 1011.8294, -6674.0854, 24.804919, 7.1387631, ]
+ - [210, 253.15307, -5538.5651, -6557.0252, 1018.4601, -6672.0536, 37.676595, 0.61220091, ]
+ - [220, 245.19643, -5522.5163, -6508.966, 986.44973, -6628.188, 36.657689, 0.048643204, ]
+ - [230, 258.69809, -5495.7309, -6536.4992, 1040.7683, -6658.289, 34.857875, 0.22091682, ]
+ - [240, 260.79682, -5469.8726, -6519.0843, 1049.2117, -6624.1867, 31.576947, 3.7574905, ]
+ - [250, 269.0748, -5438.3944, -6520.9093, 1082.5148, -6616.4361, 25.447641, 8.6600563, ]
+ - [260, 266.01087, -5397.3477, -6467.536, 1070.1883, -6580.2902, 26.87188, 8.3323534, ]
+ - [270, 272.81293, -5350.8806, -6448.4343, 1097.5537, -6563.8208, 23.114149, 10.973143, ]
+ - [280, 279.42306, -5307.9795, -6432.1264, 1124.1469, -6557.3381, 33.64393, 8.5490139, ]
+ - [290, 286.84962, -5260.8412, -6414.8659, 1154.0247, -6515.6714, 28.574749, 5.9100395, ]
+ - [300, 291.52703, -5216.2853, -6389.1277, 1172.8424, -6503.1209, 27.889007, 2.2482527, ]
+...
+
+INFO:__main__:     The run terminated with in.peptide-colvars gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (36.840194 41.013691 29.768095) to (64.21156 68.385058 57.139462)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  2004 atoms
+  reading velocities ...
+  2004 velocities
+  scanning bonds ...
+  3 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  14 = max dihedrals/atom
+  scanning impropers ...
+  1 = max impropers/atom
+  orthogonal box = (36.840194 41.013691 29.768095) to (64.21156 68.385058 57.139462)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  1365 bonds
+  reading angles ...
+  786 angles
+  reading dihedrals ...
+  207 dihedrals
+  reading impropers ...
+  12 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+     7 = max # of 1-3 neighbors
+    14 = max # of 1-4 neighbors
+    18 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.026 seconds
+84 atoms in group peptide
+4 atoms in group one
+4 atoms in group two
+1 atoms in group ref
+9 atoms in group colvar
+----------------------------------------------------------------------
+Initializing the collective variables module, version 2025-08-27.
+Please cite Fiorin et al, Mol Phys 2013:
+  https://doi.org/10.1080/00268976.2013.813594
+as well as all other papers listed below for individual features used.
+Summary of compile-time features available in this build:
+  - C++ language version: 201703
+  - Multiple replicas: not available
+  - Lepton custom functions: available
+  - Tcl interpreter: not available
+Using LAMMPS interface, version "2025-05-12".
+Finding SHAKE clusters ...
+      19 = # of size 2 clusters
+       6 = # of size 3 clusters
+       3 = # of size 4 clusters
+     640 = # of frozen angles
+  find clusters CPU = 0.001 seconds
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.26872465
+  grid = 15 15 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.022820853
+  estimated relative force accuracy = 6.872432e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 10648 3375
+Generated 91 of 91 mixed pair_coeff terms from arithmetic mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 5 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 5 5 5
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/charmm/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 2
+----------------------------------------------------------------------
+Reading new configuration from file "peptide.colvars":
+# units = "" [default]
+# smp = "cvcs" [default]
+SMP parallelism will be applied to Colvars components.
+  - SMP parallelism: enabled (num. threads = 1)
+# colvarsTrajFrequency = 1
+# colvarsRestartFrequency = 1000
+# scriptedColvarForces = off [default]
+# scriptingAfterBiases = off [default]
+----------------------------------------------------------------------
+  Initializing a new collective variable.
+  # name = "one"
+    Initializing a new "distance" component.
+    # name = "" [default]
+    # componentCoeff = 1 [default]
+    # componentExp = 1 [default]
+    # period = 0 [default]
+    # wrapAround = 0 [default]
+    # forceNoPBC = off [default]
+    # scalable = on [default]
+      Initializing atom group "group1".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group1" defined with 4 atoms requested.
+      Initializing atom group "group2".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group2" defined with 1 atoms requested.
+    # oneSiteSystemForce = off [default]
+    # oneSiteTotalForce = off [default]
+  All components initialized.
+  # timeStepFactor = 1 [default]
+  # width = 1 [default]
+  # lowerBoundary = 0 [default]
+  # upperBoundary = 1 [default]
+  # hardLowerBoundary = on [default]
+  # hardUpperBoundary = off [default]
+  # expandBoundaries = off [default]
+  # extendedLagrangian = off [default]
+  # outputValue = on [default]
+  # outputVelocity = off [default]
+  # outputTotalForce = off [default]
+  # outputAppliedForce = off [default]
+  # subtractAppliedForce = off [default]
+  # runAve = off [default]
+  # corrFunc = off [default]
+----------------------------------------------------------------------
+  Initializing a new collective variable.
+  # name = "two"
+    Initializing a new "distance" component.
+    # name = "" [default]
+    # componentCoeff = 1 [default]
+    # componentExp = 1 [default]
+    # period = 0 [default]
+    # wrapAround = 0 [default]
+    # forceNoPBC = off [default]
+    # scalable = on [default]
+      Initializing atom group "group1".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group1" defined with 4 atoms requested.
+      Initializing atom group "group2".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group2" defined with 1 atoms requested.
+    # oneSiteSystemForce = off [default]
+    # oneSiteTotalForce = off [default]
+  All components initialized.
+  # timeStepFactor = 1 [default]
+  # width = 1 [default]
+  # lowerBoundary = 0 [default]
+  # upperBoundary = 1 [default]
+  # hardLowerBoundary = on [default]
+  # hardUpperBoundary = off [default]
+  # expandBoundaries = off [default]
+  # extendedLagrangian = off [default]
+  # outputValue = on [default]
+  # outputVelocity = off [default]
+  # outputTotalForce = off [default]
+  # outputAppliedForce = off [default]
+  # subtractAppliedForce = off [default]
+  # runAve = off [default]
+  # corrFunc = off [default]
+----------------------------------------------------------------------
+Collective variables initialized, 2 in total.
+----------------------------------------------------------------------
+  Initializing a new "harmonic" instance.
+  # name = "h_pot"
+  # colvars = { one, two }
+  # stepZeroData = off [default]
+  # timeStepFactor = 1 [default]
+  # outputEnergy = off [default]
+  # outputFreq = 1000 [default]
+  # writeTISamples = off [default]
+  # writeTIPMF = off [default]
+  # centers = { 10, 10 }
+  # targetCenters = { 10, 10 } [default]
+  # outputCenters = off [default]
+  # forceConstant = 100
+  # decoupling = off [default]
+  # targetForceConstant = -1 [default]
+  The force constant for colvar "one" will be rescaled to 100 according to the specified width (1).
+  The force constant for colvar "two" will be rescaled to 100 according to the specified width (1).
+----------------------------------------------------------------------
+Collective variables biases initialized, 1 in total.
+----------------------------------------------------------------------
+Collective variables module (re)initialized.
+----------------------------------------------------------------------
+Current simulation parameters: initial step = 0, integration timestep = 2
+Updating atomic parameters (masses, charges, etc).
+Re-initialized atom group for variable "one":0/0. 4 atoms: total mass = 15.035, total charge = -2.77556e-17.
+Re-initialized atom group for variable "one":0/1. 1 atoms: total mass = 12.011, total charge = 0.51.
+Re-initialized atom group for variable "two":0/0. 4 atoms: total mass = 15.035, total charge = 0.16.
+Re-initialized atom group for variable "two":0/1. 1 atoms: total mass = 12.011, total charge = 0.51.
+The final output state file will be "out.colvars.state".
+Synchronizing (emptying the buffer of) trajectory file "out.colvars.traj".
+SHAKE stats (type/ave/delta/count) on step 0
+Bond:    4   1.111     1.44264e-05        9
+Bond:    6   0.996998  7.26967e-06        6
+Bond:    8   1.08      1.32536e-05        7
+Bond:   10   1.111     1.22749e-05        8
+Bond:   12   1.08      1.11767e-05        9
+Bond:   14   0.96      0                  1
+Bond:   18   0.957206  4.37979e-05     1280
+Angle:  31   104.519   0.00396029       640
+Per MPI rank memory allocation (min/avg/max) = 19.03 | 19.03 | 19.03 Mbytes
+   Step          Temp          TotEng         PotEng         KinEng         E_pair         E_bond          f_2      
+         0   282.10052     -5237.458      -6372.3765      1134.9186     -6442.7679      16.557152      292.14604    
+        10   305.06149     -5058.8971     -6286.1899      1227.2929     -6413.1019      58.8499        103.38345    
+        20   311.00516     -4999.0612     -6250.266       1251.2048     -6417.1021      47.695297      36.699695    
+        30   314.22337     -4993.7011     -6257.8532      1264.152      -6421.9678      35.344144      10.563932    
+        40   297.87492     -5020.8375     -6219.2181      1198.3806     -6389.8526      27.723134      3.8354514    
+        50   304.0207      -5056.2575     -6279.3632      1223.1057     -6456.8213      55.459507      0.20678213   
+        60   285.92576     -5104.046      -6254.354       1150.3079     -6435.5813      32.76723       0.69352954   
+        70   277.83519     -5163.9756     -6281.7344      1117.7587     -6447.7031      39.627168      11.433604    
+        80   267.51495     -5206.4046     -6282.644       1076.2394     -6456.6369      31.611883      6.355418     
+        90   278.15579     -5245.3824     -6364.431       1119.0485     -6499.8063      28.849773      0.36941574   
+SHAKE stats (type/ave/delta/count) on step 100
+Bond:    4   1.11098   8.97155e-05        9
+Bond:    6   0.996996  1.00568e-05        6
+Bond:    8   1.08      6.02345e-06        7
+Bond:   10   1.111     1.84253e-05        8
+Bond:   12   1.08      7.2713e-06         9
+Bond:   14   0.959996  0                  1
+Bond:   18   0.957198  3.36079e-05     1280
+Angle:  31   104.52    0.0030599        640
+       100   260.10611     -5292.6885     -6339.1214      1046.4329     -6471.6733      25.362042      0.2198733    
+Saving collective variables state to "out.colvars.state".
+Loop time of 1.88348 on 1 procs for 100 steps with 2004 atoms
+
+Performance: 9.174 ns/day, 2.616 hours/ns, 53.093 timesteps/s, 106.399 katom-step/s
+99.8% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.4332     | 1.4332     | 1.4332     |   0.0 | 76.09
+Bond    | 0.0031929  | 0.0031929  | 0.0031929  |   0.0 |  0.17
+Kspace  | 0.12164    | 0.12164    | 0.12164    |   0.0 |  6.46
+Neigh   | 0.2903     | 0.2903     | 0.2903     |   0.0 | 15.41
+Comm    | 0.0082192  | 0.0082192  | 0.0082192  |   0.0 |  0.44
+Output  | 0.00018357 | 0.00018357 | 0.00018357 |   0.0 |  0.01
+Modify  | 0.025026   | 0.025026   | 0.025026   |   0.0 |  1.33
+Other   |            | 0.001732   |            |       |  0.09
+
+Nlocal:           2004 ave        2004 max        2004 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          11124 ave       11124 max       11124 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         708237 ave      708237 max      708237 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 708237
+Ave neighs/atom = 353.41168
+Ave special neighs/atom = 2.3403194
+Neighbor list builds = 12
+Dangerous builds = 2
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- Colvars module (Fiorin2013, plus other works listed for specific features)
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.26872465
+  grid = 15 15 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.022820853
+  estimated relative force accuracy = 6.872432e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 10648 3375
+Generated 91 of 91 mixed pair_coeff terms from arithmetic mixing rule
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 100
+  Time step     : 2
+Current simulation parameters: initial step = 100, integration timestep = 2
+Updating atomic parameters (masses, charges, etc).
+Re-initialized atom group for variable "one":0/0. 4 atoms: total mass = 15.035, total charge = -2.77556e-17.
+Re-initialized atom group for variable "one":0/1. 1 atoms: total mass = 12.011, total charge = 0.51.
+Re-initialized atom group for variable "two":0/0. 4 atoms: total mass = 15.035, total charge = 0.16.
+Re-initialized atom group for variable "two":0/1. 1 atoms: total mass = 12.011, total charge = 0.51.
+SHAKE stats (type/ave/delta/count) on step 100
+Bond:    4   1.11098   8.97155e-05        9
+Bond:    6   0.996996  1.00568e-05        6
+Bond:    8   1.08      6.02345e-06        7
+Bond:   10   1.111     1.84253e-05        8
+Bond:   12   1.08      7.2713e-06         9
+Bond:   14   0.959996  0                  1
+Bond:   18   0.957198  3.36079e-05     1280
+Angle:  31   104.52    0.0030599        640
+Per MPI rank memory allocation (min/avg/max) = 19.03 | 19.03 | 19.03 Mbytes
+   Step          Temp          TotEng         PotEng         KinEng         E_pair         E_bond          f_2      
+       100   260.10611     -5292.6885     -6339.1214      1046.4329     -6471.6733      25.362042      0.2198733    
+       110   266.2644      -5341.199      -6412.4073      1071.2083     -6552.7551      33.573175      1.9229648    
+       120   262.66604     -5386.2386     -6442.9703      1056.7317     -6587.5483      29.85959       2.7124806    
+       130   252.83384     -5422.54       -6439.7158      1017.1758     -6580.4705      25.979344      1.2031596    
+       140   253.85112     -5452.1836     -6473.4521      1021.2684     -6609.4826      26.071656      0.30585544   
+       150   261.31822     -5490.4725     -6541.7818      1051.3093     -6646.6077      16.258824      6.9051021    
+       160   255.73533     -5521.5935     -6550.4423      1028.8488     -6658.1373      19.717409      12.339682    
+       170   253.42528     -5540.0942     -6559.6494      1019.5552     -6656.6678      23.293802      10.290221    
+       180   248.51158     -5550.3255     -6550.1124      999.78692     -6661.4235      26.200128      3.4336074    
+       190   250.80867     -5555.2555     -6564.2839      1009.0284     -6666.1643      25.536353      3.3494322    
+SHAKE stats (type/ave/delta/count) on step 200
+Bond:    4   1.111     1.81263e-06        9
+Bond:    6   0.997     7.7941e-07         6
+Bond:    8   1.08      1.08902e-06        7
+Bond:   10   1.111     2.96499e-07        8
+Bond:   12   1.08      4.69032e-07        9
+Bond:   14   0.960001  0                  1
+Bond:   18   0.957201  3.76469e-06     1280
+Angle:  31   104.52    0.000411054      640
+       200   251.5049      -5557.4253     -6569.2547      1011.8294     -6674.0854      24.804919      7.1387631    
+Saving collective variables state to "out.colvars.state".
+Loop time of 1.55639 on 1 procs for 100 steps with 2004 atoms
+
+Performance: 11.103 ns/day, 2.162 hours/ns, 64.251 timesteps/s, 128.760 katom-step/s
+99.8% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.2653     | 1.2653     | 1.2653     |   0.0 | 81.30
+Bond    | 0.0028511  | 0.0028511  | 0.0028511  |   0.0 |  0.18
+Kspace  | 0.10372    | 0.10372    | 0.10372    |   0.0 |  6.66
+Neigh   | 0.15353    | 0.15353    | 0.15353    |   0.0 |  9.86
+Comm    | 0.006548   | 0.006548   | 0.006548   |   0.0 |  0.42
+Output  | 0.00017166 | 0.00017166 | 0.00017166 |   0.0 |  0.01
+Modify  | 0.022544   | 0.022544   | 0.022544   |   0.0 |  1.45
+Other   |            | 0.001679   |            |       |  0.11
+
+Nlocal:           2004 ave        2004 max        2004 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          11159 ave       11159 max       11159 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         708083 ave      708083 max      708083 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 708083
+Ave neighs/atom = 353.33483
+Ave special neighs/atom = 2.3403194
+Neighbor list builds = 7
+Dangerous builds = 0
+----------------------------------------------------------------------
+Initializing the collective variables module, version 2025-08-27.
+Please cite Fiorin et al, Mol Phys 2013:
+  https://doi.org/10.1080/00268976.2013.813594
+as well as all other papers listed below for individual features used.
+Summary of compile-time features available in this build:
+  - C++ language version: 201703
+  - Multiple replicas: not available
+  - Lepton custom functions: available
+  - Tcl interpreter: not available
+Using LAMMPS interface, version "2025-05-12".
+Setting initial step number from MD engine: 200
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.26872465
+  grid = 15 15 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.022820853
+  estimated relative force accuracy = 6.872432e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 10648 3375
+Generated 91 of 91 mixed pair_coeff terms from arithmetic mixing rule
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 200
+  Time step     : 2
+Will read input state from file "out.colvars.state"----------------------------------------------------------------------
+Reading new configuration from file "peptide.colvars":
+# units = "" [default]
+# smp = "cvcs" [default]
+SMP parallelism will be applied to Colvars components.
+  - SMP parallelism: enabled (num. threads = 1)
+# colvarsTrajFrequency = 1
+# colvarsRestartFrequency = 1000
+# scriptedColvarForces = off [default]
+# scriptingAfterBiases = off [default]
+----------------------------------------------------------------------
+  Initializing a new collective variable.
+  # name = "one"
+    Initializing a new "distance" component.
+    # name = "" [default]
+    # componentCoeff = 1 [default]
+    # componentExp = 1 [default]
+    # period = 0 [default]
+    # wrapAround = 0 [default]
+    # forceNoPBC = off [default]
+    # scalable = on [default]
+      Initializing atom group "group1".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group1" defined with 4 atoms requested.
+      Initializing atom group "group2".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group2" defined with 1 atoms requested.
+    # oneSiteSystemForce = off [default]
+    # oneSiteTotalForce = off [default]
+  All components initialized.
+  # timeStepFactor = 1 [default]
+  # width = 1 [default]
+  # lowerBoundary = 0 [default]
+  # upperBoundary = 1 [default]
+  # hardLowerBoundary = on [default]
+  # hardUpperBoundary = off [default]
+  # expandBoundaries = off [default]
+  # extendedLagrangian = off [default]
+  # outputValue = on [default]
+  # outputVelocity = off [default]
+  # outputTotalForce = off [default]
+  # outputAppliedForce = off [default]
+  # subtractAppliedForce = off [default]
+  # runAve = off [default]
+  # corrFunc = off [default]
+----------------------------------------------------------------------
+  Initializing a new collective variable.
+  # name = "two"
+    Initializing a new "distance" component.
+    # name = "" [default]
+    # componentCoeff = 1 [default]
+    # componentExp = 1 [default]
+    # period = 0 [default]
+    # wrapAround = 0 [default]
+    # forceNoPBC = off [default]
+    # scalable = on [default]
+      Initializing atom group "group1".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group1" defined with 4 atoms requested.
+      Initializing atom group "group2".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group2" defined with 1 atoms requested.
+    # oneSiteSystemForce = off [default]
+    # oneSiteTotalForce = off [default]
+  All components initialized.
+  # timeStepFactor = 1 [default]
+  # width = 1 [default]
+  # lowerBoundary = 0 [default]
+  # upperBoundary = 1 [default]
+  # hardLowerBoundary = on [default]
+  # hardUpperBoundary = off [default]
+  # expandBoundaries = off [default]
+  # extendedLagrangian = off [default]
+  # outputValue = on [default]
+  # outputVelocity = off [default]
+  # outputTotalForce = off [default]
+  # outputAppliedForce = off [default]
+  # subtractAppliedForce = off [default]
+  # runAve = off [default]
+  # corrFunc = off [default]
+----------------------------------------------------------------------
+Collective variables initialized, 2 in total.
+----------------------------------------------------------------------
+  Initializing a new "harmonic" instance.
+  # name = "h_pot"
+  # colvars = { one, two }
+  # stepZeroData = off [default]
+  # timeStepFactor = 1 [default]
+  # outputEnergy = off [default]
+  # outputFreq = 1000 [default]
+  # writeTISamples = off [default]
+  # writeTIPMF = off [default]
+  # centers = { 10, 10 }
+  # targetCenters = { 10, 10 } [default]
+  # outputCenters = off [default]
+  # forceConstant = 100
+  # decoupling = off [default]
+  # targetForceConstant = -1 [default]
+  The force constant for colvar "one" will be rescaled to 100 according to the specified width (1).
+  The force constant for colvar "two" will be rescaled to 100 according to the specified width (1).
+----------------------------------------------------------------------
+Collective variables biases initialized, 1 in total.
+----------------------------------------------------------------------
+Collective variables module (re)initialized.
+----------------------------------------------------------------------
+Current simulation parameters: initial step = 200, integration timestep = 2
+Updating atomic parameters (masses, charges, etc).
+Re-initialized atom group for variable "one":0/0. 4 atoms: total mass = 15.035, total charge = -2.77556e-17.
+Re-initialized atom group for variable "one":0/1. 1 atoms: total mass = 12.011, total charge = 0.51.
+Re-initialized atom group for variable "two":0/0. 4 atoms: total mass = 15.035, total charge = 0.16.
+Re-initialized atom group for variable "two":0/1. 1 atoms: total mass = 12.011, total charge = 0.51.
+----------------------------------------------------------------------
+Loading state from text file "out.colvars.state".
+  Restarting collective variable "one" from value: 10.0128
+  Restarting collective variable "two" from value: 9.62236
+  Restarted harmonic bias "h_pot" with step number 200.
+----------------------------------------------------------------------
+The final output state file will be "out2.colvars.state".
+SHAKE stats (type/ave/delta/count) on step 200
+Bond:    4   1.111     1.81263e-06        9
+Bond:    6   0.997     7.7941e-07         6
+Bond:    8   1.08      1.08902e-06        7
+Bond:   10   1.111     2.96499e-07        8
+Bond:   12   1.08      4.69032e-07        9
+Bond:   14   0.960001  0                  1
+Bond:   18   0.957201  3.76469e-06     1280
+Angle:  31   104.52    0.000411054      640
+Per MPI rank memory allocation (min/avg/max) = 19.03 | 19.03 | 19.03 Mbytes
+   Step          Temp          TotEng         PotEng         KinEng         E_pair         E_bond          f_2      
+       200   251.5049      -5557.4253     -6569.2547      1011.8294     -6674.0854      24.804919      7.1387631    
+       210   253.15307     -5538.5651     -6557.0252      1018.4601     -6672.0536      37.676595      0.61220091   
+       220   245.19643     -5522.5163     -6508.966       986.44973     -6628.188       36.657689      0.048643204  
+       230   258.69809     -5495.7309     -6536.4992      1040.7683     -6658.289       34.857875      0.22091682   
+       240   260.79682     -5469.8726     -6519.0843      1049.2117     -6624.1867      31.576947      3.7574905    
+       250   269.0748      -5438.3944     -6520.9093      1082.5148     -6616.4361      25.447641      8.6600563    
+       260   266.01087     -5397.3477     -6467.536       1070.1883     -6580.2902      26.87188       8.3323534    
+       270   272.81293     -5350.8806     -6448.4343      1097.5537     -6563.8208      23.114149      10.973143    
+       280   279.42306     -5307.9795     -6432.1264      1124.1469     -6557.3381      33.64393       8.5490139    
+       290   286.84962     -5260.8412     -6414.8659      1154.0247     -6515.6714      28.574749      5.9100395    
+SHAKE stats (type/ave/delta/count) on step 300
+Bond:    4   1.111     1.79797e-05        9
+Bond:    6   0.997005  1.02516e-05        6
+Bond:    8   1.08      1.85102e-05        7
+Bond:   10   1.111     9.98836e-06        8
+Bond:   12   1.08      8.84111e-06        9
+Bond:   14   0.960008  0                  1
+Bond:   18   0.957203  1.84466e-05     1280
+Angle:  31   104.52    0.00168372       640
+       300   291.52703     -5216.2853     -6389.1277      1172.8424     -6503.1209      27.889007      2.2482527    
+Saving collective variables state to "out2.colvars.state".
+Loop time of 1.59552 on 1 procs for 100 steps with 2004 atoms
+
+Performance: 10.830 ns/day, 2.216 hours/ns, 62.676 timesteps/s, 125.602 katom-step/s
+99.8% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.2804     | 1.2804     | 1.2804     |   0.0 | 80.25
+Bond    | 0.0028532  | 0.0028532  | 0.0028532  |   0.0 |  0.18
+Kspace  | 0.10511    | 0.10511    | 0.10511    |   0.0 |  6.59
+Neigh   | 0.17555    | 0.17555    | 0.17555    |   0.0 | 11.00
+Comm    | 0.0068237  | 0.0068237  | 0.0068237  |   0.0 |  0.43
+Output  | 0.00017173 | 0.00017173 | 0.00017173 |   0.0 |  0.01
+Modify  | 0.022877   | 0.022877   | 0.022877   |   0.0 |  1.43
+Other   |            | 0.001708   |            |       |  0.11
+
+Nlocal:           2004 ave        2004 max        2004 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          11296 ave       11296 max       11296 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         708152 ave      708152 max      708152 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 708152
+Ave neighs/atom = 353.36926
+Ave special neighs/atom = 2.3403194
+Neighbor list builds = 8
+Dangerous builds = 0
+Total wall time: 0:00:05
+
+INFO:__main__:   + in.peptide-colvars2 (2/4)
+INFO:__main__:     Using 1 nprocs for in.peptide-colvars2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.peptide-colvars2 -cite none -log log.peptide-colvars2.1
+INFO:__main__:    Error parsing log.peptide-colvars2.1 at line 4, column 2.
+INFO:__main__:---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, width, =, 1, [default], ]
+ - [#, lowerBoundary, =, 0, [default], ]
+ - [#, upperBoundary, =, 1, [default], ]
+ - [#, hardLowerBoundary, =, on, [default], ]
+ - [#, hardUpperBoundary, =, off, [default], ]
+ - [#, expandBoundaries, =, off, [default], ]
+ - [#, extendedLagrangian, =, off, [default], ]
+ - [#, outputValue, =, on, [default], ]
+ - [#, outputVelocity, =, off, [default], ]
+ - [#, outputTotalForce, =, off, [default], ]
+ - [#, outputAppliedForce, =, off, [default], ]
+ - [#, subtractAppliedForce, =, off, [default], ]
+ - [#, runAve, =, off, [default], ]
+ - [#, corrFunc, =, off, [default], ]
+ - [Initializing, a, new, "harmonic", instance., ]
+ - [#, stepZeroData, =, off, [default], ]
+---
+keywords: ['#', 'timeStepFactor', '=', '1', '[default]', ]
+data:
+ - [#, outputEnergy, =, off, [default], ]
+ - [#, outputFreq, =, 1000, [default], ]
+ - [#, writeTISamples, =, off, [default], ]
+ - [#, writeTIPMF, =, off, [default], ]
+ - [#, outputCenters, =, off, [default], ]
+ - [#, decoupling, =, off, [default], ]
+ - [#, targetForceConstant, =, -1, [default], ]
+ - [Bond:, 4, 1.111, 1.44264e-05, 9, ]
+ - [Bond:, 6, 0.996998, 7.26967e-06, 6, ]
+ - [Bond:, 8, 1.08, 1.32536e-05, 7, ]
+ - [Bond:, 10, 1.111, 1.22749e-05, 8, ]
+ - [Bond:, 12, 1.08, 1.11767e-05, 9, ]
+ - [Bond:, 14, 0.96, 0, 1, ]
+ - [Bond:, 18, 0.957206, 4.37979e-05, 1280, ]
+ - [Angle:, 31, 104.519, 0.00396029, 640, ]
+---
+keywords: ['Step', 'Temp', 'TotEng', 'PotEng', 'KinEng', 'E_pair', 'E_bond', 'f_2', ]
+data:
+ - [0, 282.10052, -5237.458, -6372.3765, 1134.9186, -6442.7679, 16.557152, 273.74323, ]
+ - [10, 333.47919, -4982.3966, -6324.0167, 1341.6201, -6400.422, 21.367762, 12.393263, ]
+ - [20, 309.56902, -4999.498, -6244.9251, 1245.4271, -6401.6983, 43.59542, 13.004313, ]
+ - [30, 316.9763, -5025.5662, -6300.7936, 1275.2273, -6422.5376, 27.323196, 6.7589588, ]
+ - [40, 297.55779, -5088.2203, -6285.325, 1197.1047, -6395.3749, 13.6769, 25.625023, ]
+ - [50, 296.79994, -5117.2966, -6311.3524, 1194.0558, -6451.8308, 30.631241, 5.3320864, ]
+ - [60, 281.72778, -5188.4971, -6321.9161, 1133.419, -6427.8858, 26.287725, 20.574037, ]
+ - [70, 277.26052, -5224.8434, -6340.2902, 1115.4468, -6447.8521, 27.742891, 0.6942037, ]
+ - [80, 268.01485, -5281.8507, -6360.1013, 1078.2505, -6496.6085, 20.300755, 5.2607208, ]
+ - [90, 270.43474, -5334.0836, -6422.0696, 1087.986, -6563.2513, 39.846097, 1.1832275, ]
+ - [100, 260.35636, -5387.2284, -6434.6681, 1047.4396, -6534.1956, 20.246866, 0.075048501, ]
+...
+
+INFO:__main__:     The run terminated with in.peptide-colvars2 gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (36.840194 41.013691 29.768095) to (64.21156 68.385058 57.139462)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  2004 atoms
+  reading velocities ...
+  2004 velocities
+  scanning bonds ...
+  3 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  14 = max dihedrals/atom
+  scanning impropers ...
+  1 = max impropers/atom
+  orthogonal box = (36.840194 41.013691 29.768095) to (64.21156 68.385058 57.139462)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  1365 bonds
+  reading angles ...
+  786 angles
+  reading dihedrals ...
+  207 dihedrals
+  reading impropers ...
+  12 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+     7 = max # of 1-3 neighbors
+    14 = max # of 1-4 neighbors
+    18 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.025 seconds
+84 atoms in group peptide
+4 atoms in group one
+4 atoms in group two
+1 atoms in group ref
+9 atoms in group colvar
+----------------------------------------------------------------------
+Initializing the collective variables module, version 2025-08-27.
+Please cite Fiorin et al, Mol Phys 2013:
+  https://doi.org/10.1080/00268976.2013.813594
+as well as all other papers listed below for individual features used.
+Summary of compile-time features available in this build:
+  - C++ language version: 201703
+  - Multiple replicas: not available
+  - Lepton custom functions: available
+  - Tcl interpreter: not available
+Using LAMMPS interface, version "2025-05-12".
+Finding SHAKE clusters ...
+      19 = # of size 2 clusters
+       6 = # of size 3 clusters
+       3 = # of size 4 clusters
+     640 = # of frozen angles
+  find clusters CPU = 0.001 seconds
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.26872465
+  grid = 15 15 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.022820853
+  estimated relative force accuracy = 6.872432e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 10648 3375
+Generated 91 of 91 mixed pair_coeff terms from arithmetic mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 5 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 5 5 5
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/charmm/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 2
+----------------------------------------------------------------------
+Reading new configuration from file "peptide.colvars2":
+# units = "" [default]
+# smp = "cvcs" [default]
+SMP parallelism will be applied to Colvars components.
+  - SMP parallelism: enabled (num. threads = 1)
+# colvarsTrajFrequency = 1
+# colvarsRestartFrequency = 1000
+# scriptedColvarForces = off [default]
+# scriptingAfterBiases = off [default]
+----------------------------------------------------------------------
+  Initializing a new collective variable.
+  # name = "one"
+    Initializing a new "distance" component.
+    # name = "" [default]
+    # componentCoeff = 1 [default]
+    # componentExp = 1 [default]
+    # period = 0 [default]
+    # wrapAround = 0 [default]
+    # forceNoPBC = off [default]
+    # scalable = on [default]
+      Initializing atom group "group1".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group1" defined with 4 atoms requested.
+      Initializing atom group "group2".
+      # name = "" [default]
+      # centerToOrigin = off [default]
+      # centerToReference = off [default]
+      # rotateToReference = off [default]
+      # atomsOfGroup = "" [default]
+      # indexGroup = "" [default]
+      # psfSegID =  [default]
+      # atomsFile = "" [default]
+      # dummyAtom = ( 0 , 0 , 0 ) [default]
+      # enableFitGradients = on [default]
+      # printAtomIDs = off [default]
+      Atom group "group2" defined with 4 atoms requested.
+    # oneSiteSystemForce = off [default]
+    # oneSiteTotalForce = off [default]
+  All components initialized.
+  # timeStepFactor = 1 [default]
+  # width = 1 [default]
+  # lowerBoundary = 0 [default]
+  # upperBoundary = 1 [default]
+  # hardLowerBoundary = on [default]
+  # hardUpperBoundary = off [default]
+  # expandBoundaries = off [default]
+  # extendedLagrangian = off [default]
+  # outputValue = on [default]
+  # outputVelocity = off [default]
+  # outputTotalForce = off [default]
+  # outputAppliedForce = off [default]
+  # subtractAppliedForce = off [default]
+  # runAve = off [default]
+  # corrFunc = off [default]
+----------------------------------------------------------------------
+Collective variables initialized, 1 in total.
+----------------------------------------------------------------------
+  Initializing a new "harmonic" instance.
+  # name = "h_pot"
+  # colvars = { one }
+  # stepZeroData = off [default]
+  # timeStepFactor = 1 [default]
+  # outputEnergy = off [default]
+  # outputFreq = 1000 [default]
+  # writeTISamples = off [default]
+  # writeTIPMF = off [default]
+  # centers = { 10 }
+  # targetCenters = { 10 } [default]
+  # outputCenters = off [default]
+  # forceConstant = 100
+  # decoupling = off [default]
+  # targetForceConstant = -1 [default]
+  The force constant for colvar "one" will be rescaled to 100 according to the specified width (1).
+----------------------------------------------------------------------
+Collective variables biases initialized, 1 in total.
+----------------------------------------------------------------------
+Collective variables module (re)initialized.
+----------------------------------------------------------------------
+Current simulation parameters: initial step = 0, integration timestep = 2
+Updating atomic parameters (masses, charges, etc).
+Re-initialized atom group for variable "one":0/0. 4 atoms: total mass = 15.035, total charge = -2.77556e-17.
+Re-initialized atom group for variable "one":0/1. 4 atoms: total mass = 15.035, total charge = 0.16.
+The final output state file will be "peptide2.colvars.state".
+Synchronizing (emptying the buffer of) trajectory file "peptide2.colvars.traj".
+SHAKE stats (type/ave/delta/count) on step 0
+Bond:    4   1.111     1.44264e-05        9
+Bond:    6   0.996998  7.26967e-06        6
+Bond:    8   1.08      1.32536e-05        7
+Bond:   10   1.111     1.22749e-05        8
+Bond:   12   1.08      1.11767e-05        9
+Bond:   14   0.96      0                  1
+Bond:   18   0.957206  4.37979e-05     1280
+Angle:  31   104.519   0.00396029       640
+Per MPI rank memory allocation (min/avg/max) = 19.03 | 19.03 | 19.03 Mbytes
+   Step          Temp          TotEng         PotEng         KinEng         E_pair         E_bond          f_2      
+         0   282.10052     -5237.458      -6372.3765      1134.9186     -6442.7679      16.557152      273.74323    
+        10   333.47919     -4982.3966     -6324.0167      1341.6201     -6400.422       21.367762      12.393263    
+        20   309.56902     -4999.498      -6244.9251      1245.4271     -6401.6983      43.59542       13.004313    
+        30   316.9763      -5025.5662     -6300.7936      1275.2273     -6422.5376      27.323196      6.7589588    
+        40   297.55779     -5088.2203     -6285.325       1197.1047     -6395.3749      13.6769        25.625023    
+        50   296.79994     -5117.2966     -6311.3524      1194.0558     -6451.8308      30.631241      5.3320864    
+        60   281.72778     -5188.4971     -6321.9161      1133.419      -6427.8858      26.287725      20.574037    
+        70   277.26052     -5224.8434     -6340.2902      1115.4468     -6447.8521      27.742891      0.6942037    
+        80   268.01485     -5281.8507     -6360.1013      1078.2505     -6496.6085      20.300755      5.2607208    
+        90   270.43474     -5334.0836     -6422.0696      1087.986      -6563.2513      39.846097      1.1832275    
+SHAKE stats (type/ave/delta/count) on step 100
+Bond:    4   1.11096   0.000191462        9
+Bond:    6   0.996989  3.55509e-05        6
+Bond:    8   1.08      9.0997e-06         7
+Bond:   10   1.111     1.58544e-05        8
+Bond:   12   1.08      5.80604e-06        9
+Bond:   14   0.959997  0                  1
+Bond:   18   0.957198  2.92445e-05     1280
+Angle:  31   104.52    0.00239923       640
+       100   260.35636     -5387.2284     -6434.6681      1047.4396     -6534.1956      20.246866      0.075048501  
+Saving collective variables state to "peptide2.colvars.state".
+Loop time of 1.68874 on 1 procs for 100 steps with 2004 atoms
+
+Performance: 10.232 ns/day, 2.345 hours/ns, 59.216 timesteps/s, 118.668 katom-step/s
+99.8% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.2661     | 1.2661     | 1.2661     |   0.0 | 74.97
+Bond    | 0.0028289  | 0.0028289  | 0.0028289  |   0.0 |  0.17
+Kspace  | 0.10447    | 0.10447    | 0.10447    |   0.0 |  6.19
+Neigh   | 0.28262    | 0.28262    | 0.28262    |   0.0 | 16.74
+Comm    | 0.0077613  | 0.0077613  | 0.0077613  |   0.0 |  0.46
+Output  | 0.00018541 | 0.00018541 | 0.00018541 |   0.0 |  0.01
+Modify  | 0.023131   | 0.023131   | 0.023131   |   0.0 |  1.37
+Other   |            | 0.001656   |            |       |  0.10
+
+Nlocal:           2004 ave        2004 max        2004 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          11143 ave       11143 max       11143 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         708234 ave      708234 max      708234 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 708234
+Ave neighs/atom = 353.41018
+Ave special neighs/atom = 2.3403194
+Neighbor list builds = 13
+Dangerous builds = 1
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- Colvars module (Fiorin2013, plus other works listed for specific features)
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Total wall time: 0:00:01
+
+INFO:__main__:   + in.peptide-spring (3/4)
+INFO:__main__:     Using 1 nprocs for in.peptide-spring as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.peptide-spring -cite none -log log.peptide-spring.1
+INFO:__main__:     Comparing thermo output from log.peptide-spring.1 against the reference log file log.14Jul25.peptide-spring.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.peptide-spring2 (4/4)
+INFO:__main__:     Using 1 nprocs for in.peptide-spring2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.peptide-spring2 -cite none -log log.peptide-spring2.1
+INFO:__main__:     Comparing thermo output from log.peptide-spring2.1 against the reference log file log.14Jul25.peptide-spring2.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/dielectric
+INFO:__main__:   + in.confined (1/2)
+INFO:__main__:     Using 1 nprocs for in.confined as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.confined -cite none -log log.confined.1
+INFO:__main__:       failed, cannot find the reference log file for in.confined with the expected format log.[date].confined.*.[nprocs]
+INFO:__main__:       thermo.in.confined.yaml also does not exist in the working directory.
+INFO:__main__:   + in.nopbc (2/2)
+INFO:__main__:     Using 1 nprocs for in.nopbc as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.nopbc -cite none -log log.nopbc.1
+INFO:__main__:       failed, cannot find the reference log file for in.nopbc with the expected format log.[date].nopbc.*.[nprocs]
+INFO:__main__:       thermo.in.nopbc.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/dpd-basic/dpd
+INFO:__main__:   + in.dpd (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpd as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpd -cite none -log log.dpd.1
+INFO:__main__:     Comparing thermo output from log.dpd.1 against the reference log file log.5Apr22.dpd.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (6.58e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (3.13e-01) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (7.44e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (4.14e-02) > expected (1.00e-07)
+INFO:__main__:Entering examples/PACKAGES/dpd-basic/dpd_coul_slater_long
+INFO:__main__:   + in.dpd_coul_slater_long (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpd_coul_slater_long as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpd_coul_slater_long -cite none -log log.dpd_coul_slater_long.1
+INFO:__main__:       failed, cannot find the reference log file for in.dpd_coul_slater_long with the expected format log.[date].dpd_coul_slater_long.*.[nprocs]
+INFO:__main__:       thermo.in.dpd_coul_slater_long.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/dpd-basic/dpd_tstat
+INFO:__main__:   + in.dpd_tstat (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpd_tstat as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpd_tstat -cite none -log log.dpd_tstat.1
+INFO:__main__:     Comparing thermo output from log.dpd_tstat.1 against the reference log file log.5Apr22.dpd_tstat.g++.1
+INFO:__main__:     all 4 checks passed.
+INFO:__main__:Entering examples/PACKAGES/dpd-basic/dpdext
+INFO:__main__:   + in.dpdext (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpdext as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpdext -cite none -log log.dpdext.1
+INFO:__main__:     Comparing thermo output from log.dpdext.1 against the reference log file log.10Mar21.dpdext.g++.1
+INFO:__main__:     failed: Number of thermo steps in log.dpdext.1 (51)
+INFO:__main__:     is different from that in the reference log (101) in run 0.
+INFO:__main__:     mismatched num steps in the log files. Check both log files for more details.
+INFO:__main__:Entering examples/PACKAGES/dpd-react/dpd-shardlow
+INFO:__main__:   + in.dpd-shardlow (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpd-shardlow as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpd-shardlow -cite none -log log.dpd-shardlow.1
+INFO:__main__:       failed, cannot find the reference log file for in.dpd-shardlow with the expected format log.[date].dpd-shardlow.*.[nprocs]
+INFO:__main__:       thermo.in.dpd-shardlow.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/dpd-react/dpd-vv
+INFO:__main__:   + in.dpd-vv (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpd-vv as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpd-vv -cite none -log log.dpd-vv.1
+INFO:__main__:       failed, cannot find the reference log file for in.dpd-vv with the expected format log.[date].dpd-vv.*.[nprocs]
+INFO:__main__:       thermo.in.dpd-vv.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/dpd-react/dpde-shardlow
+INFO:__main__:   + in.dpde-shardlow (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpde-shardlow as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpde-shardlow -cite none -log log.dpde-shardlow.1
+INFO:__main__:       failed, cannot find the reference log file for in.dpde-shardlow with the expected format log.[date].dpde-shardlow.*.[nprocs]
+INFO:__main__:       thermo.in.dpde-shardlow.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/dpd-react/dpde-vv
+INFO:__main__:   + in.dpde-vv (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpde-vv as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpde-vv -cite none -log log.dpde-vv.1
+INFO:__main__:       failed, cannot find the reference log file for in.dpde-vv with the expected format log.[date].dpde-vv.*.[nprocs]
+INFO:__main__:       thermo.in.dpde-vv.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/dpd-react/dpdh-shardlow
+INFO:__main__:   + in.dpdh-shardlow (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpdh-shardlow as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpdh-shardlow -cite none -log log.dpdh-shardlow.1
+INFO:__main__:       failed, cannot find the reference log file for in.dpdh-shardlow with the expected format log.[date].dpdh-shardlow.*.[nprocs]
+INFO:__main__:       thermo.in.dpdh-shardlow.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/dpd-react/dpdp-shardlow
+INFO:__main__:   + in.dpdp-shardlow (1/1)
+INFO:__main__:     Using 1 nprocs for in.dpdp-shardlow as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848299_0/build/lmp -in in.dpdp-shardlow -cite none -log log.dpdp-shardlow.1
+INFO:__main__:       failed, cannot find the reference log file for in.dpdp-shardlow with the expected format log.[date].dpdp-shardlow.*.[nprocs]
+INFO:__main__:       thermo.in.dpdp-shardlow.yaml also does not exist in the working directory.

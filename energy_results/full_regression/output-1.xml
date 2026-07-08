@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="71" tests="92" time="0.0">
+	<testsuite disabled="0" errors="0" failures="71" name="tools/regression-tests/config_serial.yaml" skipped="47" tests="92" time="0" timestamp="2026-01-12 19:22:28.087883">
+		<testcase name="in.d2" classname="in.d2"/>
+		<testcase name="in.d3" classname="in.d3"/>
+		<testcase name="in.dpd" classname="in.dpd">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.dpd_coul_slater_long" classname="in.dpd_coul_slater_long">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpd_tstat" classname="in.dpd_tstat"/>
+		<testcase name="in.dpdext" classname="in.dpdext">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.dpdext_tstat" classname="in.dpdext_tstat"/>
+		<testcase name="in.edpd" classname="in.edpd">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.edpd-region" classname="in.edpd-region">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.mdpd" classname="in.mdpd">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.tdpd" classname="in.tdpd">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.tdpd-region" classname="in.tdpd-region">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.dpd-shardlow" classname="in.dpd-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpd-vv" classname="in.dpd-vv">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpde-shardlow" classname="in.dpde-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpde-vv" classname="in.dpde-vv">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpdh-shardlow" classname="in.dpdh-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpdp-shardlow" classname="in.dpdp-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpdrx-shardlow" classname="in.dpdrx-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.multi-lucy" classname="in.multi-lucy">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.lammps" classname="in.lammps">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.lammps" classname="in.lammps">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.lammps" classname="in.lammps">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.butane.lang" classname="in.butane.lang">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.butane.nh" classname="in.butane.nh">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.butane.tgnh" classname="in.butane.tgnh">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.ethanol.lang" classname="in.ethanol.lang">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.ethanol.nh" classname="in.ethanol.nh">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.ethanol.tgnh" classname="in.ethanol.tgnh">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.ethylene_glycol" classname="in.ethylene_glycol">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.swm4-ndp.lang" classname="in.swm4-ndp.lang">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.swm4-ndp.nh" classname="in.swm4-ndp.nh">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.toluene.lang" classname="in.toluene.lang">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.toluene.nh" classname="in.toluene.nh">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.e3b-tip4p2005" classname="in.e3b-tip4p2005"/>
+		<testcase name="in.edip-Si" classname="in.edip-Si">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.edip-Si-multi" classname="in.edip-Si-multi">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.edip-SiC" classname="in.edip-SiC">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.fix_wall" classname="in.fix_wall"/>
+		<testcase name="in.fix_wall_region" classname="in.fix_wall_region"/>
+		<testcase name="in.adamantane_ionized.nve" classname="in.adamantane_ionized.nve">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7' "/>
+		</testcase>
+		<testcase name="in.Be-solid.spe" classname="in.Be-solid.spe">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ch4.dynamics" classname="in.ch4.dynamics">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.ch4.min" classname="in.ch4.min"/>
+		<testcase name="in.ch4_ionized.dynamics" classname="in.ch4_ionized.dynamics">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '9' "/>
+		</testcase>
+		<testcase name="in.Si2H6" classname="in.Si2H6"/>
+		<testcase name="in.Si2H6.ang" classname="in.Si2H6.ang">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.SiC" classname="in.SiC">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.SiH4" classname="in.SiH4">
+			<failure type="failure" message="completed, error parsing log.SiH4.1 into YAML"/>
+		</testcase>
+		<testcase name="in.SiH4.ang" classname="in.SiH4.ang">
+			<failure type="failure" message="completed, error parsing log.SiH4.ang.1 into YAML"/>
+		</testcase>
+		<testcase name="in.h_atom.spe.ang" classname="in.h_atom.spe.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.h_atom.spe.bohr" classname="in.h_atom.spe.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.h2" classname="in.h2">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.h2bulk.npt" classname="in.h2bulk.npt">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.h2bulk.nve" classname="in.h2bulk.nve">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.h2bulk.nve.ang" classname="in.h2bulk.nve.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.Li-dendritic.min" classname="in.Li-dendritic.min">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.Li-dendritic.nvt" classname="in.Li-dendritic.nvt">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.Li.ang" classname="in.Li.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.Li.bohr" classname="in.Li.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.C2H6fc.ang" classname="in.C2H6fc.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.C2H6fc.bohr" classname="in.C2H6fc.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.ang" classname="in.CH4fc.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.bohr" classname="in.CH4fc.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.spe.ang" classname="in.CH4fc.spe.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.spe.bohr" classname="in.CH4fc.spe.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.conp" classname="in.conp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.conq" classname="in.conq">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.conq2" classname="in.conq2">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.etypes" classname="in.etypes">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ffield" classname="in.ffield">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ramp" classname="in.ramp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.thermo" classname="in.thermo">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.cg" classname="in.cg">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.eta" classname="in.eta"/>
+		<testcase name="in.eta_cg" classname="in.eta_cg"/>
+		<testcase name="in.eta_mix" classname="in.eta_mix"/>
+		<testcase name="in.ewald-ew2d" classname="in.ewald-ew2d">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ewald-ew3dc" classname="in.ewald-ew3dc">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ewald-ffield" classname="in.ewald-ffield">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.pppm-ew3dc" classname="in.pppm-ew3dc">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.pppm-ffield" classname="in.pppm-ffield">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.planar-ewald-ew2d" classname="in.planar-ewald-ew2d"/>
+		<testcase name="in.planar-ewald-ew3dc" classname="in.planar-ewald-ew3dc"/>
+		<testcase name="in.planar-ewald-ffield" classname="in.planar-ewald-ffield"/>
+		<testcase name="in.planar-pppm-ew3dc" classname="in.planar-pppm-ew3dc"/>
+		<testcase name="in.planar-pppm-ffield" classname="in.planar-pppm-ffield"/>
+		<testcase name="in.cascade_AlCu" classname="in.cascade_AlCu"/>
+		<testcase name="in.cascade_SiSi" classname="in.cascade_SiSi"/>
+		<testcase name="in.elstop" classname="in.elstop"/>
+		<testcase name="in.elstop.only" classname="in.elstop.only"/>
+		<testcase name="in.entropy" classname="in.entropy">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+	</testsuite>
+</testsuites>

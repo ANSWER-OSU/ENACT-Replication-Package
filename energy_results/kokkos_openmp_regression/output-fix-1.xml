@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="37" tests="48" time="0.0">
+	<testsuite disabled="0" errors="0" failures="37" name="tools/regression-tests/config_kokkos_openmp.yaml" skipped="2" tests="48" time="0" timestamp="2026-01-16 16:36:00.563184">
+		<testcase name="in.restitution" classname="in.restitution"/>
+		<testcase name="in.triaxial.compaction.12" classname="in.triaxial.compaction.12"/>
+		<testcase name="in.22DMH.relres" classname="in.22DMH.relres"/>
+		<testcase name="in.granular" classname="in.granular">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.powerlaw" classname="in.powerlaw">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.heatflux" classname="in.heatflux">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.mp" classname="in.mp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7' "/>
+		</testcase>
+		<testcase name="in.airebo-0-0" classname="in.airebo-0-0"/>
+		<testcase name="in.airebo-m" classname="in.airebo-m"/>
+		<testcase name="in.ar.lj" classname="in.ar.lj">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ar.metal" classname="in.ar.metal">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.peri-pmb" classname="in.peri-pmb">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.peri.lps" classname="in.peri.lps">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.peri.ves" classname="in.peri.ves">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.qeq.reaxff" classname="in.qeq.reaxff"/>
+		<testcase name="in.cos.1000SPCE" classname="in.cos.1000SPCE">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.gk.2d" classname="in.gk.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.wall.2d" classname="in.wall.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.comb.Cu" classname="in.comb.Cu">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.comb.Si.elastic" classname="in.comb.Si.elastic">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.comb3" classname="in.comb3"/>
+		<testcase name="in.msd.2d" classname="in.msd.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.vacf.2d" classname="in.vacf.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.replicate.bond.xy" classname="in.replicate.bond.xy"/>
+		<testcase name="in.replicate.cnt" classname="in.replicate.cnt"/>
+		<testcase name="in.coreshell.dsf" classname="in.coreshell.dsf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.nb3b.screened" classname="in.nb3b.screened">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.wall.block" classname="in.wall.block">
+			<failure type="failure" message="failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)."/>
+		</testcase>
+		<testcase name="in.wall.diffusive" classname="in.wall.diffusive">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.wall.flow" classname="in.wall.flow">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.wall.specular" classname="in.wall.specular">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.wall.sphere" classname="in.wall.sphere">
+			<failure type="failure" message="failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)."/>
+		</testcase>
+		<testcase name="in.kim-ex.melt" classname="in.kim-ex.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.kim-pm-query.melt" classname="in.kim-pm-query.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.grid.2d" classname="in.grid.2d"/>
+		<testcase name="in.cubes" classname="in.cubes">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_box.amoeba" classname="in.water_box.amoeba">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_box.hippo" classname="in.water_box.hippo">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.flow.couette" classname="in.flow.couette">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.mos2-bulk" classname="in.mos2-bulk"/>
+		<testcase name="in.tmpl-data-mix" classname="in.tmpl-data-mix">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.min.box" classname="in.min.box">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.msst" classname="in.msst">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'msst' is part of the SHOCK package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.reaxff.rdx" classname="in.reaxff.rdx">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.reaxff.rdx-shielded" classname="in.reaxff.rdx-shielded">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.indent" classname="in.indent">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.hugoniostat" classname="in.hugoniostat">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'nphug' is part of the SHOCK package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.micelle" classname="in.micelle">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1' "/>
+		</testcase>
+	</testsuite>
+</testsuites>

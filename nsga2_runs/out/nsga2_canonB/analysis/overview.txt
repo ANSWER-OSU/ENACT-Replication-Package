@@ -1,0 +1,26 @@
+NSGA-II summary.csv analysis
+
+Total runs: 1822
+OK runs:    1257
+Skipped:    565
+
+Status breakdown:
+  - ok: 1257
+  - skip_no_changed_lines: 565
+
+OK changed_lines_mapped: n=1257, min=1, p25=8, median=23, p75=67, max=520, mean=61.7
+OK coverable_changed_lines: n=1257, min=1, p25=8, median=23, p75=67, max=520, mean=61.7
+OK pareto_points: n=1257, min=1, p25=1, median=1, p75=1, max=19, mean=2.04
+OK max_change_cov: n=1257, min=0.95, p25=1, median=1, p75=1, max=1, mean=0.999
+
+OK energy_j_at_80pct: n=1257, min=2.12e+04, p25=2.5e+04, median=2.81e+04, p75=3.12e+04, max=1e+12, mean=5.17e+10
+OK suite_size_at_80pct: n=1257, min=145, p25=165, median=173, p75=181, max=237, mean=176
+OK energy_per_test_at_80pct: n=1257, min=133, p25=152, median=163, p75=174, max=5.88e+09, mean=3.03e+08
+
+OK energy_j_at_90pct: n=1257, min=2.12e+04, p25=2.5e+04, median=2.81e+04, p75=3.12e+04, max=2e+12, mean=5.41e+10
+OK suite_size_at_90pct: n=1257, min=145, p25=165, median=173, p75=181, max=244, mean=175
+OK energy_per_test_at_90pct: n=1257, min=133, p25=152, median=164, p75=174, max=1.07e+10, mean=3.16e+08
+
+OK energy_j_at_95pct: n=1257, min=2.12e+04, p25=2.5e+04, median=2.81e+04, p75=3.17e+04, max=2e+12, mean=5.89e+10
+OK suite_size_at_95pct: n=1257, min=145, p25=165, median=173, p75=181, max=249, mean=176
+OK energy_per_test_at_95pct: n=1257, min=133, p25=152, median=164, p75=175, max=1.07e+10, mean=3.42e+08

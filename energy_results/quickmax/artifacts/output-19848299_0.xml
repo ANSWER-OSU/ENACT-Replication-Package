@@ -1,0 +1,121 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="31" tests="42" time="0.0">
+	<testsuite disabled="0" errors="0" failures="31" name="tools/regression-tests/config_quick.yaml" skipped="12" tests="42" time="0" timestamp="2026-01-15 20:51:35.853486">
+		<testcase name="in.box" classname="in.box">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.box.mp" classname="in.box.mp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.dimer" classname="in.dimer">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.dimer.mp" classname="in.dimer.mp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.ellipsoid" classname="in.ellipsoid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.ellipsoid.mp" classname="in.ellipsoid.mp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.flat_membrane" classname="in.flat_membrane"/>
+		<testcase name="in.poly" classname="in.poly">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.poly.mp" classname="in.poly.mp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.star" classname="in.star">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.star.mp" classname="in.star.mp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.vesicle" classname="in.vesicle"/>
+		<testcase name="in.lj" classname="in.lj">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.elastic" classname="in.elastic">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.mc" classname="in.mc"/>
+		<testcase name="in.adatom" classname="in.adatom"/>
+		<testcase name="in.vacancy" classname="in.vacancy">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.cauchystat" classname="in.cauchystat">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.duplex3" classname="in.duplex3"/>
+		<testcase name="in.duplex1" classname="in.duplex1"/>
+		<testcase name="in.sds-hybrid" classname="in.sds-hybrid"/>
+		<testcase name="in.sds-regular" classname="in.sds-regular"/>
+		<testcase name="in.chreg-acid" classname="in.chreg-acid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.chreg-acid-real" classname="in.chreg-acid-real">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.chreg-polymer" classname="in.chreg-polymer">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.cnp" classname="in.cnp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.peptide-colvars" classname="in.peptide-colvars">
+			<failure type="failure" message="completed, error parsing log.peptide-colvars.1 into YAML"/>
+		</testcase>
+		<testcase name="in.peptide-colvars2" classname="in.peptide-colvars2">
+			<failure type="failure" message="completed, error parsing log.peptide-colvars2.1 into YAML"/>
+		</testcase>
+		<testcase name="in.peptide-spring" classname="in.peptide-spring"/>
+		<testcase name="in.peptide-spring2" classname="in.peptide-spring2"/>
+		<testcase name="in.confined" classname="in.confined">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.nopbc" classname="in.nopbc">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpd" classname="in.dpd">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.dpd_coul_slater_long" classname="in.dpd_coul_slater_long">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpd_tstat" classname="in.dpd_tstat"/>
+		<testcase name="in.dpdext" classname="in.dpdext">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.dpd-shardlow" classname="in.dpd-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpd-vv" classname="in.dpd-vv">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpde-shardlow" classname="in.dpde-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpde-vv" classname="in.dpde-vv">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpdh-shardlow" classname="in.dpdh-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.dpdp-shardlow" classname="in.dpdp-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+	</testsuite>
+</testsuites>

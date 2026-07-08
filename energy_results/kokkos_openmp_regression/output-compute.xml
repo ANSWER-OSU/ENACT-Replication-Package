@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="29" tests="35" time="0.0">
+	<testsuite disabled="0" errors="0" failures="29" name="tools/regression-tests/config_kokkos_openmp.yaml" skipped="0" tests="35" time="0" timestamp="2026-01-16 16:39:44.583424">
+		<testcase name="in.tad" classname="in.tad">
+			<failure type="failure" message="failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79)."/>
+		</testcase>
+		<testcase name="in.efield-lepton" classname="in.efield-lepton"/>
+		<testcase name="in.dipole" classname="in.dipole">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.tableting.200" classname="in.tableting.200"/>
+		<testcase name="in.triaxial.compaction.12" classname="in.triaxial.compaction.12"/>
+		<testcase name="in.bcc" classname="in.bcc"/>
+		<testcase name="in.fcc" classname="in.fcc"/>
+		<testcase name="in.icos" classname="in.icos">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.reaxff.tatb" classname="in.reaxff.tatb">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.wall.flow" classname="in.wall.flow">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.nemd.2d" classname="in.nemd.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '8' "/>
+		</testcase>
+		<testcase name="in.wall.2d" classname="in.wall.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.ehex" classname="in.ehex">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.heat" classname="in.heat">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.langevin" classname="in.langevin">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.cubes" classname="in.cubes">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.coreshell" classname="in.coreshell">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.coreshell.dsf" classname="in.coreshell.dsf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.coreshell.thermostats" classname="in.coreshell.thermostats">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '15', 'rel_diff_failed': '15' "/>
+		</testcase>
+		<testcase name="in.coreshell.wolf" classname="in.coreshell.wolf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.crack" classname="in.crack"/>
+		<testcase name="in.deposit.atom" classname="in.deposit.atom">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule" classname="in.deposit.molecule">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule.shake" classname="in.deposit.molecule.shake">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.ellipse.gayberne" classname="in.ellipse.gayberne">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.ellipse.resquared" classname="in.ellipse.resquared">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.flow.couette" classname="in.flow.couette">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.flow.pois" classname="in.flow.pois">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.friction" classname="in.friction">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.indent" classname="in.indent">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.marble_race" classname="in.marble_race">
+			<failure type="failure" message="failed, ERROR: Cannot (yet) use cylinder-style region with fix addforce/kk (src/KOKKOS/fix_addforce_kokkos.cpp:101)."/>
+		</testcase>
+		<testcase name="in.mesh_box" classname="in.mesh_box">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.obstacle" classname="in.obstacle">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.srd.mixture" classname="in.srd.mixture">
+			<failure type="failure" message="failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)."/>
+		</testcase>
+		<testcase name="in.stress_vcm" classname="in.stress_vcm">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7' "/>
+		</testcase>
+	</testsuite>
+</testsuites>

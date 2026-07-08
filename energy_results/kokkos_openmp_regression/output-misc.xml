@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="28" tests="33" time="0.0">
+	<testsuite disabled="0" errors="0" failures="28" name="tools/regression-tests/config_kokkos_openmp.yaml" skipped="0" tests="33" time="0" timestamp="2026-01-16 16:34:11.389730">
+		<testcase name="in.charmmfsw" classname="in.charmmfsw">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '0' "/>
+		</testcase>
+		<testcase name="in.cmap" classname="in.cmap">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.peptide" classname="in.peptide">
+			<failure type="failure" message="completed, error parsing log.peptide.2 into YAML"/>
+		</testcase>
+		<testcase name="in.replicate.bond.x" classname="in.replicate.bond.x">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.replicate.bond.x.noloop" classname="in.replicate.bond.x.noloop">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.replicate.bond.x.y" classname="in.replicate.bond.x.y"/>
+		<testcase name="in.replicate.bond.xy" classname="in.replicate.bond.xy"/>
+		<testcase name="in.replicate.cnt" classname="in.replicate.cnt"/>
+		<testcase name="in.cos.1000SPCE" classname="in.cos.1000SPCE">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.dreiding" classname="in.dreiding">
+			<failure type="failure" message="failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)."/>
+		</testcase>
+		<testcase name="in.spce" classname="in.spce">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.22DMH.real" classname="in.22DMH.real">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '12', 'rel_diff_failed': '12' "/>
+		</testcase>
+		<testcase name="in.22DMH.relres" classname="in.22DMH.relres"/>
+		<testcase name="in.22DMH.respa" classname="in.22DMH.respa"/>
+		<testcase name="in.hybrid" classname="in.hybrid">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.mol-data-mix" classname="in.mol-data-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.molecular-mix" classname="in.molecular-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.template-mix" classname="in.template-mix">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.tmpl-data-mix" classname="in.tmpl-data-mix">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.ubiquitin" classname="in.ubiquitin">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_box.amoeba" classname="in.water_box.amoeba">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_box.hippo" classname="in.water_box.hippo">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_dimer.amoeba" classname="in.water_dimer.amoeba">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_dimer.hippo" classname="in.water_dimer.hippo">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_hexamer.amoeba" classname="in.water_hexamer.amoeba">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_hexamer.hippo" classname="in.water_hexamer.hippo">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.coreshell" classname="in.coreshell">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.coreshell.dsf" classname="in.coreshell.dsf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.coreshell.thermostats" classname="in.coreshell.thermostats">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '15', 'rel_diff_failed': '15' "/>
+		</testcase>
+		<testcase name="in.coreshell.wolf" classname="in.coreshell.wolf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule" classname="in.deposit.molecule">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule.shake" classname="in.deposit.molecule.shake">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.micelle" classname="in.micelle">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1' "/>
+		</testcase>
+	</testsuite>
+</testsuites>

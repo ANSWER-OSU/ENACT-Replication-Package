@@ -1,0 +1,2 @@
+run_id,pr_number,changed_lines_mapped,coverable_changed_lines,max_change_cov,pareto_points,status
+20116243111,154,0,0,0.0,0,skip_no_changed_lines

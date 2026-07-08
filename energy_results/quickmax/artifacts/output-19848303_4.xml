@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="29" tests="55" time="0.0">
+	<testsuite disabled="0" errors="0" failures="29" name="tools/regression-tests/config_quick.yaml" skipped="16" tests="55" time="0" timestamp="2026-01-15 20:55:17.948976">
+		<testcase name="in.spin.iron_dipole_cut" classname="in.spin.iron_dipole_cut"/>
+		<testcase name="in.spin.iron_dipole_pppm" classname="in.spin.iron_dipole_pppm"/>
+		<testcase name="in.spin.iron" classname="in.spin.iron">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.spin.iron_cubic" classname="in.spin.iron_cubic">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.spin.nickel" classname="in.spin.nickel"/>
+		<testcase name="in.spin.nickel_cubic" classname="in.spin.nickel_cubic"/>
+		<testcase name="in.spin.write_restart" classname="in.spin.write_restart"/>
+		<testcase name="in.spin.bfo_min" classname="in.spin.bfo_min"/>
+		<testcase name="in.spin.bfo_min_cg" classname="in.spin.bfo_min_cg"/>
+		<testcase name="in.spin.bfo_min_lbfgs" classname="in.spin.bfo_min_lbfgs"/>
+		<testcase name="in.spin.iron_min" classname="in.spin.iron_min"/>
+		<testcase name="in.spin.iron-nve" classname="in.spin.iron-nve">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ar.lj" classname="in.ar.lj">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ar.metal" classname="in.ar.metal">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ar.real" classname="in.ar.real">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.mp.2d" classname="in.mp.2d"/>
+		<testcase name="in.nemd.2d" classname="in.nemd.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.wall.2d" classname="in.wall.2d"/>
+		<testcase name="in.airebo-0-0" classname="in.airebo-0-0"/>
+		<testcase name="in.rebo2" classname="in.rebo2"/>
+		<testcase name="in.ubiquitin" classname="in.ubiquitin"/>
+		<testcase name="in.water_box.amoeba" classname="in.water_box.amoeba"/>
+		<testcase name="in.water_box.hippo" classname="in.water_box.hippo"/>
+		<testcase name="in.water_dimer.amoeba" classname="in.water_dimer.amoeba">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '0' "/>
+		</testcase>
+		<testcase name="in.water_dimer.hippo" classname="in.water_dimer.hippo">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.water_hexamer.amoeba" classname="in.water_hexamer.amoeba">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.water_hexamer.hippo" classname="in.water_hexamer.hippo">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.atm" classname="in.atm"/>
+		<testcase name="in.balance" classname="in.balance">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.bond.fast" classname="in.balance.bond.fast">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.bond.slow" classname="in.balance.bond.slow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.clock.dynamic" classname="in.balance.clock.dynamic">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.clock.static" classname="in.balance.clock.static">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.group.dynamic" classname="in.balance.group.dynamic">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.group.static" classname="in.balance.group.static">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.kspace" classname="in.balance.kspace">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.neigh.dynamic" classname="in.balance.neigh.dynamic">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.neigh.rcb" classname="in.balance.neigh.rcb">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.neigh.static" classname="in.balance.neigh.static">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.balance.var.dynamic" classname="in.balance.var.dynamic">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.body" classname="in.body"/>
+		<testcase name="in.pour3d" classname="in.pour3d"/>
+		<testcase name="in.squares" classname="in.squares">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.wall2d" classname="in.wall2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.bpm.impact.spring" classname="in.bpm.impact.spring">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.charmmfsw" classname="in.charmmfsw">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.cmap" classname="in.cmap">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.colloid" classname="in.colloid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.comb.Cu" classname="in.comb.Cu"/>
+		<testcase name="in.comb.Cu2O.elastic" classname="in.comb.Cu2O.elastic"/>
+		<testcase name="in.comb.HfO2" classname="in.comb.HfO2"/>
+		<testcase name="in.comb.Si" classname="in.comb.Si"/>
+		<testcase name="in.comb.Si.elastic" classname="in.comb.Si.elastic"/>
+		<testcase name="in.comb3" classname="in.comb3"/>
+		<testcase name="in.controller.temp" classname="in.controller.temp"/>
+	</testsuite>
+</testsuites>

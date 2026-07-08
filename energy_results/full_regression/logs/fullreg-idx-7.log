@@ -1,0 +1,753 @@
+[2026-01-12 17:22:47] [*] START idx=7 host=cn-e24.hpc.engr.oregonstate.edu
+[2026-01-12 17:22:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 17:22:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 17:22:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-7.log
+
+[2026-01-12 17:22:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7
+[2026-01-12 17:23:33] [*] Create venv + deps
+[2026-01-12 17:23:45] [*] ccache reset
+[2026-01-12 17:23:46] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[4/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[5/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[6/7] Completed 'spglib_build'
+[7/7] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[2026-01-12 17:23:48] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 17:23:52] [*] RUN idx=7 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-7.txt
+
+There are 92 input scripts listed in input-list-7.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7
+--------------------------------------------------------------------------------
+Entering examples/rerun
+2 input script(s) to be tested: ['in.read_dump', 'in.rerun']
+   + in.read_dump (1/2)
+failed, ERROR on proc 0: Cannot open file lj.dump: No such file or directory (src/reader.cpp:61).
+   + in.rerun (2/2)
+failed, ERROR on proc 0: Cannot open file lj.dump: No such file or directory (src/reader.cpp:61).
+--------------------------------------------------------------------------------
+Entering examples/rheo/balloon
+1 input script(s) to be tested: ['in.rheo.balloon']
+   + in.rheo.balloon (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.balloon -cite none -log log.rheo.balloon.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/dam-break
+1 input script(s) to be tested: ['in.rheo.dam.break']
+   + in.rheo.dam.break (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.dam.break -cite none -log log.rheo.dam.break.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/ice-cubes
+1 input script(s) to be tested: ['in.rheo.ice.cubes']
+   + in.rheo.ice.cubes (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.ice.cubes -cite none -log log.rheo.ice.cubes.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/oxidation
+1 input script(s) to be tested: ['in.rheo.oxidation']
+   + in.rheo.oxidation (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.oxidation -cite none -log log.rheo.oxidation.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/poiseuille
+1 input script(s) to be tested: ['in.rheo.poiseuille']
+   + in.rheo.poiseuille (1/1)
+       failed, cannot find the reference log file for in.rheo.poiseuille with the expected format log.[date].rheo.poiseuille.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/rheo/taylor-green
+1 input script(s) to be tested: ['in.rheo.taylor.green']
+   + in.rheo.taylor.green (1/1)
+       failed, cannot find the reference log file for in.rheo.taylor.green with the expected format log.[date].rheo.taylor.green.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/rigid
+13 input script(s) to be tested: ['in.rigid', 'in.rigid.atomfile', 'in.rigid.atomvar', 'in.rigid.early', 'in.rigid.gravity', 'in.rigid.infile', 'in.rigid.molecule', 'in.rigid.nve', 'in.rigid.nve.early', 'in.rigid.property', 'in.rigid.small', 'in.rigid.small.infile', 'in.rigid.tnr']
+   + in.rigid (1/13)
+     all 6 checks passed.
+   + in.rigid.atomfile (2/13)
+     all 6 checks passed.
+   + in.rigid.atomvar (3/13)
+     all 6 checks passed.
+   + in.rigid.early (4/13)
+     all 6 checks passed.
+   + in.rigid.gravity (5/13)
+     all 2 checks passed.
+   + in.rigid.infile (6/13)
+     all 6 checks passed.
+   + in.rigid.molecule (7/13)
+     all 6 checks passed.
+   + in.rigid.nve (8/13)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.rigid.nve.early (9/13)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.rigid.property (10/13)
+     all 6 checks passed.
+   + in.rigid.small (11/13)
+     all 6 checks passed.
+   + in.rigid.small.infile (12/13)
+     all 6 checks passed.
+   + in.rigid.tnr (13/13)
+     18 abs diff checks failed.
+     22 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/shear
+2 input script(s) to be tested: ['in.shear', 'in.shear.void']
+   + in.shear (1/2)
+     all 12 checks passed.
+   + in.shear.void (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/snap
+13 input script(s) to be tested: ['in.C_SNAP', 'in.gaussian.grid', 'in.snap.InP.JCPA2020', 'in.snap.Mo_Chen', 'in.snap.Ta06A', 'in.snap.W.2940', 'in.snap.WBe.PRB2019', 'in.snap.compute', 'in.snap.compute.quadratic', 'in.snap.grid', 'in.snap.grid.triclinic', 'in.snap.hybrid.WSNAP.HePair', 'in.snap.scale.Ni_Zuo_JCPA2020']
+   + in.C_SNAP (1/13)
+     all 8 checks passed.
+   + in.gaussian.grid (2/13)
+     all 0 checks passed.
+   + in.snap.InP.JCPA2020 (3/13)
+     all 6 checks passed.
+   + in.snap.Mo_Chen (4/13)
+     all 6 checks passed.
+   + in.snap.Ta06A (5/13)
+     all 6 checks passed.
+   + in.snap.W.2940 (6/13)
+     all 6 checks passed.
+   + in.snap.WBe.PRB2019 (7/13)
+     all 6 checks passed.
+   + in.snap.compute (8/13)
+    completed, but no Step nor Loop in the output.
+
+   + in.snap.compute.quadratic (9/13)
+    completed, but no Step nor Loop in the output.
+
+   + in.snap.grid (10/13)
+       failed, cannot find the reference log file for in.snap.grid with the expected format log.[date].snap.grid.*.[nprocs]
+   + in.snap.grid.triclinic (11/13)
+       failed, cannot find the reference log file for in.snap.grid.triclinic with the expected format log.[date].snap.grid.triclinic.*.[nprocs]
+   + in.snap.hybrid.WSNAP.HePair (12/13)
+     all 6 checks passed.
+   + in.snap.scale.Ni_Zuo_JCPA2020 (13/13)
+       failed, cannot find the reference log file for in.snap.scale.Ni_Zuo_JCPA2020 with the expected format log.[date].snap.scale.Ni_Zuo_JCPA2020.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/srd
+2 input script(s) to be tested: ['in.srd.mixture', 'in.srd.pure']
+   + in.srd.mixture (1/2)
+     all 12 checks passed.
+   + in.srd.pure (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/steinhardt
+3 input script(s) to be tested: ['in.bcc', 'in.fcc', 'in.icos']
+   + in.bcc (1/3)
+     all 4 checks passed.
+   + in.fcc (2/3)
+     all 4 checks passed.
+   + in.icos (3/3)
+     all 8 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/streitz
+3 input script(s) to be tested: ['in.ctip', 'in.streitz.ewald', 'in.streitz.wolf']
+   + in.ctip (1/3)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.ctip -cite none -log log.ctip.1 (180s expired)
+     failed, no Total wall time in the output.
+
+   + in.streitz.ewald (2/3)
+     all 10 checks passed.
+   + in.streitz.wolf (3/3)
+--------------------------------------------------------------------------------
+Entering examples/stress_vcm
+1 input script(s) to be tested: ['in.stress_vcm']
+   + in.stress_vcm (1/1)
+     all 14 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/tad
+1 input script(s) to be tested: ['in.tad']
+   + in.tad (1/1)
+failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79).
+--------------------------------------------------------------------------------
+Entering examples/template
+7 input script(s) to be tested: ['in.hybrid', 'in.mol-data-mix', 'in.mol-restart-mix', 'in.molecular-mix', 'in.template-mix', 'in.tmpl-data-mix', 'in.tmpl-restart-mix']
+   + in.hybrid (1/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.mol-data-mix (2/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.mol-restart-mix (3/7)
+     8 abs diff checks failed.
+     8 rel diff checks failed.
+   + in.molecular-mix (4/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.template-mix (5/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.tmpl-data-mix (6/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.tmpl-restart-mix (7/7)
+     8 abs diff checks failed.
+     8 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/tersoff
+2 input script(s) to be tested: ['in.hBN_shift', 'in.tersoff']
+   + in.hBN_shift (1/2)
+     all 6 checks passed.
+   + in.tersoff (2/2)
+     all 30 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/threebody
+4 input script(s) to be tested: ['in.mos2-bulk', 'in.mos2.rebomos', 'in.mos2.sw.mod', 'in.threebody']
+   + in.mos2-bulk (1/4)
+     all 6 checks passed.
+   + in.mos2.rebomos (2/4)
+     all 6 checks passed.
+   + in.mos2.sw.mod (3/4)
+       failed, cannot find the reference log file for in.mos2.sw.mod with the expected format log.[date].mos2.sw.mod.*.[nprocs]
+   + in.threebody (4/4)
+     all 30 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/tracker
+1 input script(s) to be tested: ['in.track']
+   + in.track (1/1)
+       failed, cannot find the reference log file for in.track with the expected format log.[date].track.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/triclinic
+9 input script(s) to be tested: ['in.bcc.orthog', 'in.bcc.primitive', 'in.data.general', 'in.fcc.orthog', 'in.fcc.primitive', 'in.hex.orthog', 'in.hex.primitive', 'in.sq2.orthog', 'in.sq2.primitive']
+   + in.bcc.orthog (1/9)
+     all 2 checks passed.
+   + in.bcc.primitive (2/9)
+     all 2 checks passed.
+   + in.data.general (3/9)
+     all 2 checks passed.
+   + in.fcc.orthog (4/9)
+     all 2 checks passed.
+   + in.fcc.primitive (5/9)
+     all 2 checks passed.
+   + in.hex.orthog (6/9)
+     all 2 checks passed.
+   + in.hex.primitive (7/9)
+     all 2 checks passed.
+   + in.sq2.orthog (8/9)
+     all 2 checks passed.
+   + in.sq2.primitive (9/9)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/ttm
+4 input script(s) to be tested: ['in.ttm', 'in.ttm.grid', 'in.ttm.mod', 'in.ttm.thermal']
+   + in.ttm (1/4)
+     all 4 checks passed.
+   + in.ttm.grid (2/4)
+     all 4 checks passed.
+   + in.ttm.mod (3/4)
+     all 4 checks passed.
+   + in.ttm.thermal (4/4)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/vashishta
+4 input script(s) to be tested: ['in.vashishta.inp', 'in.vashishta.sio2', 'in.vashishta.table.inp', 'in.vashishta.table.sio2']
+   + in.vashishta.inp (1/4)
+     all 600 checks passed.
+   + in.vashishta.sio2 (2/4)
+     all 6 checks passed.
+   + in.vashishta.table.inp (3/4)
+     all 600 checks passed.
+   + in.vashishta.table.sio2 (4/4)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/voronoi
+3 input script(s) to be tested: ['in.voronoi', 'in.voronoi.2d', 'in.voronoi.data']
+   + in.voronoi (1/3)
+    completed, but no Step nor Loop in the output.
+
+   + in.voronoi.2d (2/3)
+    completed, but no Step nor Loop in the output.
+
+   + in.voronoi.data (3/3)
+    completed, but no Step nor Loop in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/wall
+11 input script(s) to be tested: ['in.wall.block', 'in.wall.ccl', 'in.wall.diffusive', 'in.wall.flow', 'in.wall.harmonic.2d', 'in.wall.harmonic.outside.2d', 'in.wall.lepton', 'in.wall.maxwell', 'in.wall.specular', 'in.wall.sphere', 'in.wall.table']
+   + in.wall.block (1/11)
+failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).
+   + in.wall.ccl (2/11)
+     all 6 checks passed.
+   + in.wall.diffusive (3/11)
+     all 6 checks passed.
+   + in.wall.flow (4/11)
+     all 6 checks passed.
+   + in.wall.harmonic.2d (5/11)
+       failed, cannot find the reference log file for in.wall.harmonic.2d with the expected format log.[date].wall.harmonic.2d.*.[nprocs]
+   + in.wall.harmonic.outside.2d (6/11)
+       failed, cannot find the reference log file for in.wall.harmonic.outside.2d with the expected format log.[date].wall.harmonic.outside.2d.*.[nprocs]
+   + in.wall.lepton (7/11)
+     all 88 checks passed.
+   + in.wall.maxwell (8/11)
+     all 6 checks passed.
+   + in.wall.specular (9/11)
+     all 6 checks passed.
+   + in.wall.sphere (10/11)
+failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).
+   + in.wall.table (11/11)
+     all 112 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/yaml
+1 input script(s) to be tested: ['in.yaml']
+   + in.yaml (1/1)
+    Error parsing log.yaml.1 at line 1, column 28.
+
+Summary:
+  Total number of input scripts: 92
+  - Skipped  : 0
+  - Error    : 15
+     - timeout  : 5
+  - Completed: 77
+     - failed   : 20
+     - numerical tests passed: 56
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-7.yaml
+  - Running log with screen output: run-7.log
+  - Testing result in JUnit XML   : output-7.xml
+
+[2026-01-12 17:52:53] [DONE] idx=7 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_7.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-7.tar
+[2026-01-12 18:07:47] [*] START idx=7 host=cn-e33.hpc.engr.oregonstate.edu
+[2026-01-12 18:07:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:07:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:07:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-7.log
+
+[2026-01-12 18:07:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7
+[2026-01-12 18:09:02] [*] Create venv + deps
+[2026-01-12 18:09:14] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:09:14] [*] ccache reset
+[2026-01-12 18:09:14] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: local: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: local: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: start_arr[$i]: unbound variable
+[2026-01-12 18:13:47] [*] START idx=7 host=cn-e24.hpc.engr.oregonstate.edu
+[2026-01-12 18:13:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:13:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:13:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-7.log
+
+[2026-01-12 18:13:50] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7
+[2026-01-12 18:14:35] [*] Create venv + deps
+[2026-01-12 18:14:48] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:14:48] [*] ccache reset
+[2026-01-12 18:14:48] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 18:14:50] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 18:14:54] [*] RUN idx=7 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-7.txt
+
+There are 92 input scripts listed in input-list-7.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7
+--------------------------------------------------------------------------------
+Entering examples/rerun
+2 input script(s) to be tested: ['in.read_dump', 'in.rerun']
+   + in.read_dump (1/2)
+failed, ERROR on proc 0: Cannot open file lj.dump: No such file or directory (src/reader.cpp:61).
+   + in.rerun (2/2)
+failed, ERROR on proc 0: Cannot open file lj.dump: No such file or directory (src/reader.cpp:61).
+--------------------------------------------------------------------------------
+Entering examples/rheo/balloon
+1 input script(s) to be tested: ['in.rheo.balloon']
+   + in.rheo.balloon (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.balloon -cite none -log log.rheo.balloon.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/dam-break
+1 input script(s) to be tested: ['in.rheo.dam.break']
+   + in.rheo.dam.break (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.dam.break -cite none -log log.rheo.dam.break.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/ice-cubes
+1 input script(s) to be tested: ['in.rheo.ice.cubes']
+   + in.rheo.ice.cubes (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.ice.cubes -cite none -log log.rheo.ice.cubes.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/oxidation
+1 input script(s) to be tested: ['in.rheo.oxidation']
+   + in.rheo.oxidation (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.rheo.oxidation -cite none -log log.rheo.oxidation.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/rheo/poiseuille
+1 input script(s) to be tested: ['in.rheo.poiseuille']
+   + in.rheo.poiseuille (1/1)
+       failed, cannot find the reference log file for in.rheo.poiseuille with the expected format log.[date].rheo.poiseuille.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/rheo/taylor-green
+1 input script(s) to be tested: ['in.rheo.taylor.green']
+   + in.rheo.taylor.green (1/1)
+       failed, cannot find the reference log file for in.rheo.taylor.green with the expected format log.[date].rheo.taylor.green.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/rigid
+13 input script(s) to be tested: ['in.rigid', 'in.rigid.atomfile', 'in.rigid.atomvar', 'in.rigid.early', 'in.rigid.gravity', 'in.rigid.infile', 'in.rigid.molecule', 'in.rigid.nve', 'in.rigid.nve.early', 'in.rigid.property', 'in.rigid.small', 'in.rigid.small.infile', 'in.rigid.tnr']
+   + in.rigid (1/13)
+     all 6 checks passed.
+   + in.rigid.atomfile (2/13)
+     all 6 checks passed.
+   + in.rigid.atomvar (3/13)
+     all 6 checks passed.
+   + in.rigid.early (4/13)
+     all 6 checks passed.
+   + in.rigid.gravity (5/13)
+     all 2 checks passed.
+   + in.rigid.infile (6/13)
+     all 6 checks passed.
+   + in.rigid.molecule (7/13)
+     all 6 checks passed.
+   + in.rigid.nve (8/13)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.rigid.nve.early (9/13)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.rigid.property (10/13)
+     all 6 checks passed.
+   + in.rigid.small (11/13)
+     all 6 checks passed.
+   + in.rigid.small.infile (12/13)
+     all 6 checks passed.
+   + in.rigid.tnr (13/13)
+     18 abs diff checks failed.
+     22 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/shear
+2 input script(s) to be tested: ['in.shear', 'in.shear.void']
+   + in.shear (1/2)
+     all 12 checks passed.
+   + in.shear.void (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/snap
+13 input script(s) to be tested: ['in.C_SNAP', 'in.gaussian.grid', 'in.snap.InP.JCPA2020', 'in.snap.Mo_Chen', 'in.snap.Ta06A', 'in.snap.W.2940', 'in.snap.WBe.PRB2019', 'in.snap.compute', 'in.snap.compute.quadratic', 'in.snap.grid', 'in.snap.grid.triclinic', 'in.snap.hybrid.WSNAP.HePair', 'in.snap.scale.Ni_Zuo_JCPA2020']
+   + in.C_SNAP (1/13)
+     all 8 checks passed.
+   + in.gaussian.grid (2/13)
+     all 0 checks passed.
+   + in.snap.InP.JCPA2020 (3/13)
+     all 6 checks passed.
+   + in.snap.Mo_Chen (4/13)
+     all 6 checks passed.
+   + in.snap.Ta06A (5/13)
+     all 6 checks passed.
+   + in.snap.W.2940 (6/13)
+     all 6 checks passed.
+   + in.snap.WBe.PRB2019 (7/13)
+     all 6 checks passed.
+   + in.snap.compute (8/13)
+    completed, but no Step nor Loop in the output.
+
+   + in.snap.compute.quadratic (9/13)
+    completed, but no Step nor Loop in the output.
+
+   + in.snap.grid (10/13)
+       failed, cannot find the reference log file for in.snap.grid with the expected format log.[date].snap.grid.*.[nprocs]
+   + in.snap.grid.triclinic (11/13)
+       failed, cannot find the reference log file for in.snap.grid.triclinic with the expected format log.[date].snap.grid.triclinic.*.[nprocs]
+   + in.snap.hybrid.WSNAP.HePair (12/13)
+     all 6 checks passed.
+   + in.snap.scale.Ni_Zuo_JCPA2020 (13/13)
+       failed, cannot find the reference log file for in.snap.scale.Ni_Zuo_JCPA2020 with the expected format log.[date].snap.scale.Ni_Zuo_JCPA2020.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/srd
+2 input script(s) to be tested: ['in.srd.mixture', 'in.srd.pure']
+   + in.srd.mixture (1/2)
+     all 12 checks passed.
+   + in.srd.pure (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/steinhardt
+3 input script(s) to be tested: ['in.bcc', 'in.fcc', 'in.icos']
+   + in.bcc (1/3)
+     all 4 checks passed.
+   + in.fcc (2/3)
+     all 4 checks passed.
+   + in.icos (3/3)
+     all 8 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/streitz
+3 input script(s) to be tested: ['in.ctip', 'in.streitz.ewald', 'in.streitz.wolf']
+   + in.ctip (1/3)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_7/build/lmp -in in.ctip -cite none -log log.ctip.1 (180s expired)
+     failed, no Total wall time in the output.
+
+   + in.streitz.ewald (2/3)
+     all 10 checks passed.
+   + in.streitz.wolf (3/3)
+--------------------------------------------------------------------------------
+Entering examples/stress_vcm
+1 input script(s) to be tested: ['in.stress_vcm']
+   + in.stress_vcm (1/1)
+     all 14 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/tad
+1 input script(s) to be tested: ['in.tad']
+   + in.tad (1/1)
+failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79).
+--------------------------------------------------------------------------------
+Entering examples/template
+7 input script(s) to be tested: ['in.hybrid', 'in.mol-data-mix', 'in.mol-restart-mix', 'in.molecular-mix', 'in.template-mix', 'in.tmpl-data-mix', 'in.tmpl-restart-mix']
+   + in.hybrid (1/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.mol-data-mix (2/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.mol-restart-mix (3/7)
+     8 abs diff checks failed.
+     8 rel diff checks failed.
+   + in.molecular-mix (4/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.template-mix (5/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.tmpl-data-mix (6/7)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.tmpl-restart-mix (7/7)
+     8 abs diff checks failed.
+     8 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/tersoff
+2 input script(s) to be tested: ['in.hBN_shift', 'in.tersoff']
+   + in.hBN_shift (1/2)
+     all 6 checks passed.
+   + in.tersoff (2/2)
+     all 30 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/threebody
+4 input script(s) to be tested: ['in.mos2-bulk', 'in.mos2.rebomos', 'in.mos2.sw.mod', 'in.threebody']
+   + in.mos2-bulk (1/4)
+     all 6 checks passed.
+   + in.mos2.rebomos (2/4)
+     all 6 checks passed.
+   + in.mos2.sw.mod (3/4)
+       failed, cannot find the reference log file for in.mos2.sw.mod with the expected format log.[date].mos2.sw.mod.*.[nprocs]
+   + in.threebody (4/4)
+     all 30 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/tracker
+1 input script(s) to be tested: ['in.track']
+   + in.track (1/1)
+       failed, cannot find the reference log file for in.track with the expected format log.[date].track.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/triclinic
+9 input script(s) to be tested: ['in.bcc.orthog', 'in.bcc.primitive', 'in.data.general', 'in.fcc.orthog', 'in.fcc.primitive', 'in.hex.orthog', 'in.hex.primitive', 'in.sq2.orthog', 'in.sq2.primitive']
+   + in.bcc.orthog (1/9)
+     all 2 checks passed.
+   + in.bcc.primitive (2/9)
+     all 2 checks passed.
+   + in.data.general (3/9)
+     all 2 checks passed.
+   + in.fcc.orthog (4/9)
+     all 2 checks passed.
+   + in.fcc.primitive (5/9)
+     all 2 checks passed.
+   + in.hex.orthog (6/9)
+     all 2 checks passed.
+   + in.hex.primitive (7/9)
+     all 2 checks passed.
+   + in.sq2.orthog (8/9)
+     all 2 checks passed.
+   + in.sq2.primitive (9/9)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/ttm
+4 input script(s) to be tested: ['in.ttm', 'in.ttm.grid', 'in.ttm.mod', 'in.ttm.thermal']
+   + in.ttm (1/4)
+     all 4 checks passed.
+   + in.ttm.grid (2/4)
+     all 4 checks passed.
+   + in.ttm.mod (3/4)
+     all 4 checks passed.
+   + in.ttm.thermal (4/4)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/vashishta
+4 input script(s) to be tested: ['in.vashishta.inp', 'in.vashishta.sio2', 'in.vashishta.table.inp', 'in.vashishta.table.sio2']
+   + in.vashishta.inp (1/4)
+     all 600 checks passed.
+   + in.vashishta.sio2 (2/4)
+     all 6 checks passed.
+   + in.vashishta.table.inp (3/4)
+     all 600 checks passed.
+   + in.vashishta.table.sio2 (4/4)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/voronoi
+3 input script(s) to be tested: ['in.voronoi', 'in.voronoi.2d', 'in.voronoi.data']
+   + in.voronoi (1/3)
+    completed, but no Step nor Loop in the output.
+
+   + in.voronoi.2d (2/3)
+    completed, but no Step nor Loop in the output.
+
+   + in.voronoi.data (3/3)
+    completed, but no Step nor Loop in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/wall
+11 input script(s) to be tested: ['in.wall.block', 'in.wall.ccl', 'in.wall.diffusive', 'in.wall.flow', 'in.wall.harmonic.2d', 'in.wall.harmonic.outside.2d', 'in.wall.lepton', 'in.wall.maxwell', 'in.wall.specular', 'in.wall.sphere', 'in.wall.table']
+   + in.wall.block (1/11)
+failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).
+   + in.wall.ccl (2/11)
+     all 6 checks passed.
+   + in.wall.diffusive (3/11)
+     all 6 checks passed.
+   + in.wall.flow (4/11)
+     all 6 checks passed.
+   + in.wall.harmonic.2d (5/11)
+       failed, cannot find the reference log file for in.wall.harmonic.2d with the expected format log.[date].wall.harmonic.2d.*.[nprocs]
+   + in.wall.harmonic.outside.2d (6/11)
+       failed, cannot find the reference log file for in.wall.harmonic.outside.2d with the expected format log.[date].wall.harmonic.outside.2d.*.[nprocs]
+   + in.wall.lepton (7/11)
+     all 88 checks passed.
+   + in.wall.maxwell (8/11)
+     all 6 checks passed.
+   + in.wall.specular (9/11)
+     all 6 checks passed.
+   + in.wall.sphere (10/11)
+failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).
+   + in.wall.table (11/11)
+     all 112 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/yaml
+1 input script(s) to be tested: ['in.yaml']
+   + in.yaml (1/1)
+    Error parsing log.yaml.1 at line 1, column 28.
+
+Summary:
+  Total number of input scripts: 92
+  - Skipped  : 0
+  - Error    : 15
+     - timeout  : 5
+  - Completed: 77
+     - failed   : 20
+     - numerical tests passed: 56
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-7.yaml
+  - Running log with screen output: run-7.log
+  - Testing result in JUnit XML   : output-7.xml
+
+[2026-01-12 18:43:55] [WARN] RAPL wrap detected on package-0; applied +max_range_uj=262143328850
+[2026-01-12 18:43:55] [DONE] idx=7 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_7.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-7.tar

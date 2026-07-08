@@ -1,0 +1,822 @@
+[2026-01-12 17:22:47] [*] START idx=6 host=cn-e15.hpc.engr.oregonstate.edu
+[2026-01-12 17:22:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 17:22:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 17:22:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-6.log
+
+[2026-01-12 17:22:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_6
+[2026-01-12 17:23:28] [*] Create venv + deps
+[2026-01-12 17:23:40] [*] ccache reset
+[2026-01-12 17:23:40] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_6/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 17:23:42] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 17:23:46] [*] RUN idx=6 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-6.txt
+
+There are 96 input scripts listed in input-list-6.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_6/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_6
+--------------------------------------------------------------------------------
+Entering examples/mesh
+2 input script(s) to be tested: ['in.marble_race', 'in.mesh_box']
+   + in.marble_race (1/2)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+   + in.mesh_box (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/micelle
+2 input script(s) to be tested: ['in.micelle', 'in.micelle-rigid']
+   + in.micelle (1/2)
+     1 rel diff checks failed.
+   + in.micelle-rigid (2/2)
+     all 18 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/min
+2 input script(s) to be tested: ['in.min', 'in.min.box']
+   + in.min (1/2)
+     all 12 checks passed.
+   + in.min.box (2/2)
+     all 36 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/mliap/jax
+1 input script(s) to be tested: ['in.run']
+   + in.run (1/1)
+failed, ERROR: Using pair_style mliap unified requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:212).
+--------------------------------------------------------------------------------
+Entering examples/mliap
+16 input script(s) to be tested: ['in.mliap.ace.compute', 'in.mliap.nn.Cu', 'in.mliap.nn.Ta06A', 'in.mliap.pytorch.Ta06A', 'in.mliap.pytorch.ace', 'in.mliap.pytorch.ace.NN', 'in.mliap.pytorch.relu1hidden', 'in.mliap.quadratic.compute', 'in.mliap.snap.Ta06A', 'in.mliap.snap.WBe.PRB2019', 'in.mliap.snap.chem', 'in.mliap.snap.compute', 'in.mliap.snap.quadratic', 'in.mliap.so3.Ni_Mo', 'in.mliap.so3.nn.Si', 'in.mliap.unified.lj.Ar']
+   + in.mliap.ace.compute (1/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.nn.Cu (2/16)
+     all 6 checks passed.
+   + in.mliap.nn.Ta06A (3/16)
+     all 6 checks passed.
+   + in.mliap.pytorch.Ta06A (4/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.pytorch.ace (5/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.pytorch.ace.NN (6/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.pytorch.relu1hidden (7/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.quadratic.compute (8/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.snap.Ta06A (9/16)
+     all 6 checks passed.
+   + in.mliap.snap.WBe.PRB2019 (10/16)
+     all 6 checks passed.
+   + in.mliap.snap.chem (11/16)
+     all 6 checks passed.
+   + in.mliap.snap.compute (12/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.snap.quadratic (13/16)
+     all 6 checks passed.
+   + in.mliap.so3.Ni_Mo (14/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.so3.nn.Si (15/16)
+     all 6 checks passed.
+   + in.mliap.unified.lj.Ar (16/16)
+failed, ERROR: Could not process Python string: .
+--------------------------------------------------------------------------------
+Entering examples/msst
+1 input script(s) to be tested: ['in.msst']
+   + in.msst (1/1)
+     all 10 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/multi
+3 input script(s) to be tested: ['in.colloid', 'in.granular', 'in.powerlaw']
+   + in.colloid (1/3)
+     mismatched num steps in the log files. Check both log files for more details.
+   + in.granular (2/3)
+     mismatched num steps in the log files. Check both log files for more details.
+   + in.powerlaw (3/3)
+     mismatched num steps in the log files. Check both log files for more details.
+--------------------------------------------------------------------------------
+Entering examples/nb3b
+2 input script(s) to be tested: ['in.nb3b', 'in.nb3b.screened']
+   + in.nb3b (1/2)
+     all 20 checks passed.
+   + in.nb3b.screened (2/2)
+     4 abs diff checks failed.
+     4 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/neb
+4 input script(s) to be tested: ['in.neb.hop1', 'in.neb.hop1.end', 'in.neb.hop2', 'in.neb.sivac']
+   + in.neb.hop1 (1/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.hop1.end (2/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.hop2 (3/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac (4/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+--------------------------------------------------------------------------------
+Entering examples/nemd
+1 input script(s) to be tested: ['in.nemd']
+   + in.nemd (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/numdiff
+1 input script(s) to be tested: ['in.numdiff']
+   + in.numdiff (1/1)
+       failed, cannot find the reference log file for in.numdiff with the expected format log.[date].numdiff.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/obstacle
+1 input script(s) to be tested: ['in.obstacle']
+   + in.obstacle (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/peptide
+1 input script(s) to be tested: ['in.peptide']
+   + in.peptide (1/1)
+    Error parsing log.peptide.1 at line 3, column 13.
+--------------------------------------------------------------------------------
+Entering examples/peri
+5 input script(s) to be tested: ['in.peri-pmb', 'in.peri.eps', 'in.peri.lps', 'in.peri.pmb', 'in.peri.ves']
+   + in.peri-pmb (1/5)
+       failed, cannot find the reference log file for in.peri-pmb with the expected format log.[date].peri-pmb.*.[nprocs]
+   + in.peri.eps (2/5)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.peri.lps (3/5)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.peri.pmb (4/5)
+     all 6 checks passed.
+   + in.peri.ves (5/5)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/pour
+3 input script(s) to be tested: ['in.pour', 'in.pour.2d', 'in.pour.2d.molecule']
+   + in.pour (1/3)
+     all 0 checks passed.
+   + in.pour.2d (2/3)
+     all 0 checks passed.
+   + in.pour.2d.molecule (3/3)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/prd
+1 input script(s) to be tested: ['in.prd']
+   + in.prd (1/1)
+       failed, cannot find the reference log file for in.prd with the expected format log.[date].prd.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/python
+14 input script(s) to be tested: ['in.fix_python_invoke', 'in.fix_python_invoke_neighlist', 'in.fix_python_move_nve_melt', 'in.fix_python_move_nve_melt_group', 'in.fix_python_move_nve_melt_opt', 'in.pair_python_coulomb', 'in.pair_python_harmonic', 'in.pair_python_hybrid', 'in.pair_python_long', 'in.pair_python_melt', 'in.pair_python_spce', 'in.pair_python_table', 'in.python', 'in.python.wrap']
+   + in.fix_python_invoke (1/14)
+failed, ERROR: Could not process Python string: .
+   + in.fix_python_invoke_neighlist (2/14)
+failed, ERROR: Could not process Python string: .
+   + in.fix_python_move_nve_melt (3/14)
+failed, ERROR: Loading python integrator module failure (src/PYTHON/fix_python_move.cpp:64).
+   + in.fix_python_move_nve_melt_group (4/14)
+failed, ERROR: Loading python integrator module failure (src/PYTHON/fix_python_move.cpp:64).
+   + in.fix_python_move_nve_melt_opt (5/14)
+failed, ERROR: Loading python integrator module failure (src/PYTHON/fix_python_move.cpp:64).
+   + in.pair_python_coulomb (6/14)
+     all 6 checks passed.
+   + in.pair_python_harmonic (7/14)
+     all 24 checks passed.
+   + in.pair_python_hybrid (8/14)
+     3 rel diff checks failed.
+   + in.pair_python_long (9/14)
+     all 6 checks passed.
+   + in.pair_python_melt (10/14)
+     3 rel diff checks failed.
+   + in.pair_python_spce (11/14)
+     all 6 checks passed.
+   + in.pair_python_table (12/14)
+     all 6 checks passed.
+   + in.python (13/14)
+failed, ERROR on proc 0: Python evaluation of function loop failed (src/PYTHON/python_impl.cpp:416).
+   + in.python.wrap (14/14)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/qeq
+2 input script(s) to be tested: ['in.qeq.buck', 'in.qeq.reaxff']
+   + in.qeq.buck (1/2)
+     all 12 checks passed.
+   + in.qeq.reaxff (2/2)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/rdf-adf
+1 input script(s) to be tested: ['in.spce']
+   + in.spce (1/1)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/AB
+1 input script(s) to be tested: ['in.AB']
+   + in.AB (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/AuO
+1 input script(s) to be tested: ['in.AuO']
+   + in.AuO (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/CHO
+1 input script(s) to be tested: ['in.CHO']
+   + in.CHO (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/FC
+1 input script(s) to be tested: ['in.FC']
+   + in.FC (1/1)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/FeOH3
+1 input script(s) to be tested: ['in.FeOH3']
+   + in.FeOH3 (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/HNS
+1 input script(s) to be tested: ['in.reaxff.hns']
+   + in.reaxff.hns (1/1)
+     1 abs diff checks failed.
+     1 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/RDX
+1 input script(s) to be tested: ['in.RDX']
+   + in.RDX (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/VOH
+1 input script(s) to be tested: ['in.VOH']
+   + in.VOH (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/ZnOH2
+1 input script(s) to be tested: ['in.ZnOH2']
+   + in.ZnOH2 (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/ci-reaxFF
+1 input script(s) to be tested: ['in.ci-reax.CH']
+   + in.ci-reax.CH (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/water
+8 input script(s) to be tested: ['in.water.acks2', 'in.water.acks2.field', 'in.water.qeq', 'in.water.qeq.field', 'in.water.qeqr', 'in.water.qeqr.field', 'in.water.qtpie', 'in.water.qtpie.field']
+   + in.water.acks2 (1/8)
+     1 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.water.acks2.field (2/8)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.water.qeq (3/8)
+     all 4 checks passed.
+   + in.water.qeq.field (4/8)
+     all 4 checks passed.
+   + in.water.qeqr (5/8)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'qeqr/reaxff' (src/modify.cpp:930)
+   + in.water.qeqr.field (6/8)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'qeqr/reaxff' (src/modify.cpp:930)
+   + in.water.qtpie (7/8)
+     all 4 checks passed.
+   + in.water.qtpie.field (8/8)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff
+4 input script(s) to be tested: ['in.reaxff.rdx', 'in.reaxff.rdx-shielded', 'in.reaxff.tatb', 'in.reaxff.tatb-shielded']
+   + in.reaxff.rdx (1/4)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.reaxff.rdx-shielded (2/4)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.reaxff.tatb (3/4)
+     1 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.reaxff.tatb-shielded (4/4)
+     1 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/relres
+3 input script(s) to be tested: ['in.22DMH.real', 'in.22DMH.relres', 'in.22DMH.respa']
+   + in.22DMH.real (1/3)
+     all 32 checks passed.
+   + in.22DMH.relres (2/3)
+     all 8 checks passed.
+   + in.22DMH.respa (3/3)
+     all 8 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/replicate
+5 input script(s) to be tested: ['in.replicate.bond.x', 'in.replicate.bond.x.noloop', 'in.replicate.bond.x.y', 'in.replicate.bond.xy', 'in.replicate.cnt']
+   + in.replicate.bond.x (1/5)
+     all 6 checks passed.
+   + in.replicate.bond.x.noloop (2/5)
+     all 6 checks passed.
+   + in.replicate.bond.x.y (3/5)
+     all 6 checks passed.
+   + in.replicate.bond.xy (4/5)
+     all 6 checks passed.
+   + in.replicate.cnt (5/5)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/rerun
+3 input script(s) to be tested: ['in.first', 'in.rdf.first', 'in.rdf.rerun']
+   + in.first (1/3)
+       failed, cannot find the reference log file for in.first with the expected format log.[date].first.*.[nprocs]
+   + in.rdf.first (2/3)
+       failed, cannot find the reference log file for in.rdf.first with the expected format log.[date].rdf.first.*.[nprocs]
+   + in.rdf.rerun (3/3)
+       failed, cannot find the reference log file for in.rdf.rerun with the expected format log.[date].rdf.rerun.*.[nprocs]
+
+Summary:
+  Total number of input scripts: 96
+  - Skipped  : 0
+  - Error    : 22
+     - timeout  : 0
+  - Completed: 74
+     - failed   : 32
+     - numerical tests passed: 41
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-6.yaml
+  - Running log with screen output: run-6.log
+  - Testing result in JUnit XML   : output-6.xml
+
+[2026-01-12 17:39:39] [DONE] idx=6 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_6.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-6.tar
+[2026-01-12 18:07:47] [*] START idx=6 host=cn-e32.hpc.engr.oregonstate.edu
+[2026-01-12 18:07:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:07:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:07:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-6.log
+
+[2026-01-12 18:07:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_6
+[2026-01-12 18:09:02] [*] Create venv + deps
+[2026-01-12 18:09:13] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:09:13] [*] ccache reset
+[2026-01-12 18:09:13] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_6/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: local: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: local: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: start_arr[$i]: unbound variable
+[2026-01-12 18:13:47] [*] START idx=6 host=cn-e15.hpc.engr.oregonstate.edu
+[2026-01-12 18:13:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:13:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:13:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-6.log
+
+[2026-01-12 18:13:50] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_6
+[2026-01-12 18:14:31] [*] Create venv + deps
+[2026-01-12 18:14:42] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:14:42] [*] ccache reset
+[2026-01-12 18:14:42] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_6/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 18:14:44] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 18:14:48] [*] RUN idx=6 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-6.txt
+
+There are 96 input scripts listed in input-list-6.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_6/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_6
+--------------------------------------------------------------------------------
+Entering examples/mesh
+2 input script(s) to be tested: ['in.marble_race', 'in.mesh_box']
+   + in.marble_race (1/2)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+   + in.mesh_box (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/micelle
+2 input script(s) to be tested: ['in.micelle', 'in.micelle-rigid']
+   + in.micelle (1/2)
+     1 rel diff checks failed.
+   + in.micelle-rigid (2/2)
+     all 18 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/min
+2 input script(s) to be tested: ['in.min', 'in.min.box']
+   + in.min (1/2)
+     all 12 checks passed.
+   + in.min.box (2/2)
+     all 36 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/mliap/jax
+1 input script(s) to be tested: ['in.run']
+   + in.run (1/1)
+failed, ERROR: Using pair_style mliap unified requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:212).
+--------------------------------------------------------------------------------
+Entering examples/mliap
+16 input script(s) to be tested: ['in.mliap.ace.compute', 'in.mliap.nn.Cu', 'in.mliap.nn.Ta06A', 'in.mliap.pytorch.Ta06A', 'in.mliap.pytorch.ace', 'in.mliap.pytorch.ace.NN', 'in.mliap.pytorch.relu1hidden', 'in.mliap.quadratic.compute', 'in.mliap.snap.Ta06A', 'in.mliap.snap.WBe.PRB2019', 'in.mliap.snap.chem', 'in.mliap.snap.compute', 'in.mliap.snap.quadratic', 'in.mliap.so3.Ni_Mo', 'in.mliap.so3.nn.Si', 'in.mliap.unified.lj.Ar']
+   + in.mliap.ace.compute (1/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.nn.Cu (2/16)
+     all 6 checks passed.
+   + in.mliap.nn.Ta06A (3/16)
+     all 6 checks passed.
+   + in.mliap.pytorch.Ta06A (4/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.pytorch.ace (5/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.pytorch.ace.NN (6/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.pytorch.relu1hidden (7/16)
+failed, ERROR: Using pair_style mliap model mliappy requires ML-IAP with python support (src/ML-IAP/pair_mliap.cpp:172).
+   + in.mliap.quadratic.compute (8/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.snap.Ta06A (9/16)
+     all 6 checks passed.
+   + in.mliap.snap.WBe.PRB2019 (10/16)
+     all 6 checks passed.
+   + in.mliap.snap.chem (11/16)
+     all 6 checks passed.
+   + in.mliap.snap.compute (12/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.snap.quadratic (13/16)
+     all 6 checks passed.
+   + in.mliap.so3.Ni_Mo (14/16)
+    completed, but no Step nor Loop in the output.
+
+   + in.mliap.so3.nn.Si (15/16)
+     all 6 checks passed.
+   + in.mliap.unified.lj.Ar (16/16)
+failed, ERROR: Could not process Python string: .
+--------------------------------------------------------------------------------
+Entering examples/msst
+1 input script(s) to be tested: ['in.msst']
+   + in.msst (1/1)
+     all 10 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/multi
+3 input script(s) to be tested: ['in.colloid', 'in.granular', 'in.powerlaw']
+   + in.colloid (1/3)
+     mismatched num steps in the log files. Check both log files for more details.
+   + in.granular (2/3)
+     mismatched num steps in the log files. Check both log files for more details.
+   + in.powerlaw (3/3)
+     mismatched num steps in the log files. Check both log files for more details.
+--------------------------------------------------------------------------------
+Entering examples/nb3b
+2 input script(s) to be tested: ['in.nb3b', 'in.nb3b.screened']
+   + in.nb3b (1/2)
+     all 20 checks passed.
+   + in.nb3b.screened (2/2)
+     4 abs diff checks failed.
+     4 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/neb
+4 input script(s) to be tested: ['in.neb.hop1', 'in.neb.hop1.end', 'in.neb.hop2', 'in.neb.sivac']
+   + in.neb.hop1 (1/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.hop1.end (2/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.hop2 (3/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac (4/4)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+--------------------------------------------------------------------------------
+Entering examples/nemd
+1 input script(s) to be tested: ['in.nemd']
+   + in.nemd (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/numdiff
+1 input script(s) to be tested: ['in.numdiff']
+   + in.numdiff (1/1)
+       failed, cannot find the reference log file for in.numdiff with the expected format log.[date].numdiff.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/obstacle
+1 input script(s) to be tested: ['in.obstacle']
+   + in.obstacle (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/peptide
+1 input script(s) to be tested: ['in.peptide']
+   + in.peptide (1/1)
+    Error parsing log.peptide.1 at line 3, column 13.
+--------------------------------------------------------------------------------
+Entering examples/peri
+5 input script(s) to be tested: ['in.peri-pmb', 'in.peri.eps', 'in.peri.lps', 'in.peri.pmb', 'in.peri.ves']
+   + in.peri-pmb (1/5)
+       failed, cannot find the reference log file for in.peri-pmb with the expected format log.[date].peri-pmb.*.[nprocs]
+   + in.peri.eps (2/5)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.peri.lps (3/5)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.peri.pmb (4/5)
+     all 6 checks passed.
+   + in.peri.ves (5/5)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/pour
+3 input script(s) to be tested: ['in.pour', 'in.pour.2d', 'in.pour.2d.molecule']
+   + in.pour (1/3)
+     all 0 checks passed.
+   + in.pour.2d (2/3)
+     all 0 checks passed.
+   + in.pour.2d.molecule (3/3)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/prd
+1 input script(s) to be tested: ['in.prd']
+   + in.prd (1/1)
+       failed, cannot find the reference log file for in.prd with the expected format log.[date].prd.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/python
+14 input script(s) to be tested: ['in.fix_python_invoke', 'in.fix_python_invoke_neighlist', 'in.fix_python_move_nve_melt', 'in.fix_python_move_nve_melt_group', 'in.fix_python_move_nve_melt_opt', 'in.pair_python_coulomb', 'in.pair_python_harmonic', 'in.pair_python_hybrid', 'in.pair_python_long', 'in.pair_python_melt', 'in.pair_python_spce', 'in.pair_python_table', 'in.python', 'in.python.wrap']
+   + in.fix_python_invoke (1/14)
+failed, ERROR: Could not process Python string: .
+   + in.fix_python_invoke_neighlist (2/14)
+failed, ERROR: Could not process Python string: .
+   + in.fix_python_move_nve_melt (3/14)
+failed, ERROR: Loading python integrator module failure (src/PYTHON/fix_python_move.cpp:64).
+   + in.fix_python_move_nve_melt_group (4/14)
+failed, ERROR: Loading python integrator module failure (src/PYTHON/fix_python_move.cpp:64).
+   + in.fix_python_move_nve_melt_opt (5/14)
+failed, ERROR: Loading python integrator module failure (src/PYTHON/fix_python_move.cpp:64).
+   + in.pair_python_coulomb (6/14)
+     all 6 checks passed.
+   + in.pair_python_harmonic (7/14)
+     all 24 checks passed.
+   + in.pair_python_hybrid (8/14)
+     3 rel diff checks failed.
+   + in.pair_python_long (9/14)
+     all 6 checks passed.
+   + in.pair_python_melt (10/14)
+     3 rel diff checks failed.
+   + in.pair_python_spce (11/14)
+     all 6 checks passed.
+   + in.pair_python_table (12/14)
+     all 6 checks passed.
+   + in.python (13/14)
+failed, ERROR on proc 0: Python evaluation of function loop failed (src/PYTHON/python_impl.cpp:416).
+   + in.python.wrap (14/14)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/qeq
+2 input script(s) to be tested: ['in.qeq.buck', 'in.qeq.reaxff']
+   + in.qeq.buck (1/2)
+     all 12 checks passed.
+   + in.qeq.reaxff (2/2)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/rdf-adf
+1 input script(s) to be tested: ['in.spce']
+   + in.spce (1/1)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/AB
+1 input script(s) to be tested: ['in.AB']
+   + in.AB (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/AuO
+1 input script(s) to be tested: ['in.AuO']
+   + in.AuO (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/CHO
+1 input script(s) to be tested: ['in.CHO']
+   + in.CHO (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/FC
+1 input script(s) to be tested: ['in.FC']
+   + in.FC (1/1)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/FeOH3
+1 input script(s) to be tested: ['in.FeOH3']
+   + in.FeOH3 (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/HNS
+1 input script(s) to be tested: ['in.reaxff.hns']
+   + in.reaxff.hns (1/1)
+     1 abs diff checks failed.
+     1 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/RDX
+1 input script(s) to be tested: ['in.RDX']
+   + in.RDX (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/VOH
+1 input script(s) to be tested: ['in.VOH']
+   + in.VOH (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/ZnOH2
+1 input script(s) to be tested: ['in.ZnOH2']
+   + in.ZnOH2 (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/ci-reaxFF
+1 input script(s) to be tested: ['in.ci-reax.CH']
+   + in.ci-reax.CH (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff/water
+8 input script(s) to be tested: ['in.water.acks2', 'in.water.acks2.field', 'in.water.qeq', 'in.water.qeq.field', 'in.water.qeqr', 'in.water.qeqr.field', 'in.water.qtpie', 'in.water.qtpie.field']
+   + in.water.acks2 (1/8)
+     1 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.water.acks2.field (2/8)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.water.qeq (3/8)
+     all 4 checks passed.
+   + in.water.qeq.field (4/8)
+     all 4 checks passed.
+   + in.water.qeqr (5/8)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'qeqr/reaxff' (src/modify.cpp:930)
+   + in.water.qeqr.field (6/8)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'qeqr/reaxff' (src/modify.cpp:930)
+   + in.water.qtpie (7/8)
+     all 4 checks passed.
+   + in.water.qtpie.field (8/8)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/reaxff
+4 input script(s) to be tested: ['in.reaxff.rdx', 'in.reaxff.rdx-shielded', 'in.reaxff.tatb', 'in.reaxff.tatb-shielded']
+   + in.reaxff.rdx (1/4)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.reaxff.rdx-shielded (2/4)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.reaxff.tatb (3/4)
+     1 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.reaxff.tatb-shielded (4/4)
+     1 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/relres
+3 input script(s) to be tested: ['in.22DMH.real', 'in.22DMH.relres', 'in.22DMH.respa']
+   + in.22DMH.real (1/3)
+     all 32 checks passed.
+   + in.22DMH.relres (2/3)
+     all 8 checks passed.
+   + in.22DMH.respa (3/3)
+     all 8 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/replicate
+5 input script(s) to be tested: ['in.replicate.bond.x', 'in.replicate.bond.x.noloop', 'in.replicate.bond.x.y', 'in.replicate.bond.xy', 'in.replicate.cnt']
+   + in.replicate.bond.x (1/5)
+     all 6 checks passed.
+   + in.replicate.bond.x.noloop (2/5)
+     all 6 checks passed.
+   + in.replicate.bond.x.y (3/5)
+     all 6 checks passed.
+   + in.replicate.bond.xy (4/5)
+     all 6 checks passed.
+   + in.replicate.cnt (5/5)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/rerun
+3 input script(s) to be tested: ['in.first', 'in.rdf.first', 'in.rdf.rerun']
+   + in.first (1/3)
+       failed, cannot find the reference log file for in.first with the expected format log.[date].first.*.[nprocs]
+   + in.rdf.first (2/3)
+       failed, cannot find the reference log file for in.rdf.first with the expected format log.[date].rdf.first.*.[nprocs]
+   + in.rdf.rerun (3/3)
+       failed, cannot find the reference log file for in.rdf.rerun with the expected format log.[date].rdf.rerun.*.[nprocs]
+
+Summary:
+  Total number of input scripts: 96
+  - Skipped  : 0
+  - Error    : 22
+     - timeout  : 0
+  - Completed: 74
+     - failed   : 32
+     - numerical tests passed: 41
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-6.yaml
+  - Running log with screen output: run-6.log
+  - Testing result in JUnit XML   : output-6.xml
+
+[2026-01-12 18:30:42] [DONE] idx=6 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_6.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-6.tar

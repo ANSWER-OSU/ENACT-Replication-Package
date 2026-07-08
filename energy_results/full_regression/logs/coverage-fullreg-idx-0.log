@@ -1,0 +1,36 @@
+[2026-01-19 13:36:27] [*] START per-test coverage idx=0
+[2026-01-19 13:36:27] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-19 13:36:27] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-19 13:36:27] [*] Using WORK_DIR=/scratch/projects/anklesan/lammps/fullreg_energy_work/work_0
+[2026-01-19 13:36:27] [*] Reconfiguring build with coverage enabled
+[2026-01-19 13:36:27] [*] Building (coverage enabled)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_0/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/2] Re-running CMake...
+CMake Deprecation Warning at CMakeLists.txt:22 (cmake_policy):
+  The OLD behavior for policy CMP0109 will be removed from a future version
+  of CMake.
+
+  The cmake-policies(7) manual explains that the OLD behaviors of all
+  policies are deprecated and that a policy should be set to OLD only under
+  specific short-term circumstances.  Projects should be ported to the NEW
+  behavior and not rely on setting a policy to OLD.
+
+
+-- Appending /apps/slurm/24.11/lib:/usr/local/apps/python/3.11/lib:/usr/local/apps/gcc/12.4/lib64:/usr/local/apps/gcc/12.4/lib to CMAKE_LIBRARY_PATH: /apps/slurm/24.11/lib:/usr/local/apps/python/3.11/lib:/usr/local/apps/gcc/12.4/lib64:/usr/local/apps/gcc/12.4/lib
+-- Running check for auto-generated files from make-based build system
+-- Could NOT find MPI_CXX (missing: MPI_CXX_WORKS) 
+CMake Error at /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:233 (message):
+  Could NOT find MPI (missing: MPI_CXX_FOUND CXX)
+Call Stack (most recent call first):
+  /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake:603 (_FPHSA_FAILURE_MESSAGE)
+  /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/share/cmake-3.31/Modules/FindMPI.cmake:1842 (find_package_handle_standard_args)
+  CMakeLists.txt:391 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+FAILED: build.ninja 
+/nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake --regenerate-during-build -S/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake -B/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy
+ninja: error: rebuilding 'build.ninja': subcommand failed

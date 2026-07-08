@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="27" tests="58" time="0.0">
+	<testsuite disabled="0" errors="0" failures="27" name="tools/regression-tests/config_quick.yaml" skipped="6" tests="58" time="0" timestamp="2026-01-15 20:56:49.541822">
+		<testcase name="in.nb3b" classname="in.nb3b"/>
+		<testcase name="in.nemd" classname="in.nemd"/>
+		<testcase name="in.numdiff" classname="in.numdiff">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.obstacle" classname="in.obstacle"/>
+		<testcase name="in.peptide" classname="in.peptide">
+			<failure type="failure" message="completed, error parsing log.peptide.1 into YAML"/>
+		</testcase>
+		<testcase name="in.peri-pmb" classname="in.peri-pmb">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.peri.eps" classname="in.peri.eps">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.peri.lps" classname="in.peri.lps">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.peri.pmb" classname="in.peri.pmb"/>
+		<testcase name="in.peri.ves" classname="in.peri.ves">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.pour" classname="in.pour"/>
+		<testcase name="in.pour.2d" classname="in.pour.2d"/>
+		<testcase name="in.pour.2d.molecule" classname="in.pour.2d.molecule"/>
+		<testcase name="in.prd" classname="in.prd">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.pair_python_coulomb" classname="in.pair_python_coulomb"/>
+		<testcase name="in.pair_python_hybrid" classname="in.pair_python_hybrid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.pair_python_long" classname="in.pair_python_long"/>
+		<testcase name="in.pair_python_melt" classname="in.pair_python_melt">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.pair_python_spce" classname="in.pair_python_spce"/>
+		<testcase name="in.pair_python_table" classname="in.pair_python_table"/>
+		<testcase name="in.qeq.buck" classname="in.qeq.buck"/>
+		<testcase name="in.qeq.reaxff" classname="in.qeq.reaxff"/>
+		<testcase name="in.AB" classname="in.AB">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.AuO" classname="in.AuO">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.CHO" classname="in.CHO">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.FC" classname="in.FC"/>
+		<testcase name="in.FeOH3" classname="in.FeOH3">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.RDX" classname="in.RDX">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.VOH" classname="in.VOH">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ZnOH2" classname="in.ZnOH2">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ci-reax.CH" classname="in.ci-reax.CH"/>
+		<testcase name="in.reaxff.rdx" classname="in.reaxff.rdx">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.reaxff.rdx-shielded" classname="in.reaxff.rdx-shielded">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.reaxff.tatb" classname="in.reaxff.tatb">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.reaxff.tatb-shielded" classname="in.reaxff.tatb-shielded">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.water.acks2" classname="in.water.acks2">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.water.acks2.field" classname="in.water.acks2.field">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.water.qeq" classname="in.water.qeq"/>
+		<testcase name="in.water.qeq.field" classname="in.water.qeq.field"/>
+		<testcase name="in.22DMH.relres" classname="in.22DMH.relres"/>
+		<testcase name="in.22DMH.respa" classname="in.22DMH.respa"/>
+		<testcase name="in.replicate.bond.x" classname="in.replicate.bond.x"/>
+		<testcase name="in.replicate.bond.x.noloop" classname="in.replicate.bond.x.noloop"/>
+		<testcase name="in.replicate.bond.x.y" classname="in.replicate.bond.x.y"/>
+		<testcase name="in.replicate.bond.xy" classname="in.replicate.bond.xy"/>
+		<testcase name="in.replicate.cnt" classname="in.replicate.cnt"/>
+		<testcase name="in.rdf.first" classname="in.rdf.first">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.rdf.rerun" classname="in.rdf.rerun">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.rheo.poiseuille" classname="in.rheo.poiseuille">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.rigid" classname="in.rigid"/>
+		<testcase name="in.rigid.atomfile" classname="in.rigid.atomfile"/>
+		<testcase name="in.rigid.atomvar" classname="in.rigid.atomvar"/>
+		<testcase name="in.rigid.early" classname="in.rigid.early"/>
+		<testcase name="in.rigid.gravity" classname="in.rigid.gravity"/>
+		<testcase name="in.rigid.infile" classname="in.rigid.infile"/>
+		<testcase name="in.rigid.molecule" classname="in.rigid.molecule"/>
+		<testcase name="in.rigid.nve" classname="in.rigid.nve">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.rigid.nve.early" classname="in.rigid.nve.early">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+	</testsuite>
+</testsuites>

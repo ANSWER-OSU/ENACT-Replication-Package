@@ -1,0 +1,152 @@
+{ 'in.vashishta.sio2': { 'folder': 'examples/vashishta', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.vashishta.table.sio2': { 'folder': 'examples/vashishta', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.controller.temp': { 'folder': 'examples/controller', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6'  }, 'walltime': '3.0', 'walltime_norm': '1.5' } }
+{ 'in.controller.wall': { 'folder': 'examples/controller', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '9.0', 'walltime_norm': '4.5' } }
+{ 'in.voronoi': { 'folder': 'examples/voronoi', 'status': 'completed, but no Step nor Loop in the output.', 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.voronoi.2d': { 'folder': 'examples/voronoi', 'status': 'failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94).', 'walltime': '-1' } }
+{ 'in.grid.2d': { 'folder': 'examples/grid', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.sph': { 'folder': 'examples/grid', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.charmmfsw': { 'folder': 'examples/charmmfsw', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '0'  }, 'walltime': '12.0', 'walltime_norm': '6.0' } }
+{ 'in.deposit.atom': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.wall.block': { 'folder': 'examples/wall', 'status': 'failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).', 'walltime': '-1' } }
+{ 'in.wall.ccl': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.wall.lepton': { 'folder': 'examples/wall', 'status': 'failed, no Total wall time in the output, [cn-e09:1066137] *** Process received signal ***
+[cn-e09:1066137] Signal: Segmentation fault (11)
+[cn-e09:1066137] Signal code: Address not mapped (1)
+[cn-e09:1066137] Failing at address: (nil)
+[cn-e09:1066136] *** Process received signal ***
+[cn-e09:1066136] Signal: Segmentation fault (11)
+[cn-e09:1066136] Signal code: Address not mapped (1)
+[cn-e09:1066136] Failing at address: (nil)
+[cn-e09:1066137] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e09:1066137] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x126d3a7]
+[cn-e09:1066137] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0xbb7a8b]
+[cn-e09:1066137] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x5fb8e0]
+[cn-e09:1066137] [cn-e09:1066136] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e09:1066136] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x126d3a7]
+[cn-e09:1066136] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0xbb7a8b]
+[cn-e09:1066136] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x5fb8e0]
+[cn-e09:1066136] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bbe41]
+[cn-e09:1066136] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bc7e6]
+[cn-e09:1066136] [ 6] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bbe41]
+[cn-e09:1066137] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bc7e6]
+[cn-e09:1066137] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4a446d]
+[cn-e09:1066137] [ 7] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4a446d]
+[cn-e09:1066136] [ 7] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e09:1066136] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4af2ce]
+[cn-e09:1066136] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e09:1066137] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4af2ce]
+[cn-e09:1066137] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 1066136 on node cn-e09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+', 'walltime': '-1' } }
+{ 'in.wall.specular': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.wall.sphere': { 'folder': 'examples/wall', 'status': 'failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).', 'walltime': '-1' } }
+{ 'in.track': { 'folder': 'examples/tracker', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'tracker' is part of the MISC package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.min': { 'folder': 'examples/min', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.min.box': { 'folder': 'examples/min', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.spce.ehex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.ar.lj': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.ar.metal': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.bcc.orthog': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.data.general': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.hex.orthog': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.hex.primitive': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.22DMH.respa': { 'folder': 'examples/relres', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.coreshell.wolf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '19.0', 'walltime_norm': '9.5' } }
+{ 'in.einstein.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6'  }, 'walltime': '94.0', 'walltime_norm': '47.0' } }
+{ 'in.gk.2d': { 'folder': 'examples/VISCOSITY', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.nemd.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '8'  }, 'walltime': '43.0', 'walltime_norm': '21.5' } }
+{ 'in.qeq.buck': { 'folder': 'examples/qeq', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '0'  }, 'walltime': '16.0', 'walltime_norm': '8.0' } }
+{ 'in.qeq.reaxff': { 'folder': 'examples/qeq', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.peptide': { 'folder': 'examples/peptide', 'status': 'completed, error parsing log.peptide.2 into YAML', 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.tad': { 'folder': 'examples/tad', 'status': 'failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79).', 'walltime': '-1' } }
+{ 'in.marble_race': { 'folder': 'examples/mesh', 'status': 'failed, ERROR: Cannot (yet) use cylinder-style region with fix addforce/kk (src/KOKKOS/fix_addforce_kokkos.cpp:101).', 'walltime': '-1' } }
+{ 'in.nb3b': { 'folder': 'examples/nb3b', 'status': 'failed, no Total wall time in the output, [cn-e09:1068366] *** Process received signal ***
+[cn-e09:1068366] Signal: Segmentation fault (11)
+[cn-e09:1068366] Signal code: Address not mapped (1)
+[cn-e09:1068366] Failing at address: 0x20
+Kokkos::Impl::SharedAllocationRecord failed increment
+Backtrace:
+[cn-e09:1068366] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e09:1068366] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1f9f3a5]
+[cn-e09:1068366] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x9b56ef]
+[cn-e09:1068366] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c5a7a5]
+[cn-e09:1068366] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c730b5]
+[cn-e09:1068366] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c77865]
+[cn-e09:1068366] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c7ff75]
+[cn-e09:1068366] [ 7] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x157993c]
+[cn-e09:1068366] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x12c7c33]
+[cn-e09:1068366] [ 9] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x53e10d]
+[cn-e09:1068366] [10] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bbe41]
+[cn-e09:1068366] [11] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bc7e6]
+[cn-e09:1068366] [12] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4a446d]
+[cn-e09:1068366] [13] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e09:1068366] [14] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4af2ce]
+[cn-e09:1068366] *** End of error message ***
+[0x1f9f635] 
+[0x1f7edfc] 
+[0x1f9f3bc] 
+[0x9b5767] 
+[0x1c5a7a5] 
+[0x1c730b5] 
+[0x1c77865] 
+[0x1c7ff75] 
+[0x157993c] 
+[0x12c7c33] 
+[0x53e10d] 
+[0x4bbe41] 
+[0x4bc7e6] 
+[0x4a446d] 
+[0x155551fbd865] __libc_start_main
+[0x4af2ce] 
+[cn-e09:1068367] *** Process received signal ***
+[cn-e09:1068367] Signal: Aborted (6)
+[cn-e09:1068367] Signal code:  (-6)
+[cn-e09:1068367] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e09:1068367] [ 1] /lib64/libc.so.6(gsignal+0x10f)[0x155551fd15af]
+[cn-e09:1068367] [ 2] /lib64/libc.so.6(abort+0x127)[0x155551fa4ee5]
+[cn-e09:1068367] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1f7ee09]
+[cn-e09:1068367] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1f9f3bc]
+[cn-e09:1068367] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x9b5767]
+[cn-e09:1068367] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c5a7a5]
+[cn-e09:1068367] [ 7] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c730b5]
+[cn-e09:1068367] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c77865]
+[cn-e09:1068367] [ 9] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x1c7ff75]
+[cn-e09:1068367] [10] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x157993c]
+[cn-e09:1068367] [11] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x12c7c33]
+[cn-e09:1068367] [12] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x53e10d]
+[cn-e09:1068367] [13] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bbe41]
+[cn-e09:1068367] [14] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4bc7e6]
+[cn-e09:1068367] [15] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4a446d]
+[cn-e09:1068367] [16] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e09:1068367] [17] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-1/build/lmp[0x4af2ce]
+[cn-e09:1068367] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 1068366 on node cn-e09 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+', 'walltime': '-1' } }
+{ 'in.replicate.bond.x': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.bond.x.y': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.cnt': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.heat': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '5'  }, 'walltime': '64.0', 'walltime_norm': '32.0' } }
+{ 'in.reaxff.tatb': { 'folder': 'examples/reaxff', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.reaxff.tatb-shielded': { 'folder': 'examples/reaxff', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.hybrid': { 'folder': 'examples/template', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.molecular-mix': { 'folder': 'examples/template', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '9.0', 'walltime_norm': '4.5' } }
+{ 'in.stress_vcm': { 'folder': 'examples/stress_vcm', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7'  }, 'walltime': '7.0', 'walltime_norm': '3.5' } }
+{ 'in.bcc': { 'folder': 'examples/steinhardt', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.airebo-m': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '46.0', 'walltime_norm': '23.0' } }
+{ 'in.spce': { 'folder': 'examples/rdf-adf', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '5'  }, 'walltime': '55.0', 'walltime_norm': '27.5' } }
+{ 'in.nemd': { 'folder': 'examples/nemd', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.mos2.sw.mod': { 'folder': 'examples/threebody', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }

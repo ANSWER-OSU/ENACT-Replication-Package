@@ -1,0 +1,2 @@
+idx,test_num,input_path,rc,wall_s,lines_total,lines_covered,line_rate,funcs_total,funcs_covered,func_rate
+0,1,examples/ASPHERE/box/in.box,0,149,0,0,0.0,0,0,0.0

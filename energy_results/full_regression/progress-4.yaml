@@ -1,0 +1,132 @@
+{ 'in.vtp': { 'folder': 'examples/PACKAGES/vtk', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized dump style 'vtk' is part of the VTK package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.ch4': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.ch4.plugin': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.graphene': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.graphene.plugin': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.series': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unknown command, package not installed, ERROR: Unknown command: mdi             connect (src/input.cpp:316)', 'walltime': '-1' } }
+{ 'in.series.plugin': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.sucrose': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.sucrose.plugin': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.uo2': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.uo2.plugin': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water.min': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water.min.plugin': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water.plugin': { 'folder': 'examples/QUANTUM/LATTE', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.series': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'failed, unknown command, package not installed, ERROR: Unknown command: mdi             connect (src/input.cpp:316)', 'walltime': '-1' } }
+{ 'in.series.plugin': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water.mm': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.water.qmmm': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water.qmmm.plugin': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.zeolite.mm': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.zeolite.qmmm': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.zeolite.qmmm.plugin': { 'folder': 'examples/QUANTUM/NWChem', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.mixture.mm': { 'folder': 'examples/QUANTUM/PySCF', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.mixture.qmmm': { 'folder': 'examples/QUANTUM/PySCF', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.mixture.qmmm.plugin': { 'folder': 'examples/QUANTUM/PySCF', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water.qmmm': { 'folder': 'examples/QUANTUM/PySCF', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.water.qmmm.plugin': { 'folder': 'examples/QUANTUM/PySCF', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qmmm' is part of the MDI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.spin.bfo': { 'folder': 'examples/SPIN/bfo', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '12.0', 'walltime_norm': '1.5' } }
+{ 'in.spin.cobalt_fcc': { 'folder': 'examples/SPIN/cobalt_fcc', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '0.5' } }
+{ 'in.spin.cobalt_hcp': { 'folder': 'examples/SPIN/cobalt_hcp', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '5.0', 'walltime_norm': '0.625' } }
+{ 'in.spin.iron_dipole_cut': { 'folder': 'examples/SPIN/dipole_spin', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '10.0', 'walltime_norm': '1.25' } }
+{ 'in.spin.iron_dipole_ewald': { 'folder': 'examples/SPIN/dipole_spin', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '0'  }, 'walltime': '32.0', 'walltime_norm': '4.0' } }
+{ 'in.spin.iron_dipole_pppm': { 'folder': 'examples/SPIN/dipole_spin', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '20.0', 'walltime_norm': '2.5' } }
+{ 'in.gneb.iron': { 'folder': 'examples/SPIN/gneb/iron', 'status': 'failed, ERROR: Cannot use NEBSpin with a single replica (src/SPIN/neb_spin.cpp:133).', 'walltime': '-1' } }
+{ 'in.gneb.skyrmion': { 'folder': 'examples/SPIN/gneb/skyrmion', 'status': 'failed, ERROR: Did not assign all atoms correctly.', 'walltime': '-1' } }
+{ 'in.spin.iron': { 'folder': 'examples/SPIN/iron', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '1.0', 'walltime_norm': '0.125' } }
+{ 'in.spin.iron_cubic': { 'folder': 'examples/SPIN/iron', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '2.0', 'walltime_norm': '0.25' } }
+{ 'in.spin.nickel': { 'folder': 'examples/SPIN/nickel', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '0.5' } }
+{ 'in.spin.nickel_cubic': { 'folder': 'examples/SPIN/nickel', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '0.5' } }
+{ 'in.spin.read_data': { 'folder': 'examples/SPIN/read_restart', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '7.0', 'walltime_norm': '0.875' } }
+{ 'in.spin.restart': { 'folder': 'examples/SPIN/read_restart', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.125' } }
+{ 'in.spin.write_restart': { 'folder': 'examples/SPIN/read_restart', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '0.25' } }
+{ 'in.spin.setforce': { 'folder': 'examples/SPIN/setforce_spin', 'status': 'failed, no Total wall time in the output, --------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            cn-e13
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+[cn-e13:317258] *** Process received signal ***
+[cn-e13:317258] Signal: Segmentation fault (11)
+[cn-e13:317258] Signal code: Address not mapped (1)
+[cn-e13:317258] Failing at address: 0x3a8
+[cn-e13:317258] [ 0] /lib64/libpthread.so.0(+0x12990)[0x15555383a990]
+[cn-e13:317258] [ 1] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS11ComputeSpin14compute_vectorEv+0x26f)[0xe102ef]
+[cn-e13:317258] [ 2] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS8Variable8evaluateEPcPPNS0_4TreeEi+0x73c9)[0x9bf659]
+[cn-e13:317258] [ 3] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS8Variable13compute_equalEi+0x21a)[0x9c438a]
+[cn-e13:317258] [ 4] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS6Thermo16compute_variableEv+0x47)[0x9800d7]
+[cn-e13:317258] [ 5] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS6Thermo7computeEi+0x1c4)[0x98a004]
+[cn-e13:317258] [ 6] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS6Output5setupEi+0x54)[0x90e514]
+[cn-e13:317258] [ 7] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS3Min5setupEi+0x7ea)[0x89b64a]
+[cn-e13:317258] [ 8] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS8Minimize7commandEiPPc+0x1bd)[0x89ce7d]
+[cn-e13:317258] [ 9] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS5Input15execute_commandEv+0x70f)[0x81ac4f]
+[cn-e13:317258] [10] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_ZN9LAMMPS_NS5Input4fileEv+0x176)[0x81b3a6]
+[cn-e13:317258] [11] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(main+0x4d)[0x808b7d]
+[cn-e13:317258] [12] /lib64/libc.so.6(__libc_start_main+0xe5)[0x15554fa16865]
+[cn-e13:317258] [13] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_4/build/lmp(_start+0x2e)[0x80dafe]
+[cn-e13:317258] *** End of error message ***
+', 'walltime': '-1' } }
+{ 'in.spin.bfo_min': { 'folder': 'examples/SPIN/spinmin', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '11.0', 'walltime_norm': '1.375' } }
+{ 'in.spin.bfo_min_cg': { 'folder': 'examples/SPIN/spinmin', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '12.0', 'walltime_norm': '1.5' } }
+{ 'in.spin.bfo_min_lbfgs': { 'folder': 'examples/SPIN/spinmin', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.spin.iron_min': { 'folder': 'examples/SPIN/spinmin', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.spin.iron-nve': { 'folder': 'examples/SPIN/test_problems/validation_nve', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '4.0', 'walltime_norm': '0.5' } }
+{ 'in.spin.nvt_lattice': { 'folder': 'examples/SPIN/test_problems/validation_nvt', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '19.0', 'walltime_norm': '2.375' } }
+{ 'in.spin.nvt_spin': { 'folder': 'examples/SPIN/test_problems/validation_nvt', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '18.0', 'walltime_norm': '2.25' } }
+{ 'in.ar.lj': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.ar.metal': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.ar.real': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.cos.1000SPCE': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '45.0', 'walltime_norm': '5.625' } }
+{ 'in.einstein.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '65.0', 'walltime_norm': '8.125' } }
+{ 'in.gk.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '66.0', 'walltime_norm': '8.25' } }
+{ 'in.mp.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '8.0', 'walltime_norm': '1.0' } }
+{ 'in.nemd.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '24.0', 'walltime_norm': '3.0' } }
+{ 'in.wall.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '14.0', 'walltime_norm': '1.75' } }
+{ 'in.airebo': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '75.0', 'walltime_norm': '9.375' } }
+{ 'in.airebo-0-0': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '6.0', 'walltime_norm': '0.75' } }
+{ 'in.airebo-m': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '85.0', 'walltime_norm': '10.625' } }
+{ 'in.rebo2': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '7.0', 'walltime_norm': '0.875' } }
+{ 'in.ubiquitin': { 'folder': 'examples/amoeba', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '16.0', 'walltime_norm': '2.0' } }
+{ 'in.water_box.amoeba': { 'folder': 'examples/amoeba', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '10.0', 'walltime_norm': '1.25' } }
+{ 'in.water_box.hippo': { 'folder': 'examples/amoeba', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '8.0', 'walltime_norm': '1.0' } }
+{ 'in.water_dimer.amoeba': { 'folder': 'examples/amoeba', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.water_dimer.hippo': { 'folder': 'examples/amoeba', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.water_hexamer.amoeba': { 'folder': 'examples/amoeba', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.water_hexamer.hippo': { 'folder': 'examples/amoeba', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.atm': { 'folder': 'examples/atm', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '17.0', 'walltime_norm': '2.125' } }
+{ 'in.balance': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.balance.bond.fast': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.balance.bond.slow': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.balance.clock.dynamic': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '20.0', 'walltime_norm': '2.5' } }
+{ 'in.balance.clock.static': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '7.0', 'walltime_norm': '0.875' } }
+{ 'in.balance.group.dynamic': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '2.0', 'walltime_norm': '0.25' } }
+{ 'in.balance.group.static': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '2.0', 'walltime_norm': '0.25' } }
+{ 'in.balance.kspace': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '9.0', 'walltime_norm': '1.125' } }
+{ 'in.balance.neigh.dynamic': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '20.0', 'walltime_norm': '2.5' } }
+{ 'in.balance.neigh.rcb': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '5.0', 'walltime_norm': '0.625' } }
+{ 'in.balance.neigh.static': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '12.0', 'walltime_norm': '1.5' } }
+{ 'in.balance.var.dynamic': { 'folder': 'examples/balance', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '20.0', 'walltime_norm': '2.5' } }
+{ 'in.body': { 'folder': 'examples/body', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.125' } }
+{ 'in.cubes': { 'folder': 'examples/body', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '45.0', 'walltime_norm': '5.625' } }
+{ 'in.pour3d': { 'folder': 'examples/body', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.squares': { 'folder': 'examples/body', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '0.625' } }
+{ 'in.wall2d': { 'folder': 'examples/body', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '3.0', 'walltime_norm': '0.375' } }
+{ 'in.bpm.impact.rotational': { 'folder': 'examples/bpm/impact', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '146.0', 'walltime_norm': '18.25' } }
+{ 'in.bpm.impact.spring': { 'folder': 'examples/bpm/impact', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '17.0', 'walltime_norm': '2.125' } }
+{ 'in.bpm.plasticity': { 'folder': 'examples/bpm/plasticity', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.bpm.poissons_ratio': { 'folder': 'examples/bpm/poissons_ratio', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '132.0', 'walltime_norm': '16.5' } }
+{ 'in.bpm.pour': { 'folder': 'examples/bpm/pour', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.charmmfsw': { 'folder': 'examples/charmmfsw', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '1'  }, 'walltime': '20.0', 'walltime_norm': '2.5' } }
+{ 'in.cmap': { 'folder': 'examples/cmap', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '1.0', 'walltime_norm': '0.125' } }

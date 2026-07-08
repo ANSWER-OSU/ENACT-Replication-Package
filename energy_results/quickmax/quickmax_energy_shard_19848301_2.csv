@@ -1,0 +1,2 @@
+phase,start_iso,end_iso,wall_s,energy_uj,energy_j,energy_kwh,avg_power_w,rc,valid_energy
+quickmax,2026-01-16T04:45:37Z,2026-01-16T04:50:30Z,293,-243046485737,-243046.485737,-0.067512913,-829.510190,0,1

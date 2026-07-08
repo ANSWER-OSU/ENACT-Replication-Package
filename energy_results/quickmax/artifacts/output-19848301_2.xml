@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="13" tests="39" time="0.0">
+	<testsuite disabled="0" errors="0" failures="13" name="tools/regression-tests/config_quick.yaml" skipped="3" tests="39" time="0" timestamp="2026-01-15 20:50:30.581614">
+		<testcase name="in.entropy" classname="in.entropy">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.extep-bn" classname="in.extep-bn">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.bpti" classname="in.bpti">
+			<failure type="failure" message="completed, error parsing log.bpti.1 into YAML"/>
+		</testcase>
+		<testcase name="in.GD" classname="in.GD"/>
+		<testcase name="in.gauss-diel" classname="in.gauss-diel">
+			<failure type="failure" message="completed, error parsing log.gauss-diel.1 into YAML"/>
+		</testcase>
+		<testcase name="in.gauss-diel-cg" classname="in.gauss-diel-cg">
+			<failure type="failure" message="completed, error parsing log.gauss-diel-cg.1 into YAML"/>
+		</testcase>
+		<testcase name="in.gauss-diel-split" classname="in.gauss-diel-split">
+			<failure type="failure" message="completed, error parsing log.gauss-diel-split.1 into YAML"/>
+		</testcase>
+		<testcase name="in.h2o-quantum" classname="in.h2o-quantum">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.h2o-smart" classname="in.h2o-smart">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.gREM-npt" classname="in.gREM-npt">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.gREM-nvt" classname="in.gREM-nvt">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.gr_water" classname="in.gr_water">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.gr_water.opt" classname="in.gr_water.opt">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.CH_drip" classname="in.CH_drip">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.C_drip" classname="in.C_drip"/>
+		<testcase name="in.atom-diffusion" classname="in.atom-diffusion"/>
+		<testcase name="in.gold_gr" classname="in.gold_gr"/>
+		<testcase name="in.aluminum_strip_pull" classname="in.aluminum_strip_pull"/>
+		<testcase name="in.rubber_rings_3d" classname="in.rubber_rings_3d"/>
+		<testcase name="in.rubber_strip_pull" classname="in.rubber_strip_pull"/>
+		<testcase name="in.spce2" classname="in.spce2"/>
+		<testcase name="in.spce_sw" classname="in.spce_sw"/>
+		<testcase name="in.meam-spline.Si" classname="in.meam-spline.Si"/>
+		<testcase name="in.bcc_relax" classname="in.bcc_relax"/>
+		<testcase name="in.dc" classname="in.dc"/>
+		<testcase name="in.dc_relax" classname="in.dc_relax"/>
+		<testcase name="in.energy_conservation.meam.sw" classname="in.energy_conservation.meam.sw"/>
+		<testcase name="in.fcc_relax" classname="in.fcc_relax"/>
+		<testcase name="in.hcp_relax" classname="in.hcp_relax"/>
+		<testcase name="in.sc" classname="in.sc"/>
+		<testcase name="in.sc_relax" classname="in.sc_relax"/>
+		<testcase name="in.single_atom" classname="in.single_atom"/>
+		<testcase name="in.alpha" classname="in.alpha"/>
+		<testcase name="in.alpha_relaxation" classname="in.alpha_relaxation"/>
+		<testcase name="in.beta" classname="in.beta"/>
+		<testcase name="in.hexagonal" classname="in.hexagonal"/>
+		<testcase name="in.omega" classname="in.omega"/>
+		<testcase name="in.hkust1" classname="in.hkust1"/>
+		<testcase name="in.hkust1_long" classname="in.hkust1_long"/>
+	</testsuite>
+</testsuites>

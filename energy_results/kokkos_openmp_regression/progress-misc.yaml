@@ -1,0 +1,135 @@
+{ 'in.charmmfsw': { 'folder': 'examples/charmmfsw', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '0'  }, 'walltime': '12.0', 'walltime_norm': '6.0' } }
+{ 'in.cmap': { 'folder': 'examples/cmap', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '11.0', 'walltime_norm': '5.5' } }
+{ 'in.peptide': { 'folder': 'examples/peptide', 'status': 'completed, error parsing log.peptide.2 into YAML', 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.replicate.bond.x': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.bond.x.noloop': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.bond.x.y': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.bond.xy': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.cnt': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.spce.ehex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.spce.hex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.cos.1000SPCE': { 'folder': 'examples/VISCOSITY', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.dreiding': { 'folder': 'examples/dreiding', 'status': 'failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94).', 'walltime': '-1' } }
+{ 'in.spce': { 'folder': 'examples/rdf-adf', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '5'  }, 'walltime': '53.0', 'walltime_norm': '26.5' } }
+{ 'in.22DMH.real': { 'folder': 'examples/relres', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '12', 'rel_diff_failed': '12'  }, 'walltime': '34.0', 'walltime_norm': '17.0' } }
+{ 'in.22DMH.relres': { 'folder': 'examples/relres', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.22DMH.respa': { 'folder': 'examples/relres', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.hybrid': { 'folder': 'examples/template', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.mol-data-mix': { 'folder': 'examples/template', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '6.0', 'walltime_norm': '3.0' } }
+{ 'in.molecular-mix': { 'folder': 'examples/template', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '9.0', 'walltime_norm': '4.5' } }
+{ 'in.template-mix': { 'folder': 'examples/template', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.tmpl-data-mix': { 'folder': 'examples/template', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.ubiquitin': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_box.amoeba': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_box.hippo': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_dimer.amoeba': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_dimer.hippo': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_hexamer.amoeba': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_hexamer.hippo': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.coreshell': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '9.0', 'walltime_norm': '4.5' } }
+{ 'in.coreshell.dsf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '15.0', 'walltime_norm': '7.5' } }
+{ 'in.coreshell.thermostats': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '15', 'rel_diff_failed': '15'  }, 'walltime': '13.0', 'walltime_norm': '6.5' } }
+{ 'in.coreshell.wolf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '18.0', 'walltime_norm': '9.0' } }
+{ 'in.deposit.molecule': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.deposit.molecule.shake': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '6.0', 'walltime_norm': '3.0' } }
+{ 'in.micelle': { 'folder': 'examples/micelle', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.wall.lepton': { 'folder': 'examples/wall', 'status': 'failed, no Total wall time in the output, --------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+[cn-e13:409872] *** Process received signal ***
+[cn-e13:409871] *** Process received signal ***
+[cn-e13:409872] Signal: Segmentation fault (11)
+[cn-e13:409872] Signal code: Address not mapped (1)
+[cn-e13:409872] Failing at address: (nil)
+[cn-e13:409871] Signal: Segmentation fault (11)
+[cn-e13:409871] Signal code: Address not mapped (1)
+[cn-e13:409871] Failing at address: (nil)
+[cn-e13:409871] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409871] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409871] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409871] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+[cn-e13:409871] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409871] [ 5] [cn-e13:409872] [ 0] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409871] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+[cn-e13:409871] [ 7] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409872] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409872] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409872] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409871] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+[cn-e13:409872] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409872] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409872] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+[cn-e13:409872] [ 7] [cn-e13:409871] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409872] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+[cn-e13:409872] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 409871 on node cn-e13 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[cn-e13.hpc.engr.oregonstate.edu:409867] 1 more process has sent help message help-mpi-common-cuda.txt / dlopen failed
+[cn-e13.hpc.engr.oregonstate.edu:409867] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+', 'walltime': '-1' } }
+{ 'in.wall.table': { 'folder': 'examples/wall', 'status': 'failed, no Total wall time in the output, --------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+[cn-e13:409950] *** Process received signal ***
+[cn-e13:409949] *** Process received signal ***
+[cn-e13:409950] Signal: Segmentation fault (11)
+[cn-e13:409950] Signal code: Address not mapped (1)
+[cn-e13:409950] Failing at address: (nil)
+[cn-e13:409949] Signal: Segmentation fault (11)
+[cn-e13:409949] Signal code: Address not mapped (1)
+[cn-e13:409949] Failing at address: (nil)
+[cn-e13:409950] [ 0] [cn-e13:409949] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409950] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409949] [ 1] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409950] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409949] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409949] [ 3] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409950] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+[cn-e13:409950] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+[cn-e13:409949] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409949] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409950] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409950] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+/scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409949] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+[cn-e13:409949] [ 7] [cn-e13:409950] [ 7] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409949] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409950] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+[cn-e13:409950] *** End of error message ***
+[cn-e13:409949] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 409950 on node cn-e13 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[cn-e13.hpc.engr.oregonstate.edu:409945] 1 more process has sent help message help-mpi-common-cuda.txt / dlopen failed
+[cn-e13.hpc.engr.oregonstate.edu:409945] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+', 'walltime': '-1' } }

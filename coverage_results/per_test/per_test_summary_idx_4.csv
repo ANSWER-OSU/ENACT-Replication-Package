@@ -1,0 +1,2 @@
+idx,test_num,input_path,rc,wall_s,lines_total,lines_covered,line_rate,funcs_total,funcs_covered,func_rate
+4,1,examples/PACKAGES/vtk/in.vtp,0,14,0,0,0.0,0,0,0.0

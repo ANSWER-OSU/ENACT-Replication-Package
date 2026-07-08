@@ -1,0 +1,151 @@
+{ 'in.restitution': { 'folder': 'examples/granular', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '28.0', 'walltime_norm': '14.0' } }
+{ 'in.triaxial.compaction.12': { 'folder': 'examples/granular', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.22DMH.relres': { 'folder': 'examples/relres', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.granular': { 'folder': 'examples/multi', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.powerlaw': { 'folder': 'examples/multi', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.heatflux': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '108.0', 'walltime_norm': '54.0' } }
+{ 'in.mp': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7'  }, 'walltime': '74.0', 'walltime_norm': '37.0' } }
+{ 'in.airebo-0-0': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.airebo-m': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '45.0', 'walltime_norm': '22.5' } }
+{ 'in.lj.ehex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.ar.lj': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.ar.metal': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.peri-pmb': { 'folder': 'examples/peri', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.peri.lps': { 'folder': 'examples/peri', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.peri.ves': { 'folder': 'examples/peri', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.qeq.reaxff': { 'folder': 'examples/qeq', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.cos.1000SPCE': { 'folder': 'examples/VISCOSITY', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.gk.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '105.0', 'walltime_norm': '52.5' } }
+{ 'in.wall.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '21.0', 'walltime_norm': '10.5' } }
+{ 'in.comb.Cu': { 'folder': 'examples/comb', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.comb.Si.elastic': { 'folder': 'examples/comb', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.comb3': { 'folder': 'examples/comb', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '12.0', 'walltime_norm': '6.0' } }
+{ 'in.msd.2d': { 'folder': 'examples/DIFFUSE', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '33.0', 'walltime_norm': '16.5' } }
+{ 'in.vacf.2d': { 'folder': 'examples/DIFFUSE', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '38.0', 'walltime_norm': '19.0' } }
+{ 'in.replicate.bond.xy': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.cnt': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.coreshell.dsf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '15.0', 'walltime_norm': '7.5' } }
+{ 'in.nb3b': { 'folder': 'examples/nb3b', 'status': 'failed, no Total wall time in the output, --------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+Kokkos::Impl::SharedAllocationRecord failed increment
+Backtrace:
+Kokkos::Impl::SharedAllocationRecord failed increment
+Backtrace:
+[0x1f9eef5] 
+[0x1f7e6bc] 
+[0x1f9ec7c] 
+[0x9b52f7] 
+[0x1c5a075] 
+[0x1c72985] 
+[0x1c77135] 
+[0x1c7f845] 
+[0x1f9eef5] [0x157920c] 
+[0x12c7503] 
+[0x1f7e6bc] 
+
+[0x53e0fd] 
+[0x4bbde1] [0x1f9ec7c] 
+[0x9b52f7] 
+[0x4bc786] 
+
+[0x1c5a075] 
+[0x1c72985][0x4a446d] 
+[0x155551fbd865]  
+[0x1c77135] 
+__libc_start_main
+[0x4af2ce] [0x1c7f845] 
+[0x157920c] 
+
+[0x12c7503] 
+[0x53e0fd] 
+[0x4bbde1] 
+[0x4bc786] 
+[0x4a446d] 
+[cn-e11:321504] *** Process received signal ***
+[0x155551fbd865] __libc_start_main
+[cn-e11:321504] Signal: Aborted (6)
+[cn-e11:321504] Signal code:  (-6)
+[0x4af2ce] 
+[cn-e11:321505] *** Process received signal ***
+[cn-e11:321505] Signal: Aborted (6)
+[cn-e11:321505] Signal code:  (-6)
+[cn-e11:321505] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e11:321505] [ 1] [cn-e11:321504] [ 0] /lib64/libc.so.6(gsignal+0x10f)[0x155551fd15af]
+[cn-e11:321505] [ 2] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e11:321504] [ 1] /lib64/libc.so.6(abort+0x127)[0x155551fa4ee5]
+[cn-e11:321505] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1f7e6c9]
+[cn-e11:321505] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1f9ec7c]
+[cn-e11:321505] [ 5] /lib64/libc.so.6(gsignal+0x10f)[0x155551fd15af]
+[cn-e11:321504] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x9b52f7]
+[cn-e11:321505] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c5a075]
+[cn-e11:321505] [ 7] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c72985]
+[cn-e11:321505] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c77135]
+[cn-e11:321505] [ 9] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c7f845]
+[cn-e11:321505] [10] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x157920c]
+[cn-e11:321505] /lib64/libc.so.6(abort+0x127)[0x155551fa4ee5]
+[cn-e11:321504] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1f7e6c9]
+[cn-e11:321504] [11] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x12c7503]
+[cn-e11:321505] [12] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x53e0fd]
+[cn-e11:321505] [13] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1f9ec7c]
+[cn-e11:321504] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x9b52f7]
+[cn-e11:321504] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4bbde1]
+[cn-e11:321505] [14] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4bc786]
+[cn-e11:321505] [15] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4a446d]
+/scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c5a075]
+[cn-e11:321504] [ 7] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c72985]
+[cn-e11:321504] [ 8] [cn-e11:321505] [16] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c77135]
+[cn-e11:321504] [ 9] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x1c7f845]
+[cn-e11:321504] [10] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x157920c]
+[cn-e11:321504] [11] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x12c7503]
+[cn-e11:321504] [12] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x53e0fd]
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e11:321505] [17] [cn-e11:321504] [13] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4bbde1]
+[cn-e11:321504] [14] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4bc786]
+[cn-e11:321504] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4af2ce]
+[cn-e11:321505] *** End of error message ***
+[15] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4a446d]
+[cn-e11:321504] [16] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e11:321504] [17] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_fix-1/build/lmp[0x4af2ce]
+[cn-e11:321504] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 321505 on node cn-e11 exited on signal 6 (Aborted).
+--------------------------------------------------------------------------
+[cn-e11.hpc.engr.oregonstate.edu:321500] 1 more process has sent help message help-mpi-common-cuda.txt / dlopen failed
+[cn-e11.hpc.engr.oregonstate.edu:321500] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+', 'walltime': '-1' } }
+{ 'in.nb3b.screened': { 'folder': 'examples/nb3b', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '25.0', 'walltime_norm': '12.5' } }
+{ 'in.wall.block': { 'folder': 'examples/wall', 'status': 'failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).', 'walltime': '-1' } }
+{ 'in.wall.diffusive': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.wall.flow': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.wall.specular': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.wall.sphere': { 'folder': 'examples/wall', 'status': 'failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).', 'walltime': '-1' } }
+{ 'in.kim-ex.melt': { 'folder': 'examples/kim', 'status': 'failed, unknown command, package not installed, ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)', 'walltime': '-1' } }
+{ 'in.kim-pm-query.melt': { 'folder': 'examples/kim', 'status': 'failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)', 'walltime': '-1' } }
+{ 'in.grid.2d': { 'folder': 'examples/grid', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.cubes': { 'folder': 'examples/body', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_box.amoeba': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_box.hippo': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.flow.couette': { 'folder': 'examples/flow', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.mos2-bulk': { 'folder': 'examples/threebody', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.tmpl-data-mix': { 'folder': 'examples/template', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.min.box': { 'folder': 'examples/min', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '6.0', 'walltime_norm': '3.0' } }
+{ 'in.msst': { 'folder': 'examples/msst', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'msst' is part of the SHOCK package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.reaxff.rdx': { 'folder': 'examples/reaxff', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.reaxff.rdx-shielded': { 'folder': 'examples/reaxff', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.indent': { 'folder': 'examples/indent', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6'  }, 'walltime': '11.0', 'walltime_norm': '5.5' } }
+{ 'in.hugoniostat': { 'folder': 'examples/hugoniostat', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'nphug' is part of the SHOCK package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.micelle': { 'folder': 'examples/micelle', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }

@@ -1,0 +1,754 @@
+[2026-01-12 17:22:47] [*] START idx=5 host=cn-e14.hpc.engr.oregonstate.edu
+[2026-01-12 17:22:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 17:22:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 17:22:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-5.log
+
+[2026-01-12 17:22:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_5
+[2026-01-12 17:23:31] [*] Create venv + deps
+[2026-01-12 17:23:43] [*] ccache reset
+[2026-01-12 17:23:43] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_5/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 17:23:45] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 17:23:48] [*] RUN idx=5 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-5.txt
+
+There are 96 input scripts listed in input-list-5.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_5/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_5
+--------------------------------------------------------------------------------
+Entering examples/colloid
+1 input script(s) to be tested: ['in.colloid']
+   + in.colloid (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/comb
+6 input script(s) to be tested: ['in.comb.Cu', 'in.comb.Cu2O.elastic', 'in.comb.HfO2', 'in.comb.Si', 'in.comb.Si.elastic', 'in.comb3']
+   + in.comb.Cu (1/6)
+     all 10 checks passed.
+   + in.comb.Cu2O.elastic (2/6)
+     all 24 checks passed.
+   + in.comb.HfO2 (3/6)
+     all 40 checks passed.
+   + in.comb.Si (4/6)
+     all 10 checks passed.
+   + in.comb.Si.elastic (5/6)
+     all 16 checks passed.
+   + in.comb3 (6/6)
+     all 10 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/controller
+2 input script(s) to be tested: ['in.controller.temp', 'in.controller.wall']
+   + in.controller.temp (1/2)
+     all 12 checks passed.
+   + in.controller.wall (2/2)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/coreshell
+4 input script(s) to be tested: ['in.coreshell', 'in.coreshell.dsf', 'in.coreshell.thermostats', 'in.coreshell.wolf']
+   + in.coreshell (1/4)
+     8 abs diff checks failed.
+     9 rel diff checks failed.
+   + in.coreshell.dsf (2/4)
+     7 abs diff checks failed.
+     8 rel diff checks failed.
+   + in.coreshell.thermostats (3/4)
+     13 abs diff checks failed.
+     14 rel diff checks failed.
+   + in.coreshell.wolf (4/4)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/crack
+1 input script(s) to be tested: ['in.crack']
+   + in.crack (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/deposit
+6 input script(s) to be tested: ['in.deposit.atom', 'in.deposit.molecule', 'in.deposit.molecule.rigid-nve-small', 'in.deposit.molecule.rigid-nvt-small', 'in.deposit.molecule.rigid-small', 'in.deposit.molecule.shake']
+   + in.deposit.atom (1/6)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.deposit.molecule (2/6)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.deposit.molecule.rigid-nve-small (3/6)
+     all 6 checks passed.
+   + in.deposit.molecule.rigid-nvt-small (4/6)
+     all 6 checks passed.
+   + in.deposit.molecule.rigid-small (5/6)
+     all 6 checks passed.
+   + in.deposit.molecule.shake (6/6)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/dipole
+1 input script(s) to be tested: ['in.dipole']
+   + in.dipole (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/dreiding
+1 input script(s) to be tested: ['in.dreiding']
+   + in.dreiding (1/1)
+    Error parsing log.dreiding.1 at line 3, column 13.
+--------------------------------------------------------------------------------
+Entering examples/eim
+1 input script(s) to be tested: ['in.eim']
+   + in.eim (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/ellipse
+2 input script(s) to be tested: ['in.ellipse.gayberne', 'in.ellipse.resquared']
+   + in.ellipse.gayberne (1/2)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.ellipse.resquared (2/2)
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/fire
+12 input script(s) to be tested: ['in.abcfire', 'in.abcfire_mod', 'in.cg', 'in.fire', 'in.fire_mod', 'in.meam.abcfire', 'in.meam.fire', 'in.neb.sivac.abcfire', 'in.neb.sivac.abcfire_mod', 'in.neb.sivac.fire', 'in.neb.sivac.fire_mod', 'in.neb.sivac.qm']
+   + in.abcfire (1/12)
+     all 12 checks passed.
+   + in.abcfire_mod (2/12)
+     all 12 checks passed.
+   + in.cg (3/12)
+     all 12 checks passed.
+   + in.fire (4/12)
+     all 12 checks passed.
+   + in.fire_mod (5/12)
+     all 12 checks passed.
+   + in.meam.abcfire (6/12)
+     all 8 checks passed.
+   + in.meam.fire (7/12)
+     all 8 checks passed.
+   + in.neb.sivac.abcfire (8/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.abcfire_mod (9/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.fire (10/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.fire_mod (11/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.qm (12/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+--------------------------------------------------------------------------------
+Entering examples/flow
+2 input script(s) to be tested: ['in.flow.couette', 'in.flow.pois']
+   + in.flow.couette (1/2)
+     all 6 checks passed.
+   + in.flow.pois (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/friction
+1 input script(s) to be tested: ['in.friction']
+   + in.friction (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/gjf
+2 input script(s) to be tested: ['in.gjf.vfull', 'in.gjf.vhalf']
+   + in.gjf.vfull (1/2)
+     all 12 checks passed.
+   + in.gjf.vhalf (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/granregion
+3 input script(s) to be tested: ['in.granregion.box', 'in.granregion.funnel', 'in.granregion.mixer']
+   + in.granregion.box (1/3)
+     all 20 checks passed.
+   + in.granregion.funnel (2/3)
+     all 0 checks passed.
+   + in.granregion.mixer (3/3)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/granular
+7 input script(s) to be tested: ['in.pour.drum', 'in.pour.flatwall', 'in.pour.heat', 'in.restitution', 'in.sync_verlet', 'in.tableting.200', 'in.triaxial.compaction.12']
+   + in.pour.drum (1/7)
+     all 0 checks passed.
+   + in.pour.flatwall (2/7)
+     all 0 checks passed.
+   + in.pour.heat (3/7)
+     all 0 checks passed.
+   + in.restitution (4/7)
+     all 0 checks passed.
+   + in.sync_verlet (5/7)
+     all 0 checks passed.
+   + in.tableting.200 (6/7)
+     all 0 checks passed.
+   + in.triaxial.compaction.12 (7/7)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/grid
+3 input script(s) to be tested: ['in.grid.2d', 'in.grid.3d', 'in.sph']
+   + in.grid.2d (1/3)
+     all 6 checks passed.
+   + in.grid.3d (2/3)
+     all 6 checks passed.
+   + in.sph (3/3)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/hugoniostat
+1 input script(s) to be tested: ['in.hugoniostat']
+   + in.hugoniostat (1/1)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/hyper
+2 input script(s) to be tested: ['in.hyper.global', 'in.hyper.local']
+   + in.hyper.global (1/2)
+       failed, cannot find the reference log file for in.hyper.global with the expected format log.[date].hyper.global.*.[nprocs]
+   + in.hyper.local (2/2)
+       failed, cannot find the reference log file for in.hyper.local with the expected format log.[date].hyper.local.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/indent
+2 input script(s) to be tested: ['in.indent', 'in.indent.min']
+   + in.indent (1/2)
+     all 12 checks passed.
+   + in.indent.min (2/2)
+     all 42 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/kim
+7 input script(s) to be tested: ['in.kim-ex.melt', 'in.kim-pm-property', 'in.kim-pm-query.melt', 'in.kim-pm.melt', 'in.kim-query', 'in.kim-sm.melt', 'in.lammps.melt']
+   + in.kim-ex.melt (1/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)
+   + in.kim-pm-property (2/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim init LJ_Shifted_Bernardes_1958MedCutoff_Ar__MO_126566794224_004 metal (src/input.cpp:316)
+   + in.kim-pm-query.melt (3/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)
+   + in.kim-pm.melt (4/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)
+   + in.kim-query (5/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim   init EAM_Dynamo_ErcolessiAdams_1994_Al__MO_123629422045_005 metal (src/input.cpp:316)
+   + in.kim-sm.melt (6/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real (src/input.cpp:316)
+   + in.lammps.melt (7/7)
+       failed, cannot find the reference log file for in.lammps.melt with the expected format log.[date].lammps.melt.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/mc
+10 input script(s) to be tested: ['in.gcmc.co2', 'in.gcmc.h2o', 'in.gcmc.lj', 'in.hmc.flexible.melt', 'in.hmc.rigid', 'in.mixed', 'in.pure', 'in.sgcmc.eam', 'in.widom.lj', 'in.widom.spce']
+   + in.gcmc.co2 (1/10)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.gcmc.h2o (2/10)
+     8 abs diff checks failed.
+     8 rel diff checks failed.
+   + in.gcmc.lj (3/10)
+     all 6 checks passed.
+   + in.hmc.flexible.melt (4/10)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.hmc.rigid (5/10)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+   + in.mixed (6/10)
+       failed, cannot find the reference log file for in.mixed with the expected format log.[date].mixed.*.[nprocs]
+   + in.pure (7/10)
+       failed, cannot find the reference log file for in.pure with the expected format log.[date].pure.*.[nprocs]
+   + in.sgcmc.eam (8/10)
+     all 6 checks passed.
+   + in.widom.lj (9/10)
+     all 8 checks passed.
+   + in.widom.spce (10/10)
+     2 abs diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/mdi
+15 input script(s) to be tested: ['in.aimd.alone', 'in.aimd.driver', 'in.aimd.driver.plugin', 'in.aimd.engine', 'in.aimdpy.mm', 'in.aimdpy.qm', 'in.sequence.python', 'in.series.alone', 'in.series.driver', 'in.series.driver.plugin', 'in.series.engine', 'in.snapshot.alone', 'in.snapshot.driver', 'in.snapshot.driver.plugin', 'in.snapshot.engine']
+   + in.aimd.alone (1/15)
+       failed, cannot find the reference log file for in.aimd.alone with the expected format log.[date].aimd.alone.*.[nprocs]
+   + in.aimd.driver (2/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.aimd.driver.plugin (3/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.aimd.engine (4/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.aimdpy.mm (5/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.aimdpy.qm (6/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.sequence.python (7/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.series.alone (8/15)
+       failed, cannot find the reference log file for in.series.alone with the expected format log.[date].series.alone.*.[nprocs]
+   + in.series.driver (9/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             connect (src/input.cpp:316)
+   + in.series.driver.plugin (10/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.series.engine (11/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.snapshot.alone (12/15)
+       failed, cannot find the reference log file for in.snapshot.alone with the expected format log.[date].snapshot.alone.*.[nprocs]
+   + in.snapshot.driver (13/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.snapshot.driver.plugin (14/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.snapshot.engine (15/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+--------------------------------------------------------------------------------
+Entering examples/meam/msmeam
+1 input script(s) to be tested: ['in.msmeam']
+   + in.msmeam (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/meam
+2 input script(s) to be tested: ['in.meam', 'in.meam.shear']
+   + in.meam (1/2)
+     all 6 checks passed.
+   + in.meam.shear (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/melt
+1 input script(s) to be tested: ['in.melt']
+   + in.melt (1/1)
+     all 6 checks passed.
+
+Summary:
+  Total number of input scripts: 96
+  - Skipped  : 0
+  - Error    : 23
+     - timeout  : 0
+  - Completed: 73
+     - failed   : 24
+     - numerical tests passed: 48
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-5.yaml
+  - Running log with screen output: run-5.log
+  - Testing result in JUnit XML   : output-5.xml
+
+[2026-01-12 17:45:38] [DONE] idx=5 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_5.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-5.tar
+[2026-01-12 18:07:47] [*] START idx=5 host=cn-e31.hpc.engr.oregonstate.edu
+[2026-01-12 18:07:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:07:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:07:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-5.log
+
+[2026-01-12 18:07:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_5
+[2026-01-12 18:09:03] [*] Create venv + deps
+[2026-01-12 18:09:14] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:09:14] [*] ccache reset
+[2026-01-12 18:09:14] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_5/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: local: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: local: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: start_arr[$i]: unbound variable
+[2026-01-12 18:13:47] [*] START idx=5 host=cn-e14.hpc.engr.oregonstate.edu
+[2026-01-12 18:13:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:13:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:13:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-5.log
+
+[2026-01-12 18:13:50] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_5
+[2026-01-12 18:14:31] [*] Create venv + deps
+[2026-01-12 18:14:42] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:14:42] [*] ccache reset
+[2026-01-12 18:14:42] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_5/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 18:14:44] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 18:14:48] [*] RUN idx=5 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-5.txt
+
+There are 96 input scripts listed in input-list-5.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_5/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_5
+--------------------------------------------------------------------------------
+Entering examples/colloid
+1 input script(s) to be tested: ['in.colloid']
+   + in.colloid (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/comb
+6 input script(s) to be tested: ['in.comb.Cu', 'in.comb.Cu2O.elastic', 'in.comb.HfO2', 'in.comb.Si', 'in.comb.Si.elastic', 'in.comb3']
+   + in.comb.Cu (1/6)
+     all 10 checks passed.
+   + in.comb.Cu2O.elastic (2/6)
+     all 24 checks passed.
+   + in.comb.HfO2 (3/6)
+     all 40 checks passed.
+   + in.comb.Si (4/6)
+     all 10 checks passed.
+   + in.comb.Si.elastic (5/6)
+     all 16 checks passed.
+   + in.comb3 (6/6)
+     all 10 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/controller
+2 input script(s) to be tested: ['in.controller.temp', 'in.controller.wall']
+   + in.controller.temp (1/2)
+     all 12 checks passed.
+   + in.controller.wall (2/2)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/coreshell
+4 input script(s) to be tested: ['in.coreshell', 'in.coreshell.dsf', 'in.coreshell.thermostats', 'in.coreshell.wolf']
+   + in.coreshell (1/4)
+     8 abs diff checks failed.
+     9 rel diff checks failed.
+   + in.coreshell.dsf (2/4)
+     7 abs diff checks failed.
+     8 rel diff checks failed.
+   + in.coreshell.thermostats (3/4)
+     13 abs diff checks failed.
+     14 rel diff checks failed.
+   + in.coreshell.wolf (4/4)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/crack
+1 input script(s) to be tested: ['in.crack']
+   + in.crack (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/deposit
+6 input script(s) to be tested: ['in.deposit.atom', 'in.deposit.molecule', 'in.deposit.molecule.rigid-nve-small', 'in.deposit.molecule.rigid-nvt-small', 'in.deposit.molecule.rigid-small', 'in.deposit.molecule.shake']
+   + in.deposit.atom (1/6)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.deposit.molecule (2/6)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.deposit.molecule.rigid-nve-small (3/6)
+     all 6 checks passed.
+   + in.deposit.molecule.rigid-nvt-small (4/6)
+     all 6 checks passed.
+   + in.deposit.molecule.rigid-small (5/6)
+     all 6 checks passed.
+   + in.deposit.molecule.shake (6/6)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/dipole
+1 input script(s) to be tested: ['in.dipole']
+   + in.dipole (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/dreiding
+1 input script(s) to be tested: ['in.dreiding']
+   + in.dreiding (1/1)
+    Error parsing log.dreiding.1 at line 3, column 13.
+--------------------------------------------------------------------------------
+Entering examples/eim
+1 input script(s) to be tested: ['in.eim']
+   + in.eim (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/ellipse
+2 input script(s) to be tested: ['in.ellipse.gayberne', 'in.ellipse.resquared']
+   + in.ellipse.gayberne (1/2)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.ellipse.resquared (2/2)
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/fire
+12 input script(s) to be tested: ['in.abcfire', 'in.abcfire_mod', 'in.cg', 'in.fire', 'in.fire_mod', 'in.meam.abcfire', 'in.meam.fire', 'in.neb.sivac.abcfire', 'in.neb.sivac.abcfire_mod', 'in.neb.sivac.fire', 'in.neb.sivac.fire_mod', 'in.neb.sivac.qm']
+   + in.abcfire (1/12)
+     all 12 checks passed.
+   + in.abcfire_mod (2/12)
+     all 12 checks passed.
+   + in.cg (3/12)
+     all 12 checks passed.
+   + in.fire (4/12)
+     all 12 checks passed.
+   + in.fire_mod (5/12)
+     all 12 checks passed.
+   + in.meam.abcfire (6/12)
+     all 8 checks passed.
+   + in.meam.fire (7/12)
+     all 8 checks passed.
+   + in.neb.sivac.abcfire (8/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.abcfire_mod (9/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.fire (10/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.fire_mod (11/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+   + in.neb.sivac.qm (12/12)
+failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142).
+--------------------------------------------------------------------------------
+Entering examples/flow
+2 input script(s) to be tested: ['in.flow.couette', 'in.flow.pois']
+   + in.flow.couette (1/2)
+     all 6 checks passed.
+   + in.flow.pois (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/friction
+1 input script(s) to be tested: ['in.friction']
+   + in.friction (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/gjf
+2 input script(s) to be tested: ['in.gjf.vfull', 'in.gjf.vhalf']
+   + in.gjf.vfull (1/2)
+     all 12 checks passed.
+   + in.gjf.vhalf (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/granregion
+3 input script(s) to be tested: ['in.granregion.box', 'in.granregion.funnel', 'in.granregion.mixer']
+   + in.granregion.box (1/3)
+     all 20 checks passed.
+   + in.granregion.funnel (2/3)
+     all 0 checks passed.
+   + in.granregion.mixer (3/3)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/granular
+7 input script(s) to be tested: ['in.pour.drum', 'in.pour.flatwall', 'in.pour.heat', 'in.restitution', 'in.sync_verlet', 'in.tableting.200', 'in.triaxial.compaction.12']
+   + in.pour.drum (1/7)
+     all 0 checks passed.
+   + in.pour.flatwall (2/7)
+     all 0 checks passed.
+   + in.pour.heat (3/7)
+     all 0 checks passed.
+   + in.restitution (4/7)
+     all 0 checks passed.
+   + in.sync_verlet (5/7)
+     all 0 checks passed.
+   + in.tableting.200 (6/7)
+     all 0 checks passed.
+   + in.triaxial.compaction.12 (7/7)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/grid
+3 input script(s) to be tested: ['in.grid.2d', 'in.grid.3d', 'in.sph']
+   + in.grid.2d (1/3)
+     all 6 checks passed.
+   + in.grid.3d (2/3)
+     all 6 checks passed.
+   + in.sph (3/3)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/hugoniostat
+1 input script(s) to be tested: ['in.hugoniostat']
+   + in.hugoniostat (1/1)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/hyper
+2 input script(s) to be tested: ['in.hyper.global', 'in.hyper.local']
+   + in.hyper.global (1/2)
+       failed, cannot find the reference log file for in.hyper.global with the expected format log.[date].hyper.global.*.[nprocs]
+   + in.hyper.local (2/2)
+       failed, cannot find the reference log file for in.hyper.local with the expected format log.[date].hyper.local.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/indent
+2 input script(s) to be tested: ['in.indent', 'in.indent.min']
+   + in.indent (1/2)
+     all 12 checks passed.
+   + in.indent.min (2/2)
+     all 42 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/kim
+7 input script(s) to be tested: ['in.kim-ex.melt', 'in.kim-pm-property', 'in.kim-pm-query.melt', 'in.kim-pm.melt', 'in.kim-query', 'in.kim-sm.melt', 'in.lammps.melt']
+   + in.kim-ex.melt (1/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)
+   + in.kim-pm-property (2/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim init LJ_Shifted_Bernardes_1958MedCutoff_Ar__MO_126566794224_004 metal (src/input.cpp:316)
+   + in.kim-pm-query.melt (3/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)
+   + in.kim-pm.melt (4/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)
+   + in.kim-query (5/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim   init EAM_Dynamo_ErcolessiAdams_1994_Al__MO_123629422045_005 metal (src/input.cpp:316)
+   + in.kim-sm.melt (6/7)
+failed, unknown command, package not installed, ERROR: Unknown command: kim          init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real (src/input.cpp:316)
+   + in.lammps.melt (7/7)
+       failed, cannot find the reference log file for in.lammps.melt with the expected format log.[date].lammps.melt.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/mc
+10 input script(s) to be tested: ['in.gcmc.co2', 'in.gcmc.h2o', 'in.gcmc.lj', 'in.hmc.flexible.melt', 'in.hmc.rigid', 'in.mixed', 'in.pure', 'in.sgcmc.eam', 'in.widom.lj', 'in.widom.spce']
+   + in.gcmc.co2 (1/10)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.gcmc.h2o (2/10)
+     8 abs diff checks failed.
+     8 rel diff checks failed.
+   + in.gcmc.lj (3/10)
+     all 6 checks passed.
+   + in.hmc.flexible.melt (4/10)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.hmc.rigid (5/10)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+   + in.mixed (6/10)
+       failed, cannot find the reference log file for in.mixed with the expected format log.[date].mixed.*.[nprocs]
+   + in.pure (7/10)
+       failed, cannot find the reference log file for in.pure with the expected format log.[date].pure.*.[nprocs]
+   + in.sgcmc.eam (8/10)
+     all 6 checks passed.
+   + in.widom.lj (9/10)
+     all 8 checks passed.
+   + in.widom.spce (10/10)
+     2 abs diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/mdi
+15 input script(s) to be tested: ['in.aimd.alone', 'in.aimd.driver', 'in.aimd.driver.plugin', 'in.aimd.engine', 'in.aimdpy.mm', 'in.aimdpy.qm', 'in.sequence.python', 'in.series.alone', 'in.series.driver', 'in.series.driver.plugin', 'in.series.engine', 'in.snapshot.alone', 'in.snapshot.driver', 'in.snapshot.driver.plugin', 'in.snapshot.engine']
+   + in.aimd.alone (1/15)
+       failed, cannot find the reference log file for in.aimd.alone with the expected format log.[date].aimd.alone.*.[nprocs]
+   + in.aimd.driver (2/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.aimd.driver.plugin (3/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.aimd.engine (4/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.aimdpy.mm (5/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.aimdpy.qm (6/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.sequence.python (7/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.series.alone (8/15)
+       failed, cannot find the reference log file for in.series.alone with the expected format log.[date].series.alone.*.[nprocs]
+   + in.series.driver (9/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             connect (src/input.cpp:316)
+   + in.series.driver.plugin (10/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.series.engine (11/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+   + in.snapshot.alone (12/15)
+       failed, cannot find the reference log file for in.snapshot.alone with the expected format log.[date].snapshot.alone.*.[nprocs]
+   + in.snapshot.driver (13/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.snapshot.driver.plugin (14/15)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary.
+   + in.snapshot.engine (15/15)
+failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)
+--------------------------------------------------------------------------------
+Entering examples/meam/msmeam
+1 input script(s) to be tested: ['in.msmeam']
+   + in.msmeam (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/meam
+2 input script(s) to be tested: ['in.meam', 'in.meam.shear']
+   + in.meam (1/2)
+     all 6 checks passed.
+   + in.meam.shear (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/melt
+1 input script(s) to be tested: ['in.melt']
+   + in.melt (1/1)
+     all 6 checks passed.
+
+Summary:
+  Total number of input scripts: 96
+  - Skipped  : 0
+  - Error    : 23
+     - timeout  : 0
+  - Completed: 73
+     - failed   : 24
+     - numerical tests passed: 48
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-5.yaml
+  - Running log with screen output: run-5.log
+  - Testing result in JUnit XML   : output-5.xml
+
+[2026-01-12 18:36:38] [DONE] idx=5 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_5.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-5.tar

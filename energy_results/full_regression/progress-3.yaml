@@ -1,0 +1,131 @@
+{ 'in.hkust1': { 'folder': 'examples/PACKAGES/mofff', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.hkust1_long': { 'folder': 'examples/PACKAGES/mofff', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.system': { 'folder': 'examples/PACKAGES/momb', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '16.0', 'walltime_norm': '2.2857142857142856' } }
+{ 'in.converge': { 'folder': 'examples/PACKAGES/moments', 'status': 'failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).', 'walltime': '-1' } }
+{ 'in.simple': { 'folder': 'examples/PACKAGES/moments', 'status': 'failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).', 'walltime': '-1' } }
+{ 'in.valtest': { 'folder': 'examples/PACKAGES/moments', 'status': 'failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).', 'walltime': '-1' } }
+{ 'in.momentum': { 'folder': 'examples/PACKAGES/momentum', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '53.0', 'walltime_norm': '7.571428571428571' } }
+{ 'in.compute_stress_mop': { 'folder': 'examples/PACKAGES/mop', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.KMC_pulse_center': { 'folder': 'examples/PACKAGES/neighbor-swap', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '64.0', 'walltime_norm': '9.142857142857142' } }
+{ 'in.KMC_pulse_edge': { 'folder': 'examples/PACKAGES/neighbor-swap', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '64.0', 'walltime_norm': '9.142857142857142' } }
+{ 'in.orient_eco': { 'folder': 'examples/PACKAGES/orient_eco', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '161.0', 'walltime_norm': '23.0' } }
+{ 'in.compute': { 'folder': 'examples/PACKAGES/pace/compute', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.pace.product': { 'folder': 'examples/PACKAGES/pace', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '14.0', 'walltime_norm': '2.0' } }
+{ 'in.pace.recursive': { 'folder': 'examples/PACKAGES/pace', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '10.0', 'walltime_norm': '1.4285714285714286' } }
+{ 'in.pafi': { 'folder': 'examples/PACKAGES/pafi', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '6.0', 'walltime_norm': '0.8571428571428571' } }
+{ 'in.pedone.melt': { 'folder': 'examples/PACKAGES/pedone', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '17.0', 'walltime_norm': '2.4285714285714284' } }
+{ 'in.pedone.relax': { 'folder': 'examples/PACKAGES/pedone', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '25.0', 'walltime_norm': '3.5714285714285716' } }
+{ 'in.Ana': { 'folder': 'examples/PACKAGES/phonon/1-1D-mono', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '10.0', 'walltime_norm': '1.4285714285714286' } }
+{ 'in.disp': { 'folder': 'examples/PACKAGES/phonon/1-1D-mono', 'status': 'skipped', 'walltime': '-2' } }
+{ 'in.Ana': { 'folder': 'examples/PACKAGES/phonon/2-1D-diatomic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '21.0', 'walltime_norm': '3.0' } }
+{ 'in.disp': { 'folder': 'examples/PACKAGES/phonon/2-1D-diatomic', 'status': 'skipped', 'walltime': '-2' } }
+{ 'in.EAM3D': { 'folder': 'examples/PACKAGES/phonon/3-3D-FCC-Cu-EAM', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.disp': { 'folder': 'examples/PACKAGES/phonon/3-3D-FCC-Cu-EAM', 'status': 'skipped', 'walltime': '-2' } }
+{ 'in.disp2': { 'folder': 'examples/PACKAGES/phonon/3-3D-FCC-Cu-EAM', 'status': 'skipped', 'walltime': '-2' } }
+{ 'in.dos': { 'folder': 'examples/PACKAGES/phonon/3-3D-FCC-Cu-EAM', 'status': 'skipped', 'walltime': '-2' } }
+{ 'in.disp': { 'folder': 'examples/PACKAGES/phonon/4-Graphene', 'status': 'skipped', 'walltime': '-2' } }
+{ 'in.graphene': { 'folder': 'examples/PACKAGES/phonon/4-Graphene', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.silicon': { 'folder': 'examples/PACKAGES/phonon/dynamical_matrix_command/Silicon', 'status': 'completed, but no Step nor Loop in the output.', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.langevin.metal': { 'folder': 'examples/PACKAGES/pimd/langevin_metal_units', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.pimd-langevin.metal': { 'folder': 'examples/PACKAGES/pimd/langevin_metal_units', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.lmp': { 'folder': 'examples/PACKAGES/pimd/langevin_reduced_units', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.lmp': { 'folder': 'examples/PACKAGES/pimd/langevin_reduced_units_group', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.scp': { 'folder': 'examples/PACKAGES/pimd/para-h2', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '9.0', 'walltime_norm': '1.2857142857142858' } }
+{ 'in.scp': { 'folder': 'examples/PACKAGES/pimd/prot-hairpin', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '18.0', 'walltime_norm': '2.5714285714285716' } }
+{ 'in.lmp': { 'folder': 'examples/PACKAGES/pimd_bosonic/harmonic_trap_langevin', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.lmp': { 'folder': 'examples/PACKAGES/pimd_bosonic/harmonic_trap_nvt', 'status': 'failed, no Total wall time in the output, --------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            cn-e12
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+[cn-e12:333751] *** Process received signal ***
+[cn-e12:333751] Signal: Segmentation fault (11)
+[cn-e12:333751] Signal code:  (128)
+[cn-e12:333751] Failing at address: (nil)
+[cn-e12:333751] [ 0] /lib64/libpthread.so.0(+0x12990)[0x15555383a990]
+[cn-e12:333751] [ 1] /lib64/libc.so.6(+0x96c60)[0x15554fa72c60]
+[cn-e12:333751] [ 2] /lib64/libc.so.6(__libc_mallinfo+0x9c)[0x15554fa789bc]
+[cn-e12:333751] [ 3] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_ZN9LAMMPS_NS4Info15get_memory_infoEPd+0x134)[0x1127f34]
+[cn-e12:333751] [ 4] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_ZN9LAMMPS_NS6Output12memory_usageEv+0x158)[0x90e2d8]
+[cn-e12:333751] [ 5] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_ZN9LAMMPS_NS6Output5setupEi+0x535)[0x90e9f5]
+[cn-e12:333751] [ 6] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_ZN9LAMMPS_NS6Verlet5setupEi+0x355)[0x9e1d85]
+[cn-e12:333751] [ 7] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_ZN9LAMMPS_NS3Run7commandEiPPc+0xb0b)[0x95f51b]
+[cn-e12:333751] [ 8] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_ZN9LAMMPS_NS5Input15execute_commandEv+0x70f)[0x81ac4f]
+[cn-e12:333751] [ 9] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_ZN9LAMMPS_NS5Input4fileEv+0x176)[0x81b3a6]
+[cn-e12:333751] [10] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(main+0x4d)[0x808b7d]
+[cn-e12:333751] [11] /lib64/libc.so.6(__libc_start_main+0xe5)[0x15554fa16865]
+[cn-e12:333751] [12] /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp(_start+0x2e)[0x80dafe]
+[cn-e12:333751] *** End of error message ***
+', 'walltime': '-1' } }
+{ 'in.peptide-plumed': { 'folder': 'examples/PACKAGES/plumed', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'plumed' is part of the PLUMED package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.fitpod': { 'folder': 'examples/PACKAGES/pod/InP', 'status': 'failed, ERROR: Cannot fit potential without data files. The data paths may not be valid. Please check the data paths in the POD data file. (src/ML-POD/fitpod_command.cpp:717).', 'walltime': '-1' } }
+{ 'in.pod': { 'folder': 'examples/PACKAGES/pod/InP', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '0.5714285714285714' } }
+{ 'in.fitpod': { 'folder': 'examples/PACKAGES/pod/Ta', 'status': 'completed, but no Step nor Loop in the output.', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.pod': { 'folder': 'examples/PACKAGES/pod/Ta', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.pod.compute': { 'folder': 'examples/PACKAGES/pod/Ta', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.ptm': { 'folder': 'examples/PACKAGES/ptm', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.alpha_quartz_qbmsst': { 'folder': 'examples/PACKAGES/qtb/alpha_quartz_qbmsst', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '4'  }, 'walltime': '61.0', 'walltime_norm': '8.714285714285714' } }
+{ 'in.alpha_quartz_qtb': { 'folder': 'examples/PACKAGES/qtb/alpha_quartz_qtb', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '15.0', 'walltime_norm': '2.142857142857143' } }
+{ 'in.methane_qbmsst': { 'folder': 'examples/PACKAGES/qtb/methane_qbmsst', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.methane_qtb': { 'folder': 'examples/PACKAGES/qtb/methane_qtb', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2'  }, 'walltime': '14.0', 'walltime_norm': '2.0' } }
+{ 'in.gap': { 'folder': 'examples/PACKAGES/quip', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.molecular': { 'folder': 'examples/PACKAGES/quip', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.sw': { 'folder': 'examples/PACKAGES/quip', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.rann': { 'folder': 'examples/PACKAGES/rann', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '9.0', 'walltime_norm': '1.2857142857142858' } }
+{ 'in.grow_styrene': { 'folder': 'examples/PACKAGES/reaction/create_atoms_polystyrene', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '8.0', 'walltime_norm': '1.1428571428571428' } }
+{ 'in.large_nylon_melt': { 'folder': 'examples/PACKAGES/reaction/nylon,6-6_melt', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '77.0', 'walltime_norm': '11.0' } }
+{ 'in.tiny_epoxy.stabilized': { 'folder': 'examples/PACKAGES/reaction/tiny_epoxy', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.tiny_nylon.stabilized': { 'folder': 'examples/PACKAGES/reaction/tiny_nylon', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '3.0', 'walltime_norm': '0.42857142857142855' } }
+{ 'in.tiny_nylon.stabilized_variable_probability': { 'folder': 'examples/PACKAGES/reaction/tiny_nylon', 'status': 'failed, ERROR: Fix bond/react: Variable name prob1 does not exist (src/REACTION/fix_bond_react.cpp:3985).', 'walltime': '-1' } }
+{ 'in.tiny_nylon.unstabilized': { 'folder': 'examples/PACKAGES/reaction/tiny_nylon', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.tiny_nylon.stabilized': { 'folder': 'examples/PACKAGES/reaction/tiny_nylon_json', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '3.0', 'walltime_norm': '0.42857142857142855' } }
+{ 'in.tiny_polystyrene.stabilized': { 'folder': 'examples/PACKAGES/reaction/tiny_polystyrene', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '23.0', 'walltime_norm': '3.2857142857142856' } }
+{ 'in.crystal': { 'folder': 'examples/PACKAGES/rhok', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '27.0', 'walltime_norm': '3.857142857142857' } }
+{ 'in.pinning': { 'folder': 'examples/PACKAGES/rhok', 'status': 'failed, ERROR: Cannot open file data.halfhalf: No such file or directory (src/read_data.cpp:380).', 'walltime': '-1' } }
+{ 'in.setup': { 'folder': 'examples/PACKAGES/rhok', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '20.0', 'walltime_norm': '2.857142857142857' } }
+{ 'in.scafacos': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.cw.ewald': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.cw.fmm': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.cw.p2nfft': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.cw.p3m': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.ewald': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.fmm': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.hsph.direct': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.hsph.fmm': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.hsph.p2nfft': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.p2nfft': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.scafacos.p3m': { 'folder': 'examples/PACKAGES/scafacos', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.slater': { 'folder': 'examples/PACKAGES/slater', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.smatbAgCuPancake': { 'folder': 'examples/PACKAGES/smtbq', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.smatbBulkFCC': { 'folder': 'examples/PACKAGES/smtbq', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.smtbq.Al': { 'folder': 'examples/PACKAGES/smtbq', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '4.0', 'walltime_norm': '0.5714285714285714' } }
+{ 'in.smtbq.Al2O3': { 'folder': 'examples/PACKAGES/smtbq', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.smtbq.TiO2': { 'folder': 'examples/PACKAGES/smtbq', 'status': 'failed, no Total wall time in the output, timeout (180s expired)', 'walltime': '-1' } }
+{ 'in.slcsa': { 'folder': 'examples/PACKAGES/sna_nnn_slcsa', 'status': 'failed, ERROR: Invalid compute slcsa/atom argument: slcsa (src/EXTRA-COMPUTE/compute_slcsa_atom.cpp:115).', 'walltime': '-1' } }
+{ 'in.srp': { 'folder': 'examples/PACKAGES/srp', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '9.0', 'walltime_norm': '1.2857142857142858' } }
+{ 'in.srp_react': { 'folder': 'examples/PACKAGES/srp_react', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '96.0', 'walltime_norm': '13.714285714285714' } }
+{ 'in.cylinder': { 'folder': 'examples/PACKAGES/stressprofile', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '6.0', 'walltime_norm': '0.8571428571428571' } }
+{ 'in.flat': { 'folder': 'examples/PACKAGES/stressprofile', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '3.0', 'walltime_norm': '0.42857142857142855' } }
+{ 'in.sphere': { 'folder': 'examples/PACKAGES/stressprofile', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '0.2857142857142857' } }
+{ 'in.force': { 'folder': 'examples/PACKAGES/tally', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '3.0', 'walltime_norm': '0.42857142857142855' } }
+{ 'in.pe': { 'folder': 'examples/PACKAGES/tally', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '3.0', 'walltime_norm': '0.42857142857142855' } }
+{ 'in.stress': { 'folder': 'examples/PACKAGES/tally', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '3.0', 'walltime_norm': '0.42857142857142855' } }
+{ 'in.temper_npt': { 'folder': 'examples/PACKAGES/temper_npt', 'status': 'failed, ERROR: World variable count 8 doesn't match # of partitions 1 (src/variable.cpp:259).', 'walltime': '-1' } }
+{ 'in.ti_spring': { 'folder': 'examples/PACKAGES/ti', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '3.0', 'walltime_norm': '0.42857142857142855' } }
+{ 'in.tmd': { 'folder': 'examples/PACKAGES/tmd', 'status': 'completed, error parsing log.tmd.1 into YAML', 'walltime': '4.0', 'walltime_norm': '0.5714285714285714' } }
+{ 'in.npt_biaxial': { 'folder': 'examples/PACKAGES/uef/npt_biaxial', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '0.5714285714285714' } }
+{ 'in.nvt_uniaxial': { 'folder': 'examples/PACKAGES/uef/nvt_uniaxial', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '5.0', 'walltime_norm': '0.7142857142857143' } }
+{ 'in.uf3.Nb': { 'folder': 'examples/PACKAGES/uf3', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.vtk': { 'folder': 'examples/PACKAGES/vtk', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized dump style 'vtk' is part of the VTK package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }

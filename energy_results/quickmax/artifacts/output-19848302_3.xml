@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="26" tests="41" time="0.0">
+	<testsuite disabled="0" errors="0" failures="26" name="tools/regression-tests/config_quick.yaml" skipped="9" tests="41" time="0" timestamp="2026-01-15 20:51:27.476143">
+		<testcase name="in.system" classname="in.system"/>
+		<testcase name="in.compute_stress_mop" classname="in.compute_stress_mop"/>
+		<testcase name="in.compute" classname="in.compute"/>
+		<testcase name="in.pace.product" classname="in.pace.product"/>
+		<testcase name="in.pace.recursive" classname="in.pace.recursive"/>
+		<testcase name="in.pedone.melt" classname="in.pedone.melt">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.pedone.relax" classname="in.pedone.relax">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.Ana" classname="in.Ana"/>
+		<testcase name="in.langevin.metal" classname="in.langevin.metal">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.pimd-langevin.metal" classname="in.pimd-langevin.metal">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.lmp" classname="in.lmp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.scp" classname="in.scp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.pod" classname="in.pod"/>
+		<testcase name="in.alpha_quartz_qtb" classname="in.alpha_quartz_qtb">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.methane_qtb" classname="in.methane_qtb">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.grow_styrene" classname="in.grow_styrene">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.tiny_epoxy.stabilized" classname="in.tiny_epoxy.stabilized">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.tiny_nylon.stabilized_variable_probability" classname="in.tiny_nylon.stabilized_variable_probability">
+			<failure type="failure" message="failed, ERROR: Fix bond/react: Variable name prob1 does not exist (src/REACTION/fix_bond_react.cpp:3985)."/>
+		</testcase>
+		<testcase name="in.tiny_nylon.unstabilized" classname="in.tiny_nylon.unstabilized">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.tiny_polystyrene.stabilized" classname="in.tiny_polystyrene.stabilized">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.crystal" classname="in.crystal">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.setup" classname="in.setup">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.smatbAgCuPancake" classname="in.smatbAgCuPancake">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.smatbBulkFCC" classname="in.smatbBulkFCC">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.smtbq.Al" classname="in.smtbq.Al">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.srp" classname="in.srp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.cylinder" classname="in.cylinder"/>
+		<testcase name="in.sphere" classname="in.sphere"/>
+		<testcase name="in.force" classname="in.force"/>
+		<testcase name="in.pe" classname="in.pe"/>
+		<testcase name="in.stress" classname="in.stress"/>
+		<testcase name="in.tmd" classname="in.tmd">
+			<failure type="failure" message="completed, error parsing log.tmd.1 into YAML"/>
+		</testcase>
+		<testcase name="in.npt_biaxial" classname="in.npt_biaxial"/>
+		<testcase name="in.nvt_uniaxial" classname="in.nvt_uniaxial"/>
+		<testcase name="in.uf3.Nb" classname="in.uf3.Nb">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.water.mm" classname="in.water.mm">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.zeolite.mm" classname="in.zeolite.mm">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.mixture.mm" classname="in.mixture.mm">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.spin.bfo" classname="in.spin.bfo">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.spin.cobalt_fcc" classname="in.spin.cobalt_fcc"/>
+		<testcase name="in.spin.cobalt_hcp" classname="in.spin.cobalt_hcp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+	</testsuite>
+</testsuites>

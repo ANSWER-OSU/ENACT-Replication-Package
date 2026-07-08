@@ -1,0 +1,2 @@
+runs_total,runs_ok,total_energy_all_tests_j,total_time_all_tests_s,n_tests_all,median_coverable_changed_lines,median_pareto_points
+1257,1257,188600.29600000003,5812.0916050000005,613,23.0,2.0

@@ -1,0 +1,941 @@
+INFO:__main__:
+There are 63 input scripts listed in ../energy_results/quickmax/lists/shards_19848304/shard-05.txt.
+INFO:__main__:     Executing for reference walltime: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/../bench/in.lj -v x 2 -v y 2 -v z 1 -cite none
+INFO:__main__:     Reference walltime, sec = 1.0
+INFO:__main__:Entering examples/coreshell
+INFO:__main__:   + in.coreshell (1/4)
+INFO:__main__:     Using 1 nprocs for in.coreshell as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.coreshell -cite none -log log.coreshell.1
+INFO:__main__:     Comparing thermo output from log.coreshell.1 against the reference log file log.14Jul25.coreshell.g++.1
+INFO:__main__:     8 abs diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (1.70e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (5.80e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.04e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.00e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (3.13e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (1.12e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (4.00e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (3.44e-01) > expected (1.00e-03)
+INFO:__main__:     9 rel diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (2.57e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Temp: actual (4.28e-06) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (1.04e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 0: E_vdwl: actual (6.14e-06) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (1.60e-06) > expected (1.00e-07)
+INFO:__main__:        - Run 1: PotEng: actual (4.73e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Temp: actual (8.43e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (2.75e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: E_vdwl: actual (7.75e-03) > expected (1.00e-07)
+INFO:__main__:   + in.coreshell.dsf (2/4)
+INFO:__main__:     Using 1 nprocs for in.coreshell.dsf as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.coreshell.dsf -cite none -log log.coreshell.dsf.1
+INFO:__main__:     Comparing thermo output from log.coreshell.dsf.1 against the reference log file log.14Jul25.coreshell.dsf.g++.1
+INFO:__main__:     7 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (5.00e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (4.01e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (5.38e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (1.92e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (6.72e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (4.62e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (1.44e+00) > expected (1.00e-03)
+INFO:__main__:     8 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (3.68e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (4.95e-05) > expected (1.00e-07)
+INFO:__main__:        - Run 0: E_vdwl: actual (1.98e-06) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (8.63e-05) > expected (1.00e-07)
+INFO:__main__:        - Run 1: PotEng: actual (2.91e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Temp: actual (5.11e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (3.84e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 1: E_vdwl: actual (3.03e-02) > expected (1.00e-07)
+INFO:__main__:   + in.coreshell.thermostats (3/4)
+INFO:__main__:     Using 1 nprocs for in.coreshell.thermostats as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.coreshell.thermostats -cite none -log log.coreshell.thermostats.1
+INFO:__main__:     Comparing thermo output from log.coreshell.thermostats.1 against the reference log file log.14Jul25.coreshell.thermostats.g++.1
+INFO:__main__:     13 abs diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (1.70e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (5.80e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.04e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (8.38e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (1.27e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (7.60e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.87e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (4.75e-01) > expected (1.00e-03)
+INFO:__main__:        - Run 2: TotEng: actual (6.20e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 2: PotEng: actual (6.39e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Temp: actual (6.77e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Press: actual (2.04e+03) > expected (1.00e-04)
+INFO:__main__:        - Run 2: E_vdwl: actual (4.75e+00) > expected (1.00e-03)
+INFO:__main__:     14 rel diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (2.57e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Temp: actual (4.28e-06) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (1.04e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 0: E_vdwl: actual (6.14e-06) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (1.37e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 1: PotEng: actual (1.94e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Temp: actual (4.93e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (1.70e+00) > expected (1.00e-07)
+INFO:__main__:        - Run 1: E_vdwl: actual (1.10e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 2: TotEng: actual (1.01e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 2: PotEng: actual (9.76e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 2: Temp: actual (4.71e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 2: Press: actual (1.53e+00) > expected (1.00e-07)
+INFO:__main__:        - Run 2: E_vdwl: actual (1.01e-01) > expected (1.00e-07)
+INFO:__main__:   + in.coreshell.wolf (4/4)
+INFO:__main__:     Using 1 nprocs for in.coreshell.wolf as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.coreshell.wolf -cite none -log log.coreshell.wolf.1
+INFO:__main__:     Timeout for: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.coreshell.wolf -cite none -log log.coreshell.wolf.1 (30s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.coreshell.wolf:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (30s expired)
+INFO:__main__:Entering examples/crack
+INFO:__main__:   + in.crack (1/1)
+INFO:__main__:     Using 1 nprocs for in.crack as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.crack -cite none -log log.crack.1
+INFO:__main__:     Comparing thermo output from log.crack.1 against the reference log file log.27Nov18.crack.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/deposit
+INFO:__main__:   + in.deposit.atom (1/6)
+INFO:__main__:     Using 1 nprocs for in.deposit.atom as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.deposit.atom -cite none -log log.deposit.atom.1
+INFO:__main__:     Comparing thermo output from log.deposit.atom.1 against the reference log file log.27Nov18.deposit.atom.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (5.94e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (9.07e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (5.21e-02) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (6.21e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: TotEng: actual (1.86e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (7.39e-02) > expected (1.00e-07)
+INFO:__main__:   + in.deposit.molecule (2/6)
+INFO:__main__:     Using 1 nprocs for in.deposit.molecule as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.deposit.molecule -cite none -log log.deposit.molecule.1
+INFO:__main__:     Comparing thermo output from log.deposit.molecule.1 against the reference log file log.27Nov18.deposit.molecule.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (3.63e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.05e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (9.08e-02) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.16e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 0: TotEng: actual (1.53e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (1.19e-01) > expected (1.00e-07)
+INFO:__main__:   + in.deposit.molecule.rigid-nve-small (3/6)
+INFO:__main__:     Using 1 nprocs for in.deposit.molecule.rigid-nve-small as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.deposit.molecule.rigid-nve-small -cite none -log log.deposit.molecule.rigid-nve-small.1
+INFO:__main__:     Comparing thermo output from log.deposit.molecule.rigid-nve-small.1 against the reference log file log.10Mar21.deposit.molecule.rigid-nve-small.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.deposit.molecule.rigid-nvt-small (4/6)
+INFO:__main__:     Using 1 nprocs for in.deposit.molecule.rigid-nvt-small as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.deposit.molecule.rigid-nvt-small -cite none -log log.deposit.molecule.rigid-nvt-small.1
+INFO:__main__:     Comparing thermo output from log.deposit.molecule.rigid-nvt-small.1 against the reference log file log.10Mar21.deposit.molecule.rigid-nvt-small.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.deposit.molecule.rigid-small (5/6)
+INFO:__main__:     Using 1 nprocs for in.deposit.molecule.rigid-small as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.deposit.molecule.rigid-small -cite none -log log.deposit.molecule.rigid-small.1
+INFO:__main__:     Comparing thermo output from log.deposit.molecule.rigid-small.1 against the reference log file log.10Mar21.deposit.molecule.rigid-small.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.deposit.molecule.shake (6/6)
+INFO:__main__:     Using 1 nprocs for in.deposit.molecule.shake as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.deposit.molecule.shake -cite none -log log.deposit.molecule.shake.1
+INFO:__main__:     Comparing thermo output from log.deposit.molecule.shake.1 against the reference log file log.27Nov18.deposit.molecule.shake.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (2.02e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (2.59e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.33e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (6.50e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: TotEng: actual (3.93e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (1.76e-01) > expected (1.00e-07)
+INFO:__main__:Entering examples/dipole
+INFO:__main__:   + in.dipole (1/1)
+INFO:__main__:     Using 1 nprocs for in.dipole as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.dipole -cite none -log log.dipole.1
+INFO:__main__:     Comparing thermo output from log.dipole.1 against the reference log file log.27Nov18.dipole.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/dreiding
+INFO:__main__:   + in.dreiding (1/1)
+INFO:__main__:     Using 1 nprocs for in.dreiding as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.dreiding -cite none -log log.dreiding.1
+INFO:__main__:    Error parsing log.dreiding.1 at line 3, column 13.
+INFO:__main__:---
+keywords: ['------------', 'Step', '0', '-----', 'CPU', '=', '0', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.723597, KinEng, =, 0.000000, Temp, =, 0.000000, ]
+ - [PotEng, =, 113.723597, E_bond, =, 0.535673, E_angle, =, 1.281880, ]
+ - [E_dihed, =, 1.232497, E_impro, =, 0.000000, E_vdwl, =, -125.381324, ]
+ - [E_coul, =, 597.219735, E_long, =, -361.164864, v_E_hbond, =, -69.322152, ]
+ - [v_C_hbond, =, 235.000000, Press, =, -328.847363, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '10', '-----', 'CPU', '=', '0.02662439', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.773204, KinEng, =, 1.537257, Temp, =, 1.346522, ]
+ - [PotEng, =, 112.235947, E_bond, =, 0.530880, E_angle, =, 1.407481, ]
+ - [E_dihed, =, 1.084172, E_impro, =, 0.000000, E_vdwl, =, -126.339883, ]
+ - [E_coul, =, 596.742308, E_long, =, -361.189011, v_E_hbond, =, -69.944278, ]
+ - [v_C_hbond, =, 240.000000, Press, =, -395.900478, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '20', '-----', 'CPU', '=', '0.05332253', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.879291, KinEng, =, 2.999580, Temp, =, 2.627407, ]
+ - [PotEng, =, 110.879711, E_bond, =, 0.549156, E_angle, =, 1.323582, ]
+ - [E_dihed, =, 1.357398, E_impro, =, 0.000000, E_vdwl, =, -127.482103, ]
+ - [E_coul, =, 596.318728, E_long, =, -361.187051, v_E_hbond, =, -70.088343, ]
+ - [v_C_hbond, =, 237.000000, Press, =, -487.150420, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '30', '-----', 'CPU', '=', '0.07991529', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.587471, KinEng, =, 4.369566, Temp, =, 3.827412, ]
+ - [PotEng, =, 109.217905, E_bond, =, 0.416485, E_angle, =, 1.294630, ]
+ - [E_dihed, =, 1.710254, E_impro, =, 0.000000, E_vdwl, =, -128.565697, ]
+ - [E_coul, =, 595.560843, E_long, =, -361.198612, v_E_hbond, =, -69.848068, ]
+ - [v_C_hbond, =, 238.000000, Press, =, -423.966912, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '40', '-----', 'CPU', '=', '0.1066333', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.915506, KinEng, =, 6.466349, Temp, =, 5.664037, ]
+ - [PotEng, =, 107.449156, E_bond, =, 0.514530, E_angle, =, 1.342583, ]
+ - [E_dihed, =, 1.536929, E_impro, =, 0.000000, E_vdwl, =, -129.858713, ]
+ - [E_coul, =, 595.186403, E_long, =, -361.272576, v_E_hbond, =, -69.871393, ]
+ - [v_C_hbond, =, 237.000000, Press, =, -498.152655, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '50', '-----', 'CPU', '=', '0.1332519', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.787835, KinEng, =, 8.050614, Temp, =, 7.051734, ]
+ - [PotEng, =, 105.737221, E_bond, =, 0.652153, E_angle, =, 1.416041, ]
+ - [E_dihed, =, 1.363560, E_impro, =, 0.000000, E_vdwl, =, -130.513518, ]
+ - [E_coul, =, 594.139764, E_long, =, -361.320780, v_E_hbond, =, -69.593967, ]
+ - [v_C_hbond, =, 233.000000, Press, =, -557.299815, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '60', '-----', 'CPU', '=', '0.1598263', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 114.120938, KinEng, =, 10.318793, Temp, =, 9.038489, ]
+ - [PotEng, =, 103.802145, E_bond, =, 0.576578, E_angle, =, 1.285008, ]
+ - [E_dihed, =, 1.123936, E_impro, =, 0.000000, E_vdwl, =, -131.268312, ]
+ - [E_coul, =, 593.450006, E_long, =, -361.365070, v_E_hbond, =, -70.107165, ]
+ - [v_C_hbond, =, 238.000000, Press, =, -571.907195, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '70', '-----', 'CPU', '=', '0.1865058', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.836168, KinEng, =, 11.873184, Temp, =, 10.400019, ]
+ - [PotEng, =, 101.962984, E_bond, =, 0.633521, E_angle, =, 1.315999, ]
+ - [E_dihed, =, 1.055318, E_impro, =, 0.000000, E_vdwl, =, -131.673572, ]
+ - [E_coul, =, 592.039201, E_long, =, -361.407483, v_E_hbond, =, -70.518544, ]
+ - [v_C_hbond, =, 240.000000, Press, =, -576.731420, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '80', '-----', 'CPU', '=', '0.2132824', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.589444, KinEng, =, 13.546466, Temp, =, 11.865689, ]
+ - [PotEng, =, 100.042978, E_bond, =, 0.637759, E_angle, =, 1.439918, ]
+ - [E_dihed, =, 1.020307, E_impro, =, 0.000000, E_vdwl, =, -131.980346, ]
+ - [E_coul, =, 590.365887, E_long, =, -361.440548, v_E_hbond, =, -71.174370, ]
+ - [v_C_hbond, =, 245.000000, Press, =, -735.254245, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '90', '-----', 'CPU', '=', '0.2401059', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 114.100563, KinEng, =, 15.870735, Temp, =, 13.901574, ]
+ - [PotEng, =, 98.229828, E_bond, =, 0.724671, E_angle, =, 1.435914, ]
+ - [E_dihed, =, 1.028167, E_impro, =, 0.000000, E_vdwl, =, -132.680267, ]
+ - [E_coul, =, 589.225622, E_long, =, -361.504279, v_E_hbond, =, -72.653223, ]
+ - [v_C_hbond, =, 245.000000, Press, =, -820.598956, Volume, =, 7447.236335, ]
+---
+keywords: ['------------', 'Step', '100', '-----', 'CPU', '=', '0.266844', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 113.670040, KinEng, =, 17.406803, Temp, =, 15.247054, ]
+ - [PotEng, =, 96.263236, E_bond, =, 0.711253, E_angle, =, 1.338059, ]
+ - [E_dihed, =, 1.474770, E_impro, =, 0.000000, E_vdwl, =, -132.917719, ]
+ - [E_coul, =, 587.219019, E_long, =, -361.562145, v_E_hbond, =, -74.299795, ]
+ - [v_C_hbond, =, 246.000000, Press, =, -786.245952, Volume, =, 7447.236335, ]
+...
+
+INFO:__main__:     The run terminated with in.dreiding gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (19.99689 19.12816 19.46971)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  384 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  3 = max dihedrals/atom
+  orthogonal box = (0 0 0) to (19.99689 19.12816 19.46971)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  320 bonds
+  reading angles ...
+  448 angles
+  reading dihedrals ...
+  192 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        1       
+  special bond factors coul:  0        0        1       
+     4 = max # of 1-2 neighbors
+     3 = max # of 1-3 neighbors
+     5 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.010 seconds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- neighbor multi command: https://doi.org/10.1016/j.cpc.2008.03.005, https://doi.org/10.1007/s40571-020-00361-2
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = -0.00064
+For more information see https://docs.lammps.org/err0029 (src/kspace.cpp:329)
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.14207291
+  grid = 3 3 3
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.154715
+  estimated relative force accuracy = 0.00046591962
+  using double precision FFTW3
+  3d grid and FFT values/proc = 512 27
+Generated 0 of 6 mixed pair_coeff terms from arithmetic mixing rule
+Neighbor list info ...
+  update: every = 2 steps, delay = 4 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 13.5
+  ghost atom cutoff = 13.5
+  binsize = 4.25, bins = 5 5 5
+  3 neighbor lists, perpetual/occasional/extra = 3 0 0
+  (1) pair hbond/dreiding/lj, perpetual, skip from (3)
+      attributes: full, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (2) pair lj/cut/coul/long, perpetual, half/full from (3)
+      attributes: half, newton on, cut 13.5
+      pair build: halffull/newton
+      stencil: none
+      bin: none
+  (3) neighbor class addition, perpetual
+      attributes: full, newton on
+      pair build: full/multi
+      stencil: full/multi/3d
+      bin: multi
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 12.34 | 12.34 | 12.34 Mbytes
+------------ Step              0 ----- CPU =            0 (sec) -------------
+TotEng   =     113.723597 KinEng   =       0.000000 Temp     =       0.000000 
+PotEng   =     113.723597 E_bond   =       0.535673 E_angle  =       1.281880 
+E_dihed  =       1.232497 E_impro  =       0.000000 E_vdwl   =    -125.381324 
+E_coul   =     597.219735 E_long   =    -361.164864 v_E_hbond =     -69.322152 
+v_C_hbond =     235.000000 Press    =    -328.847363 Volume   =    7447.236335
+------------ Step             10 ----- CPU =   0.02662439 (sec) -------------
+TotEng   =     113.773204 KinEng   =       1.537257 Temp     =       1.346522 
+PotEng   =     112.235947 E_bond   =       0.530880 E_angle  =       1.407481 
+E_dihed  =       1.084172 E_impro  =       0.000000 E_vdwl   =    -126.339883 
+E_coul   =     596.742308 E_long   =    -361.189011 v_E_hbond =     -69.944278 
+v_C_hbond =     240.000000 Press    =    -395.900478 Volume   =    7447.236335
+------------ Step             20 ----- CPU =   0.05332253 (sec) -------------
+TotEng   =     113.879291 KinEng   =       2.999580 Temp     =       2.627407 
+PotEng   =     110.879711 E_bond   =       0.549156 E_angle  =       1.323582 
+E_dihed  =       1.357398 E_impro  =       0.000000 E_vdwl   =    -127.482103 
+E_coul   =     596.318728 E_long   =    -361.187051 v_E_hbond =     -70.088343 
+v_C_hbond =     237.000000 Press    =    -487.150420 Volume   =    7447.236335
+------------ Step             30 ----- CPU =   0.07991529 (sec) -------------
+TotEng   =     113.587471 KinEng   =       4.369566 Temp     =       3.827412 
+PotEng   =     109.217905 E_bond   =       0.416485 E_angle  =       1.294630 
+E_dihed  =       1.710254 E_impro  =       0.000000 E_vdwl   =    -128.565697 
+E_coul   =     595.560843 E_long   =    -361.198612 v_E_hbond =     -69.848068 
+v_C_hbond =     238.000000 Press    =    -423.966912 Volume   =    7447.236335
+------------ Step             40 ----- CPU =    0.1066333 (sec) -------------
+TotEng   =     113.915506 KinEng   =       6.466349 Temp     =       5.664037 
+PotEng   =     107.449156 E_bond   =       0.514530 E_angle  =       1.342583 
+E_dihed  =       1.536929 E_impro  =       0.000000 E_vdwl   =    -129.858713 
+E_coul   =     595.186403 E_long   =    -361.272576 v_E_hbond =     -69.871393 
+v_C_hbond =     237.000000 Press    =    -498.152655 Volume   =    7447.236335
+------------ Step             50 ----- CPU =    0.1332519 (sec) -------------
+TotEng   =     113.787835 KinEng   =       8.050614 Temp     =       7.051734 
+PotEng   =     105.737221 E_bond   =       0.652153 E_angle  =       1.416041 
+E_dihed  =       1.363560 E_impro  =       0.000000 E_vdwl   =    -130.513518 
+E_coul   =     594.139764 E_long   =    -361.320780 v_E_hbond =     -69.593967 
+v_C_hbond =     233.000000 Press    =    -557.299815 Volume   =    7447.236335
+------------ Step             60 ----- CPU =    0.1598263 (sec) -------------
+TotEng   =     114.120938 KinEng   =      10.318793 Temp     =       9.038489 
+PotEng   =     103.802145 E_bond   =       0.576578 E_angle  =       1.285008 
+E_dihed  =       1.123936 E_impro  =       0.000000 E_vdwl   =    -131.268312 
+E_coul   =     593.450006 E_long   =    -361.365070 v_E_hbond =     -70.107165 
+v_C_hbond =     238.000000 Press    =    -571.907195 Volume   =    7447.236335
+------------ Step             70 ----- CPU =    0.1865058 (sec) -------------
+TotEng   =     113.836168 KinEng   =      11.873184 Temp     =      10.400019 
+PotEng   =     101.962984 E_bond   =       0.633521 E_angle  =       1.315999 
+E_dihed  =       1.055318 E_impro  =       0.000000 E_vdwl   =    -131.673572 
+E_coul   =     592.039201 E_long   =    -361.407483 v_E_hbond =     -70.518544 
+v_C_hbond =     240.000000 Press    =    -576.731420 Volume   =    7447.236335
+------------ Step             80 ----- CPU =    0.2132824 (sec) -------------
+TotEng   =     113.589444 KinEng   =      13.546466 Temp     =      11.865689 
+PotEng   =     100.042978 E_bond   =       0.637759 E_angle  =       1.439918 
+E_dihed  =       1.020307 E_impro  =       0.000000 E_vdwl   =    -131.980346 
+E_coul   =     590.365887 E_long   =    -361.440548 v_E_hbond =     -71.174370 
+v_C_hbond =     245.000000 Press    =    -735.254245 Volume   =    7447.236335
+------------ Step             90 ----- CPU =    0.2401059 (sec) -------------
+TotEng   =     114.100563 KinEng   =      15.870735 Temp     =      13.901574 
+PotEng   =      98.229828 E_bond   =       0.724671 E_angle  =       1.435914 
+E_dihed  =       1.028167 E_impro  =       0.000000 E_vdwl   =    -132.680267 
+E_coul   =     589.225622 E_long   =    -361.504279 v_E_hbond =     -72.653223 
+v_C_hbond =     245.000000 Press    =    -820.598956 Volume   =    7447.236335
+------------ Step            100 ----- CPU =     0.266844 (sec) -------------
+TotEng   =     113.670040 KinEng   =      17.406803 Temp     =      15.247054 
+PotEng   =      96.263236 E_bond   =       0.711253 E_angle  =       1.338059 
+E_dihed  =       1.474770 E_impro  =       0.000000 E_vdwl   =    -132.917719 
+E_coul   =     587.219019 E_long   =    -361.562145 v_E_hbond =     -74.299795 
+v_C_hbond =     246.000000 Press    =    -786.245952 Volume   =    7447.236335
+Loop time of 0.266863 on 1 procs for 100 steps with 384 atoms
+
+Performance: 32.376 ns/day, 0.741 hours/ns, 374.724 timesteps/s, 143.894 katom-step/s
+99.8% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.24389    | 0.24389    | 0.24389    |   0.0 | 91.39
+Bond    | 0.0040798  | 0.0040798  | 0.0040798  |   0.0 |  1.53
+Kspace  | 0.016093   | 0.016093   | 0.016093   |   0.0 |  6.03
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0019169  | 0.0019169  | 0.0019169  |   0.0 |  0.72
+Output  | 0.0002553  | 0.0002553  | 0.0002553  |   0.0 |  0.10
+Modify  | 0.00035442 | 0.00035442 | 0.00035442 |   0.0 |  0.13
+Other   |            | 0.0002696  |            |       |  0.10
+
+Nlocal:            384 ave         384 max         384 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           4637 ave        4637 max        4637 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         101854 ave      101854 max      101854 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 101854
+Ave neighs/atom = 265.24479
+Ave special neighs/atom = 4
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+
+INFO:__main__:Entering examples/eim
+INFO:__main__:   + in.eim (1/1)
+INFO:__main__:     Using 1 nprocs for in.eim as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.eim -cite none -log log.eim.1
+INFO:__main__:     Comparing thermo output from log.eim.1 against the reference log file log.27Nov18.eim.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (1.80e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (2.64e-02) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (3.11e-06) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Temp: actual (3.70e-05) > expected (1.00e-07)
+INFO:__main__:Entering examples/ellipse
+INFO:__main__:   + in.ellipse.gayberne (1/2)
+INFO:__main__:     Using 1 nprocs for in.ellipse.gayberne as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.ellipse.gayberne -cite none -log log.ellipse.gayberne.1
+INFO:__main__:     Comparing thermo output from log.ellipse.gayberne.1 against the reference log file log.27Nov18.ellipse.gayberne.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 1: TotEng: actual (9.72e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (3.13e-01) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 1: TotEng: actual (6.50e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (8.74e-01) > expected (1.00e-07)
+INFO:__main__:   + in.ellipse.resquared (2/2)
+INFO:__main__:     Using 1 nprocs for in.ellipse.resquared as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.ellipse.resquared -cite none -log log.ellipse.resquared.1
+INFO:__main__:     Comparing thermo output from log.ellipse.resquared.1 against the reference log file log.27Nov18.ellipse.resquared.g++.1
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 1: TotEng: actual (3.77e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 1: Press: actual (1.55e-06) > expected (1.00e-07)
+INFO:__main__:Entering examples/fire
+INFO:__main__:   + in.abcfire (1/5)
+INFO:__main__:     Using 1 nprocs for in.abcfire as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.abcfire -cite none -log log.abcfire.1
+INFO:__main__:     Comparing thermo output from log.abcfire.1 against the reference log file log.10Jan22.abcfire.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.abcfire_mod (2/5)
+INFO:__main__:     Using 1 nprocs for in.abcfire_mod as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.abcfire_mod -cite none -log log.abcfire_mod.1
+INFO:__main__:     Comparing thermo output from log.abcfire_mod.1 against the reference log file log.10Jan22.abcfire_mod.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.cg (3/5)
+INFO:__main__:     Using 1 nprocs for in.cg as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.cg -cite none -log log.cg.1
+INFO:__main__:     Comparing thermo output from log.cg.1 against the reference log file log.10Jan22.cg.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.fire (4/5)
+INFO:__main__:     Using 1 nprocs for in.fire as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.fire -cite none -log log.fire.1
+INFO:__main__:     Comparing thermo output from log.fire.1 against the reference log file log.10Jan22.fire.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.fire_mod (5/5)
+INFO:__main__:     Using 1 nprocs for in.fire_mod as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.fire_mod -cite none -log log.fire_mod.1
+INFO:__main__:     Comparing thermo output from log.fire_mod.1 against the reference log file log.10Jan22.fire_mod.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:Entering examples/flow
+INFO:__main__:   + in.flow.couette (1/2)
+INFO:__main__:     Using 1 nprocs for in.flow.couette as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.flow.couette -cite none -log log.flow.couette.1
+INFO:__main__:     Comparing thermo output from log.flow.couette.1 against the reference log file log.27Nov18.flow.couette.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.flow.pois (2/2)
+INFO:__main__:     Using 1 nprocs for in.flow.pois as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.flow.pois -cite none -log log.flow.pois.1
+INFO:__main__:     Comparing thermo output from log.flow.pois.1 against the reference log file log.27Nov18.flow.pois.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/friction
+INFO:__main__:   + in.friction (1/1)
+INFO:__main__:     Using 1 nprocs for in.friction as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.friction -cite none -log log.friction.1
+INFO:__main__:     Comparing thermo output from log.friction.1 against the reference log file log.27Nov18.friction.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/gjf
+INFO:__main__:   + in.gjf.vfull (1/2)
+INFO:__main__:     Using 1 nprocs for in.gjf.vfull as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.gjf.vfull -cite none -log log.gjf.vfull.1
+INFO:__main__:     Comparing thermo output from log.gjf.vfull.1 against the reference log file log.2Apr25.gjf.vfull.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.gjf.vhalf (2/2)
+INFO:__main__:     Using 1 nprocs for in.gjf.vhalf as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.gjf.vhalf -cite none -log log.gjf.vhalf.1
+INFO:__main__:     Comparing thermo output from log.gjf.vhalf.1 against the reference log file log.2Apr25.gjf.vhalf.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:Entering examples/granregion
+INFO:__main__:   + in.granregion.box (1/1)
+INFO:__main__:     Using 1 nprocs for in.granregion.box as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.granregion.box -cite none -log log.granregion.box.1
+INFO:__main__:     Comparing thermo output from log.granregion.box.1 against the reference log file log.27Jun24.granregion.box.g++.1
+INFO:__main__:     all 20 checks passed.
+INFO:__main__:Entering examples/granular
+INFO:__main__:   + in.pour.drum (1/3)
+INFO:__main__:     Using 1 nprocs for in.pour.drum as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.pour.drum -cite none -log log.pour.drum.1
+INFO:__main__:     Comparing thermo output from log.pour.drum.1 against the reference log file log.27Jun24.pour.drum.g++.1
+INFO:__main__:     all 0 checks passed.
+INFO:__main__:   + in.pour.flatwall (2/3)
+INFO:__main__:     Using 1 nprocs for in.pour.flatwall as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.pour.flatwall -cite none -log log.pour.flatwall.1
+INFO:__main__:     Comparing thermo output from log.pour.flatwall.1 against the reference log file log.27Jun24.pour.flatwall.g++.1
+INFO:__main__:     all 0 checks passed.
+INFO:__main__:   + in.restitution (3/3)
+INFO:__main__:     Using 1 nprocs for in.restitution as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.restitution -cite none -log log.restitution.1
+INFO:__main__:     Comparing thermo output from log.restitution.1 against the reference log file log.4Feb25.restitution.g++.1
+INFO:__main__:     all 0 checks passed.
+INFO:__main__:Entering examples/grid
+INFO:__main__:   + in.grid.2d (1/2)
+INFO:__main__:     Using 1 nprocs for in.grid.2d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.grid.2d -cite none -log log.grid.2d.1
+INFO:__main__:     Comparing thermo output from log.grid.2d.1 against the reference log file log.1Dec22.grid.2d.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.grid.3d (2/2)
+INFO:__main__:     Using 1 nprocs for in.grid.3d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.grid.3d -cite none -log log.grid.3d.1
+INFO:__main__:     Comparing thermo output from log.grid.3d.1 against the reference log file log.1Dec22.grid.3d.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/hugoniostat
+INFO:__main__:   + in.hugoniostat (1/1)
+INFO:__main__:     Using 1 nprocs for in.hugoniostat as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.hugoniostat -cite none -log log.hugoniostat.1
+INFO:__main__:     Comparing thermo output from log.hugoniostat.1 against the reference log file log.08Feb21.hugoniostat.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:Entering examples/hyper
+INFO:__main__:   + in.hyper.local (1/1)
+INFO:__main__:     Using 1 nprocs for in.hyper.local as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.hyper.local -cite none -log log.hyper.local.1
+INFO:__main__:       failed, cannot find the reference log file for in.hyper.local with the expected format log.[date].hyper.local.*.[nprocs]
+INFO:__main__:       thermo.in.hyper.local.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/indent
+INFO:__main__:   + in.indent (1/2)
+INFO:__main__:     Using 1 nprocs for in.indent as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.indent -cite none -log log.indent.1
+INFO:__main__:     Comparing thermo output from log.indent.1 against the reference log file log.27Nov18.indent.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.indent.min (2/2)
+INFO:__main__:     Using 1 nprocs for in.indent.min as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.indent.min -cite none -log log.indent.min.1
+INFO:__main__:     Comparing thermo output from log.indent.min.1 against the reference log file log.27Nov18.indent.min.g++.1
+INFO:__main__:     all 42 checks passed.
+INFO:__main__:Entering examples/kim
+INFO:__main__:   + in.lammps.melt (1/1)
+INFO:__main__:     Using 1 nprocs for in.lammps.melt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.lammps.melt -cite none -log log.lammps.melt.1
+INFO:__main__:       failed, cannot find the reference log file for in.lammps.melt with the expected format log.[date].lammps.melt.*.[nprocs]
+INFO:__main__:       thermo.in.lammps.melt.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/mc
+INFO:__main__:   + in.gcmc.co2 (1/3)
+INFO:__main__:     Using 1 nprocs for in.gcmc.co2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.gcmc.co2 -cite none -log log.gcmc.co2.1
+INFO:__main__:     Comparing thermo output from log.gcmc.co2.1 against the reference log file log.15Jul25.gcmc.co2.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.29e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (3.05e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (1.09e+01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (2.84e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (1.66e+00) > expected (1.00e-07)
+INFO:__main__:        - Run 0: PotEng: actual (1.75e+00) > expected (1.00e-07)
+INFO:__main__:   + in.gcmc.lj (2/3)
+INFO:__main__:     Using 1 nprocs for in.gcmc.lj as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.gcmc.lj -cite none -log log.gcmc.lj.1
+INFO:__main__:     Comparing thermo output from log.gcmc.lj.1 against the reference log file log.23Mar23.gcmc.lj.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.widom.lj (3/3)
+INFO:__main__:     Using 1 nprocs for in.widom.lj as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.widom.lj -cite none -log log.widom.lj.1
+INFO:__main__:     Comparing thermo output from log.widom.lj.1 against the reference log file log.14Jun23.widom.lj.g++.1
+INFO:__main__:     all 8 checks passed.
+INFO:__main__:Entering examples/mdi
+INFO:__main__:   + in.aimd.alone (1/3)
+INFO:__main__:     Using 1 nprocs for in.aimd.alone as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.aimd.alone -cite none -log log.aimd.alone.1
+INFO:__main__:       failed, cannot find the reference log file for in.aimd.alone with the expected format log.[date].aimd.alone.*.[nprocs]
+INFO:__main__:       thermo.in.aimd.alone.yaml also does not exist in the working directory.
+INFO:__main__:   + in.series.alone (2/3)
+INFO:__main__:     Using 1 nprocs for in.series.alone as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.series.alone -cite none -log log.series.alone.1
+INFO:__main__:       failed, cannot find the reference log file for in.series.alone with the expected format log.[date].series.alone.*.[nprocs]
+INFO:__main__:       thermo.in.series.alone.yaml also does not exist in the working directory.
+INFO:__main__:   + in.snapshot.alone (3/3)
+INFO:__main__:     Using 1 nprocs for in.snapshot.alone as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.snapshot.alone -cite none -log log.snapshot.alone.1
+INFO:__main__:       failed, cannot find the reference log file for in.snapshot.alone with the expected format log.[date].snapshot.alone.*.[nprocs]
+INFO:__main__:       thermo.in.snapshot.alone.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/meam
+INFO:__main__:   + in.meam (1/1)
+INFO:__main__:     Using 1 nprocs for in.meam as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.meam -cite none -log log.meam.1
+INFO:__main__:     Comparing thermo output from log.meam.1 against the reference log file log.27Nov18.meam.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/meam/msmeam
+INFO:__main__:   + in.msmeam (1/1)
+INFO:__main__:     Using 1 nprocs for in.msmeam as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.msmeam -cite none -log log.msmeam.1
+INFO:__main__:     Comparing thermo output from log.msmeam.1 against the reference log file log.27Sep2024.msmeam.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/melt
+INFO:__main__:   + in.melt (1/1)
+INFO:__main__:     Using 1 nprocs for in.melt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.melt -cite none -log log.melt.1
+INFO:__main__:     Comparing thermo output from log.melt.1 against the reference log file log.8Apr21.melt.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/mesh
+INFO:__main__:   + in.mesh_box (1/1)
+INFO:__main__:     Using 1 nprocs for in.mesh_box as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mesh_box -cite none -log log.mesh_box.1
+INFO:__main__:     Comparing thermo output from log.mesh_box.1 against the reference log file log.11May22.mesh_box.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:Entering examples/micelle
+INFO:__main__:   + in.micelle (1/2)
+INFO:__main__:     Using 1 nprocs for in.micelle as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.micelle -cite none -log log.micelle.1
+INFO:__main__:     Comparing thermo output from log.micelle.1 against the reference log file log.29Mar2019.micelle.g++.1
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 1: Press: actual (5.50e-07) > expected (1.00e-07)
+INFO:__main__:   + in.micelle-rigid (2/2)
+INFO:__main__:     Using 1 nprocs for in.micelle-rigid as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.micelle-rigid -cite none -log log.micelle-rigid.1
+INFO:__main__:     Comparing thermo output from log.micelle-rigid.1 against the reference log file log.4Apr2024.micelle-rigid.g++.1
+INFO:__main__:     all 18 checks passed.
+INFO:__main__:Entering examples/min
+INFO:__main__:   + in.min (1/2)
+INFO:__main__:     Using 1 nprocs for in.min as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.min -cite none -log log.min.1
+INFO:__main__:     Comparing thermo output from log.min.1 against the reference log file log.27Nov18.min.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.min.box (2/2)
+INFO:__main__:     Using 1 nprocs for in.min.box as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.min.box -cite none -log log.min.box.1
+INFO:__main__:     Comparing thermo output from log.min.box.1 against the reference log file log.27Nov18.min.box.g++.1
+INFO:__main__:     all 36 checks passed.
+INFO:__main__:Entering examples/mliap
+INFO:__main__:   + in.mliap.ace.compute (1/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.ace.compute as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.ace.compute -cite none -log log.mliap.ace.compute.1
+INFO:__main__:    completed, but no Step nor Loop in the output.
+
+INFO:__main__:
+in.mliap.ace.compute:
+INFO:__main__:
+    Output:
+LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (12 12 12)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  161 atoms
+  read_data CPU = 0.002 seconds
+WARNING: No fixes with time integration, atoms won't move
+For more information see https://docs.lammps.org/err0028 (src/verlet.cpp:60)
+Generated 0 of 3 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7.7
+  ghost atom cutoff = 7.7
+  binsize = 3.85, bins = 4 4 4
+  2 neighbor lists, perpetual/occasional/extra = 1 1 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+  (2) compute mliap, occasional
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 115.8 | 115.8 | 115.8 Mbytes
+    PotEng          Pxy        c_ace[1][1]    c_ace[1][2]  
+ 0              0              110            633.5226     
+Loop time of 1.53e-06 on 1 procs for 0 steps with 161 atoms
+
+196.1% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 1.53e-06   |            |       |100.00
+
+Nlocal:            161 ave         161 max         161 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           1754 ave        1754 max        1754 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          14230 ave       14230 max       14230 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:        28460 ave       28460 max       28460 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 28460
+Ave neighs/atom = 176.77019
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+
+INFO:__main__:
+    Error:
+
+INFO:__main__:   + in.mliap.nn.Cu (2/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.nn.Cu as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.nn.Cu -cite none -log log.mliap.nn.Cu.1
+INFO:__main__:     Comparing thermo output from log.mliap.nn.Cu.1 against the reference log file log.14Jun21.mliap.nn.Cu.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.mliap.nn.Ta06A (3/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.nn.Ta06A as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.nn.Ta06A -cite none -log log.mliap.nn.Ta06A.1
+INFO:__main__:     Comparing thermo output from log.mliap.nn.Ta06A.1 against the reference log file log.14Jun21.mliap.nn.Ta06A.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.mliap.snap.Ta06A (4/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.snap.Ta06A as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.snap.Ta06A -cite none -log log.mliap.snap.Ta06A.1
+INFO:__main__:     Comparing thermo output from log.mliap.snap.Ta06A.1 against the reference log file log.21Jun20.mliap.snap.Ta06A.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.mliap.snap.WBe.PRB2019 (5/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.snap.WBe.PRB2019 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.snap.WBe.PRB2019 -cite none -log log.mliap.snap.WBe.PRB2019.1
+INFO:__main__:     Comparing thermo output from log.mliap.snap.WBe.PRB2019.1 against the reference log file log.21Jun20.mliap.snap.WBe.PRB2019.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.mliap.snap.chem (6/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.snap.chem as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.snap.chem -cite none -log log.mliap.snap.chem.1
+INFO:__main__:     Comparing thermo output from log.mliap.snap.chem.1 against the reference log file log.21Jun20.mliap.snap.chem.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.mliap.snap.quadratic (7/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.snap.quadratic as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.snap.quadratic -cite none -log log.mliap.snap.quadratic.1
+INFO:__main__:     Comparing thermo output from log.mliap.snap.quadratic.1 against the reference log file log.21Jun20.mliap.snap.quadratic.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.mliap.so3.Ni_Mo (8/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.so3.Ni_Mo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.so3.Ni_Mo -cite none -log log.mliap.so3.Ni_Mo.1
+INFO:__main__:    completed, but no Step nor Loop in the output.
+
+INFO:__main__:
+in.mliap.so3.Ni_Mo:
+INFO:__main__:
+    Output:
+LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (5.7209005 5.7209005 3.555662)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  10 atoms
+  read_data CPU = 0.001 seconds
+Reading potential file Ni_Mo.mliap.descriptor with DATE: 2014-09-05
+SO3 keyword rcutfac 4.1 
+SO3 keyword nmax 3 
+SO3 keyword lmax 2 
+SO3 keyword alpha 2.0 
+SO3 keyword nelems 2 
+SO3 keyword elems Mo 
+SO3 keyword radelems 0.5 
+SO3 keyword welems 42 
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 6.1
+  ghost atom cutoff = 6.1
+  binsize = 3.05, bins = 2 2 2
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair mliap, perpetual
+      attributes: full, newton on
+      pair build: full/bin/atomonly
+      stencil: full/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 17.97 | 17.97 | 17.97 Mbytes
+    PotEng          Pxx            Pyy            Pzz            Pxy            Pxz            Pyz      
+-60.509577     -38.702887     -342.91582      1831.0743     -819.59439      427.87407      446.40498    
+-60.509344     -29.050171     -342.67124      1839.4215     -832.92479      439.72661      448.55829    
+-60.509056     -9.4119072     -335.83361      1856.2802     -846.04664      451.4663       450.35456    
+-60.508714      20.205972     -322.43019      1881.6        -858.97774      463.10122      451.79916    
+Loop time of 0.00838185 on 1 procs for 3 steps with 10 atoms
+
+Performance: 30.924 ns/day, 0.776 hours/ns, 357.916 timesteps/s, 3.579 katom-step/s
+99.2% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.0083376  | 0.0083376  | 0.0083376  |   0.0 | 99.47
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 8.207e-06  | 8.207e-06  | 8.207e-06  |   0.0 |  0.10
+Output  | 2.8625e-05 | 2.8625e-05 | 2.8625e-05 |   0.0 |  0.34
+Modify  | 2.272e-06  | 2.272e-06  | 2.272e-06  |   0.0 |  0.03
+Other   |            | 5.151e-06  |            |       |  0.06
+
+Nlocal:             10 ave          10 max          10 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:            423 ave         423 max         423 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+FullNghs:          780 ave         780 max         780 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 780
+Ave neighs/atom = 78
+Neighbor list builds = 0
+Dangerous builds = 0
+Total wall time: 0:00:00
+
+INFO:__main__:
+    Error:
+
+INFO:__main__:   + in.mliap.so3.nn.Si (9/9)
+INFO:__main__:     Using 1 nprocs for in.mliap.so3.nn.Si as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.mliap.so3.nn.Si -cite none -log log.mliap.so3.nn.Si.1
+INFO:__main__:     Comparing thermo output from log.mliap.so3.nn.Si.1 against the reference log file log.14Jun21.mliap.so3.nn.Si.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/msst
+INFO:__main__:   + in.msst (1/1)
+INFO:__main__:     Using 1 nprocs for in.msst as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.msst -cite none -log log.msst.1
+INFO:__main__:     Comparing thermo output from log.msst.1 against the reference log file log.08Feb21.msst.g++.1
+INFO:__main__:     all 10 checks passed.
+INFO:__main__:Entering examples/multi
+INFO:__main__:   + in.granular (1/2)
+INFO:__main__:     Using 1 nprocs for in.granular as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.granular -cite none -log log.granular.1
+INFO:__main__:     Comparing thermo output from log.granular.1 against the reference log file log.30Nov20.granular.intel.1
+INFO:__main__:     failed: Number of thermo steps in log.granular.1 (21)
+INFO:__main__:     is different from that in the reference log (51) in run 0.
+INFO:__main__:     mismatched num steps in the log files. Check both log files for more details.
+INFO:__main__:   + in.powerlaw (2/2)
+INFO:__main__:     Using 1 nprocs for in.powerlaw as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848304_5/build/lmp -in in.powerlaw -cite none -log log.powerlaw.1
+INFO:__main__:     Comparing thermo output from log.powerlaw.1 against the reference log file log.30Nov20.powerlaw.intel.1
+INFO:__main__:     failed: Number of thermo steps in log.powerlaw.1 (11)
+INFO:__main__:     is different from that in the reference log (201) in run 0.
+INFO:__main__:     mismatched num steps in the log files. Check both log files for more details.

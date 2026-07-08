@@ -1,0 +1,32 @@
+\begin{table}[t]
+  \caption{Energy Savings Comparison. All values are percentages relative
+  to full suite execution across matched runs.}
+  \label{tab:baseline-comparison}
+  \centering
+  \begin{tabular}{llcccc}
+    \toprule
+    Method & Coverage & \multicolumn{4}{c}{Energy Savings (\%)} \\
+    \cmidrule(lr){3-6}
+    & Target & Mean & Median & p10 & p90 \\
+    \midrule
+    ENACT & 80\% & 94.13 & 99.81 & 94.27 & 99.94 \\
+    ENACT & 90\% & 93.42 & 99.71 & 87.71 & 99.93 \\
+    ENACT & 95\% & 92.02 & 99.51 & 76.47 & 99.93 \\
+    \midrule
+    Random & 80\% & 61.07 & 57.30 & 32.17 & 99.82 \\
+    Random & 90\% & 51.20 & 45.18 & 24.82 & 94.66 \\
+    Random & 95\% & 44.76 & 40.38 & 18.66 & 83.91 \\
+    Random & 100\% & 38.65 & 31.80 & 9.39 & 83.91 \\
+    \midrule
+    Greedy (cov/s) & 80\% & 99.62 & 99.87 & 99.33 & 99.94 \\
+    Greedy (cov/s) & 90\% & 99.38 & 99.84 & 98.95 & 99.94 \\
+    Greedy (cov/s) & 95\% & 99.21 & 99.81 & 98.41 & 99.94 \\
+    Greedy (cov/s) & 100\% & 98.77 & 99.76 & 97.70 & 99.94 \\
+    \midrule
+    Greedy (cov/J) & 80\% & 99.65 & 99.87 & 99.29 & 99.94 \\
+    Greedy (cov/J) & 90\% & 99.44 & 99.84 & 99.07 & 99.94 \\
+    Greedy (cov/J) & 95\% & 99.22 & 99.80 & 98.41 & 99.94 \\
+    Greedy (cov/J) & 100\% & 98.77 & 99.76 & 97.71 & 99.94 \\
+    \bottomrule
+  \end{tabular}
+\end{table}

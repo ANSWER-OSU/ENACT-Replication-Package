@@ -1,0 +1,50 @@
+{ 'in.controller.temp': { 'folder': 'examples/controller', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6'  }, 'walltime': '3.0', 'walltime_norm': '1.5' } }
+{ 'in.water_box.amoeba': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_box.hippo': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_dimer.amoeba': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_dimer.hippo': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_hexamer.amoeba': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.water_hexamer.hippo': { 'folder': 'examples/amoeba', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.peri.ves': { 'folder': 'examples/peri', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.kim-ex.melt': { 'folder': 'examples/kim', 'status': 'failed, unknown command, package not installed, ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)', 'walltime': '-1' } }
+{ 'in.kim-sm.melt': { 'folder': 'examples/kim', 'status': 'failed, unknown command, package not installed, ERROR: Unknown command: kim          init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real (src/input.cpp:316)', 'walltime': '-1' } }
+{ 'in.replicate.bond.x': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.bond.x.noloop': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.bond.xy': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.cnt': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.sync_verlet': { 'folder': 'examples/granular', 'status': 'failed, ERROR: Illegal wall/gran command, unrecognized damping model (src/KOKKOS/fix_wall_gran_old.cpp:203).', 'walltime': '-1' } }
+{ 'in.tableting.200': { 'folder': 'examples/granular', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '24.0', 'walltime_norm': '12.0' } }
+{ 'in.triaxial.compaction.12': { 'folder': 'examples/granular', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.airebo': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '40.0', 'walltime_norm': '20.0' } }
+{ 'in.rebo2': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.obstacle': { 'folder': 'examples/obstacle', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.ar.lj': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.ar.real': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.wall.harmonic.2d': { 'folder': 'examples/wall', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '6.0', 'walltime_norm': '3.0' } }
+{ 'in.wall.harmonic.outside.2d': { 'folder': 'examples/wall', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.wall.sphere': { 'folder': 'examples/wall', 'status': 'failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).', 'walltime': '-1' } }
+{ 'in.comb.Si.elastic': { 'folder': 'examples/comb', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.22DMH.real': { 'folder': 'examples/relres', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '12', 'rel_diff_failed': '12'  }, 'walltime': '35.0', 'walltime_norm': '17.5' } }
+{ 'in.nemd': { 'folder': 'examples/nemd', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.grid.2d': { 'folder': 'examples/grid', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.grid.3d': { 'folder': 'examples/grid', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.sph': { 'folder': 'examples/grid', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.heatflux': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '110.0', 'walltime_norm': '55.0' } }
+{ 'in.mol-data-mix': { 'folder': 'examples/template', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '7.0', 'walltime_norm': '3.5' } }
+{ 'in.template-mix': { 'folder': 'examples/template', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.cos.1000SPCE': { 'folder': 'examples/VISCOSITY', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.mp.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7'  }, 'walltime': '15.0', 'walltime_norm': '7.5' } }
+{ 'in.wall.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '20.0', 'walltime_norm': '10.0' } }
+{ 'in.srd.mixture': { 'folder': 'examples/srd', 'status': 'failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94).', 'walltime': '-1' } }
+{ 'in.vashishta.sio2': { 'folder': 'examples/vashishta', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.vashishta.table.sio2': { 'folder': 'examples/vashishta', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.colloid': { 'folder': 'examples/colloid', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '8.0', 'walltime_norm': '4.0' } }
+{ 'in.coreshell.dsf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '15.0', 'walltime_norm': '7.5' } }
+{ 'in.coreshell.wolf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '18.0', 'walltime_norm': '9.0' } }
+{ 'in.powerlaw': { 'folder': 'examples/multi', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.spce.hex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.tad': { 'folder': 'examples/tad', 'status': 'failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79).', 'walltime': '-1' } }
+{ 'in.micelle': { 'folder': 'examples/micelle', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.squares': { 'folder': 'examples/body', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.tersoff': { 'folder': 'examples/tersoff', 'status': 'failed, ERROR: Keyword 'shift' not supported for this style (src/MANYBODY/pair_tersoff.cpp:362).', 'walltime': '-1' } }
+{ 'in.flow.pois': { 'folder': 'examples/flow', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }

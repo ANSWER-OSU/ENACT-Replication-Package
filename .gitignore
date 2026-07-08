@@ -1,0 +1,102 @@
+# =========================================================================
+# ENACT Replication Package — .gitignore
+#
+# Scope: this file excludes local environments, build/OS/IDE noise, and
+# large raw measurement artifacts that are not suitable for ordinary Git
+# storage (see REPOSITORY_AUDIT.md for the data-archival plan). It does
+# NOT exclude processed inputs or final result CSVs/tables/figures unless
+# individually noted below with a reason.
+# =========================================================================
+
+# --- Git internals (defensive; Git never tracks its own dir) -------------
+.git/
+
+# --- Python virtual environments ------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+*/venv*/pyvenv.cfg
+nsga2_runs/out/venv_nsga2/
+
+# --- Python build/bytecode artifacts ---------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+nsga2_runs/scripts/__pycache__/
+*.egg-info/
+build/
+dist/
+
+# --- IDE / editor files -----------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS files ----------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Temporary files -----------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+
+# --- Local environment / config files -------------------------------------------
+.env
+.env.*
+*.local
+
+# --- Archives (generic) --------------------------------------------------------
+*.zip
+*.tar.gz
+*.tgz
+*.7z
+
+# =========================================================================
+# Large raw measurement artifacts (explicit paths)
+# =========================================================================
+
+# Raw gcovr verbose logs from coverage instrumentation (~8.7 GB, 289 files).
+# These are build/tooling noise, not analysis results; final coverage
+# numbers live in unittest_linux_bigbig_coverage/matrix/*.csv (kept) and
+# coverage_results/*/*_summary_*.csv (kept).
+coverage_results/quickmax/logs/
+
+# Raw per-test gcov .info files (~5.4 GB, 615 files). These are the
+# lowest-level coverage capture; the processed matrix derived from them
+# (unittest_linux_bigbig_coverage/matrix/*.csv) is kept.
+unittest_linux_bigbig_coverage/pertest/
+
+# Largest single processed artifact in the repo (~31 GB): full per-test,
+# per-line coverage matrix. Too large for ordinary Git/GitHub storage
+# (single-file hard limits). Intended for external archival; see
+# REPOSITORY_AUDIT.md.
+unittest_linux_bigbig_coverage/matrix/pertest_line_coverage.csv
+
+# Slurm / batch job stdout+stderr for the energy-measurement jobs. Raw
+# scheduler logs, not analysis inputs; the derived energy_idx_*.csv /
+# codecarbon_*.csv files are kept.
+energy_results/**/*.out
+energy_results/**/*.err
+
+# Raw regression-test tarballs collected alongside energy runs; not used
+# by any analysis script (energy/coverage CSVs derived from them are kept).
+energy_results/**/*.tar
+
+# Intermediate build input for nsga2_runs/scripts/build_line_index.py only
+# (~249 MB; columns: file,line,n_tests,tests). Confirmed (2026-07-08) that
+# no optimization/baseline script reads this file directly — nsga2_final.py,
+# nsga_calculate_en.py, nsga2_with_order.py, nsga2_all_prs.py, and
+# baselines.py all load only the already-generated line_index.npz (+
+# _tests.txt/_lines.txt) via --line-index-prefix. The generated index is
+# committed at nsga2_runs/out/line_index.npz and is sufficient on its own
+# to rerun the canonical optimization. This CSV also exceeds GitHub's
+# 100 MB hard per-file limit. It will be made available alongside the
+# external data archive for users who want to rebuild the index from
+# scratch; see REPOSITORY_AUDIT.md.
+unittest_linux_bigbig_coverage/matrix/line_to_tests.csv

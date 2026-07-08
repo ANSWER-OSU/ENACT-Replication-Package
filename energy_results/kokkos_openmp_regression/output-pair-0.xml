@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="32" tests="47" time="0.0">
+	<testsuite disabled="0" errors="0" failures="32" name="tools/regression-tests/config_kokkos_openmp.yaml" skipped="2" tests="47" time="0" timestamp="2026-01-16 16:37:42.540543">
+		<testcase name="in.wall.ccl" classname="in.wall.ccl">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.wall.harmonic.outside.2d" classname="in.wall.harmonic.outside.2d">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.wall.specular" classname="in.wall.specular">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.wall.sphere" classname="in.wall.sphere">
+			<failure type="failure" message="failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)."/>
+		</testcase>
+		<testcase name="in.fcc" classname="in.fcc"/>
+		<testcase name="in.voronoi.data" classname="in.voronoi.data">
+			<failure type="failure" message="failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)."/>
+		</testcase>
+		<testcase name="in.cmap" classname="in.cmap">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.flow.couette" classname="in.flow.couette">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.flow.pois" classname="in.flow.pois">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.coreshell.wolf" classname="in.coreshell.wolf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.einstein.2d" classname="in.einstein.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.gk.2d" classname="in.gk.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.mp.2d" classname="in.mp.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7' "/>
+		</testcase>
+		<testcase name="in.wall.2d" classname="in.wall.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.dreiding" classname="in.dreiding">
+			<failure type="failure" message="failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)."/>
+		</testcase>
+		<testcase name="in.replicate.bond.xy" classname="in.replicate.bond.xy"/>
+		<testcase name="in.replicate.cnt" classname="in.replicate.cnt"/>
+		<testcase name="in.hybrid" classname="in.hybrid">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.ehex" classname="in.ehex">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.heat" classname="in.heat">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.langevin" classname="in.langevin">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.mp" classname="in.mp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7' "/>
+		</testcase>
+		<testcase name="in.reaxff.rdx" classname="in.reaxff.rdx">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.nb3b.screened" classname="in.nb3b.screened">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.read_dump" classname="in.read_dump"/>
+		<testcase name="in.crack" classname="in.crack"/>
+		<testcase name="in.track" classname="in.track">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'tracker' is part of the MISC package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.bcc.orthog" classname="in.bcc.orthog"/>
+		<testcase name="in.bcc.primitive" classname="in.bcc.primitive"/>
+		<testcase name="in.data.general" classname="in.data.general"/>
+		<testcase name="in.fcc.primitive" classname="in.fcc.primitive"/>
+		<testcase name="in.hex.orthog" classname="in.hex.orthog"/>
+		<testcase name="in.hex.primitive" classname="in.hex.primitive"/>
+		<testcase name="in.msd.2d" classname="in.msd.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.vacf.2d" classname="in.vacf.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.min" classname="in.min">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.deposit.atom" classname="in.deposit.atom">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule" classname="in.deposit.molecule">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.dipole" classname="in.dipole">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.yaml" classname="in.yaml">
+			<failure type="failure" message="completed, error parsing log.yaml.2 into YAML"/>
+		</testcase>
+		<testcase name="in.ar.lj" classname="in.ar.lj">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.vashishta.sio2" classname="in.vashishta.sio2"/>
+		<testcase name="in.airebo-m" classname="in.airebo-m"/>
+		<testcase name="in.micelle" classname="in.micelle">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.charmmfsw" classname="in.charmmfsw">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '0' "/>
+		</testcase>
+		<testcase name="in.mos2.sw.mod" classname="in.mos2.sw.mod"/>
+		<testcase name="in.threebody" classname="in.threebody"/>
+	</testsuite>
+</testsuites>

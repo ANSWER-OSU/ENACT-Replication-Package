@@ -1,0 +1,2362 @@
+INFO:__main__:
+There are 37 input scripts listed in input-list-misc-kk.txt.
+INFO:__main__:     Executing for reference walltime: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/../bench/in.lj -v x 2 -v y 2 -v z 1 -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half
+INFO:__main__:     Reference walltime, sec = 2.0
+INFO:__main__:Entering examples/charmmfsw
+INFO:__main__:   + in.charmmfsw (1/1)
+INFO:__main__:     Using 2 nprocs for in.charmmfsw as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.charmmfsw -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.charmmfsw.2
+INFO:__main__:     Comparing thermo output from log.charmmfsw.2 against the reference log file log.26Jul24.charmmfsw.g++.4
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: PotEng: actual (1.00e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (4.00e-04) > expected (1.00e-04)
+INFO:__main__:Entering examples/cmap
+INFO:__main__:   + in.cmap (1/1)
+INFO:__main__:     Using 2 nprocs for in.cmap as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.cmap -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.cmap.2
+INFO:__main__:     Comparing thermo output from log.cmap.2 against the reference log file log.27Nov18.cmap.g++.4
+INFO:__main__:     1 abs diff checks failed.
+INFO:__main__:        - Run 0: E_vdwl: actual (5.52e-01) > expected (1.00e-03)
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 0: E_vdwl: actual (5.44e-01) > expected (1.00e-07)
+INFO:__main__:Entering examples/peptide
+INFO:__main__:   + in.peptide (1/1)
+INFO:__main__:     Using 2 nprocs for in.peptide as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.peptide -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.peptide.2
+INFO:__main__:    Error parsing log.peptide.2 at line 3, column 13.
+INFO:__main__:---
+keywords: ['------------', 'Step', '0', '-----', 'CPU', '=', '0', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -5237.4580, KinEng, =, 1134.9186, Temp, =, 282.1005, ]
+ - [PotEng, =, -6372.3765, E_bond, =, 16.5572, E_angle, =, 36.3726, ]
+ - [E_dihed, =, 15.5190, E_impro, =, 1.9426, E_vdwl, =, 692.8945, ]
+ - [E_coul, =, 26772.2647, E_long, =, -33907.9271, Press, =, -837.0111, ]
+---
+keywords: ['------------', 'Step', '50', '-----', 'CPU', '=', '0.3324332', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -5247.5537, KinEng, =, 1132.4000, Temp, =, 281.4745, ]
+ - [PotEng, =, -6379.9537, E_bond, =, 12.2118, E_angle, =, 31.7365, ]
+ - [E_dihed, =, 18.8145, E_impro, =, 2.3611, E_vdwl, =, 658.1785, ]
+ - [E_coul, =, 26804.4441, E_long, =, -33907.7003, Press, =, -1331.7945, ]
+---
+keywords: ['------------', 'Step', '100', '-----', 'CPU', '=', '0.6621769', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -5257.9979, KinEng, =, 1078.0552, Temp, =, 267.9663, ]
+ - [PotEng, =, -6336.0532, E_bond, =, 14.4829, E_angle, =, 43.4429, ]
+ - [E_dihed, =, 15.2569, E_impro, =, 2.3160, E_vdwl, =, 708.3273, ]
+ - [E_coul, =, 26786.6829, E_long, =, -33906.5621, Press, =, -648.6818, ]
+---
+keywords: ['------------', 'Step', '150', '-----', 'CPU', '=', '1.006028', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -5287.2798, KinEng, =, 1098.6027, Temp, =, 273.0737, ]
+ - [PotEng, =, -6385.8826, E_bond, =, 17.4925, E_angle, =, 32.8594, ]
+ - [E_dihed, =, 15.1624, E_impro, =, 1.6522, E_vdwl, =, 736.9676, ]
+ - [E_coul, =, 26717.2654, E_long, =, -33907.2820, Press, =, -333.1814, ]
+---
+keywords: ['------------', 'Step', '200', '-----', 'CPU', '=', '1.330991', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -5308.4468, KinEng, =, 1100.4878, Temp, =, 273.5422, ]
+ - [PotEng, =, -6408.9346, E_bond, =, 18.2714, E_angle, =, 33.3040, ]
+ - [E_dihed, =, 16.8151, E_impro, =, 2.6051, E_vdwl, =, 686.3219, ]
+ - [E_coul, =, 26736.1321, E_long, =, -33902.3841, Press, =, -1470.3469, ]
+---
+keywords: ['------------', 'Step', '250', '-----', 'CPU', '=', '1.667233', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -5294.1564, KinEng, =, 1071.0934, Temp, =, 266.2358, ]
+ - [PotEng, =, -6365.2497, E_bond, =, 14.2013, E_angle, =, 39.1995, ]
+ - [E_dihed, =, 19.4583, E_impro, =, 3.1406, E_vdwl, =, 753.4711, ]
+ - [E_coul, =, 26713.9934, E_long, =, -33908.7140, Press, =, -189.4398, ]
+---
+keywords: ['------------', 'Step', '300', '-----', 'CPU', '=', '2.003475', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -5251.3634, KinEng, =, 1123.7657, Temp, =, 279.3283, ]
+ - [PotEng, =, -6375.1291, E_bond, =, 14.2208, E_angle, =, 38.4294, ]
+ - [E_dihed, =, 18.1660, E_impro, =, 2.3732, E_vdwl, =, 715.3636, ]
+ - [E_coul, =, 26745.3995, E_long, =, -33909.0817, Press, =, -471.3002, ]
+...
+
+INFO:__main__:     The run terminated with in.peptide gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (36.840194 41.013691 29.768095) to (64.21156 68.385058 57.139462)
+  1 by 1 by 2 MPI processor grid
+  reading atoms ...
+  2004 atoms
+  reading velocities ...
+  2004 velocities
+  scanning bonds ...
+  3 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  14 = max dihedrals/atom
+  scanning impropers ...
+  1 = max impropers/atom
+  orthogonal box = (36.840194 41.013691 29.768095) to (64.21156 68.385058 57.139462)
+  1 by 1 by 2 MPI processor grid
+  reading bonds ...
+  1365 bonds
+  reading angles ...
+  786 angles
+  reading dihedrals ...
+  207 dihedrals
+  reading impropers ...
+  12 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+     7 = max # of 1-3 neighbors
+    14 = max # of 1-4 neighbors
+    18 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.034 seconds
+Finding SHAKE clusters ...
+      19 = # of size 2 clusters
+       6 = # of size 3 clusters
+       3 = # of size 4 clusters
+     640 = # of frozen angles
+  find clusters CPU = 0.000 seconds
+84 atoms in group peptide
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM Kokkos initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.26872465
+  grid = 15 15 15
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.022820853
+  estimated relative force accuracy = 6.872432e-05
+  using double precision KISS FFT
+  3d grid and FFT values/proc = 6776 1800
+Generated 91 of 91 mixed pair_coeff terms from arithmetic mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 5 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 5 5 5
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/charmm/coul/long/kk, perpetual
+      attributes: half, newton on, kokkos_device
+      pair build: half/bin/newton/kk/device
+      stencil: half/bin/3d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 2
+SHAKE/KK stats (type/ave/delta/count) on step 0
+Bond:    4   1.111     1.44264e-05        9
+Bond:    6   0.996998  7.26967e-06        6
+Bond:    8   1.08      1.32536e-05        7
+Bond:   10   1.111     1.22749e-05        8
+Bond:   12   1.08      1.11767e-05        9
+Bond:   14   0.96      0                  1
+Bond:   18   0.957206  4.37979e-05     1280
+Angle:  31   104.519   0.00396029       640
+Per MPI rank memory allocation (min/avg/max) = 16.91 | 16.92 | 16.93 Mbytes
+------------ Step              0 ----- CPU =            0 (sec) -------------
+TotEng   =     -5237.4580 KinEng   =      1134.9186 Temp     =       282.1005 
+PotEng   =     -6372.3765 E_bond   =        16.5572 E_angle  =        36.3726 
+E_dihed  =        15.5190 E_impro  =         1.9426 E_vdwl   =       692.8945 
+E_coul   =     26772.2647 E_long   =    -33907.9271 Press    =      -837.0111
+------------ Step             50 ----- CPU =    0.3324332 (sec) -------------
+TotEng   =     -5247.5537 KinEng   =      1132.4000 Temp     =       281.4745 
+PotEng   =     -6379.9537 E_bond   =        12.2118 E_angle  =        31.7365 
+E_dihed  =        18.8145 E_impro  =         2.3611 E_vdwl   =       658.1785 
+E_coul   =     26804.4441 E_long   =    -33907.7003 Press    =     -1331.7945
+SHAKE/KK stats (type/ave/delta/count) on step 100
+Bond:    4   1.111     7.80612e-07        9
+Bond:    6   0.997     1.0618e-06         6
+Bond:    8   1.08      6.20292e-07        7
+Bond:   10   1.111     6.23283e-07        8
+Bond:   12   1.08      2.67996e-07        9
+Bond:   14   0.96      0                  1
+Bond:   18   0.957201  5.3796e-06      1280
+Angle:  31   104.52    0.000502278      640
+------------ Step            100 ----- CPU =    0.6621769 (sec) -------------
+TotEng   =     -5257.9979 KinEng   =      1078.0552 Temp     =       267.9663 
+PotEng   =     -6336.0532 E_bond   =        14.4829 E_angle  =        43.4429 
+E_dihed  =        15.2569 E_impro  =         2.3160 E_vdwl   =       708.3273 
+E_coul   =     26786.6829 E_long   =    -33906.5621 Press    =      -648.6818
+------------ Step            150 ----- CPU =     1.006028 (sec) -------------
+TotEng   =     -5287.2798 KinEng   =      1098.6027 Temp     =       273.0737 
+PotEng   =     -6385.8826 E_bond   =        17.4925 E_angle  =        32.8594 
+E_dihed  =        15.1624 E_impro  =         1.6522 E_vdwl   =       736.9676 
+E_coul   =     26717.2654 E_long   =    -33907.2820 Press    =      -333.1814
+SHAKE/KK stats (type/ave/delta/count) on step 200
+Bond:    4   1.111     2.18704e-07        9
+Bond:    6   0.997     1.50575e-07        6
+Bond:    8   1.08      6.57544e-08        7
+Bond:   10   1.111     5.54343e-07        8
+Bond:   12   1.08      1.98861e-07        9
+Bond:   14   0.96      0                  1
+Bond:   18   0.957201  3.59631e-06     1280
+Angle:  31   104.52    0.000388324      640
+------------ Step            200 ----- CPU =     1.330991 (sec) -------------
+TotEng   =     -5308.4468 KinEng   =      1100.4878 Temp     =       273.5422 
+PotEng   =     -6408.9346 E_bond   =        18.2714 E_angle  =        33.3040 
+E_dihed  =        16.8151 E_impro  =         2.6051 E_vdwl   =       686.3219 
+E_coul   =     26736.1321 E_long   =    -33902.3841 Press    =     -1470.3469
+------------ Step            250 ----- CPU =     1.667233 (sec) -------------
+TotEng   =     -5294.1564 KinEng   =      1071.0934 Temp     =       266.2358 
+PotEng   =     -6365.2497 E_bond   =        14.2013 E_angle  =        39.1995 
+E_dihed  =        19.4583 E_impro  =         3.1406 E_vdwl   =       753.4711 
+E_coul   =     26713.9934 E_long   =    -33908.7140 Press    =      -189.4398
+SHAKE/KK stats (type/ave/delta/count) on step 300
+Bond:    4   1.111     3.79022e-06        9
+Bond:    6   0.997001  3.60124e-06        6
+Bond:    8   1.08      2.09367e-06        7
+Bond:   10   1.111     5.64814e-06        8
+Bond:   12   1.08      2.10663e-06        9
+Bond:   14   0.96      0                  1
+Bond:   18   0.957202  7.71676e-06     1280
+Angle:  31   104.52    0.000806192      640
+------------ Step            300 ----- CPU =     2.003475 (sec) -------------
+TotEng   =     -5251.3634 KinEng   =      1123.7657 Temp     =       279.3283 
+PotEng   =     -6375.1291 E_bond   =        14.2208 E_angle  =        38.4294 
+E_dihed  =        18.1660 E_impro  =         2.3732 E_vdwl   =       715.3636 
+E_coul   =     26745.3995 E_long   =    -33909.0817 Press    =      -471.3002
+Loop time of 2.00352 on 4 procs for 300 steps with 2004 atoms
+
+Performance: 25.875 ns/day, 0.928 hours/ns, 149.737 timesteps/s, 300.072 katom-step/s
+196.2% CPU use with 2 MPI tasks x 2 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.1663     | 1.186      | 1.2057     |   1.8 | 59.20
+Bond    | 0.011783   | 0.012147   | 0.012511   |   0.3 |  0.61
+Kspace  | 0.45669    | 0.47567    | 0.49465    |   2.8 | 23.74
+Neigh   | 0.16217    | 0.16224    | 0.1623     |   0.0 |  8.10
+Comm    | 0.069227   | 0.070387   | 0.071547   |   0.4 |  3.51
+Output  | 0.00036143 | 0.00038396 | 0.00040649 |   0.0 |  0.02
+Modify  | 0.089423   | 0.089532   | 0.08964    |   0.0 |  4.47
+Other   |            | 0.007162   |            |       |  0.36
+
+Nlocal:           1002 ave        1006 max         998 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Nghost:         8670.5 ave        8691 max        8650 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+Neighs:         354012 ave      357257 max      350767 min
+Histogram: 1 0 0 0 0 0 0 0 0 1
+
+Total # of neighbors = 708024
+Ave neighs/atom = 353.30539
+Ave special neighs/atom = 2.3403194
+Neighbor list builds = 26
+Dangerous builds = 0
+Total wall time: 0:00:02
+
+INFO:__main__:Entering examples/replicate
+INFO:__main__:   + in.replicate.bond.x (1/5)
+INFO:__main__:     Using 2 nprocs for in.replicate.bond.x as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.replicate.bond.x -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.bond.x.2
+INFO:__main__:     Comparing thermo output from log.replicate.bond.x.2 against the reference log file log.6May24.replicate.bond.x.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (8.86e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.05e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.45e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.74e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (9.59e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (3.47e-01) > expected (1.00e-06)
+INFO:__main__:   + in.replicate.bond.x.noloop (2/5)
+INFO:__main__:     Using 2 nprocs for in.replicate.bond.x.noloop as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.replicate.bond.x.noloop -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.bond.x.noloop.2
+INFO:__main__:     Comparing thermo output from log.replicate.bond.x.noloop.2 against the reference log file log.6May24.replicate.bond.x.noloop.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (3.98e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.29e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.07e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (5.31e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (1.16e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.89e-02) > expected (1.00e-06)
+INFO:__main__:   + in.replicate.bond.x.y (3/5)
+INFO:__main__:     Using 2 nprocs for in.replicate.bond.x.y as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.replicate.bond.x.y -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.bond.x.y.2
+INFO:__main__:     Comparing thermo output from log.replicate.bond.x.y.2 against the reference log file log.6May24.replicate.bond.x.y.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.replicate.bond.xy (4/5)
+INFO:__main__:     Using 2 nprocs for in.replicate.bond.xy as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.replicate.bond.xy -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.bond.xy.2
+INFO:__main__:     Comparing thermo output from log.replicate.bond.xy.2 against the reference log file log.6May24.replicate.bond.xy.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.replicate.cnt (5/5)
+INFO:__main__:     Using 2 nprocs for in.replicate.cnt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.replicate.cnt -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.replicate.cnt.2
+INFO:__main__:     Comparing thermo output from log.replicate.cnt.2 against the reference log file log.6May24.replicate.cnt.g++.4
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/HEAT
+INFO:__main__:   + in.spce.ehex (1/2)
+INFO:__main__:     Using 2 nprocs for in.spce.ehex as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 32.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.spce.ehex -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.spce.ehex.2
+INFO:__main__:     Timeout for: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.spce.ehex -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.spce.ehex.2 (120s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.spce.ehex:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (120s expired)
+INFO:__main__:   + in.spce.hex (2/2)
+INFO:__main__:     Using 2 nprocs for in.spce.hex as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 32.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.spce.hex -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.spce.hex.2
+INFO:__main__:     Timeout for: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.spce.hex -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.spce.hex.2 (120s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.spce.hex:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (120s expired)
+INFO:__main__:Entering examples/VISCOSITY
+INFO:__main__:   + in.cos.1000SPCE (1/1)
+INFO:__main__:     Using 2 nprocs for in.cos.1000SPCE as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.cos.1000SPCE -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.cos.1000SPCE.2
+INFO:__main__:     The run terminated with in.cos.1000SPCE gives the following output:
+INFO:__main__:       ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary.
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (31.043 31.043 31.043)
+  1 by 1 by 2 MPI processor grid
+  reading atoms ...
+  3000 atoms
+  scanning bonds ...
+  2 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  orthogonal box = (0 0 0) to (31.043 31.043 31.043)
+  1 by 1 by 2 MPI processor grid
+  reading bonds ...
+  2000 bonds
+  reading angles ...
+  1000 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0.5     
+  special bond factors coul:  0        0        0.8333333333333334
+     2 = max # of 1-2 neighbors
+     1 = max # of 1-3 neighbors
+     1 = max # of 1-4 neighbors
+     2 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.029 seconds
+Finding SHAKE clusters ...
+       0 = # of size 2 clusters
+       0 = # of size 3 clusters
+       0 = # of size 4 clusters
+    1000 = # of frozen angles
+  find clusters CPU = 0.000 seconds
+ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary.
+For more information see https://docs.lammps.org/err0010 (src/modify.cpp:930)
+Last input line: fix cos all accelerate/cos ${A}
+--> parsed line: fix cos all accelerate/cos 5e-07 
+                             ^^^^^^^^^^^^^^
+
+INFO:__main__:     Failed with in.cos.1000SPCE.
+
+INFO:__main__:Entering examples/dreiding
+INFO:__main__:   + in.dreiding (1/1)
+INFO:__main__:     Using 2 nprocs for in.dreiding as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.dreiding -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.dreiding.2
+INFO:__main__:     The run terminated with in.dreiding gives the following output:
+INFO:__main__:       ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (0 0 0) to (19.99689 19.12816 19.46971)
+  2 by 1 by 1 MPI processor grid
+  reading atoms ...
+  384 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  3 = max dihedrals/atom
+  orthogonal box = (0 0 0) to (19.99689 19.12816 19.46971)
+  2 by 1 by 1 MPI processor grid
+  reading bonds ...
+  320 bonds
+  reading angles ...
+  448 angles
+  reading dihedrals ...
+  192 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        1       
+  special bond factors coul:  0        0        1       
+     4 = max # of 1-2 neighbors
+     3 = max # of 1-3 neighbors
+     5 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.016 seconds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+- neighbor multi command: https://doi.org/10.1016/j.cpc.2008.03.005, https://doi.org/10.1007/s40571-020-00361-2
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM Kokkos initialization ...
+WARNING: System is not charge neutral, net charge = -0.00064
+For more information see https://docs.lammps.org/err0029 (src/kspace.cpp:329)
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.14207291
+  grid = 3 3 3
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.154715
+  estimated relative force accuracy = 0.00046591962
+  using double precision KISS FFT
+  3d grid and FFT values/proc = 448 18
+Generated 0 of 6 mixed pair_coeff terms from arithmetic mixing rule
+ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)
+Last input line: run 100
+
+INFO:__main__:     Failed with in.dreiding.
+
+INFO:__main__:Entering examples/rdf-adf
+INFO:__main__:   + in.spce (1/1)
+INFO:__main__:     Using 2 nprocs for in.spce as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.spce -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.spce.2
+INFO:__main__:     Comparing thermo output from log.spce.2 against the reference log file log.27Nov18.spce.g++.4
+INFO:__main__:     6 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (9.57e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (4.00e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (4.75e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (5.81e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (1.75e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (5.03e+01) > expected (1.00e-04)
+INFO:__main__:     5 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (3.21e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (2.05e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (1.95e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: TotEng: actual (1.25e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (7.21e+01) > expected (1.00e-06)
+INFO:__main__:Entering examples/relres
+INFO:__main__:   + in.22DMH.real (1/3)
+INFO:__main__:     Using 2 nprocs for in.22DMH.real as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.22DMH.real -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.22DMH.real.2
+INFO:__main__:     Comparing thermo output from log.22DMH.real.2 against the reference log file log.05Mar21.22DMH.real.g++.4
+INFO:__main__:     12 abs diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (1.94e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.69e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (5.15e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (9.78e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Temp: actual (2.66e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Press: actual (2.13e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 2: PotEng: actual (4.73e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: TotEng: actual (4.09e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 3: Temp: actual (2.96e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 3: Press: actual (6.94e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 3: PotEng: actual (3.96e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 3: TotEng: actual (1.10e+02) > expected (1.00e-04)
+INFO:__main__:     12 rel diff checks failed.
+INFO:__main__:        - Run 1: Temp: actual (6.76e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (3.93e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (1.50e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: TotEng: actual (9.51e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 2: Temp: actual (9.23e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 2: Press: actual (4.53e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 2: PotEng: actual (1.39e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 2: TotEng: actual (3.98e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 3: Temp: actual (1.03e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 3: Press: actual (1.45e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 3: PotEng: actual (1.18e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 3: TotEng: actual (1.08e-02) > expected (1.00e-06)
+INFO:__main__:   + in.22DMH.relres (2/3)
+INFO:__main__:     Using 2 nprocs for in.22DMH.relres as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.22DMH.relres -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.22DMH.relres.2
+INFO:__main__:     Comparing thermo output from log.22DMH.relres.2 against the reference log file log.05Mar21.22DMH.relres.g++.4
+INFO:__main__:     all 8 checks passed.
+INFO:__main__:   + in.22DMH.respa (3/3)
+INFO:__main__:     Using 2 nprocs for in.22DMH.respa as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.22DMH.respa -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.22DMH.respa.2
+INFO:__main__:     Comparing thermo output from log.22DMH.respa.2 against the reference log file log.05Mar21.22DMH.respa.g++.4
+INFO:__main__:     all 8 checks passed.
+INFO:__main__:Entering examples/template
+INFO:__main__:   + in.hybrid (1/5)
+INFO:__main__:     Using 2 nprocs for in.hybrid as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.hybrid -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.hybrid.2
+INFO:__main__:     The run terminated with in.hybrid gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Read molecule template twomols:
+# Water molecule. SPC/E model.
+  1 molecules
+  0 fragments
+  0 bodies
+  3 atoms with max type 2
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+Read molecule template twomols:
+# CO2 molecule file. TraPPE model.
+  1 molecules
+  0 fragments
+  0 bodies
+  3 atoms with max type 4
+  2 bonds with max type 2
+  1 angles with max type 2
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style hybrid template twomols charge
+
+INFO:__main__:     Failed with in.hybrid.
+
+INFO:__main__:   + in.mol-data-mix (2/5)
+INFO:__main__:     Using 2 nprocs for in.mol-data-mix as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.mol-data-mix -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.mol-data-mix.2
+INFO:__main__:     Comparing thermo output from log.mol-data-mix.2 against the reference log file log.22Oct20.mol-data-mix.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.05e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (6.81e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (9.39e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (3.41e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (2.22e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (8.35e-04) > expected (1.00e-06)
+INFO:__main__:   + in.molecular-mix (3/5)
+INFO:__main__:     Using 2 nprocs for in.molecular-mix as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.molecular-mix -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.molecular-mix.2
+INFO:__main__:     Comparing thermo output from log.molecular-mix.2 against the reference log file log.22Oct20.molecular-mix.g++.4
+INFO:__main__:     5 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.66e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (9.30e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (1.71e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: TotEng: actual (2.49e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.08e+03) > expected (1.00e-04)
+INFO:__main__:     5 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (2.94e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.88e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (5.75e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: TotEng: actual (1.28e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (9.44e-02) > expected (1.00e-06)
+INFO:__main__:   + in.template-mix (4/5)
+INFO:__main__:     Using 2 nprocs for in.template-mix as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.template-mix -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.template-mix.2
+INFO:__main__:     The run terminated with in.template-mix gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Read molecule template cychex:
+LAMMPS molecule file. Cyclohexane(UA)
+  1 molecules
+  0 fragments
+  0 bodies
+  6 atoms with max type 1
+  6 bonds with max type 1
+  6 angles with max type 1
+  6 dihedrals with max type 1
+  0 impropers with max type 0
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style template cychex
+
+INFO:__main__:     Failed with in.template-mix.
+
+INFO:__main__:   + in.tmpl-data-mix (5/5)
+INFO:__main__:     Using 2 nprocs for in.tmpl-data-mix as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.tmpl-data-mix -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.tmpl-data-mix.2
+INFO:__main__:     The run terminated with in.tmpl-data-mix gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Read molecule template cychex:
+LAMMPS molecule file. Cyclohexane(UA)
+  1 molecules
+  0 fragments
+  0 bodies
+  6 atoms with max type 1
+  6 bonds with max type 1
+  6 angles with max type 1
+  6 dihedrals with max type 1
+  0 impropers with max type 0
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style template cychex
+
+INFO:__main__:     Failed with in.tmpl-data-mix.
+
+INFO:__main__:Entering examples/amoeba
+INFO:__main__:   + in.ubiquitin (1/7)
+INFO:__main__:     Using 2 nprocs for in.ubiquitin as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.ubiquitin -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.ubiquitin.2
+INFO:__main__:     The run terminated with in.ubiquitin gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.ubiquitin.
+
+INFO:__main__:   + in.water_box.amoeba (2/7)
+INFO:__main__:     Using 2 nprocs for in.water_box.amoeba as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.water_box.amoeba -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_box.amoeba.2
+INFO:__main__:     The run terminated with in.water_box.amoeba gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_box.amoeba.
+
+INFO:__main__:   + in.water_box.hippo (3/7)
+INFO:__main__:     Using 2 nprocs for in.water_box.hippo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.water_box.hippo -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_box.hippo.2
+INFO:__main__:     The run terminated with in.water_box.hippo gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_box.hippo.
+
+INFO:__main__:   + in.water_dimer.amoeba (4/7)
+INFO:__main__:     Using 2 nprocs for in.water_dimer.amoeba as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.water_dimer.amoeba -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_dimer.amoeba.2
+INFO:__main__:     The run terminated with in.water_dimer.amoeba gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_dimer.amoeba.
+
+INFO:__main__:   + in.water_dimer.hippo (5/7)
+INFO:__main__:     Using 2 nprocs for in.water_dimer.hippo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.water_dimer.hippo -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_dimer.hippo.2
+INFO:__main__:     The run terminated with in.water_dimer.hippo gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_dimer.hippo.
+
+INFO:__main__:   + in.water_hexamer.amoeba (6/7)
+INFO:__main__:     Using 2 nprocs for in.water_hexamer.amoeba as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.water_hexamer.amoeba -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_hexamer.amoeba.2
+INFO:__main__:     The run terminated with in.water_hexamer.amoeba gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_hexamer.amoeba.
+
+INFO:__main__:   + in.water_hexamer.hippo (7/7)
+INFO:__main__:     Using 2 nprocs for in.water_hexamer.hippo as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.water_hexamer.hippo -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.water_hexamer.hippo.2
+INFO:__main__:     The run terminated with in.water_hexamer.hippo gives the following output:
+INFO:__main__:       ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+INFO:__main__:     Output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)
+Last input line: atom_style amoeba
+
+INFO:__main__:     Failed with in.water_hexamer.hippo.
+
+INFO:__main__:Entering examples/coreshell
+INFO:__main__:   + in.coreshell (1/4)
+INFO:__main__:     Using 2 nprocs for in.coreshell as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.coreshell -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.coreshell.2
+INFO:__main__:     Comparing thermo output from log.coreshell.2 against the reference log file log.3Jul25.coreshell.g++.4
+INFO:__main__:     10 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.55e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (1.41e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (4.53e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (6.56e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: E_vdwl: actual (1.70e-02) > expected (1.00e-03)
+INFO:__main__:        - Run 1: TotEng: actual (4.35e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (2.69e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (9.69e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (7.58e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (2.14e+00) > expected (1.00e-03)
+INFO:__main__:     10 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (2.48e-06) > expected (1.00e-06)
+INFO:__main__:        - Run 0: PotEng: actual (2.14e-05) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Temp: actual (3.34e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (6.58e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: E_vdwl: actual (4.01e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (6.97e-06) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (4.07e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (7.44e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (2.20e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 1: E_vdwl: actual (4.69e-02) > expected (1.00e-07)
+INFO:__main__:   + in.coreshell.dsf (2/4)
+INFO:__main__:     Using 2 nprocs for in.coreshell.dsf as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.coreshell.dsf -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.coreshell.dsf.2
+INFO:__main__:     Comparing thermo output from log.coreshell.dsf.2 against the reference log file log.3Jul25.coreshell.dsf.g++.4
+INFO:__main__:     10 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (5.36e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (1.14e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (2.18e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.29e+03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: E_vdwl: actual (2.70e+00) > expected (1.00e-03)
+INFO:__main__:        - Run 1: TotEng: actual (5.59e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (1.50e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (3.39e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (3.04e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (3.49e-01) > expected (1.00e-03)
+INFO:__main__:     10 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (8.59e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: PotEng: actual (1.73e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Temp: actual (1.70e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (1.40e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 0: E_vdwl: actual (6.27e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (8.96e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (2.27e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (2.51e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (5.32e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 1: E_vdwl: actual (7.78e-03) > expected (1.00e-07)
+INFO:__main__:   + in.coreshell.thermostats (3/4)
+INFO:__main__:     Using 2 nprocs for in.coreshell.thermostats as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.coreshell.thermostats -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.coreshell.thermostats.2
+INFO:__main__:     Comparing thermo output from log.coreshell.thermostats.2 against the reference log file log.3Jul25.coreshell.thermostats.g++.4
+INFO:__main__:     15 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.55e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (1.41e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (4.53e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (6.56e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: E_vdwl: actual (1.70e-02) > expected (1.00e-03)
+INFO:__main__:        - Run 1: TotEng: actual (6.31e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (2.78e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (1.23e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.48e+03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (3.04e+00) > expected (1.00e-03)
+INFO:__main__:        - Run 2: TotEng: actual (5.36e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 2: PotEng: actual (2.64e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Temp: actual (9.80e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 2: Press: actual (9.96e+02) > expected (1.00e-04)
+INFO:__main__:        - Run 2: E_vdwl: actual (3.26e+00) > expected (1.00e-03)
+INFO:__main__:     15 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (2.48e-06) > expected (1.00e-06)
+INFO:__main__:        - Run 0: PotEng: actual (2.14e-05) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Temp: actual (3.34e-04) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (6.58e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: E_vdwl: actual (4.01e-04) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (1.02e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (4.22e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (8.23e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (3.17e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 1: E_vdwl: actual (6.79e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 2: TotEng: actual (8.76e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 2: PotEng: actual (4.04e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 2: Temp: actual (6.57e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 2: Press: actual (8.10e-01) > expected (1.00e-06)
+INFO:__main__:        - Run 2: E_vdwl: actual (8.04e-02) > expected (1.00e-07)
+INFO:__main__:   + in.coreshell.wolf (4/4)
+INFO:__main__:     Using 2 nprocs for in.coreshell.wolf as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.coreshell.wolf -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.coreshell.wolf.2
+INFO:__main__:     Comparing thermo output from log.coreshell.wolf.2 against the reference log file log.3Jul25.coreshell.wolf.g++.4
+INFO:__main__:     10 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (4.88e-03) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (4.29e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (1.37e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (4.25e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: E_vdwl: actual (8.47e-02) > expected (1.00e-03)
+INFO:__main__:        - Run 1: TotEng: actual (5.65e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 1: PotEng: actual (8.75e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Temp: actual (3.35e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 1: Press: actual (1.04e+03) > expected (1.00e-04)
+INFO:__main__:        - Run 1: E_vdwl: actual (2.24e+00) > expected (1.00e-03)
+INFO:__main__:     10 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (7.82e-06) > expected (1.00e-06)
+INFO:__main__:        - Run 0: PotEng: actual (6.50e-05) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Temp: actual (1.05e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (9.18e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: E_vdwl: actual (1.84e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 1: TotEng: actual (9.05e-05) > expected (1.00e-06)
+INFO:__main__:        - Run 1: PotEng: actual (1.32e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Temp: actual (2.48e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 1: Press: actual (2.47e+00) > expected (1.00e-06)
+INFO:__main__:        - Run 1: E_vdwl: actual (4.91e-02) > expected (1.00e-07)
+INFO:__main__:Entering examples/deposit
+INFO:__main__:   + in.deposit.molecule (1/2)
+INFO:__main__:     Using 2 nprocs for in.deposit.molecule as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.deposit.molecule -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.deposit.molecule.2
+INFO:__main__:     Comparing thermo output from log.deposit.molecule.2 against the reference log file log.27Nov18.deposit.molecule.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (2.73e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (1.35e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.48e-01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (9.13e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (1.95e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (2.02e-01) > expected (1.00e-06)
+INFO:__main__:   + in.deposit.molecule.shake (2/2)
+INFO:__main__:     Using 2 nprocs for in.deposit.molecule.shake as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.deposit.molecule.shake -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.deposit.molecule.shake.2
+INFO:__main__:     Comparing thermo output from log.deposit.molecule.shake.2 against the reference log file log.27Nov18.deposit.molecule.shake.g++.4
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.54e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (3.22e-02) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (5.94e-04) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (5.08e-02) > expected (1.00e-06)
+INFO:__main__:        - Run 0: TotEng: actual (4.86e-03) > expected (1.00e-06)
+INFO:__main__:        - Run 0: Press: actual (7.03e-04) > expected (1.00e-06)
+INFO:__main__:Entering examples/micelle
+INFO:__main__:   + in.micelle (1/1)
+INFO:__main__:     Using 2 nprocs for in.micelle as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.micelle -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.micelle.2
+INFO:__main__:     Comparing thermo output from log.micelle.2 against the reference log file log.29Mar2019.micelle.g++.4
+INFO:__main__:     1 rel diff checks failed.
+INFO:__main__:        - Run 1: Press: actual (1.40e-06) > expected (1.00e-06)
+INFO:__main__:Entering examples/wall
+INFO:__main__:   + in.wall.lepton (1/2)
+INFO:__main__:     Using 2 nprocs for in.wall.lepton as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.wall.lepton -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.wall.lepton.2
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.wall.lepton:
+INFO:__main__:
+    Output:
+LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Created orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+2 atoms in group move
+System init for write_restart ...
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.004 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0           1800           1800              0
+         1     16146.37291    6600.295604    144.3878119    1652.527054    1796.914866              0
+         2     59294.04011      24238.149     530.232812    1258.437705    1788.670517              0
+         3     115302.7492    47133.32419    1031.086781    746.8819904    1777.968771              0
+         4     165817.4572    67782.66799    1482.811029    285.5057515     1768.31678              0
+         5     194283.6024    79419.02582    1737.367544    25.51012833    1762.877672              0
+Loop time of 0.000771222 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.002 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0           1800           1800              0
+         1     16146.37291    6600.295604    144.3878119    1652.527054    1796.914866              0
+         2     59294.04011      24238.149     530.232812    1258.437705    1788.670517              0
+         3     115302.7492    47133.32419    1031.086781    746.8819904    1777.968771              0
+         4     165817.4572    67782.66799    1482.811029    285.5057515     1768.31678              0
+         5     194283.6024    79419.02582    1737.367544    25.51012833    1762.877672              0
+Loop time of 0.00276673 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+WARNING: Communication cutoff 7 is shorter than a bond length based estimate of 8. This may lead to errors. (src/comm.cpp:688)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+WARNING: Communication cutoff 7 is shorter than a bond length based estimate of 8. This may lead to errors. (src/comm.cpp:688)
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0      27427.366              0           1800           1800            900
+         1     16146.37291    36178.74173    144.3878119    1652.527054    1796.914866     826.263527
+         2     59294.04011     58444.6962     530.232812    1258.437705    1788.670517    629.2188524
+         3     115302.7492    83661.44348    1031.086781    746.8819904    1777.968771    373.4409952
+         4     165817.4572    98424.89283    1482.811029    285.5057515     1768.31678    142.7528758
+         5     194283.6024    91313.53086    1737.367544    25.51012833    1762.877672    12.75506417
+Loop time of 0.000733679 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 6
+  ghost atom cutoff = 6
+  binsize = 3, bins = 4 4 4
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair harmonic/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.075 | 6.075 | 6.075 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0      27427.366              0           1800           1800            900
+         1     16146.37291    36178.74173    144.3878119    1652.527054    1796.914866     826.263527
+         2     59294.04011     58444.6962     530.232812    1258.437705    1788.670517    629.2188524
+         3     115302.7492    83661.44348    1031.086781    746.8819904    1777.968771    373.4409952
+         4     165817.4572    98424.89283    1482.811029    285.5057515     1768.31678    142.7528758
+         5     170540.4005    97560.47089    1525.045619    190.8165235    1715.862142    178.0614593
+Loop time of 0.000592436 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0    645.1224609    645.1224609              0
+         1     178153.8707    72825.53278    1593.128544   0.2259591031    1593.354503              0
+         2     178262.3593    72869.88065    1594.098696 -0.02237405364    1594.076322              0
+         3     178259.9436    72868.89314    1594.077094 -0.003385746252    1594.073708              0
+         4     178259.4975    72868.71081    1594.073105              0    1594.073105              0
+         5     178259.4975    72868.71081    1594.073105              0    1594.073105              0
+WARNING: Bond/angle/dihedral extent > half of periodic box length (src/domain.cpp:1174)
+Loop time of 0.000388152 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0    645.1224609    645.1224609              0
+         1     178153.8707    72825.53278    1593.128544   0.2259591031    1593.354503              0
+         2     178262.3593    72869.88065    1594.098696 -0.02237405364    1594.076322              0
+         3     178259.9436    72868.89314    1594.077094 -0.003385746252    1594.073708              0
+         4     178259.4975    72868.71081    1594.073105              0    1594.073105              0
+         5     178259.4975    72868.71081    1594.073105              0    1594.073105              0
+WARNING: Bond/angle/dihedral extent > half of periodic box length (src/domain.cpp:1174)
+Loop time of 0.00579477 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 6
+  ghost atom cutoff = 6
+  binsize = 3, bins = 4 4 4
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/kk, perpetual
+      attributes: half, newton on, kokkos_device
+      pair build: half/bin/newton/kk/device
+      stencil: half/bin/3d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.072 | 6.072 | 6.072 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0    178343.7047              0    645.1224609    645.1224609    322.5612305
+         1     178153.8707    72925.96146    1593.128544   0.2259591031    1593.354503   0.1129795516
+         2     178262.3593    72867.28485    1594.098696 -0.02237405364    1594.076322 -0.01118702682
+         3     178260.8147    72867.80305    1594.084884 -0.007499601847    1594.077384 -0.005806728722
+         4     176007.6835    72778.53677    1573.936415    2.772305717    1576.708721    2.772305717
+         5  1.132219912e+27 4.628275436e+26 1.012479748e+25 3.761972158e+12 1.012479748e+25 3.761972158e+12
+WARNING: Bond/angle/dihedral extent > half of periodic box length (src/domain.cpp:1174)
+Loop time of 0.0028204 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0   -30.02905654   -30.02905654              0
+         1     146.0893547    59.71823711     1.30639385   -31.40065042   -30.09425657              0
+         2     485.8091411    198.5884977     4.34431431   -34.55987817   -30.21556386              0
+         3     822.0828974    336.0500941    7.351418888   -37.63613582   -30.28471693              0
+         4     1018.806679    416.4666136    9.110607565   -39.39265114   -30.28204357              0
+         5     1050.331347    429.3532307    9.392514704   -39.63687095   -30.24435625              0
+Loop time of 0.000560803 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0   -30.02905654   -30.02905654              0
+         1     146.0893547    59.71823711     1.30639385   -31.40065042   -30.09425657              0
+         2     485.8091411    198.5884977     4.34431431   -34.55987817   -30.21556386              0
+         3     822.0828974    336.0500941    7.351418888   -37.63613582   -30.28471693              0
+         4     1018.806679    416.4666136    9.110607565   -39.39265114   -30.28204357              0
+         5     1050.331347    429.3532307    9.392514704   -39.63687095   -30.24435625              0
+Loop time of 0.0051155 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+
+INFO:__main__:
+    Error:
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+[cn-e13:409872] *** Process received signal ***
+[cn-e13:409871] *** Process received signal ***
+[cn-e13:409872] Signal: Segmentation fault (11)
+[cn-e13:409872] Signal code: Address not mapped (1)
+[cn-e13:409872] Failing at address: (nil)
+[cn-e13:409871] Signal: Segmentation fault (11)
+[cn-e13:409871] Signal code: Address not mapped (1)
+[cn-e13:409871] Failing at address: (nil)
+[cn-e13:409871] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409871] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409871] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409871] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+[cn-e13:409871] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409871] [ 5] [cn-e13:409872] [ 0] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409871] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+[cn-e13:409871] [ 7] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409872] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409872] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409872] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409871] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+[cn-e13:409872] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409872] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409872] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+[cn-e13:409872] [ 7] [cn-e13:409871] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409872] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+[cn-e13:409872] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 409871 on node cn-e13 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[cn-e13.hpc.engr.oregonstate.edu:409867] 1 more process has sent help message help-mpi-common-cuda.txt / dlopen failed
+[cn-e13.hpc.engr.oregonstate.edu:409867] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+
+INFO:__main__:   + in.wall.table (2/2)
+INFO:__main__:     Using 2 nprocs for in.wall.table as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: mpirun --host localhost:2 -np 2 /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp -in in.wall.table -cite none -k on t 2 -sf kk -pk kokkos newton on neigh half -log log.wall.table.2
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.wall.table:
+INFO:__main__:
+    Output:
+LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f-modified)
+KOKKOS mode with Kokkos version 5.0.0 is enabled
+  using double precision
+  using view layout = legacy
+  using 2 OpenMP thread(s) per MPI task
+Created orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Created 1 atoms
+  using lattice units in orthogonal box = (-5 -5 -5) to (5 5 5)
+  create_atoms CPU = 0.000 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+2 atoms in group move
+System init for write_restart ...
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.004 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- KOKKOS package: https://doi.org/10.1145/3731599.3767498
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0           1800           1800              0
+         1     16146.37291    6600.295604    144.3878119    1652.527054    1796.914866              0
+         2     59294.04011      24238.149     530.232812    1258.437705    1788.670517              0
+         3     115302.7492    47133.32419    1031.086781    746.8819904    1777.968771              0
+         4     165817.4572    67782.66799    1482.811029    285.5057515     1768.31678              0
+         5     194283.6024    79419.02582    1737.367544    25.51012833    1762.877672              0
+Loop time of 0.000802188 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.002 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0    1800.000356    1800.000356              0
+         1     16146.37291    6600.295604    144.3878119    1652.527723    1796.915535              0
+         2     59294.04011      24238.149     530.232812    1258.437853    1788.670665              0
+         3     115302.7492    47133.32419    1031.086781    746.8824148    1777.969196              0
+         4     165817.4572    67782.66799    1482.811029    285.5061521    1768.317181              0
+         5     194283.6024    79419.02582    1737.367544    25.51090543    1762.878449              0
+Loop time of 0.000505912 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0           1800           1800              0
+         1     16146.37291    6600.295604    144.3878119    1652.527054    1796.914866              0
+         2     59294.04011      24238.149     530.232812    1258.437705    1788.670517              0
+         3     115302.7492    47133.32419    1031.086781    746.8819904    1777.968771              0
+         4     165817.4572    67782.66799    1482.811029    285.5057515     1768.31678              0
+         5     194283.6024    79419.02582    1737.367544    25.51012833    1762.877672              0
+Loop time of 0.000588616 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+WARNING: Communication cutoff 7 is shorter than a bond length based estimate of 8. This may lead to errors. (src/comm.cpp:688)
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+WARNING: Communication cutoff 7 is shorter than a bond length based estimate of 8. This may lead to errors. (src/comm.cpp:688)
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0      27427.366              0           1800           1800            900
+         1     16146.37291    36178.74173    144.3878119    1652.527054    1796.914866     826.263527
+         2     59294.04011     58444.6962     530.232812    1258.437705    1788.670517    629.2188524
+         3     115302.7492    83661.44348    1031.086781    746.8819904    1777.968771    373.4409952
+         4     165817.4572    98424.89283    1482.811029    285.5057515     1768.31678    142.7528758
+         5     194283.6024    91313.53086    1737.367544    25.51012833    1762.877672    12.75506417
+Loop time of 0.000466057 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 6
+  ghost atom cutoff = 6
+  binsize = 3, bins = 4 4 4
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair harmonic/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.075 | 6.075 | 6.075 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0      27427.366              0           1800           1800            900
+         1     16146.37291    36178.74173    144.3878119    1652.527054    1796.914866     826.263527
+         2     59294.04011     58444.6962     530.232812    1258.437705    1788.670517    629.2188524
+         3     115302.7492    83661.44348    1031.086781    746.8819904    1777.968771    373.4409952
+         4     165817.4572    98424.89283    1482.811029    285.5057515     1768.31678    142.7528758
+         5     170540.4005    97560.47089    1525.045619    190.8165235    1715.862142    178.0614593
+Loop time of 0.000640293 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0    645.1224609    645.1224609              0
+         1     178153.8707    72825.53278    1593.128544   0.2259591031    1593.354503              0
+         2     178262.3593    72869.88065    1594.098696 -0.02237405364    1594.076322              0
+         3     178259.9436    72868.89314    1594.077094 -0.003385746252    1594.073708              0
+         4     178259.4975    72868.71081    1594.073105              0    1594.073105              0
+         5     178259.4975    72868.71081    1594.073105              0    1594.073105              0
+WARNING: Bond/angle/dihedral extent > half of periodic box length (src/domain.cpp:1174)
+Loop time of 0.00065752 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+WARNING: 1 of 400 force values in table are inconsistent with -dE/dr.
+WARNING:  Should only be flagged at inflection points (src/fix_wall_table.cpp:244)
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+WARNING: 1 of 400 force values in table are inconsistent with -dE/dr.
+WARNING:  Should only be flagged at inflection points (src/fix_wall_table.cpp:244)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0    645.2141852    645.2141852              0
+         1     178212.5398    72849.51549    1593.653189   0.2256644171    1593.878854              0
+         2     178320.9331    72893.82438    1594.622489 -0.02236253394    1594.600126              0
+         3      178318.518    72892.83712    1594.600891  -0.0033818408    1594.597509              0
+         4     178318.0722     72892.6549    1594.596905              0    1594.596905              0
+         5     178318.0722     72892.6549    1594.596905              0    1594.596905              0
+WARNING: Bond/angle/dihedral extent > half of periodic box length (src/domain.cpp:1174)
+Loop time of 0.000487532 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+WARNING: 1 of 400 force values in table are inconsistent with -dE/dr.
+WARNING:  Should only be flagged at inflection points (src/fix_wall_table.cpp:244)
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+WARNING: 1 of 400 force values in table are inconsistent with -dE/dr.
+WARNING:  Should only be flagged at inflection points (src/fix_wall_table.cpp:244)
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0    645.3361317    645.3361317              0
+         1     161871.9611    66169.83266    1447.528705   0.3353251002     1447.86403              0
+         2      162015.342    66228.44376    1448.810879 -0.02581160308    1448.785068              0
+         3      162012.784    66227.39811    1448.788005 -0.004635008226     1448.78337              0
+         4     162012.2554    66227.18201    1448.783278              0    1448.783278              0
+         5     162012.2554    66227.18201    1448.783278              0    1448.783278              0
+WARNING: Bond/angle/dihedral extent > half of periodic box length (src/domain.cpp:1174)
+Loop time of 0.000486745 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 6
+  ghost atom cutoff = 6
+  binsize = 3, bins = 4 4 4
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/kk, perpetual
+      attributes: half, newton on, kokkos_device
+      pair build: half/bin/newton/kk/device
+      stencil: half/bin/3d
+      bin: kk/device
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.072 | 6.072 | 6.072 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0    178343.7047              0    645.1224609    645.1224609    322.5612305
+         1     178153.8707    72925.96146    1593.128544   0.2259591031    1593.354503   0.1129795516
+         2     178262.3593    72867.28485    1594.098696 -0.02237405364    1594.076322 -0.01118702682
+         3     178260.8147    72867.80305    1594.084884 -0.007499601847    1594.077384 -0.005806728722
+         4     176007.6835    72778.53677    1573.936415    2.772305717    1576.708721    2.772305717
+         5  1.132219912e+27 4.628275436e+26 1.012479748e+25 3.761972158e+12 1.012479748e+25 3.761972158e+12
+WARNING: Bond/angle/dihedral extent > half of periodic box length (src/domain.cpp:1174)
+Loop time of 0.00264943 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0   -30.02905654   -30.02905654              0
+         1     146.0893547    59.71823711     1.30639385   -31.40065042   -30.09425657              0
+         2     485.8091411    198.5884977     4.34431431   -34.55987817   -30.21556386              0
+         3     822.0828974    336.0500941    7.351418888   -37.63613582   -30.28471693              0
+         4     1018.806679    416.4666136    9.110607565   -39.39265114   -30.28204357              0
+         5     1050.331347    429.3532307    9.392514704   -39.63687095   -30.24435625              0
+Loop time of 0.000339427 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0    -30.0282104    -30.0282104              0
+         1     146.0967469    59.72125889    1.306459954   -31.40033773   -30.09387777              0
+         2     485.8417772    198.6018386    4.344606156   -34.55851819   -30.21391203              0
+         3     822.1558136    336.0799007    7.352070936   -37.63533573   -30.28326479              0
+         4     1018.904947    416.5067832    9.111486314   -39.39200056   -30.28051425              0
+         5     1050.436268    429.3961205    9.393452958   -39.63643565   -30.24298269              0
+Loop time of 0.000582665 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Reading fix wall/table table potential file walltab.dat with DATE: 2023-02-23
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 6.074 | 6.074 | 6.074 Mbytes
+   Step          Temp          Press          KinEng         PotEng         TotEng          c_pe     
+         0               0              0              0   -30.02905657   -30.02905657              0
+         1     146.0893531    59.71823647    1.306393836   -31.40065068   -30.09425684              0
+         2      485.809133    198.5884944    4.344314238   -34.55987846   -30.21556422              0
+         3     822.0828818    336.0500877    7.351418748   -37.63613601   -30.28471726              0
+         4      1018.80666    416.4666056    9.110607389   -39.39265128   -30.28204389              0
+         5     1050.331328     429.353223    9.392514534   -39.63687099   -30.24435645              0
+Loop time of 0.000411733 on 4 procs for 5 steps with 4 atoms
+
+  using 2 OpenMP thread(s) per MPI task
+Reading restart file ...
+  restart file = 10 Dec 2025, LAMMPS = 10 Dec 2025
+  restoring atom style bond/kk from restart
+  orthogonal box = (-5 -5 -5) to (5 5 5)
+  2 by 1 by 1 MPI processor grid
+  restoring pair style zero from restart
+  restoring bond style zero from restart
+  4 atoms
+  2 bonds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     1 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_restart CPU = 0.001 seconds
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    1        1        1       
+  special bond factors coul:  1        1        1       
+     1 = max # of 1-2 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+Generated 0 of 0 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 7
+  ghost atom cutoff = 7
+  binsize = 3.5, bins = 3 3 3
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair zero, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+
+INFO:__main__:
+    Error:
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+[cn-e13:409950] *** Process received signal ***
+[cn-e13:409949] *** Process received signal ***
+[cn-e13:409950] Signal: Segmentation fault (11)
+[cn-e13:409950] Signal code: Address not mapped (1)
+[cn-e13:409950] Failing at address: (nil)
+[cn-e13:409949] Signal: Segmentation fault (11)
+[cn-e13:409949] Signal code: Address not mapped (1)
+[cn-e13:409949] Failing at address: (nil)
+[cn-e13:409950] [ 0] [cn-e13:409949] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409950] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e13:409949] [ 1] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409950] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x126c607]
+[cn-e13:409949] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409949] [ 3] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0xbb71ab]
+[cn-e13:409950] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+[cn-e13:409950] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x5fb69d]
+[cn-e13:409949] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409949] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bbdf1]
+[cn-e13:409950] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409950] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+/scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4bc796]
+[cn-e13:409949] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4a447d]
+[cn-e13:409949] [ 7] [cn-e13:409950] [ 7] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409949] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e13:409950] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_misc/build/lmp[0x4af2de]
+[cn-e13:409950] *** End of error message ***
+[cn-e13:409949] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 409950 on node cn-e13 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[cn-e13.hpc.engr.oregonstate.edu:409945] 1 more process has sent help message help-mpi-common-cuda.txt / dlopen failed
+[cn-e13.hpc.engr.oregonstate.edu:409945] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+

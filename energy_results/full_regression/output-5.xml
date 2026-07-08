@@ -1,0 +1,205 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="48" tests="96" time="0.0">
+	<testsuite disabled="0" errors="0" failures="48" name="tools/regression-tests/config_serial.yaml" skipped="8" tests="96" time="0" timestamp="2026-01-12 18:36:38.055997">
+		<testcase name="in.colloid" classname="in.colloid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.comb.Cu" classname="in.comb.Cu"/>
+		<testcase name="in.comb.Cu2O.elastic" classname="in.comb.Cu2O.elastic"/>
+		<testcase name="in.comb.HfO2" classname="in.comb.HfO2"/>
+		<testcase name="in.comb.Si" classname="in.comb.Si"/>
+		<testcase name="in.comb.Si.elastic" classname="in.comb.Si.elastic"/>
+		<testcase name="in.comb3" classname="in.comb3"/>
+		<testcase name="in.controller.temp" classname="in.controller.temp"/>
+		<testcase name="in.controller.wall" classname="in.controller.wall"/>
+		<testcase name="in.coreshell" classname="in.coreshell">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '9' "/>
+		</testcase>
+		<testcase name="in.coreshell.dsf" classname="in.coreshell.dsf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '8' "/>
+		</testcase>
+		<testcase name="in.coreshell.thermostats" classname="in.coreshell.thermostats">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '13', 'rel_diff_failed': '14' "/>
+		</testcase>
+		<testcase name="in.coreshell.wolf" classname="in.coreshell.wolf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.crack" classname="in.crack"/>
+		<testcase name="in.deposit.atom" classname="in.deposit.atom">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule" classname="in.deposit.molecule">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule.rigid-nve-small" classname="in.deposit.molecule.rigid-nve-small"/>
+		<testcase name="in.deposit.molecule.rigid-nvt-small" classname="in.deposit.molecule.rigid-nvt-small"/>
+		<testcase name="in.deposit.molecule.rigid-small" classname="in.deposit.molecule.rigid-small"/>
+		<testcase name="in.deposit.molecule.shake" classname="in.deposit.molecule.shake">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.dipole" classname="in.dipole"/>
+		<testcase name="in.dreiding" classname="in.dreiding">
+			<failure type="failure" message="completed, error parsing log.dreiding.1 into YAML"/>
+		</testcase>
+		<testcase name="in.eim" classname="in.eim">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ellipse.gayberne" classname="in.ellipse.gayberne">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ellipse.resquared" classname="in.ellipse.resquared">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.abcfire" classname="in.abcfire"/>
+		<testcase name="in.abcfire_mod" classname="in.abcfire_mod"/>
+		<testcase name="in.cg" classname="in.cg"/>
+		<testcase name="in.fire" classname="in.fire"/>
+		<testcase name="in.fire_mod" classname="in.fire_mod"/>
+		<testcase name="in.meam.abcfire" classname="in.meam.abcfire"/>
+		<testcase name="in.meam.fire" classname="in.meam.fire"/>
+		<testcase name="in.neb.sivac.abcfire" classname="in.neb.sivac.abcfire">
+			<failure type="failure" message="failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142)."/>
+		</testcase>
+		<testcase name="in.neb.sivac.abcfire_mod" classname="in.neb.sivac.abcfire_mod">
+			<failure type="failure" message="failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142)."/>
+		</testcase>
+		<testcase name="in.neb.sivac.fire" classname="in.neb.sivac.fire">
+			<failure type="failure" message="failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142)."/>
+		</testcase>
+		<testcase name="in.neb.sivac.fire_mod" classname="in.neb.sivac.fire_mod">
+			<failure type="failure" message="failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142)."/>
+		</testcase>
+		<testcase name="in.neb.sivac.qm" classname="in.neb.sivac.qm">
+			<failure type="failure" message="failed, ERROR: Cannot use NEB with a single replica (src/REPLICA/neb.cpp:142)."/>
+		</testcase>
+		<testcase name="in.flow.couette" classname="in.flow.couette"/>
+		<testcase name="in.flow.pois" classname="in.flow.pois"/>
+		<testcase name="in.friction" classname="in.friction"/>
+		<testcase name="in.gjf.vfull" classname="in.gjf.vfull"/>
+		<testcase name="in.gjf.vhalf" classname="in.gjf.vhalf"/>
+		<testcase name="in.granregion.box" classname="in.granregion.box"/>
+		<testcase name="in.granregion.funnel" classname="in.granregion.funnel"/>
+		<testcase name="in.granregion.mixer" classname="in.granregion.mixer"/>
+		<testcase name="in.pour.drum" classname="in.pour.drum"/>
+		<testcase name="in.pour.flatwall" classname="in.pour.flatwall"/>
+		<testcase name="in.pour.heat" classname="in.pour.heat"/>
+		<testcase name="in.restitution" classname="in.restitution"/>
+		<testcase name="in.sync_verlet" classname="in.sync_verlet"/>
+		<testcase name="in.tableting.200" classname="in.tableting.200"/>
+		<testcase name="in.triaxial.compaction.12" classname="in.triaxial.compaction.12"/>
+		<testcase name="in.grid.2d" classname="in.grid.2d"/>
+		<testcase name="in.grid.3d" classname="in.grid.3d"/>
+		<testcase name="in.sph" classname="in.sph"/>
+		<testcase name="in.hugoniostat" classname="in.hugoniostat"/>
+		<testcase name="in.hyper.global" classname="in.hyper.global">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.hyper.local" classname="in.hyper.local">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.indent" classname="in.indent"/>
+		<testcase name="in.indent.min" classname="in.indent.min"/>
+		<testcase name="in.kim-ex.melt" classname="in.kim-ex.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.kim-pm-property" classname="in.kim-pm-property">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim init LJ_Shifted_Bernardes_1958MedCutoff_Ar__MO_126566794224_004 metal (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.kim-pm-query.melt" classname="in.kim-pm-query.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.kim-pm.melt" classname="in.kim-pm.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init SW_StillingerWeber_1985_Si__MO_405512056662_005 real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.kim-query" classname="in.kim-query">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim   init EAM_Dynamo_ErcolessiAdams_1994_Al__MO_123629422045_005 metal (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.kim-sm.melt" classname="in.kim-sm.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.lammps.melt" classname="in.lammps.melt">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.gcmc.co2" classname="in.gcmc.co2">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.gcmc.h2o" classname="in.gcmc.h2o">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '8' "/>
+		</testcase>
+		<testcase name="in.gcmc.lj" classname="in.gcmc.lj"/>
+		<testcase name="in.hmc.flexible.melt" classname="in.hmc.flexible.melt">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.hmc.rigid" classname="in.hmc.rigid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.mixed" classname="in.mixed">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.pure" classname="in.pure">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.sgcmc.eam" classname="in.sgcmc.eam"/>
+		<testcase name="in.widom.lj" classname="in.widom.lj"/>
+		<testcase name="in.widom.spce" classname="in.widom.spce">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '0' "/>
+		</testcase>
+		<testcase name="in.aimd.alone" classname="in.aimd.alone">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.aimd.driver" classname="in.aimd.driver">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.aimd.driver.plugin" classname="in.aimd.driver.plugin">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.aimd.engine" classname="in.aimd.engine">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.aimdpy.mm" classname="in.aimdpy.mm">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.aimdpy.qm" classname="in.aimdpy.qm">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.sequence.python" classname="in.sequence.python">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.series.alone" classname="in.series.alone">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.series.driver" classname="in.series.driver">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: mdi             connect (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.series.driver.plugin" classname="in.series.driver.plugin">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.series.engine" classname="in.series.engine">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.snapshot.alone" classname="in.snapshot.alone">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.snapshot.driver" classname="in.snapshot.driver">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.snapshot.driver.plugin" classname="in.snapshot.driver.plugin">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'mdi/qm' is part of the MDI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.snapshot.engine" classname="in.snapshot.engine">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: mdi             engine (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.msmeam" classname="in.msmeam"/>
+		<testcase name="in.meam" classname="in.meam"/>
+		<testcase name="in.meam.shear" classname="in.meam.shear"/>
+		<testcase name="in.melt" classname="in.melt"/>
+	</testsuite>
+</testsuites>

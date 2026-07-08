@@ -1,0 +1,24 @@
+# ENACT Replication Package — direct runtime dependencies
+#
+# Versions below were recovered from nsga2_runs/out/venv_nsga2/ (a captured
+# virtualenv found in the repository, now excluded from version control by
+# .gitignore) before that environment was ignored. That venv only contained
+# numpy/pandas/matplotlib and their transitive deps (it was used for the
+# analysis/plotting scripts: nsga2_runs/analyze.py, analyze2.py, insights.py,
+# nsga2_runs/out/generate_chart_forMM.py, nsga_summary.py).
+#
+# pymoo, tqdm, and requests are imported by the NSGA-II run scripts
+# (nsga2_runs/scripts/*.py) and the GitHub Actions collector
+# (Workflow_runs/runs_linux_bigbig.py) but were NOT present in the captured
+# venv, so no exact version could be recovered from this repository. They
+# are listed unpinned below — see UNRESOLVED_ISSUES.md. Pin them once the
+# original run environment is confirmed.
+#
+# Python version observed in the captured venv: 3.12 (pyvenv.cfg).
+
+numpy==2.4.1
+pandas==2.3.3
+matplotlib==3.10.8
+pymoo
+tqdm
+requests

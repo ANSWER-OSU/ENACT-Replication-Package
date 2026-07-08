@@ -1,0 +1,108 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="19" tests="60" time="0.0">
+	<testsuite disabled="0" errors="0" failures="19" name="tools/regression-tests/config_quick.yaml" skipped="5" tests="60" time="0" timestamp="2026-01-15 20:54:48.457509">
+		<testcase name="in.coreshell" classname="in.coreshell">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '9' "/>
+		</testcase>
+		<testcase name="in.coreshell.dsf" classname="in.coreshell.dsf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '8' "/>
+		</testcase>
+		<testcase name="in.coreshell.thermostats" classname="in.coreshell.thermostats">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '13', 'rel_diff_failed': '14' "/>
+		</testcase>
+		<testcase name="in.crack" classname="in.crack"/>
+		<testcase name="in.deposit.atom" classname="in.deposit.atom">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule" classname="in.deposit.molecule">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.deposit.molecule.rigid-nve-small" classname="in.deposit.molecule.rigid-nve-small"/>
+		<testcase name="in.deposit.molecule.rigid-nvt-small" classname="in.deposit.molecule.rigid-nvt-small"/>
+		<testcase name="in.deposit.molecule.rigid-small" classname="in.deposit.molecule.rigid-small"/>
+		<testcase name="in.deposit.molecule.shake" classname="in.deposit.molecule.shake">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.dipole" classname="in.dipole"/>
+		<testcase name="in.dreiding" classname="in.dreiding">
+			<failure type="failure" message="completed, error parsing log.dreiding.1 into YAML"/>
+		</testcase>
+		<testcase name="in.eim" classname="in.eim">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ellipse.gayberne" classname="in.ellipse.gayberne">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ellipse.resquared" classname="in.ellipse.resquared">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.abcfire" classname="in.abcfire"/>
+		<testcase name="in.abcfire_mod" classname="in.abcfire_mod"/>
+		<testcase name="in.cg" classname="in.cg"/>
+		<testcase name="in.fire" classname="in.fire"/>
+		<testcase name="in.fire_mod" classname="in.fire_mod"/>
+		<testcase name="in.flow.couette" classname="in.flow.couette"/>
+		<testcase name="in.flow.pois" classname="in.flow.pois"/>
+		<testcase name="in.friction" classname="in.friction"/>
+		<testcase name="in.gjf.vfull" classname="in.gjf.vfull"/>
+		<testcase name="in.gjf.vhalf" classname="in.gjf.vhalf"/>
+		<testcase name="in.granregion.box" classname="in.granregion.box"/>
+		<testcase name="in.pour.drum" classname="in.pour.drum"/>
+		<testcase name="in.pour.flatwall" classname="in.pour.flatwall"/>
+		<testcase name="in.restitution" classname="in.restitution"/>
+		<testcase name="in.grid.2d" classname="in.grid.2d"/>
+		<testcase name="in.grid.3d" classname="in.grid.3d"/>
+		<testcase name="in.hugoniostat" classname="in.hugoniostat"/>
+		<testcase name="in.hyper.local" classname="in.hyper.local">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.indent" classname="in.indent"/>
+		<testcase name="in.indent.min" classname="in.indent.min"/>
+		<testcase name="in.lammps.melt" classname="in.lammps.melt">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.gcmc.co2" classname="in.gcmc.co2">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.gcmc.lj" classname="in.gcmc.lj"/>
+		<testcase name="in.widom.lj" classname="in.widom.lj"/>
+		<testcase name="in.aimd.alone" classname="in.aimd.alone">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.series.alone" classname="in.series.alone">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.snapshot.alone" classname="in.snapshot.alone">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.meam" classname="in.meam"/>
+		<testcase name="in.msmeam" classname="in.msmeam"/>
+		<testcase name="in.melt" classname="in.melt"/>
+		<testcase name="in.mesh_box" classname="in.mesh_box"/>
+		<testcase name="in.micelle" classname="in.micelle">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.micelle-rigid" classname="in.micelle-rigid"/>
+		<testcase name="in.min" classname="in.min"/>
+		<testcase name="in.min.box" classname="in.min.box"/>
+		<testcase name="in.mliap.nn.Cu" classname="in.mliap.nn.Cu"/>
+		<testcase name="in.mliap.nn.Ta06A" classname="in.mliap.nn.Ta06A"/>
+		<testcase name="in.mliap.snap.Ta06A" classname="in.mliap.snap.Ta06A"/>
+		<testcase name="in.mliap.snap.WBe.PRB2019" classname="in.mliap.snap.WBe.PRB2019"/>
+		<testcase name="in.mliap.snap.chem" classname="in.mliap.snap.chem"/>
+		<testcase name="in.mliap.snap.quadratic" classname="in.mliap.snap.quadratic"/>
+		<testcase name="in.mliap.so3.nn.Si" classname="in.mliap.so3.nn.Si"/>
+		<testcase name="in.msst" classname="in.msst"/>
+		<testcase name="in.granular" classname="in.granular">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.powerlaw" classname="in.powerlaw">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+	</testsuite>
+</testsuites>

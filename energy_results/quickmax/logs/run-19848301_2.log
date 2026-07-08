@@ -1,0 +1,1182 @@
+INFO:__main__:
+There are 41 input scripts listed in ../energy_results/quickmax/lists/shards_19848301/shard-02.txt.
+INFO:__main__:     Executing for reference walltime: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/../bench/in.lj -v x 2 -v y 2 -v z 1 -cite none
+INFO:__main__:     Reference walltime, sec = 1.0
+INFO:__main__:Entering examples/PACKAGES/entropy
+INFO:__main__:   + in.entropy (1/1)
+INFO:__main__:     Using 1 nprocs for in.entropy as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.entropy -cite none -log log.entropy.1
+INFO:__main__:       failed, cannot find the reference log file for in.entropy with the expected format log.[date].entropy.*.[nprocs]
+INFO:__main__:       thermo.in.entropy.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/extep
+INFO:__main__:   + in.extep-bn (1/1)
+INFO:__main__:     Using 1 nprocs for in.extep-bn as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.extep-bn -cite none -log log.extep-bn.1
+INFO:__main__:     Comparing thermo output from log.extep-bn.1 against the reference log file log.23Oct17.extep-bn.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (6.10e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (5.40e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Temp: actual (5.74e-03) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (9.17e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 0: PotEng: actual (8.09e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Temp: actual (3.77e-05) > expected (1.00e-07)
+INFO:__main__:Entering examples/PACKAGES/filter_corotate
+INFO:__main__:   + in.bpti (1/1)
+INFO:__main__:     Using 1 nprocs for in.bpti as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.bpti -cite none -log log.bpti.1
+INFO:__main__:    Error parsing log.bpti.1 at line 9, column 13.
+INFO:__main__:---
+keywords: ['Step', 'Temp', 'E_pair', 'E_mol', 'TotEng', 'Press', ]
+data:
+ - [0, 0, -3075.6497, 943.91164, -2131.7381, -380.67775, ]
+ - [241, 0, -4503.3151, 749.58684, -3753.7283, -29.038735, ]
+...
+---
+keywords: ['------------', 'Step', '0', '-----', 'CPU', '=', '0', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -3220.3397, KinEng, =, 531.1804, Temp, =, 200.0000, ]
+ - [PotEng, =, -3751.5200, E_bond, =, 42.2798, E_angle, =, 345.2600, ]
+ - [E_dihed, =, 337.8366, E_impro, =, 24.2104, E_vdwl, =, -288.5348, ]
+ - [E_coul, =, -886.3627, E_long, =, -3326.2093, Press, =, 83.2346, ]
+---
+keywords: ['------------', 'Step', '100', '-----', 'CPU', '=', '2.65726', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2718.4642, KinEng, =, 539.6161, Temp, =, 203.1762, ]
+ - [PotEng, =, -3258.0803, E_bond, =, 203.2240, E_angle, =, 566.1695, ]
+ - [E_dihed, =, 397.6787, E_impro, =, 34.7678, E_vdwl, =, -248.6454, ]
+ - [E_coul, =, -874.8600, E_long, =, -3336.4148, Press, =, 135.8498, ]
+---
+keywords: ['------------', 'Step', '200', '-----', 'CPU', '=', '5.340689', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2665.9856, KinEng, =, 622.5497, Temp, =, 234.4024, ]
+ - [PotEng, =, -3288.5353, E_bond, =, 207.6743, E_angle, =, 590.0901, ]
+ - [E_dihed, =, 389.1762, E_impro, =, 30.5638, E_vdwl, =, -240.8934, ]
+ - [E_coul, =, -926.1829, E_long, =, -3338.9635, Press, =, 103.1353, ]
+---
+keywords: ['------------', 'Step', '300', '-----', 'CPU', '=', '8.048245', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2674.8644, KinEng, =, 614.7347, Temp, =, 231.4599, ]
+ - [PotEng, =, -3289.5991, E_bond, =, 201.4417, E_angle, =, 569.7662, ]
+ - [E_dihed, =, 382.4275, E_impro, =, 41.0311, E_vdwl, =, -220.8664, ]
+ - [E_coul, =, -921.6479, E_long, =, -3341.7512, Press, =, 45.0672, ]
+---
+keywords: ['------------', 'Step', '400', '-----', 'CPU', '=', '10.75065', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2629.7435, KinEng, =, 648.9147, Temp, =, 244.3293, ]
+ - [PotEng, =, -3278.6583, E_bond, =, 194.1139, E_angle, =, 613.5008, ]
+ - [E_dihed, =, 406.1410, E_impro, =, 42.0315, E_vdwl, =, -221.2738, ]
+ - [E_coul, =, -967.6067, E_long, =, -3345.5649, Press, =, -107.5056, ]
+---
+keywords: ['------------', 'Step', '500', '-----', 'CPU', '=', '13.45741', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2591.2435, KinEng, =, 660.1495, Temp, =, 248.5594, ]
+ - [PotEng, =, -3251.3929, E_bond, =, 247.7007, E_angle, =, 582.1929, ]
+ - [E_dihed, =, 409.5270, E_impro, =, 43.1158, E_vdwl, =, -200.5524, ]
+ - [E_coul, =, -993.5366, E_long, =, -3339.8404, Press, =, 178.3948, ]
+---
+keywords: ['------------', 'Step', '600', '-----', 'CPU', '=', '16.17995', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2557.6178, KinEng, =, 666.3633, Temp, =, 250.8991, ]
+ - [PotEng, =, -3223.9812, E_bond, =, 227.4293, E_angle, =, 632.0812, ]
+ - [E_dihed, =, 415.8754, E_impro, =, 37.0779, E_vdwl, =, -235.1347, ]
+ - [E_coul, =, -962.4600, E_long, =, -3338.8503, Press, =, -36.8836, ]
+---
+keywords: ['------------', 'Step', '700', '-----', 'CPU', '=', '18.89968', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2574.7419, KinEng, =, 673.1132, Temp, =, 253.4406, ]
+ - [PotEng, =, -3247.8551, E_bond, =, 231.3275, E_angle, =, 604.9994, ]
+ - [E_dihed, =, 396.8350, E_impro, =, 45.6706, E_vdwl, =, -249.9814, ]
+ - [E_coul, =, -933.2451, E_long, =, -3343.4612, Press, =, -53.3716, ]
+---
+keywords: ['------------', 'Step', '800', '-----', 'CPU', '=', '21.62811', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2474.9035, KinEng, =, 707.1743, Temp, =, 266.2653, ]
+ - [PotEng, =, -3182.0779, E_bond, =, 262.1923, E_angle, =, 669.2278, ]
+ - [E_dihed, =, 395.4418, E_impro, =, 44.6344, E_vdwl, =, -226.7881, ]
+ - [E_coul, =, -986.8805, E_long, =, -3339.9055, Press, =, 41.3193, ]
+---
+keywords: ['------------', 'Step', '900', '-----', 'CPU', '=', '24.36523', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2389.0432, KinEng, =, 794.9408, Temp, =, 299.3111, ]
+ - [PotEng, =, -3183.9840, E_bond, =, 273.8142, E_angle, =, 670.4373, ]
+ - [E_dihed, =, 395.5193, E_impro, =, 40.3121, E_vdwl, =, -231.1109, ]
+ - [E_coul, =, -998.5893, E_long, =, -3334.3667, Press, =, -61.9356, ]
+---
+keywords: ['------------', 'Step', '1000', '-----', 'CPU', '=', '27.08091', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, -2349.3808, KinEng, =, 805.1747, Temp, =, 303.1644, ]
+ - [PotEng, =, -3154.5555, E_bond, =, 271.0459, E_angle, =, 649.7093, ]
+ - [E_dihed, =, 402.0329, E_impro, =, 43.9803, E_vdwl, =, -216.0154, ]
+ - [E_coul, =, -967.8876, E_long, =, -3337.4210, Press, =, -95.1993, ]
+...
+
+INFO:__main__:     The run terminated with in.bpti gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-10 -10 -30) to (50 50 30)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  892 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  18 = max dihedrals/atom
+  scanning impropers ...
+  2 = max impropers/atom
+  orthogonal box = (-10 -10 -30) to (50 50 30)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  906 bonds
+  reading angles ...
+  1626 angles
+  reading dihedrals ...
+  2501 dihedrals
+  reading impropers ...
+  137 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+     9 = max # of 1-3 neighbors
+    19 = max # of 1-4 neighbors
+    21 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.032 seconds
+Switching to 'neigh_modify every 1 delay 0 check yes' setting during minimization
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = 6
+For more information see https://docs.lammps.org/err0029 (src/kspace.cpp:329)
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.20327216
+  grid = 16 16 16
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.031639896
+  estimated relative force accuracy = 9.5282607e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 9261 4096
+Generated 378 of 378 mixed pair_coeff terms from arithmetic mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 10 10 10
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/charmm/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up cg style minimization ...
+  Unit style    : real
+  Current step  : 0
+Per MPI rank memory allocation (min/avg/max) = 18.22 | 18.22 | 18.22 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -3075.6497      943.91164     -2131.7381     -380.67775    
+       241   0             -4503.3151      749.58684     -3753.7283     -29.038735    
+Loop time of 2.35253 on 1 procs for 241 steps with 892 atoms
+
+99.8% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -2131.73809529935  -3753.44168937758  -3753.72825927081
+  Force two-norm initial, final = 1086.2055 26.365914
+  Force max component initial, final = 310.81136 3.9386306
+  Final line search alpha, max atom move = 0.0059668252 0.02350112
+  Iterations, force evaluations = 241 463
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.7956     | 1.7956     | 1.7956     |   0.0 | 76.32
+Bond    | 0.14234    | 0.14234    | 0.14234    |   0.0 |  6.05
+Kspace  | 0.35336    | 0.35336    | 0.35336    |   0.0 | 15.02
+Neigh   | 0.051524   | 0.051524   | 0.051524   |   0.0 |  2.19
+Comm    | 0.00051138 | 0.00051138 | 0.00051138 |   0.0 |  0.02
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.009228   |            |       |  0.39
+
+Nlocal:            892 ave         892 max         892 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:             31 ave          31 max          31 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         148892 ave      148892 max      148892 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 148892
+Ave neighs/atom = 166.91928
+Ave special neighs/atom = 10.939462
+Neighbor list builds = 15
+Dangerous builds = 0
+Respa levels:
+  1 = bond angle
+  2 = dihedral improper pair
+  3 = kspace
+Finding filter clusters ...
+  163 = # of size 2 clusters
+  0 = # of size 3 clusters
+  25 = # of size 4 clusters
+  0 = # of size 5 clusters
+  100 = # of frozen angles
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- Mollified Impulse Method with Corotational Filter: https://doi.org/10.1016/j.jcp.2016.12.024
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.20327216
+  grid = 16 16 16
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.031639896
+  estimated relative force accuracy = 9.5282607e-05
+  using double precision FFTW3
+  3d grid and FFT values/proc = 9261 4096
+Generated 378 of 378 mixed pair_coeff terms from arithmetic mixing rule
+Setting up r-RESPA run ...
+  Unit style    : real
+  Current step  : 0
+  Time steps    : 1:0.5 2:1 3:8
+  r-RESPA fixes :
+Per MPI rank memory allocation (min/avg/max) = 19.9 | 19.9 | 19.9 Mbytes
+------------ Step              0 ----- CPU =            0 (sec) -------------
+TotEng   =     -3220.3397 KinEng   =       531.1804 Temp     =       200.0000 
+PotEng   =     -3751.5200 E_bond   =        42.2798 E_angle  =       345.2600 
+E_dihed  =       337.8366 E_impro  =        24.2104 E_vdwl   =      -288.5348 
+E_coul   =      -886.3627 E_long   =     -3326.2093 Press    =        83.2346
+------------ Step            100 ----- CPU =      2.65726 (sec) -------------
+TotEng   =     -2718.4642 KinEng   =       539.6161 Temp     =       203.1762 
+PotEng   =     -3258.0803 E_bond   =       203.2240 E_angle  =       566.1695 
+E_dihed  =       397.6787 E_impro  =        34.7678 E_vdwl   =      -248.6454 
+E_coul   =      -874.8600 E_long   =     -3336.4148 Press    =       135.8498
+------------ Step            200 ----- CPU =     5.340689 (sec) -------------
+TotEng   =     -2665.9856 KinEng   =       622.5497 Temp     =       234.4024 
+PotEng   =     -3288.5353 E_bond   =       207.6743 E_angle  =       590.0901 
+E_dihed  =       389.1762 E_impro  =        30.5638 E_vdwl   =      -240.8934 
+E_coul   =      -926.1829 E_long   =     -3338.9635 Press    =       103.1353
+------------ Step            300 ----- CPU =     8.048245 (sec) -------------
+TotEng   =     -2674.8644 KinEng   =       614.7347 Temp     =       231.4599 
+PotEng   =     -3289.5991 E_bond   =       201.4417 E_angle  =       569.7662 
+E_dihed  =       382.4275 E_impro  =        41.0311 E_vdwl   =      -220.8664 
+E_coul   =      -921.6479 E_long   =     -3341.7512 Press    =        45.0672
+------------ Step            400 ----- CPU =     10.75065 (sec) -------------
+TotEng   =     -2629.7435 KinEng   =       648.9147 Temp     =       244.3293 
+PotEng   =     -3278.6583 E_bond   =       194.1139 E_angle  =       613.5008 
+E_dihed  =       406.1410 E_impro  =        42.0315 E_vdwl   =      -221.2738 
+E_coul   =      -967.6067 E_long   =     -3345.5649 Press    =      -107.5056
+------------ Step            500 ----- CPU =     13.45741 (sec) -------------
+TotEng   =     -2591.2435 KinEng   =       660.1495 Temp     =       248.5594 
+PotEng   =     -3251.3929 E_bond   =       247.7007 E_angle  =       582.1929 
+E_dihed  =       409.5270 E_impro  =        43.1158 E_vdwl   =      -200.5524 
+E_coul   =      -993.5366 E_long   =     -3339.8404 Press    =       178.3948
+------------ Step            600 ----- CPU =     16.17995 (sec) -------------
+TotEng   =     -2557.6178 KinEng   =       666.3633 Temp     =       250.8991 
+PotEng   =     -3223.9812 E_bond   =       227.4293 E_angle  =       632.0812 
+E_dihed  =       415.8754 E_impro  =        37.0779 E_vdwl   =      -235.1347 
+E_coul   =      -962.4600 E_long   =     -3338.8503 Press    =       -36.8836
+------------ Step            700 ----- CPU =     18.89968 (sec) -------------
+TotEng   =     -2574.7419 KinEng   =       673.1132 Temp     =       253.4406 
+PotEng   =     -3247.8551 E_bond   =       231.3275 E_angle  =       604.9994 
+E_dihed  =       396.8350 E_impro  =        45.6706 E_vdwl   =      -249.9814 
+E_coul   =      -933.2451 E_long   =     -3343.4612 Press    =       -53.3716
+------------ Step            800 ----- CPU =     21.62811 (sec) -------------
+TotEng   =     -2474.9035 KinEng   =       707.1743 Temp     =       266.2653 
+PotEng   =     -3182.0779 E_bond   =       262.1923 E_angle  =       669.2278 
+E_dihed  =       395.4418 E_impro  =        44.6344 E_vdwl   =      -226.7881 
+E_coul   =      -986.8805 E_long   =     -3339.9055 Press    =        41.3193
+------------ Step            900 ----- CPU =     24.36523 (sec) -------------
+TotEng   =     -2389.0432 KinEng   =       794.9408 Temp     =       299.3111 
+PotEng   =     -3183.9840 E_bond   =       273.8142 E_angle  =       670.4373 
+E_dihed  =       395.5193 E_impro  =        40.3121 E_vdwl   =      -231.1109 
+E_coul   =      -998.5893 E_long   =     -3334.3667 Press    =       -61.9356
+------------ Step           1000 ----- CPU =     27.08091 (sec) -------------
+TotEng   =     -2349.3808 KinEng   =       805.1747 Temp     =       303.1644 
+PotEng   =     -3154.5555 E_bond   =       271.0459 E_angle  =       649.7093 
+E_dihed  =       402.0329 E_impro  =        43.9803 E_vdwl   =      -216.0154 
+E_coul   =      -967.8876 E_long   =     -3337.4210 Press    =       -95.1993
+Loop time of 27.0809 on 1 procs for 1000 steps with 892 atoms
+
+Performance: 25.523 ns/day, 0.940 hours/ns, 36.926 timesteps/s, 32.938 katom-step/s
+99.8% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 21.67      | 21.67      | 21.67      |   0.0 | 80.02
+Bond    | 3.0615     | 3.0615     | 3.0615     |   0.0 | 11.31
+Kspace  | 0.75069    | 0.75069    | 0.75069    |   0.0 |  2.77
+Neigh   | 0.68613    | 0.68613    | 0.68613    |   0.0 |  2.53
+Comm    | 0.010728   | 0.010728   | 0.010728   |   0.0 |  0.04
+Output  | 0.00023235 | 0.00023235 | 0.00023235 |   0.0 |  0.00
+Modify  | 0.82199    | 0.82199    | 0.82199    |   0.0 |  3.04
+Other   |            | 0.07932    |            |       |  0.29
+
+Nlocal:            892 ave         892 max         892 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:             24 ave          24 max          24 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         145246 ave      145246 max      145246 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 145246
+Ave neighs/atom = 162.83184
+Ave special neighs/atom = 10.939462
+Neighbor list builds = 196
+Dangerous builds = 0
+Total wall time: 0:00:29
+
+INFO:__main__:Entering examples/PACKAGES/flow_gauss
+INFO:__main__:   + in.GD (1/1)
+INFO:__main__:     Using 1 nprocs for in.GD as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.GD -cite none -log log.GD.1
+INFO:__main__:     Comparing thermo output from log.GD.1 against the reference log file log.6Dec23.GD.g++.1
+INFO:__main__:     all 16 checks passed.
+INFO:__main__:Entering examples/PACKAGES/gauss_diel
+INFO:__main__:   + in.gauss-diel (1/3)
+INFO:__main__:     Using 1 nprocs for in.gauss-diel as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gauss-diel -cite none -log log.gauss-diel.1
+INFO:__main__:    Error parsing log.gauss-diel.1 at line 3, column 13.
+INFO:__main__:---
+keywords: ['------------', 'Step', '0', '-----', 'CPU', '=', '0', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 9.9401, KinEng, =, 1.4996, Temp, =, 1.0000, ]
+ - [PotEng, =, 8.4405, E_bond, =, 0.0036, E_angle, =, 0.1237, ]
+ - [E_dihed, =, 0.3185, E_impro, =, 0.0000, E_vdwl, =, 8.0100, ]
+ - [E_coul, =, -0.0127, E_long, =, -0.0025, Press, =, 0.4086, ]
+---
+keywords: ['------------', 'Step', '500', '-----', 'CPU', '=', '2.132133', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7646, KinEng, =, 1.5136, Temp, =, 1.0093, ]
+ - [PotEng, =, 1.2510, E_bond, =, 0.4719, E_angle, =, 0.3704, ]
+ - [E_dihed, =, 0.4122, E_impro, =, 0.0000, E_vdwl, =, -0.0019, ]
+ - [E_coul, =, 0.0003, E_long, =, -0.0018, Press, =, -0.0008, ]
+---
+keywords: ['------------', 'Step', '1000', '-----', 'CPU', '=', '4.245337', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7775, KinEng, =, 1.4885, Temp, =, 0.9926, ]
+ - [PotEng, =, 1.2890, E_bond, =, 0.4598, E_angle, =, 0.3788, ]
+ - [E_dihed, =, 0.4550, E_impro, =, 0.0000, E_vdwl, =, -0.0029, ]
+ - [E_coul, =, 0.0003, E_long, =, -0.0021, Press, =, -0.0040, ]
+---
+keywords: ['------------', 'Step', '1500', '-----', 'CPU', '=', '6.358099', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7496, KinEng, =, 1.4620, Temp, =, 0.9749, ]
+ - [PotEng, =, 1.2876, E_bond, =, 0.4552, E_angle, =, 0.3884, ]
+ - [E_dihed, =, 0.4493, E_impro, =, 0.0000, E_vdwl, =, -0.0034, ]
+ - [E_coul, =, 0.0003, E_long, =, -0.0022, Press, =, 0.0038, ]
+---
+keywords: ['------------', 'Step', '2000', '-----', 'CPU', '=', '8.475116', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7873, KinEng, =, 1.4713, Temp, =, 0.9811, ]
+ - [PotEng, =, 1.3160, E_bond, =, 0.4722, E_angle, =, 0.3750, ]
+ - [E_dihed, =, 0.4746, E_impro, =, 0.0000, E_vdwl, =, -0.0038, ]
+ - [E_coul, =, 0.0001, E_long, =, -0.0022, Press, =, -0.0055, ]
+...
+
+INFO:__main__:     The run terminated with in.gauss-diel gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-35 -35 -35) to (35 35 35)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  4200 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  scanning dihedrals ...
+  1 = max dihedrals/atom
+  orthogonal box = (-35 -35 -35) to (35 35 35)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  3600 bonds
+  reading angles ...
+  3300 angles
+  reading dihedrals ...
+  3000 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.052 seconds
+300 atoms in group cions
+3900 atoms in group sds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- neighbor multi command: https://doi.org/10.1016/j.cpc.2008.03.005, https://doi.org/10.1007/s40571-020-00361-2
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.2553228
+  grid = 30 30 30
+  stencil order = 3
+  estimated absolute RMS force accuracy = 0.00057128805
+  estimated relative force accuracy = 0.00057128805
+  using double precision FFTW3
+  3d grid and FFT values/proc = 35937 27000
+Generated 0 of 6 mixed pair_coeff terms from geometric mixing rule
+WARNING: Neighbor exclusions used with KSpace solver may give inconsistent Coulombic energies (src/neighbor.cpp:659)
+Neighbor list info ...
+  update: every = 5 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 9.5
+  ghost atom cutoff = 9.5
+  binsize = 1.392925, bins = 51 51 51
+  5 neighbor lists, perpetual/occasional/extra = 5 0 0
+  (1) pair lj/cut, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (2) pair lj/cut/coul/long, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (3) pair gauss/cut, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (4) pair coul/diel, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (5) neighbor class addition, perpetual
+      attributes: half, newton on
+      pair build: half/multi/newton
+      stencil: half/multi/3d
+      bin: multi
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.002
+Per MPI rank memory allocation (min/avg/max) = 14.48 | 14.48 | 14.48 Mbytes
+------------ Step              0 ----- CPU =            0 (sec) -------------
+TotEng   =         9.9401 KinEng   =         1.4996 Temp     =         1.0000 
+PotEng   =         8.4405 E_bond   =         0.0036 E_angle  =         0.1237 
+E_dihed  =         0.3185 E_impro  =         0.0000 E_vdwl   =         8.0100 
+E_coul   =        -0.0127 E_long   =        -0.0025 Press    =         0.4086
+------------ Step            500 ----- CPU =     2.132133 (sec) -------------
+TotEng   =         2.7646 KinEng   =         1.5136 Temp     =         1.0093 
+PotEng   =         1.2510 E_bond   =         0.4719 E_angle  =         0.3704 
+E_dihed  =         0.4122 E_impro  =         0.0000 E_vdwl   =        -0.0019 
+E_coul   =         0.0003 E_long   =        -0.0018 Press    =        -0.0008
+------------ Step           1000 ----- CPU =     4.245337 (sec) -------------
+TotEng   =         2.7775 KinEng   =         1.4885 Temp     =         0.9926 
+PotEng   =         1.2890 E_bond   =         0.4598 E_angle  =         0.3788 
+E_dihed  =         0.4550 E_impro  =         0.0000 E_vdwl   =        -0.0029 
+E_coul   =         0.0003 E_long   =        -0.0021 Press    =        -0.0040
+------------ Step           1500 ----- CPU =     6.358099 (sec) -------------
+TotEng   =         2.7496 KinEng   =         1.4620 Temp     =         0.9749 
+PotEng   =         1.2876 E_bond   =         0.4552 E_angle  =         0.3884 
+E_dihed  =         0.4493 E_impro  =         0.0000 E_vdwl   =        -0.0034 
+E_coul   =         0.0003 E_long   =        -0.0022 Press    =         0.0038
+------------ Step           2000 ----- CPU =     8.475116 (sec) -------------
+TotEng   =         2.7873 KinEng   =         1.4713 Temp     =         0.9811 
+PotEng   =         1.3160 E_bond   =         0.4722 E_angle  =         0.3750 
+E_dihed  =         0.4746 E_impro  =         0.0000 E_vdwl   =        -0.0038 
+E_coul   =         0.0001 E_long   =        -0.0022 Press    =        -0.0055
+Loop time of 8.47513 on 1 procs for 2000 steps with 4200 atoms
+
+Performance: 40778.112 tau/day, 235.984 timesteps/s, 991.135 katom-step/s
+99.7% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.29722    | 0.29722    | 0.29722    |   0.0 |  3.51
+Bond    | 1.7941     | 1.7941     | 1.7941     |   0.0 | 21.17
+Kspace  | 5.7678     | 5.7678     | 5.7678     |   0.0 | 68.06
+Neigh   | 0.05573    | 0.05573    | 0.05573    |   0.0 |  0.66
+Comm    | 0.042879   | 0.042879   | 0.042879   |   0.0 |  0.51
+Output  | 0.00021232 | 0.00021232 | 0.00021232 |   0.0 |  0.00
+Modify  | 0.50369    | 0.50369    | 0.50369    |   0.0 |  5.94
+Other   |            | 0.01352    |            |       |  0.16
+
+Nlocal:           4200 ave        4200 max        4200 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           3854 ave        3854 max        3854 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Ave special neighs/atom = 4.7142857
+Neighbor list builds = 14
+Dangerous builds = 2
+Total wall time: 0:00:08
+
+INFO:__main__:   + in.gauss-diel-cg (2/3)
+INFO:__main__:     Using 1 nprocs for in.gauss-diel-cg as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gauss-diel-cg -cite none -log log.gauss-diel-cg.1
+INFO:__main__:    Error parsing log.gauss-diel-cg.1 at line 3, column 13.
+INFO:__main__:---
+keywords: ['------------', 'Step', '0', '-----', 'CPU', '=', '0', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 9.9401, KinEng, =, 1.4996, Temp, =, 1.0000, ]
+ - [PotEng, =, 8.4405, E_bond, =, 0.0036, E_angle, =, 0.1237, ]
+ - [E_dihed, =, 0.3185, E_impro, =, 0.0000, E_vdwl, =, 8.0100, ]
+ - [E_coul, =, -0.0116, E_long, =, -0.0036, Press, =, 0.4086, ]
+---
+keywords: ['------------', 'Step', '500', '-----', 'CPU', '=', '0.9920635', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7564, KinEng, =, 1.4974, Temp, =, 0.9985, ]
+ - [PotEng, =, 1.2590, E_bond, =, 0.4644, E_angle, =, 0.3900, ]
+ - [E_dihed, =, 0.4089, E_impro, =, 0.0000, E_vdwl, =, -0.0024, ]
+ - [E_coul, =, 0.0016, E_long, =, -0.0034, Press, =, 0.0012, ]
+---
+keywords: ['------------', 'Step', '1000', '-----', 'CPU', '=', '1.94736', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7998, KinEng, =, 1.4916, Temp, =, 0.9946, ]
+ - [PotEng, =, 1.3082, E_bond, =, 0.4830, E_angle, =, 0.3869, ]
+ - [E_dihed, =, 0.4438, E_impro, =, 0.0000, E_vdwl, =, -0.0029, ]
+ - [E_coul, =, 0.0010, E_long, =, -0.0036, Press, =, 0.0005, ]
+---
+keywords: ['------------', 'Step', '1500', '-----', 'CPU', '=', '2.91114', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7766, KinEng, =, 1.4976, Temp, =, 0.9987, ]
+ - [PotEng, =, 1.2790, E_bond, =, 0.4553, E_angle, =, 0.3812, ]
+ - [E_dihed, =, 0.4493, E_impro, =, 0.0000, E_vdwl, =, -0.0035, ]
+ - [E_coul, =, 0.0004, E_long, =, -0.0037, Press, =, -0.0017, ]
+---
+keywords: ['------------', 'Step', '2000', '-----', 'CPU', '=', '3.867579', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.8350, KinEng, =, 1.4785, Temp, =, 0.9859, ]
+ - [PotEng, =, 1.3565, E_bond, =, 0.4830, E_angle, =, 0.4036, ]
+ - [E_dihed, =, 0.4765, E_impro, =, 0.0000, E_vdwl, =, -0.0027, ]
+ - [E_coul, =, 0.0001, E_long, =, -0.0038, Press, =, 0.0089, ]
+...
+
+INFO:__main__:     The run terminated with in.gauss-diel-cg gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-35 -35 -35) to (35 35 35)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  4200 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  scanning dihedrals ...
+  1 = max dihedrals/atom
+  orthogonal box = (-35 -35 -35) to (35 35 35)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  3600 bonds
+  reading angles ...
+  3300 angles
+  reading dihedrals ...
+  3000 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.056 seconds
+300 atoms in group cions
+3900 atoms in group sds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- neighbor multi command: https://doi.org/10.1016/j.cpc.2008.03.005, https://doi.org/10.1007/s40571-020-00361-2
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.10990129
+  grid = 12 12 12
+  stencil order = 3
+  estimated absolute RMS force accuracy = 0.00049414518
+  estimated relative force accuracy = 0.00049414518
+  using double precision FFTW3
+  3d grid and FFT values/proc = 3375 1728
+Generated 0 of 6 mixed pair_coeff terms from geometric mixing rule
+WARNING: Neighbor exclusions used with KSpace solver may give inconsistent Coulombic energies (src/neighbor.cpp:659)
+Neighbor list info ...
+  update: every = 5 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 19.5
+  ghost atom cutoff = 19.5
+  binsize = 1.392925, bins = 51 51 51
+  5 neighbor lists, perpetual/occasional/extra = 5 0 0
+  (1) pair lj/cut, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (2) pair lj/cut/coul/long, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (3) pair gauss/cut, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (4) pair coul/diel, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (5) neighbor class addition, perpetual
+      attributes: half, newton on
+      pair build: half/multi/newton
+      stencil: half/multi/3d
+      bin: multi
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.002
+  PPPM/cg optimization cutoff: 1e-05
+  Total charged atoms: 14.3%
+  Min/max charged atoms/proc: 14.3% 14.3%
+Per MPI rank memory allocation (min/avg/max) = 11.98 | 11.98 | 11.98 Mbytes
+------------ Step              0 ----- CPU =            0 (sec) -------------
+TotEng   =         9.9401 KinEng   =         1.4996 Temp     =         1.0000 
+PotEng   =         8.4405 E_bond   =         0.0036 E_angle  =         0.1237 
+E_dihed  =         0.3185 E_impro  =         0.0000 E_vdwl   =         8.0100 
+E_coul   =        -0.0116 E_long   =        -0.0036 Press    =         0.4086
+------------ Step            500 ----- CPU =    0.9920635 (sec) -------------
+TotEng   =         2.7564 KinEng   =         1.4974 Temp     =         0.9985 
+PotEng   =         1.2590 E_bond   =         0.4644 E_angle  =         0.3900 
+E_dihed  =         0.4089 E_impro  =         0.0000 E_vdwl   =        -0.0024 
+E_coul   =         0.0016 E_long   =        -0.0034 Press    =         0.0012
+------------ Step           1000 ----- CPU =      1.94736 (sec) -------------
+TotEng   =         2.7998 KinEng   =         1.4916 Temp     =         0.9946 
+PotEng   =         1.3082 E_bond   =         0.4830 E_angle  =         0.3869 
+E_dihed  =         0.4438 E_impro  =         0.0000 E_vdwl   =        -0.0029 
+E_coul   =         0.0010 E_long   =        -0.0036 Press    =         0.0005
+------------ Step           1500 ----- CPU =      2.91114 (sec) -------------
+TotEng   =         2.7766 KinEng   =         1.4976 Temp     =         0.9987 
+PotEng   =         1.2790 E_bond   =         0.4553 E_angle  =         0.3812 
+E_dihed  =         0.4493 E_impro  =         0.0000 E_vdwl   =        -0.0035 
+E_coul   =         0.0004 E_long   =        -0.0037 Press    =        -0.0017
+------------ Step           2000 ----- CPU =     3.867579 (sec) -------------
+TotEng   =         2.8350 KinEng   =         1.4785 Temp     =         0.9859 
+PotEng   =         1.3565 E_bond   =         0.4830 E_angle  =         0.4036 
+E_dihed  =         0.4765 E_impro  =         0.0000 E_vdwl   =        -0.0027 
+E_coul   =         0.0001 E_long   =        -0.0038 Press    =         0.0089
+Loop time of 3.86759 on 1 procs for 2000 steps with 4200 atoms
+
+Performance: 89357.865 tau/day, 517.117 timesteps/s, 2.172 Matom-step/s
+99.7% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.99469    | 0.99469    | 0.99469    |   0.0 | 25.72
+Bond    | 1.7899     | 1.7899     | 1.7899     |   0.0 | 46.28
+Kspace  | 0.37288    | 0.37288    | 0.37288    |   0.0 |  9.64
+Neigh   | 0.10542    | 0.10542    | 0.10542    |   0.0 |  2.73
+Comm    | 0.10055    | 0.10055    | 0.10055    |   0.0 |  2.60
+Output  | 0.00017541 | 0.00017541 | 0.00017541 |   0.0 |  0.00
+Modify  | 0.48192    | 0.48192    | 0.48192    |   0.0 | 12.46
+Other   |            | 0.02204    |            |       |  0.57
+
+Nlocal:           4200 ave        4200 max        4200 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          10619 ave       10619 max       10619 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:              0 ave           0 max           0 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Ave special neighs/atom = 4.7142857
+Neighbor list builds = 14
+Dangerous builds = 2
+Total wall time: 0:00:03
+
+INFO:__main__:   + in.gauss-diel-split (3/3)
+INFO:__main__:     Using 1 nprocs for in.gauss-diel-split as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gauss-diel-split -cite none -log log.gauss-diel-split.1
+INFO:__main__:    Error parsing log.gauss-diel-split.1 at line 3, column 13.
+INFO:__main__:---
+keywords: ['------------', 'Step', '0', '-----', 'CPU', '=', '0', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 9.9401, KinEng, =, 1.4996, Temp, =, 1.0000, ]
+ - [PotEng, =, 8.4405, E_bond, =, 0.0036, E_angle, =, 0.1237, ]
+ - [E_dihed, =, 0.3185, E_impro, =, 0.0000, E_vdwl, =, 8.0100, ]
+ - [E_coul, =, -0.0116, E_long, =, -0.0036, Press, =, 0.4086, ]
+---
+keywords: ['------------', 'Step', '500', '-----', 'CPU', '=', '1.060664', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7564, KinEng, =, 1.4974, Temp, =, 0.9985, ]
+ - [PotEng, =, 1.2590, E_bond, =, 0.4644, E_angle, =, 0.3900, ]
+ - [E_dihed, =, 0.4089, E_impro, =, 0.0000, E_vdwl, =, -0.0024, ]
+ - [E_coul, =, 0.0016, E_long, =, -0.0034, Press, =, 0.0012, ]
+---
+keywords: ['------------', 'Step', '1000', '-----', 'CPU', '=', '2.053119', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7998, KinEng, =, 1.4916, Temp, =, 0.9946, ]
+ - [PotEng, =, 1.3082, E_bond, =, 0.4830, E_angle, =, 0.3869, ]
+ - [E_dihed, =, 0.4438, E_impro, =, 0.0000, E_vdwl, =, -0.0029, ]
+ - [E_coul, =, 0.0010, E_long, =, -0.0036, Press, =, 0.0005, ]
+---
+keywords: ['------------', 'Step', '1500', '-----', 'CPU', '=', '3.060757', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.7766, KinEng, =, 1.4976, Temp, =, 0.9987, ]
+ - [PotEng, =, 1.2790, E_bond, =, 0.4553, E_angle, =, 0.3812, ]
+ - [E_dihed, =, 0.4493, E_impro, =, 0.0000, E_vdwl, =, -0.0035, ]
+ - [E_coul, =, 0.0004, E_long, =, -0.0037, Press, =, -0.0017, ]
+---
+keywords: ['------------', 'Step', '2000', '-----', 'CPU', '=', '4.053817', '(sec)', '-------------', ]
+data:
+ - [TotEng, =, 2.8350, KinEng, =, 1.4785, Temp, =, 0.9859, ]
+ - [PotEng, =, 1.3565, E_bond, =, 0.4830, E_angle, =, 0.4036, ]
+ - [E_dihed, =, 0.4765, E_impro, =, 0.0000, E_vdwl, =, -0.0027, ]
+ - [E_coul, =, 0.0001, E_long, =, -0.0038, Press, =, 0.0089, ]
+...
+
+INFO:__main__:     The run terminated with in.gauss-diel-split gives the following output:
+INFO:__main__:     LAMMPS (10 Dec 2025 - Development - patch_10Dec2025-46-g97341a839f)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread.
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-35 -35 -35) to (35 35 35)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  4200 atoms
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  1 = max angles/atom
+  scanning dihedrals ...
+  1 = max dihedrals/atom
+  orthogonal box = (-35 -35 -35) to (35 35 35)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  3600 bonds
+  reading angles ...
+  3300 angles
+  reading dihedrals ...
+  3000 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     2 = max # of 1-2 neighbors
+     2 = max # of 1-3 neighbors
+     4 = max # of 1-4 neighbors
+     6 = max # of special neighbors
+  special bonds CPU = 0.002 seconds
+  read_data CPU = 0.052 seconds
+300 atoms in group cions
+3900 atoms in group sds
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- neighbor multi command: https://doi.org/10.1016/j.cpc.2008.03.005, https://doi.org/10.1007/s40571-020-00361-2
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb
+  G vector (1/distance) = 0.10990129
+  grid = 12 12 12
+  stencil order = 3
+  estimated absolute RMS force accuracy = 0.00049414518
+  estimated relative force accuracy = 0.00049414518
+  using double precision FFTW3
+  3d grid and FFT values/proc = 3375 1728
+Generated 0 of 6 mixed pair_coeff terms from geometric mixing rule
+WARNING: Neighbor exclusions used with KSpace solver may give inconsistent Coulombic energies (src/neighbor.cpp:659)
+Neighbor list info ...
+  update: every = 5 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 19.5
+  ghost atom cutoff = 19.5
+  binsize = 1.392925, bins = 51 51 51
+  5 neighbor lists, perpetual/occasional/extra = 5 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on, cut 5.875
+      pair build: half/multi/newton
+      stencil: half/multi/3d
+      bin: multi
+  (2) pair coul/long, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (3) pair gauss/cut, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (4) pair coul/diel, perpetual, skip from (5)
+      attributes: half, newton on
+      pair build: skip
+      stencil: none
+      bin: none
+  (5) neighbor class addition, perpetual
+      attributes: half, newton on
+      pair build: half/multi/newton
+      stencil: half/multi/3d
+      bin: multi
+Setting up Verlet run ...
+  Unit style    : lj
+  Current step  : 0
+  Time step     : 0.002
+  PPPM/cg optimization cutoff: 1e-05
+  Total charged atoms: 14.3%
+  Min/max charged atoms/proc: 14.3% 14.3%
+Per MPI rank memory allocation (min/avg/max) = 13.01 | 13.01 | 13.01 Mbytes
+------------ Step              0 ----- CPU =            0 (sec) -------------
+TotEng   =         9.9401 KinEng   =         1.4996 Temp     =         1.0000 
+PotEng   =         8.4405 E_bond   =         0.0036 E_angle  =         0.1237 
+E_dihed  =         0.3185 E_impro  =         0.0000 E_vdwl   =         8.0100 
+E_coul   =        -0.0116 E_long   =        -0.0036 Press    =         0.4086
+------------ Step            500 ----- CPU =     1.060664 (sec) -------------
+TotEng   =         2.7564 KinEng   =         1.4974 Temp     =         0.9985 
+PotEng   =         1.2590 E_bond   =         0.4644 E_angle  =         0.3900 
+E_dihed  =         0.4089 E_impro  =         0.0000 E_vdwl   =        -0.0024 
+E_coul   =         0.0016 E_long   =        -0.0034 Press    =         0.0012
+------------ Step           1000 ----- CPU =     2.053119 (sec) -------------
+TotEng   =         2.7998 KinEng   =         1.4916 Temp     =         0.9946 
+PotEng   =         1.3082 E_bond   =         0.4830 E_angle  =         0.3869 
+E_dihed  =         0.4438 E_impro  =         0.0000 E_vdwl   =        -0.0029 
+E_coul   =         0.0010 E_long   =        -0.0036 Press    =         0.0005
+------------ Step           1500 ----- CPU =     3.060757 (sec) -------------
+TotEng   =         2.7766 KinEng   =         1.4976 Temp     =         0.9987 
+PotEng   =         1.2790 E_bond   =         0.4553 E_angle  =         0.3812 
+E_dihed  =         0.4493 E_impro  =         0.0000 E_vdwl   =        -0.0035 
+E_coul   =         0.0004 E_long   =        -0.0037 Press    =        -0.0017
+------------ Step           2000 ----- CPU =     4.053817 (sec) -------------
+TotEng   =         2.8350 KinEng   =         1.4785 Temp     =         0.9859 
+PotEng   =         1.3565 E_bond   =         0.4830 E_angle  =         0.4036 
+E_dihed  =         0.4765 E_impro  =         0.0000 E_vdwl   =        -0.0027 
+E_coul   =         0.0001 E_long   =        -0.0038 Press    =         0.0089
+Loop time of 4.05384 on 1 procs for 2000 steps with 4200 atoms
+
+Performance: 85252.601 tau/day, 493.360 timesteps/s, 2.072 Matom-step/s
+99.7% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 1.0726     | 1.0726     | 1.0726     |   0.0 | 26.46
+Bond    | 1.7934     | 1.7934     | 1.7934     |   0.0 | 44.24
+Kspace  | 0.37743    | 0.37743    | 0.37743    |   0.0 |  9.31
+Neigh   | 0.19883    | 0.19883    | 0.19883    |   0.0 |  4.90
+Comm    | 0.10403    | 0.10403    | 0.10403    |   0.0 |  2.57
+Output  | 0.00019287 | 0.00019287 | 0.00019287 |   0.0 |  0.00
+Modify  | 0.48228    | 0.48228    | 0.48228    |   0.0 | 11.90
+Other   |            | 0.02514    |            |       |  0.62
+
+Nlocal:           4200 ave        4200 max        4200 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          10619 ave       10619 max       10619 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:          22576 ave       22576 max       22576 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 22576
+Ave neighs/atom = 5.3752381
+Ave special neighs/atom = 4.7142857
+Neighbor list builds = 14
+Dangerous builds = 2
+Total wall time: 0:00:04
+
+INFO:__main__:Entering examples/PACKAGES/gle
+INFO:__main__:   + in.h2o-quantum (1/2)
+INFO:__main__:     Using 1 nprocs for in.h2o-quantum as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.h2o-quantum -cite none -log log.h2o-quantum.1
+INFO:__main__:     Comparing thermo output from log.h2o-quantum.1 against the reference log file log.14Jul25.h2o-quantum.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (8.80e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (3.83e+00) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (4.63e+01) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.02e-01) > expected (1.00e-07)
+INFO:__main__:        - Run 0: PotEng: actual (9.55e-03) > expected (1.00e-07)
+INFO:__main__:        - Run 0: TotEng: actual (5.17e-01) > expected (1.00e-07)
+INFO:__main__:   + in.h2o-smart (2/2)
+INFO:__main__:     Using 1 nprocs for in.h2o-smart as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.h2o-smart -cite none -log log.h2o-smart.1
+INFO:__main__:     Comparing thermo output from log.h2o-smart.1 against the reference log file log.14Jul25.h2o-smart.g++.1
+INFO:__main__:     3 abs diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (1.47e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (1.57e+01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: TotEng: actual (7.29e+00) > expected (1.00e-04)
+INFO:__main__:     3 rel diff checks failed.
+INFO:__main__:        - Run 0: Temp: actual (4.93e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: PotEng: actual (2.34e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: TotEng: actual (1.46e-02) > expected (1.00e-07)
+INFO:__main__:Entering examples/PACKAGES/grem/lj-single
+INFO:__main__:   + in.gREM-npt (1/2)
+INFO:__main__:     Using 1 nprocs for in.gREM-npt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gREM-npt -cite none -log log.gREM-npt.1
+INFO:__main__:       failed, cannot find the reference log file for in.gREM-npt with the expected format log.[date].gREM-npt.*.[nprocs]
+INFO:__main__:       thermo.in.gREM-npt.yaml also does not exist in the working directory.
+INFO:__main__:   + in.gREM-nvt (2/2)
+INFO:__main__:     Using 1 nprocs for in.gREM-nvt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 4.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gREM-nvt -cite none -log log.gREM-nvt.1
+INFO:__main__:       failed, cannot find the reference log file for in.gREM-nvt with the expected format log.[date].gREM-nvt.*.[nprocs]
+INFO:__main__:       thermo.in.gREM-nvt.yaml also does not exist in the working directory.
+INFO:__main__:Entering examples/PACKAGES/interlayer/aip_water_2dm
+INFO:__main__:   + in.gr_water (1/2)
+INFO:__main__:     Using 1 nprocs for in.gr_water as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gr_water -cite none -log log.gr_water.1
+INFO:__main__:     Comparing thermo output from log.gr_water.1 against the reference log file log.18May23.gr_water.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (3.30e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (2.40e-01) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.89e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: PotEng: actual (1.18e-02) > expected (1.00e-07)
+INFO:__main__:   + in.gr_water.opt (2/2)
+INFO:__main__:     Using 1 nprocs for in.gr_water.opt as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gr_water.opt -cite none -log log.gr_water.opt.1
+INFO:__main__:     Comparing thermo output from log.gr_water.opt.1 against the reference log file log.18May23.gr_water.opt.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (3.30e-01) > expected (1.00e-04)
+INFO:__main__:        - Run 0: PotEng: actual (2.40e-01) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.89e-02) > expected (1.00e-07)
+INFO:__main__:        - Run 0: PotEng: actual (1.18e-02) > expected (1.00e-07)
+INFO:__main__:Entering examples/PACKAGES/interlayer/drip
+INFO:__main__:   + in.CH_drip (1/2)
+INFO:__main__:     Using 1 nprocs for in.CH_drip as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.CH_drip -cite none -log log.CH_drip.1
+INFO:__main__:     Comparing thermo output from log.CH_drip.1 against the reference log file log.30Apr19.CH_drip.g++.1
+INFO:__main__:     2 abs diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (6.00e-04) > expected (1.00e-04)
+INFO:__main__:        - Run 0: Press: actual (1.47e+01) > expected (1.00e-04)
+INFO:__main__:     2 rel diff checks failed.
+INFO:__main__:        - Run 0: TotEng: actual (1.83e-07) > expected (1.00e-07)
+INFO:__main__:        - Run 0: Press: actual (6.29e-04) > expected (1.00e-07)
+INFO:__main__:   + in.C_drip (2/2)
+INFO:__main__:     Using 1 nprocs for in.C_drip as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.C_drip -cite none -log log.C_drip.1
+INFO:__main__:     Comparing thermo output from log.C_drip.1 against the reference log file log.30Apr19.C_drip.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/interlayer/kolmogorov_crespi_z
+INFO:__main__:   + in.atom-diffusion (1/1)
+INFO:__main__:     Using 1 nprocs for in.atom-diffusion as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.atom-diffusion -cite none -log log.atom-diffusion.1
+INFO:__main__:     Comparing thermo output from log.atom-diffusion.1 against the reference log file log.16Mar18.atom-diffusion.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/interlayer/saip_metal
+INFO:__main__:   + in.gold_gr (1/1)
+INFO:__main__:     Using 1 nprocs for in.gold_gr as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.gold_gr -cite none -log log.gold_gr.1
+INFO:__main__:     Comparing thermo output from log.gold_gr.1 against the reference log file log.7Jan22.gold_gr.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/local_density/benzene_water
+INFO:__main__:   + in.benzene_water (1/1)
+INFO:__main__:     Using 1 nprocs for in.benzene_water as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.benzene_water -cite none -log log.benzene_water.1
+INFO:__main__:     Timeout for: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.benzene_water -cite none -log log.benzene_water.1 (30s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.benzene_water:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (30s expired)
+INFO:__main__:Entering examples/PACKAGES/machdyn/aluminum_strip_pull
+INFO:__main__:   + in.aluminum_strip_pull (1/1)
+INFO:__main__:     Using 1 nprocs for in.aluminum_strip_pull as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.aluminum_strip_pull -cite none -log log.aluminum_strip_pull.1
+INFO:__main__:     Comparing thermo output from log.aluminum_strip_pull.1 against the reference log file log.9Oct20.aluminum_strip_pull.g++.1
+INFO:__main__:     all 0 checks passed.
+INFO:__main__:Entering examples/PACKAGES/machdyn/funnel_flow
+INFO:__main__:   + in.funnel_flow (1/1)
+INFO:__main__:     Using 1 nprocs for in.funnel_flow as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.funnel_flow -cite none -log log.funnel_flow.1
+INFO:__main__:     Timeout for: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.funnel_flow -cite none -log log.funnel_flow.1 (30s expired)
+INFO:__main__:     failed, no Total wall time in the output.
+
+INFO:__main__:
+in.funnel_flow:
+INFO:__main__:
+    Output:
+
+INFO:__main__:
+    Error:
+timeout (30s expired)
+INFO:__main__:Entering examples/PACKAGES/machdyn/rubber_rings_3d
+INFO:__main__:   + in.rubber_rings_3d (1/1)
+INFO:__main__:     Using 1 nprocs for in.rubber_rings_3d as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.rubber_rings_3d -cite none -log log.rubber_rings_3d.1
+INFO:__main__:     Comparing thermo output from log.rubber_rings_3d.1 against the reference log file log.9Oct20.rubber_rings_3d.g++.1
+INFO:__main__:     all 2 checks passed.
+INFO:__main__:Entering examples/PACKAGES/machdyn/rubber_strip_pull
+INFO:__main__:   + in.rubber_strip_pull (1/1)
+INFO:__main__:     Using 1 nprocs for in.rubber_strip_pull as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.rubber_strip_pull -cite none -log log.rubber_strip_pull.1
+INFO:__main__:     Comparing thermo output from log.rubber_strip_pull.1 against the reference log file log.9Oct20.rubber_strip_pull.g++.1
+INFO:__main__:     all 0 checks passed.
+INFO:__main__:Entering examples/PACKAGES/manybody_table
+INFO:__main__:   + in.spce2 (1/2)
+INFO:__main__:     Using 1 nprocs for in.spce2 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.spce2 -cite none -log log.spce2.1
+INFO:__main__:     Comparing thermo output from log.spce2.1 against the reference log file log.1Jun22.spce2.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.spce_sw (2/2)
+INFO:__main__:     Using 1 nprocs for in.spce_sw as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.spce_sw -cite none -log log.spce_sw.1
+INFO:__main__:     Comparing thermo output from log.spce_sw.1 against the reference log file log.1Jun22.spce_sw.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/meam_spline
+INFO:__main__:   + in.meam-spline.Si (1/1)
+INFO:__main__:     Using 1 nprocs for in.meam-spline.Si as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.meam-spline.Si -cite none -log log.meam-spline.Si.1
+INFO:__main__:     Comparing thermo output from log.meam-spline.Si.1 against the reference log file log.17Dec2022.meam-spline.Si.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/meam_sw_spline/Si
+INFO:__main__:   + in.bcc_relax (1/9)
+INFO:__main__:     Using 1 nprocs for in.bcc_relax as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.bcc_relax -cite none -log log.bcc_relax.1
+INFO:__main__:     Comparing thermo output from log.bcc_relax.1 against the reference log file log.17Dec2022.bcc_relax.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.dc (2/9)
+INFO:__main__:     Using 1 nprocs for in.dc as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.dc -cite none -log log.dc.1
+INFO:__main__:     Comparing thermo output from log.dc.1 against the reference log file log.17Dec2022.dc.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.dc_relax (3/9)
+INFO:__main__:     Using 1 nprocs for in.dc_relax as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.dc_relax -cite none -log log.dc_relax.1
+INFO:__main__:     Comparing thermo output from log.dc_relax.1 against the reference log file log.17Dec2022.dc_relax.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.energy_conservation.meam.sw (4/9)
+INFO:__main__:     Using 1 nprocs for in.energy_conservation.meam.sw as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.energy_conservation.meam.sw -cite none -log log.energy_conservation.meam.sw.1
+INFO:__main__:     Comparing thermo output from log.energy_conservation.meam.sw.1 against the reference log file log.17Dec2022.energy_conservation.meam.sw.g++.1
+INFO:__main__:     all 4 checks passed.
+INFO:__main__:   + in.fcc_relax (5/9)
+INFO:__main__:     Using 1 nprocs for in.fcc_relax as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.fcc_relax -cite none -log log.fcc_relax.1
+INFO:__main__:     Comparing thermo output from log.fcc_relax.1 against the reference log file log.17Dec2022.fcc_relax.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.hcp_relax (6/9)
+INFO:__main__:     Using 1 nprocs for in.hcp_relax as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.hcp_relax -cite none -log log.hcp_relax.1
+INFO:__main__:     Comparing thermo output from log.hcp_relax.1 against the reference log file log.17Dec2022.hcp_relax.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.sc (7/9)
+INFO:__main__:     Using 1 nprocs for in.sc as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.sc -cite none -log log.sc.1
+INFO:__main__:     Comparing thermo output from log.sc.1 against the reference log file log.17Dec2022.sc.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.sc_relax (8/9)
+INFO:__main__:     Using 1 nprocs for in.sc_relax as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.sc_relax -cite none -log log.sc_relax.1
+INFO:__main__:     Comparing thermo output from log.sc_relax.1 against the reference log file log.17Dec2022.sc_relax.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.single_atom (9/9)
+INFO:__main__:     Using 1 nprocs for in.single_atom as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.single_atom -cite none -log log.single_atom.1
+INFO:__main__:     Comparing thermo output from log.single_atom.1 against the reference log file log.17Dec2022.single_atom.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/meam_sw_spline/Ti
+INFO:__main__:   + in.alpha (1/5)
+INFO:__main__:     Using 1 nprocs for in.alpha as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.alpha -cite none -log log.alpha.1
+INFO:__main__:     Comparing thermo output from log.alpha.1 against the reference log file log.17Dec2022.alpha.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.alpha_relaxation (2/5)
+INFO:__main__:     Using 1 nprocs for in.alpha_relaxation as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.alpha_relaxation -cite none -log log.alpha_relaxation.1
+INFO:__main__:     Comparing thermo output from log.alpha_relaxation.1 against the reference log file log.17Dec2022.alpha_relaxation.g++.1
+INFO:__main__:     all 12 checks passed.
+INFO:__main__:   + in.beta (3/5)
+INFO:__main__:     Using 1 nprocs for in.beta as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.beta -cite none -log log.beta.1
+INFO:__main__:     Comparing thermo output from log.beta.1 against the reference log file log.17Dec2022.beta.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.hexagonal (4/5)
+INFO:__main__:     Using 1 nprocs for in.hexagonal as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.hexagonal -cite none -log log.hexagonal.1
+INFO:__main__:     Comparing thermo output from log.hexagonal.1 against the reference log file log.17Dec2022.hexagonal.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.omega (5/5)
+INFO:__main__:     Using 1 nprocs for in.omega as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.omega -cite none -log log.omega.1
+INFO:__main__:     Comparing thermo output from log.omega.1 against the reference log file log.17Dec2022.omega.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:Entering examples/PACKAGES/mofff
+INFO:__main__:   + in.hkust1 (1/2)
+INFO:__main__:     Using 1 nprocs for in.hkust1 as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.hkust1 -cite none -log log.hkust1.1
+INFO:__main__:     Comparing thermo output from log.hkust1.1 against the reference log file log.27Nov18.hkust1.g++.1
+INFO:__main__:     all 6 checks passed.
+INFO:__main__:   + in.hkust1_long (2/2)
+INFO:__main__:     Using 1 nprocs for in.hkust1_long as enforced in the config file.
+INFO:__main__:     WARNING: The maximum number of procs found from the reference log files is 1.
+INFO:__main__:     Executing: /scratch/projects/anklesan/lammps/quickmax_energy_work/19848301_2/build/lmp -in in.hkust1_long -cite none -log log.hkust1_long.1
+INFO:__main__:     Comparing thermo output from log.hkust1_long.1 against the reference log file log.27Nov18.hkust1_long.g++.1
+INFO:__main__:     all 6 checks passed.

@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="26" tests="82" time="0.0">
+	<testsuite disabled="0" errors="0" failures="26" name="tools/regression-tests/config_serial.yaml" skipped="9" tests="82" time="0" timestamp="2026-01-12 18:43:55.302128">
+		<testcase name="in.read_dump" classname="in.read_dump">
+			<failure type="failure" message="failed, ERROR on proc 0: Cannot open file lj.dump: No such file or directory (src/reader.cpp:61)."/>
+		</testcase>
+		<testcase name="in.rerun" classname="in.rerun">
+			<failure type="failure" message="failed, ERROR on proc 0: Cannot open file lj.dump: No such file or directory (src/reader.cpp:61)."/>
+		</testcase>
+		<testcase name="in.rheo.poiseuille" classname="in.rheo.poiseuille">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.rheo.taylor.green" classname="in.rheo.taylor.green">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.rigid" classname="in.rigid"/>
+		<testcase name="in.rigid.atomfile" classname="in.rigid.atomfile"/>
+		<testcase name="in.rigid.atomvar" classname="in.rigid.atomvar"/>
+		<testcase name="in.rigid.early" classname="in.rigid.early"/>
+		<testcase name="in.rigid.gravity" classname="in.rigid.gravity"/>
+		<testcase name="in.rigid.infile" classname="in.rigid.infile"/>
+		<testcase name="in.rigid.molecule" classname="in.rigid.molecule"/>
+		<testcase name="in.rigid.nve" classname="in.rigid.nve">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.rigid.nve.early" classname="in.rigid.nve.early">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.rigid.property" classname="in.rigid.property"/>
+		<testcase name="in.rigid.small" classname="in.rigid.small"/>
+		<testcase name="in.rigid.small.infile" classname="in.rigid.small.infile"/>
+		<testcase name="in.rigid.tnr" classname="in.rigid.tnr">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '18', 'rel_diff_failed': '22' "/>
+		</testcase>
+		<testcase name="in.shear" classname="in.shear"/>
+		<testcase name="in.shear.void" classname="in.shear.void"/>
+		<testcase name="in.C_SNAP" classname="in.C_SNAP"/>
+		<testcase name="in.gaussian.grid" classname="in.gaussian.grid"/>
+		<testcase name="in.snap.InP.JCPA2020" classname="in.snap.InP.JCPA2020"/>
+		<testcase name="in.snap.Mo_Chen" classname="in.snap.Mo_Chen"/>
+		<testcase name="in.snap.Ta06A" classname="in.snap.Ta06A"/>
+		<testcase name="in.snap.W.2940" classname="in.snap.W.2940"/>
+		<testcase name="in.snap.WBe.PRB2019" classname="in.snap.WBe.PRB2019"/>
+		<testcase name="in.snap.grid" classname="in.snap.grid">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.snap.grid.triclinic" classname="in.snap.grid.triclinic">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.snap.hybrid.WSNAP.HePair" classname="in.snap.hybrid.WSNAP.HePair"/>
+		<testcase name="in.snap.scale.Ni_Zuo_JCPA2020" classname="in.snap.scale.Ni_Zuo_JCPA2020">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.srd.mixture" classname="in.srd.mixture"/>
+		<testcase name="in.srd.pure" classname="in.srd.pure"/>
+		<testcase name="in.bcc" classname="in.bcc"/>
+		<testcase name="in.fcc" classname="in.fcc"/>
+		<testcase name="in.icos" classname="in.icos"/>
+		<testcase name="in.streitz.ewald" classname="in.streitz.ewald"/>
+		<testcase name="in.streitz.wolf" classname="in.streitz.wolf">
+			<failure type="failure" message="failed, mismatched columns in the log files"/>
+		</testcase>
+		<testcase name="in.stress_vcm" classname="in.stress_vcm"/>
+		<testcase name="in.tad" classname="in.tad">
+			<failure type="failure" message="failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79)."/>
+		</testcase>
+		<testcase name="in.hybrid" classname="in.hybrid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.mol-data-mix" classname="in.mol-data-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.mol-restart-mix" classname="in.mol-restart-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '8' "/>
+		</testcase>
+		<testcase name="in.molecular-mix" classname="in.molecular-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.template-mix" classname="in.template-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.tmpl-data-mix" classname="in.tmpl-data-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.tmpl-restart-mix" classname="in.tmpl-restart-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '8' "/>
+		</testcase>
+		<testcase name="in.hBN_shift" classname="in.hBN_shift"/>
+		<testcase name="in.tersoff" classname="in.tersoff"/>
+		<testcase name="in.mos2-bulk" classname="in.mos2-bulk"/>
+		<testcase name="in.mos2.rebomos" classname="in.mos2.rebomos"/>
+		<testcase name="in.mos2.sw.mod" classname="in.mos2.sw.mod">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.threebody" classname="in.threebody"/>
+		<testcase name="in.track" classname="in.track">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.bcc.orthog" classname="in.bcc.orthog"/>
+		<testcase name="in.bcc.primitive" classname="in.bcc.primitive"/>
+		<testcase name="in.data.general" classname="in.data.general"/>
+		<testcase name="in.fcc.orthog" classname="in.fcc.orthog"/>
+		<testcase name="in.fcc.primitive" classname="in.fcc.primitive"/>
+		<testcase name="in.hex.orthog" classname="in.hex.orthog"/>
+		<testcase name="in.hex.primitive" classname="in.hex.primitive"/>
+		<testcase name="in.sq2.orthog" classname="in.sq2.orthog"/>
+		<testcase name="in.sq2.primitive" classname="in.sq2.primitive"/>
+		<testcase name="in.ttm" classname="in.ttm"/>
+		<testcase name="in.ttm.grid" classname="in.ttm.grid"/>
+		<testcase name="in.ttm.mod" classname="in.ttm.mod"/>
+		<testcase name="in.ttm.thermal" classname="in.ttm.thermal"/>
+		<testcase name="in.vashishta.inp" classname="in.vashishta.inp"/>
+		<testcase name="in.vashishta.sio2" classname="in.vashishta.sio2"/>
+		<testcase name="in.vashishta.table.inp" classname="in.vashishta.table.inp"/>
+		<testcase name="in.vashishta.table.sio2" classname="in.vashishta.table.sio2"/>
+		<testcase name="in.wall.block" classname="in.wall.block">
+			<failure type="failure" message="failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)."/>
+		</testcase>
+		<testcase name="in.wall.ccl" classname="in.wall.ccl"/>
+		<testcase name="in.wall.diffusive" classname="in.wall.diffusive"/>
+		<testcase name="in.wall.flow" classname="in.wall.flow"/>
+		<testcase name="in.wall.harmonic.2d" classname="in.wall.harmonic.2d">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.wall.harmonic.outside.2d" classname="in.wall.harmonic.outside.2d">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.wall.lepton" classname="in.wall.lepton"/>
+		<testcase name="in.wall.maxwell" classname="in.wall.maxwell"/>
+		<testcase name="in.wall.specular" classname="in.wall.specular"/>
+		<testcase name="in.wall.sphere" classname="in.wall.sphere">
+			<failure type="failure" message="failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)."/>
+		</testcase>
+		<testcase name="in.wall.table" classname="in.wall.table"/>
+		<testcase name="in.yaml" classname="in.yaml">
+			<failure type="failure" message="completed, error parsing log.yaml.1 into YAML"/>
+		</testcase>
+	</testsuite>
+</testsuites>

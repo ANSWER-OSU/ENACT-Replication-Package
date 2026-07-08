@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="57" tests="81" time="0.0">
+	<testsuite disabled="0" errors="0" failures="57" name="tools/regression-tests/config_serial.yaml" skipped="14" tests="81" time="0" timestamp="2026-01-12 18:48:55.621242">
+		<testcase name="in.hkust1" classname="in.hkust1"/>
+		<testcase name="in.hkust1_long" classname="in.hkust1_long"/>
+		<testcase name="in.system" classname="in.system"/>
+		<testcase name="in.converge" classname="in.converge">
+			<failure type="failure" message="failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58)."/>
+		</testcase>
+		<testcase name="in.simple" classname="in.simple">
+			<failure type="failure" message="failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58)."/>
+		</testcase>
+		<testcase name="in.valtest" classname="in.valtest">
+			<failure type="failure" message="failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58)."/>
+		</testcase>
+		<testcase name="in.momentum" classname="in.momentum">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.compute_stress_mop" classname="in.compute_stress_mop"/>
+		<testcase name="in.KMC_pulse_center" classname="in.KMC_pulse_center"/>
+		<testcase name="in.KMC_pulse_edge" classname="in.KMC_pulse_edge"/>
+		<testcase name="in.orient_eco" classname="in.orient_eco">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.compute" classname="in.compute"/>
+		<testcase name="in.pace.product" classname="in.pace.product"/>
+		<testcase name="in.pace.recursive" classname="in.pace.recursive"/>
+		<testcase name="in.pafi" classname="in.pafi"/>
+		<testcase name="in.pedone.melt" classname="in.pedone.melt">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.pedone.relax" classname="in.pedone.relax">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.Ana" classname="in.Ana">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.Ana" classname="in.Ana"/>
+		<testcase name="in.langevin.metal" classname="in.langevin.metal">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.pimd-langevin.metal" classname="in.pimd-langevin.metal">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.lmp" classname="in.lmp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.lmp" classname="in.lmp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.scp" classname="in.scp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.scp" classname="in.scp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.lmp" classname="in.lmp">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.peptide-plumed" classname="in.peptide-plumed">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'plumed' is part of the PLUMED package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.fitpod" classname="in.fitpod">
+			<failure type="failure" message="failed, ERROR: Cannot fit potential without data files. The data paths may not be valid. Please check the data paths in the POD data file. (src/ML-POD/fitpod_command.cpp:717)."/>
+		</testcase>
+		<testcase name="in.pod" classname="in.pod"/>
+		<testcase name="in.pod" classname="in.pod"/>
+		<testcase name="in.pod.compute" classname="in.pod.compute"/>
+		<testcase name="in.ptm" classname="in.ptm"/>
+		<testcase name="in.alpha_quartz_qbmsst" classname="in.alpha_quartz_qbmsst">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.alpha_quartz_qtb" classname="in.alpha_quartz_qtb">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.methane_qtb" classname="in.methane_qtb">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.gap" classname="in.gap">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.molecular" classname="in.molecular">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.sw" classname="in.sw">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.rann" classname="in.rann"/>
+		<testcase name="in.grow_styrene" classname="in.grow_styrene">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.large_nylon_melt" classname="in.large_nylon_melt">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.tiny_epoxy.stabilized" classname="in.tiny_epoxy.stabilized">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.tiny_nylon.stabilized" classname="in.tiny_nylon.stabilized">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.tiny_nylon.stabilized_variable_probability" classname="in.tiny_nylon.stabilized_variable_probability">
+			<failure type="failure" message="failed, ERROR: Fix bond/react: Variable name prob1 does not exist (src/REACTION/fix_bond_react.cpp:3985)."/>
+		</testcase>
+		<testcase name="in.tiny_nylon.unstabilized" classname="in.tiny_nylon.unstabilized">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.tiny_nylon.stabilized" classname="in.tiny_nylon.stabilized">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.tiny_polystyrene.stabilized" classname="in.tiny_polystyrene.stabilized">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.crystal" classname="in.crystal">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.pinning" classname="in.pinning">
+			<failure type="failure" message="failed, ERROR: Cannot open file data.halfhalf: No such file or directory (src/read_data.cpp:380)."/>
+		</testcase>
+		<testcase name="in.setup" classname="in.setup">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.scafacos" classname="in.scafacos">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.cw.ewald" classname="in.scafacos.cw.ewald">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.cw.fmm" classname="in.scafacos.cw.fmm">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.cw.p2nfft" classname="in.scafacos.cw.p2nfft">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.cw.p3m" classname="in.scafacos.cw.p3m">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.ewald" classname="in.scafacos.ewald">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.fmm" classname="in.scafacos.fmm">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.hsph.direct" classname="in.scafacos.hsph.direct">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.hsph.fmm" classname="in.scafacos.hsph.fmm">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.hsph.p2nfft" classname="in.scafacos.hsph.p2nfft">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.p2nfft" classname="in.scafacos.p2nfft">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.scafacos.p3m" classname="in.scafacos.p3m">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.smatbAgCuPancake" classname="in.smatbAgCuPancake">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.smatbBulkFCC" classname="in.smatbBulkFCC">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.smtbq.Al" classname="in.smtbq.Al">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.slcsa" classname="in.slcsa">
+			<failure type="failure" message="failed, ERROR: Invalid compute slcsa/atom argument: slcsa (src/EXTRA-COMPUTE/compute_slcsa_atom.cpp:115)."/>
+		</testcase>
+		<testcase name="in.srp" classname="in.srp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.srp_react" classname="in.srp_react">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.cylinder" classname="in.cylinder"/>
+		<testcase name="in.flat" classname="in.flat"/>
+		<testcase name="in.sphere" classname="in.sphere"/>
+		<testcase name="in.force" classname="in.force"/>
+		<testcase name="in.pe" classname="in.pe"/>
+		<testcase name="in.stress" classname="in.stress"/>
+		<testcase name="in.temper_npt" classname="in.temper_npt">
+			<failure type="failure" message="failed, ERROR: World variable count 8 doesn't match # of partitions 1 (src/variable.cpp:259)."/>
+		</testcase>
+		<testcase name="in.ti_spring" classname="in.ti_spring">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.tmd" classname="in.tmd">
+			<failure type="failure" message="completed, error parsing log.tmd.1 into YAML"/>
+		</testcase>
+		<testcase name="in.npt_biaxial" classname="in.npt_biaxial"/>
+		<testcase name="in.nvt_uniaxial" classname="in.nvt_uniaxial"/>
+		<testcase name="in.uf3.Nb" classname="in.uf3.Nb">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.vtk" classname="in.vtk">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized dump style 'vtk' is part of the VTK package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+	</testsuite>
+</testsuites>

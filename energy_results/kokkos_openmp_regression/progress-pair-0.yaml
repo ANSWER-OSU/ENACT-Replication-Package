@@ -1,0 +1,99 @@
+{ 'in.wall.ccl': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.wall.harmonic.outside.2d': { 'folder': 'examples/wall', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.wall.lepton': { 'folder': 'examples/wall', 'status': 'failed, no Total wall time in the output, --------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+[cn-e01:311505] *** Process received signal ***
+[cn-e01:311504] *** Process received signal ***
+[cn-e01:311505] Signal: Segmentation fault (11)
+[cn-e01:311505] Signal code: Address not mapped (1)
+[cn-e01:311505] Failing at address: (nil)
+[cn-e01:311504] Signal: Segmentation fault (11)
+[cn-e01:311504] Signal code: Address not mapped (1)
+[cn-e01:311504] Failing at address: (nil)
+[cn-e01:311505] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e01:311505] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x126d3a7]
+[cn-e01:311505] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0xbb7a8b]
+[cn-e01:311505] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x5fb8e0]
+[cn-e01:311505] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4bbe41]
+[cn-e01:311505] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4bc7e6]
+[cn-e01:311505] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4a446d]
+[cn-e01:311505] [ 7] [cn-e01:311504] [ 0] /lib64/libpthread.so.0(+0x12990)[0x155552f25990]
+[cn-e01:311504] [ 1] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x126d3a7]
+[cn-e01:311504] [ 2] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0xbb7a8b]
+[cn-e01:311504] [ 3] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x5fb8e0]
+[cn-e01:311504] [ 4] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4bbe41]
+[cn-e01:311504] [ 5] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4bc7e6]
+[cn-e01:311504] [ 6] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4a446d]
+[cn-e01:311504] [ 7] /lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e01:311504] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4af2ce]
+[cn-e01:311504] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xe5)[0x155551fbd865]
+[cn-e01:311505] [ 8] /scratch/projects/anklesan/lammps/kokkos_openmp_energy_work/work_pair-0/build/lmp[0x4af2ce]
+[cn-e01:311505] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 311505 on node cn-e01 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[cn-e01.hpc.engr.oregonstate.edu:311500] 1 more process has sent help message help-mpi-common-cuda.txt / dlopen failed
+[cn-e01.hpc.engr.oregonstate.edu:311500] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+', 'walltime': '-1' } }
+{ 'in.wall.specular': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.wall.sphere': { 'folder': 'examples/wall', 'status': 'failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60).', 'walltime': '-1' } }
+{ 'in.fcc': { 'folder': 'examples/steinhardt', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.voronoi.data': { 'folder': 'examples/voronoi', 'status': 'failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94).', 'walltime': '-1' } }
+{ 'in.cmap': { 'folder': 'examples/cmap', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '7.0', 'walltime_norm': '3.5' } }
+{ 'in.flow.couette': { 'folder': 'examples/flow', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.flow.pois': { 'folder': 'examples/flow', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.coreshell.wolf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '18.0', 'walltime_norm': '9.0' } }
+{ 'in.einstein.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6'  }, 'walltime': '93.0', 'walltime_norm': '46.5' } }
+{ 'in.gk.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '99.0', 'walltime_norm': '49.5' } }
+{ 'in.mp.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7'  }, 'walltime': '13.0', 'walltime_norm': '6.5' } }
+{ 'in.wall.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '20.0', 'walltime_norm': '10.0' } }
+{ 'in.dreiding': { 'folder': 'examples/dreiding', 'status': 'failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94).', 'walltime': '-1' } }
+{ 'in.replicate.bond.xy': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.replicate.cnt': { 'folder': 'examples/replicate', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.hybrid': { 'folder': 'examples/template', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.ehex': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '60.0', 'walltime_norm': '30.0' } }
+{ 'in.heat': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '5'  }, 'walltime': '62.0', 'walltime_norm': '31.0' } }
+{ 'in.langevin': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '65.0', 'walltime_norm': '32.5' } }
+{ 'in.mp': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7'  }, 'walltime': '75.0', 'walltime_norm': '37.5' } }
+{ 'in.reaxff.rdx': { 'folder': 'examples/reaxff', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '2'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.nb3b.screened': { 'folder': 'examples/nb3b', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '3'  }, 'walltime': '25.0', 'walltime_norm': '12.5' } }
+{ 'in.read_dump': { 'folder': 'examples/rerun', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.crack': { 'folder': 'examples/crack', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.track': { 'folder': 'examples/tracker', 'status': 'failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'tracker' is part of the MISC package which is not enabled in this LAMMPS binary.', 'walltime': '-1' } }
+{ 'in.bcc.orthog': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.bcc.primitive': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.data.general': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.fcc.primitive': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.hex.orthog': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.hex.primitive': { 'folder': 'examples/triclinic', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.msd.2d': { 'folder': 'examples/DIFFUSE', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '32.0', 'walltime_norm': '16.0' } }
+{ 'in.vacf.2d': { 'folder': 'examples/DIFFUSE', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '34.0', 'walltime_norm': '17.0' } }
+{ 'in.min': { 'folder': 'examples/min', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.deposit.atom': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.deposit.molecule': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.dipole': { 'folder': 'examples/dipole', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.yaml': { 'folder': 'examples/yaml', 'status': 'completed, error parsing log.yaml.2 into YAML', 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.ar.lj': { 'folder': 'examples/UNITS', 'status': 'completed, numerical checks skipped due to missing the reference log file', 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.vashishta.sio2': { 'folder': 'examples/vashishta', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.spce.ehex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.spce.hex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.airebo-m': { 'folder': 'examples/airebo', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '45.0', 'walltime_norm': '22.5' } }
+{ 'in.micelle': { 'folder': 'examples/micelle', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.charmmfsw': { 'folder': 'examples/charmmfsw', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '0'  }, 'walltime': '11.0', 'walltime_norm': '5.5' } }
+{ 'in.mos2.sw.mod': { 'folder': 'examples/threebody', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.threebody': { 'folder': 'examples/threebody', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }

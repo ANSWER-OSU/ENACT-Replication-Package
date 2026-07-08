@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="38" tests="49" time="0.0">
+	<testsuite disabled="0" errors="0" failures="38" name="tools/regression-tests/config_kokkos_openmp.yaml" skipped="4" tests="49" time="0" timestamp="2026-01-16 16:31:53.730266">
+		<testcase name="in.controller.temp" classname="in.controller.temp">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6' "/>
+		</testcase>
+		<testcase name="in.water_box.amoeba" classname="in.water_box.amoeba">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_box.hippo" classname="in.water_box.hippo">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_dimer.amoeba" classname="in.water_dimer.amoeba">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_dimer.hippo" classname="in.water_dimer.hippo">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_hexamer.amoeba" classname="in.water_hexamer.amoeba">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.water_hexamer.hippo" classname="in.water_hexamer.hippo">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.peri.ves" classname="in.peri.ves">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized atom style 'peri' is part of the PERI package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.kim-ex.melt" classname="in.kim-ex.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init LennardJones_Ar real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.kim-sm.melt" classname="in.kim-sm.melt">
+			<failure type="failure" message="failed, unknown command, package not installed, ERROR: Unknown command: kim          init Sim_LAMMPS_ReaxFF_StrachanVanDuinChakraborty_2003_CHNO__SM_107643900657_000 real (src/input.cpp:316)"/>
+		</testcase>
+		<testcase name="in.replicate.bond.x" classname="in.replicate.bond.x">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.replicate.bond.x.noloop" classname="in.replicate.bond.x.noloop">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.replicate.bond.xy" classname="in.replicate.bond.xy"/>
+		<testcase name="in.replicate.cnt" classname="in.replicate.cnt"/>
+		<testcase name="in.sync_verlet" classname="in.sync_verlet">
+			<failure type="failure" message="failed, ERROR: Illegal wall/gran command, unrecognized damping model (src/KOKKOS/fix_wall_gran_old.cpp:203)."/>
+		</testcase>
+		<testcase name="in.tableting.200" classname="in.tableting.200"/>
+		<testcase name="in.triaxial.compaction.12" classname="in.triaxial.compaction.12"/>
+		<testcase name="in.airebo" classname="in.airebo"/>
+		<testcase name="in.rebo2" classname="in.rebo2"/>
+		<testcase name="in.obstacle" classname="in.obstacle">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+		<testcase name="in.ar.lj" classname="in.ar.lj">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ar.real" classname="in.ar.real">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.wall.harmonic.2d" classname="in.wall.harmonic.2d">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.wall.harmonic.outside.2d" classname="in.wall.harmonic.outside.2d">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.wall.sphere" classname="in.wall.sphere">
+			<failure type="failure" message="failed, ERROR on proc 0: Support for writing movies not included (src/dump_movie.cpp:60)."/>
+		</testcase>
+		<testcase name="in.comb.Si.elastic" classname="in.comb.Si.elastic">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.22DMH.real" classname="in.22DMH.real">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '12', 'rel_diff_failed': '12' "/>
+		</testcase>
+		<testcase name="in.nemd" classname="in.nemd"/>
+		<testcase name="in.grid.2d" classname="in.grid.2d"/>
+		<testcase name="in.grid.3d" classname="in.grid.3d"/>
+		<testcase name="in.sph" classname="in.sph">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.heatflux" classname="in.heatflux">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.mol-data-mix" classname="in.mol-data-mix">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.template-mix" classname="in.template-mix">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.cos.1000SPCE" classname="in.cos.1000SPCE">
+			<failure type="failure" message="failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'accelerate/cos' is part of the MISC package which is not enabled in this LAMMPS binary."/>
+		</testcase>
+		<testcase name="in.mp.2d" classname="in.mp.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7' "/>
+		</testcase>
+		<testcase name="in.wall.2d" classname="in.wall.2d">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4' "/>
+		</testcase>
+		<testcase name="in.srd.mixture" classname="in.srd.mixture">
+			<failure type="failure" message="failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94)."/>
+		</testcase>
+		<testcase name="in.vashishta.sio2" classname="in.vashishta.sio2"/>
+		<testcase name="in.vashishta.table.sio2" classname="in.vashishta.table.sio2"/>
+		<testcase name="in.colloid" classname="in.colloid">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.coreshell.dsf" classname="in.coreshell.dsf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.coreshell.wolf" classname="in.coreshell.wolf">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10' "/>
+		</testcase>
+		<testcase name="in.powerlaw" classname="in.powerlaw">
+			<failure type="failure" message="thermo checks failed due to mismatched log files "/>
+		</testcase>
+		<testcase name="in.tad" classname="in.tad">
+			<failure type="failure" message="failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79)."/>
+		</testcase>
+		<testcase name="in.micelle" classname="in.micelle">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '0', 'rel_diff_failed': '1' "/>
+		</testcase>
+		<testcase name="in.squares" classname="in.squares">
+			<failure type="failure" message="failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421)."/>
+		</testcase>
+		<testcase name="in.tersoff" classname="in.tersoff">
+			<failure type="failure" message="failed, ERROR: Keyword 'shift' not supported for this style (src/MANYBODY/pair_tersoff.cpp:362)."/>
+		</testcase>
+		<testcase name="in.flow.pois" classname="in.flow.pois">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2' "/>
+		</testcase>
+	</testsuite>
+</testsuites>

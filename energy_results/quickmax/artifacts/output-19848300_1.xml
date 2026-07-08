@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<testsuites disabled="0" errors="0" failures="25" tests="39" time="0.0">
+	<testsuite disabled="0" errors="0" failures="25" name="tools/regression-tests/config_quick.yaml" skipped="20" tests="39" time="0" timestamp="2026-01-15 20:47:18.723547">
+		<testcase name="in.dpdrx-shardlow" classname="in.dpdrx-shardlow">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.multi-lucy" classname="in.multi-lucy">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.e3b-tip4p2005" classname="in.e3b-tip4p2005"/>
+		<testcase name="in.edip-Si" classname="in.edip-Si">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.edip-Si-multi" classname="in.edip-Si-multi">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.edip-SiC" classname="in.edip-SiC">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.fix_wall" classname="in.fix_wall"/>
+		<testcase name="in.fix_wall_region" classname="in.fix_wall_region"/>
+		<testcase name="in.Be-solid.spe" classname="in.Be-solid.spe">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ch4.dynamics" classname="in.ch4.dynamics">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3' "/>
+		</testcase>
+		<testcase name="in.ch4.min" classname="in.ch4.min"/>
+		<testcase name="in.ch4_ionized.dynamics" classname="in.ch4_ionized.dynamics">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '9' "/>
+		</testcase>
+		<testcase name="in.Si2H6" classname="in.Si2H6"/>
+		<testcase name="in.Si2H6.ang" classname="in.Si2H6.ang">
+			<failure type="failure" message=" 'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '5' "/>
+		</testcase>
+		<testcase name="in.SiH4" classname="in.SiH4">
+			<failure type="failure" message="completed, error parsing log.SiH4.1 into YAML"/>
+		</testcase>
+		<testcase name="in.SiH4.ang" classname="in.SiH4.ang">
+			<failure type="failure" message="completed, error parsing log.SiH4.ang.1 into YAML"/>
+		</testcase>
+		<testcase name="in.h_atom.spe.ang" classname="in.h_atom.spe.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.h_atom.spe.bohr" classname="in.h_atom.spe.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.h2" classname="in.h2">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.C2H6fc.ang" classname="in.C2H6fc.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.C2H6fc.bohr" classname="in.C2H6fc.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.ang" classname="in.CH4fc.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.bohr" classname="in.CH4fc.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.spe.ang" classname="in.CH4fc.spe.ang">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.CH4fc.spe.bohr" classname="in.CH4fc.spe.bohr">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.eta" classname="in.eta"/>
+		<testcase name="in.eta_cg" classname="in.eta_cg"/>
+		<testcase name="in.eta_mix" classname="in.eta_mix"/>
+		<testcase name="in.ewald-ew2d" classname="in.ewald-ew2d">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ewald-ew3dc" classname="in.ewald-ew3dc">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.ewald-ffield" classname="in.ewald-ffield">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.pppm-ew3dc" classname="in.pppm-ew3dc">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.pppm-ffield" classname="in.pppm-ffield">
+			<failure type="failure" message="skipped due to missing the reference log file"/>
+			<skipped type="skipped" message="Test was skipped."/>
+		</testcase>
+		<testcase name="in.planar-ewald-ew2d" classname="in.planar-ewald-ew2d"/>
+		<testcase name="in.planar-ewald-ew3dc" classname="in.planar-ewald-ew3dc"/>
+		<testcase name="in.planar-ewald-ffield" classname="in.planar-ewald-ffield"/>
+		<testcase name="in.planar-pppm-ew3dc" classname="in.planar-pppm-ew3dc"/>
+		<testcase name="in.planar-pppm-ffield" classname="in.planar-pppm-ffield"/>
+		<testcase name="in.elstop.only" classname="in.elstop.only"/>
+	</testsuite>
+</testsuites>

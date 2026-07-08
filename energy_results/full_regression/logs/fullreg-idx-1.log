@@ -1,0 +1,662 @@
+[2026-01-12 17:22:48] [*] START idx=1 host=cn-e09.hpc.engr.oregonstate.edu
+[2026-01-12 17:22:48] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 17:22:48] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 17:22:48] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-1.log
+
+[2026-01-12 17:22:48] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1
+[2026-01-12 17:24:15] [*] Create venv + deps
+[2026-01-12 17:24:32] [*] ccache reset
+[2026-01-12 17:24:32] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 17:24:36] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 17:24:45] [*] RUN idx=1 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-1.txt
+
+There are 96 input scripts listed in input-list-1.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/diffraction
+1 input script(s) to be tested: ['in.BulkNi']
+   + in.BulkNi (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/build/lmp -in in.BulkNi -cite none -log log.BulkNi.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dispersion
+2 input script(s) to be tested: ['in.d2', 'in.d3']
+   + in.d2 (1/2)
+     all 8 checks passed.
+   + in.d3 (2/2)
+     all 8 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpd
+1 input script(s) to be tested: ['in.dpd']
+   + in.dpd (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpd_coul_slater_long
+1 input script(s) to be tested: ['in.dpd_coul_slater_long']
+   + in.dpd_coul_slater_long (1/1)
+       failed, cannot find the reference log file for in.dpd_coul_slater_long with the expected format log.[date].dpd_coul_slater_long.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpd_tstat
+1 input script(s) to be tested: ['in.dpd_tstat']
+   + in.dpd_tstat (1/1)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpdext
+1 input script(s) to be tested: ['in.dpdext']
+   + in.dpdext (1/1)
+     mismatched num steps in the log files. Check both log files for more details.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpdext_tstat
+1 input script(s) to be tested: ['in.dpdext_tstat']
+   + in.dpdext_tstat (1/1)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-meso/edpd
+2 input script(s) to be tested: ['in.edpd', 'in.edpd-region']
+   + in.edpd (1/2)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+   + in.edpd-region (2/2)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-meso/mdpd
+1 input script(s) to be tested: ['in.mdpd']
+   + in.mdpd (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-meso/tdpd
+2 input script(s) to be tested: ['in.tdpd', 'in.tdpd-region']
+   + in.tdpd (1/2)
+     5 abs diff checks failed.
+     6 rel diff checks failed.
+   + in.tdpd-region (2/2)
+     5 abs diff checks failed.
+     6 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpd-shardlow
+1 input script(s) to be tested: ['in.dpd-shardlow']
+   + in.dpd-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpd-shardlow with the expected format log.[date].dpd-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpd-vv
+1 input script(s) to be tested: ['in.dpd-vv']
+   + in.dpd-vv (1/1)
+       failed, cannot find the reference log file for in.dpd-vv with the expected format log.[date].dpd-vv.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpde-shardlow
+1 input script(s) to be tested: ['in.dpde-shardlow']
+   + in.dpde-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpde-shardlow with the expected format log.[date].dpde-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpde-vv
+1 input script(s) to be tested: ['in.dpde-vv']
+   + in.dpde-vv (1/1)
+       failed, cannot find the reference log file for in.dpde-vv with the expected format log.[date].dpde-vv.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpdh-shardlow
+1 input script(s) to be tested: ['in.dpdh-shardlow']
+   + in.dpdh-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpdh-shardlow with the expected format log.[date].dpdh-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpdp-shardlow
+1 input script(s) to be tested: ['in.dpdp-shardlow']
+   + in.dpdp-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpdp-shardlow with the expected format log.[date].dpdp-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpdrx-shardlow
+1 input script(s) to be tested: ['in.dpdrx-shardlow']
+   + in.dpdrx-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpdrx-shardlow with the expected format log.[date].dpdrx-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/multi-lucy
+1 input script(s) to be tested: ['in.multi-lucy']
+   + in.multi-lucy (1/1)
+       failed, cannot find the reference log file for in.multi-lucy with the expected format log.[date].multi-lucy.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-smooth/2d-diffusion-in-shear-flow
+1 input script(s) to be tested: ['in.lammps']
+   + in.lammps (1/1)
+       failed, cannot find the reference log file for in.lammps with the expected format log.[date].lammps.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-smooth/2d-diffusion
+1 input script(s) to be tested: ['in.lammps']
+   + in.lammps (1/1)
+       failed, cannot find the reference log file for in.lammps with the expected format log.[date].lammps.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-smooth/equipartition-verification
+1 input script(s) to be tested: ['in.lammps']
+   + in.lammps (1/1)
+       failed, cannot find the reference log file for in.lammps with the expected format log.[date].lammps.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/drude/butane
+3 input script(s) to be tested: ['in.butane.lang', 'in.butane.nh', 'in.butane.tgnh']
+   + in.butane.lang (1/3)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.butane.nh (2/3)
+     3 abs diff checks failed.[2026-01-12 18:07:48] [*] START idx=1 host=cn-e13.hpc.engr.oregonstate.edu
+[2026-01-12 18:07:48] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:07:48] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:07:48] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-1.log
+
+[2026-01-12 18:07:48] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1
+[2026-01-12 18:08:41] [*] Create venv + deps
+[2026-01-12 18:08:54] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:08:54] [*] ccache reset
+[2026-01-12 18:08:54] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: local: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: local: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: start_arr[$i]: unbound variable
+[2026-01-12 18:13:48] [*] START idx=1 host=cn-e09.hpc.engr.oregonstate.edu
+[2026-01-12 18:13:48] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:13:48] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:13:48] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-1.log
+
+[2026-01-12 18:13:51] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1
+[2026-01-12 18:15:25] [*] Create venv + deps
+[2026-01-12 18:15:41] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:15:41] [*] ccache reset
+[2026-01-12 18:15:41] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 18:15:45] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 18:15:54] [*] RUN idx=1 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-1.txt
+
+There are 96 input scripts listed in input-list-1.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/diffraction
+1 input script(s) to be tested: ['in.BulkNi']
+   + in.BulkNi (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/build/lmp -in in.BulkNi -cite none -log log.BulkNi.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dispersion
+2 input script(s) to be tested: ['in.d2', 'in.d3']
+   + in.d2 (1/2)
+     all 8 checks passed.
+   + in.d3 (2/2)
+     all 8 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpd
+1 input script(s) to be tested: ['in.dpd']
+   + in.dpd (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpd_coul_slater_long
+1 input script(s) to be tested: ['in.dpd_coul_slater_long']
+   + in.dpd_coul_slater_long (1/1)
+       failed, cannot find the reference log file for in.dpd_coul_slater_long with the expected format log.[date].dpd_coul_slater_long.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpd_tstat
+1 input script(s) to be tested: ['in.dpd_tstat']
+   + in.dpd_tstat (1/1)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpdext
+1 input script(s) to be tested: ['in.dpdext']
+   + in.dpdext (1/1)
+     mismatched num steps in the log files. Check both log files for more details.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-basic/dpdext_tstat
+1 input script(s) to be tested: ['in.dpdext_tstat']
+   + in.dpdext_tstat (1/1)
+     all 4 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-meso/edpd
+2 input script(s) to be tested: ['in.edpd', 'in.edpd-region']
+   + in.edpd (1/2)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+   + in.edpd-region (2/2)
+     6 abs diff checks failed.
+     6 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-meso/mdpd
+1 input script(s) to be tested: ['in.mdpd']
+   + in.mdpd (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-meso/tdpd
+2 input script(s) to be tested: ['in.tdpd', 'in.tdpd-region']
+   + in.tdpd (1/2)
+     5 abs diff checks failed.
+     6 rel diff checks failed.
+   + in.tdpd-region (2/2)
+     5 abs diff checks failed.
+     6 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpd-shardlow
+1 input script(s) to be tested: ['in.dpd-shardlow']
+   + in.dpd-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpd-shardlow with the expected format log.[date].dpd-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpd-vv
+1 input script(s) to be tested: ['in.dpd-vv']
+   + in.dpd-vv (1/1)
+       failed, cannot find the reference log file for in.dpd-vv with the expected format log.[date].dpd-vv.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpde-shardlow
+1 input script(s) to be tested: ['in.dpde-shardlow']
+   + in.dpde-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpde-shardlow with the expected format log.[date].dpde-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpde-vv
+1 input script(s) to be tested: ['in.dpde-vv']
+   + in.dpde-vv (1/1)
+       failed, cannot find the reference log file for in.dpde-vv with the expected format log.[date].dpde-vv.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpdh-shardlow
+1 input script(s) to be tested: ['in.dpdh-shardlow']
+   + in.dpdh-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpdh-shardlow with the expected format log.[date].dpdh-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpdp-shardlow
+1 input script(s) to be tested: ['in.dpdp-shardlow']
+   + in.dpdp-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpdp-shardlow with the expected format log.[date].dpdp-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/dpdrx-shardlow
+1 input script(s) to be tested: ['in.dpdrx-shardlow']
+   + in.dpdrx-shardlow (1/1)
+       failed, cannot find the reference log file for in.dpdrx-shardlow with the expected format log.[date].dpdrx-shardlow.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-react/multi-lucy
+1 input script(s) to be tested: ['in.multi-lucy']
+   + in.multi-lucy (1/1)
+       failed, cannot find the reference log file for in.multi-lucy with the expected format log.[date].multi-lucy.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-smooth/2d-diffusion-in-shear-flow
+1 input script(s) to be tested: ['in.lammps']
+   + in.lammps (1/1)
+       failed, cannot find the reference log file for in.lammps with the expected format log.[date].lammps.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-smooth/2d-diffusion
+1 input script(s) to be tested: ['in.lammps']
+   + in.lammps (1/1)
+       failed, cannot find the reference log file for in.lammps with the expected format log.[date].lammps.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/dpd-smooth/equipartition-verification
+1 input script(s) to be tested: ['in.lammps']
+   + in.lammps (1/1)
+       failed, cannot find the reference log file for in.lammps with the expected format log.[date].lammps.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/drude/butane
+3 input script(s) to be tested: ['in.butane.lang', 'in.butane.nh', 'in.butane.tgnh']
+   + in.butane.lang (1/3)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.butane.nh (2/3)
+     3 abs diff checks failed.
+     4 rel diff checks failed.
+   + in.butane.tgnh (3/3)
+     4 abs diff checks failed.
+     4 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/drude/ethanol
+3 input script(s) to be tested: ['in.ethanol.lang', 'in.ethanol.nh', 'in.ethanol.tgnh']
+   + in.ethanol.lang (1/3)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+   + in.ethanol.nh (2/3)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+   + in.ethanol.tgnh (3/3)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/drude/ethylene_glycol
+1 input script(s) to be tested: ['in.ethylene_glycol']
+   + in.ethylene_glycol (1/1)
+     4 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/drude/swm4-ndp
+2 input script(s) to be tested: ['in.swm4-ndp.lang', 'in.swm4-ndp.nh']
+   + in.swm4-ndp.lang (1/2)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+   + in.swm4-ndp.nh (2/2)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/drude/toluene
+2 input script(s) to be tested: ['in.toluene.lang', 'in.toluene.nh']
+   + in.toluene.lang (1/2)
+     4 abs diff checks failed.
+     4 rel diff checks failed.
+   + in.toluene.nh (2/2)
+     5 abs diff checks failed.
+     5 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/e3b
+1 input script(s) to be tested: ['in.e3b-tip4p2005']
+   + in.e3b-tip4p2005 (1/1)
+     all 24 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/edip
+3 input script(s) to be tested: ['in.edip-Si', 'in.edip-Si-multi', 'in.edip-SiC']
+   + in.edip-Si (1/3)
+       failed, cannot find the reference log file for in.edip-Si with the expected format log.[date].edip-Si.*.[nprocs]
+   + in.edip-Si-multi (2/3)
+       failed, cannot find the reference log file for in.edip-Si-multi with the expected format log.[date].edip-Si-multi.*.[nprocs]
+   + in.edip-SiC (3/3)
+       failed, cannot find the reference log file for in.edip-SiC with the expected format log.[date].edip-SiC.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/ees
+2 input script(s) to be tested: ['in.fix_wall', 'in.fix_wall_region']
+   + in.fix_wall (1/2)
+     all 6 checks passed.
+   + in.fix_wall_region (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/Auger-Adamantane
+1 input script(s) to be tested: ['in.adamantane_ionized.nve']
+   + in.adamantane_ionized.nve (1/1)
+     7 abs diff checks failed.
+     7 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/Be-solid
+1 input script(s) to be tested: ['in.Be-solid.spe']
+   + in.Be-solid.spe (1/1)
+       failed, cannot find the reference log file for in.Be-solid.spe with the expected format log.[date].Be-solid.spe.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/CH4
+3 input script(s) to be tested: ['in.ch4.dynamics', 'in.ch4.min', 'in.ch4_ionized.dynamics']
+   + in.ch4.dynamics (1/3)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.ch4.min (2/3)
+     all 4 checks passed.
+   + in.ch4_ionized.dynamics (3/3)
+     8 abs diff checks failed.
+     9 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/ECP/Si2H6
+2 input script(s) to be tested: ['in.Si2H6', 'in.Si2H6.ang']
+   + in.Si2H6 (1/2)
+     all 8 checks passed.
+   + in.Si2H6.ang (2/2)
+     4 abs diff checks failed.
+     5 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/ECP/SiC/bulk
+1 input script(s) to be tested: ['in.SiC']
+   + in.SiC (1/1)
+       failed, cannot find the reference log file for in.SiC with the expected format log.[date].SiC.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/ECP/SiH4
+2 input script(s) to be tested: ['in.SiH4', 'in.SiH4.ang']
+   + in.SiH4 (1/2)
+   + in.SiH4.ang (2/2)
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/H
+2 input script(s) to be tested: ['in.h_atom.spe.ang', 'in.h_atom.spe.bohr']
+   + in.h_atom.spe.ang (1/2)
+       failed, cannot find the reference log file for in.h_atom.spe.ang with the expected format log.[date].h_atom.spe.ang.*.[nprocs]
+   + in.h_atom.spe.bohr (2/2)
+       failed, cannot find the reference log file for in.h_atom.spe.bohr with the expected format log.[date].h_atom.spe.bohr.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/H2
+1 input script(s) to be tested: ['in.h2']
+   + in.h2 (1/1)
+       failed, cannot find the reference log file for in.h2 with the expected format log.[date].h2.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/H_plasma
+3 input script(s) to be tested: ['in.h2bulk.npt', 'in.h2bulk.nve', 'in.h2bulk.nve.ang']
+   + in.h2bulk.npt (1/3)
+       failed, cannot find the reference log file for in.h2bulk.npt with the expected format log.[date].h2bulk.npt.*.[nprocs]
+   + in.h2bulk.nve (2/3)
+       failed, cannot find the reference log file for in.h2bulk.nve with the expected format log.[date].h2bulk.nve.*.[nprocs]
+   + in.h2bulk.nve.ang (3/3)
+       failed, cannot find the reference log file for in.h2bulk.nve.ang with the expected format log.[date].h2bulk.nve.ang.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/Li-dendritic
+2 input script(s) to be tested: ['in.Li-dendritic.min', 'in.Li-dendritic.nvt']
+   + in.Li-dendritic.min (1/2)
+       failed, cannot find the reference log file for in.Li-dendritic.min with the expected format log.[date].Li-dendritic.min.*.[nprocs]
+   + in.Li-dendritic.nvt (2/2)
+       failed, cannot find the reference log file for in.Li-dendritic.nvt with the expected format log.[date].Li-dendritic.nvt.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/Li-solid
+2 input script(s) to be tested: ['in.Li.ang', 'in.Li.bohr']
+   + in.Li.ang (1/2)
+       failed, cannot find the reference log file for in.Li.ang with the expected format log.[date].Li.ang.*.[nprocs]
+   + in.Li.bohr (2/2)
+       failed, cannot find the reference log file for in.Li.bohr with the expected format log.[date].Li.bohr.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/fixed-core/C2H6
+2 input script(s) to be tested: ['in.C2H6fc.ang', 'in.C2H6fc.bohr']
+   + in.C2H6fc.ang (1/2)
+       failed, cannot find the reference log file for in.C2H6fc.ang with the expected format log.[date].C2H6fc.ang.*.[nprocs]
+   + in.C2H6fc.bohr (2/2)
+       failed, cannot find the reference log file for in.C2H6fc.bohr with the expected format log.[date].C2H6fc.bohr.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/eff/fixed-core/CH4
+4 input script(s) to be tested: ['in.CH4fc.ang', 'in.CH4fc.bohr', 'in.CH4fc.spe.ang', 'in.CH4fc.spe.bohr']
+   + in.CH4fc.ang (1/4)
+       failed, cannot find the reference log file for in.CH4fc.ang with the expected format log.[date].CH4fc.ang.*.[nprocs]
+   + in.CH4fc.bohr (2/4)
+       failed, cannot find the reference log file for in.CH4fc.bohr with the expected format log.[date].CH4fc.bohr.*.[nprocs]
+   + in.CH4fc.spe.ang (3/4)
+       failed, cannot find the reference log file for in.CH4fc.spe.ang with the expected format log.[date].CH4fc.spe.ang.*.[nprocs]
+   + in.CH4fc.spe.bohr (4/4)
+       failed, cannot find the reference log file for in.CH4fc.spe.bohr with the expected format log.[date].CH4fc.spe.bohr.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/electrode/au-aq
+2 input script(s) to be tested: ['in.ffield', 'in.tf']
+   + in.ffield (1/2)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/build/lmp -in in.ffield -cite none -log log.ffield.1 (180s expired)
+     failed, no Total wall time in the output.
+
+   + in.tf (2/2)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/build/lmp -in in.tf -cite none -log log.tf.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/electrode/graph-il
+7 input script(s) to be tested: ['in.conp', 'in.conq', 'in.conq2', 'in.etypes', 'in.ffield', 'in.ramp', 'in.thermo']
+   + in.conp (1/7)
+       failed, cannot find the reference log file for in.conp with the expected format log.[date].conp.*.[nprocs]
+   + in.conq (2/7)
+       failed, cannot find the reference log file for in.conq with the expected format log.[date].conq.*.[nprocs]
+   + in.conq2 (3/7)
+       failed, cannot find the reference log file for in.conq2 with the expected format log.[date].conq2.*.[nprocs]
+   + in.etypes (4/7)
+       failed, cannot find the reference log file for in.etypes with the expected format log.[date].etypes.*.[nprocs]
+   + in.ffield (5/7)
+       failed, cannot find the reference log file for in.ffield with the expected format log.[date].ffield.*.[nprocs]
+   + in.ramp (6/7)
+       failed, cannot find the reference log file for in.ramp with the expected format log.[date].ramp.*.[nprocs]
+   + in.thermo (7/7)
+       failed, cannot find the reference log file for in.thermo with the expected format log.[date].thermo.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/electrode/madelung
+9 input script(s) to be tested: ['in.cg', 'in.eta', 'in.eta_cg', 'in.eta_mix', 'in.ewald-ew2d', 'in.ewald-ew3dc', 'in.ewald-ffield', 'in.pppm-ew3dc', 'in.pppm-ffield']
+   + in.cg (1/9)
+       failed, cannot find the reference log file for in.cg with the expected format log.[date].cg.*.[nprocs]
+   + in.eta (2/9)
+     all 2 checks passed.
+   + in.eta_cg (3/9)
+     all 2 checks passed.
+   + in.eta_mix (4/9)
+     all 2 checks passed.
+   + in.ewald-ew2d (5/9)
+       failed, cannot find the reference log file for in.ewald-ew2d with the expected format log.[date].ewald-ew2d.*.[nprocs]
+   + in.ewald-ew3dc (6/9)
+       failed, cannot find the reference log file for in.ewald-ew3dc with the expected format log.[date].ewald-ew3dc.*.[nprocs]
+   + in.ewald-ffield (7/9)
+       failed, cannot find the reference log file for in.ewald-ffield with the expected format log.[date].ewald-ffield.*.[nprocs]
+   + in.pppm-ew3dc (8/9)
+       failed, cannot find the reference log file for in.pppm-ew3dc with the expected format log.[date].pppm-ew3dc.*.[nprocs]
+   + in.pppm-ffield (9/9)
+       failed, cannot find the reference log file for in.pppm-ffield with the expected format log.[date].pppm-ffield.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/electrode/piston
+1 input script(s) to be tested: ['in.piston']
+   + in.piston (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_1/build/lmp -in in.piston -cite none -log log.piston.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/electrode/planar
+5 input script(s) to be tested: ['in.planar-ewald-ew2d', 'in.planar-ewald-ew3dc', 'in.planar-ewald-ffield', 'in.planar-pppm-ew3dc', 'in.planar-pppm-ffield']
+   + in.planar-ewald-ew2d (1/5)
+     all 0 checks passed.
+   + in.planar-ewald-ew3dc (2/5)
+     all 0 checks passed.
+   + in.planar-ewald-ffield (3/5)
+     all 0 checks passed.
+   + in.planar-pppm-ew3dc (4/5)
+     all 0 checks passed.
+   + in.planar-pppm-ffield (5/5)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/electron_stopping
+4 input script(s) to be tested: ['in.cascade_AlCu', 'in.cascade_SiSi', 'in.elstop', 'in.elstop.only']
+   + in.cascade_AlCu (1/4)
+     all 4 checks passed.
+   + in.cascade_SiSi (2/4)
+     all 4 checks passed.
+   + in.elstop (3/4)
+     all 0 checks passed.
+   + in.elstop.only (4/4)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/entropy
+1 input script(s) to be tested: ['in.entropy']
+   + in.entropy (1/1)
+       failed, cannot find the reference log file for in.entropy with the expected format log.[date].entropy.*.[nprocs]
+
+Summary:
+  Total number of input scripts: 96
+  - Skipped  : 0
+  - Error    : 4
+     - timeout  : 4
+  - Completed: 92
+     - failed   : 69
+     - numerical tests passed: 21
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-1.yaml
+  - Running log with screen output: run-1.log
+  - Testing result in JUnit XML   : output-1.xml
+
+[2026-01-12 19:22:28] [WARN] RAPL wrap detected on package-1; applied +max_range_uj=262143328850
+[2026-01-12 19:22:28] [DONE] idx=1 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_1.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-1.tar

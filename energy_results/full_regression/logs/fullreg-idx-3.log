@@ -1,0 +1,950 @@
+[2026-01-12 17:22:47] [*] START idx=3 host=cn-e12.hpc.engr.oregonstate.edu
+[2026-01-12 17:22:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 17:22:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 17:22:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-3.log
+
+[2026-01-12 17:22:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3
+[2026-01-12 17:23:38] [*] Create venv + deps
+[2026-01-12 17:23:52] [*] ccache reset
+[2026-01-12 17:23:52] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[4/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 17:23:54] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 17:23:59] [*] RUN idx=3 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-3.txt
+
+There are 96 input scripts listed in input-list-3.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/mofff
+2 input script(s) to be tested: ['in.hkust1', 'in.hkust1_long']
+   + in.hkust1 (1/2)
+     all 6 checks passed.
+   + in.hkust1_long (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/momb
+1 input script(s) to be tested: ['in.system']
+   + in.system (1/1)
+     all 14 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/moments
+3 input script(s) to be tested: ['in.converge', 'in.simple', 'in.valtest']
+   + in.converge (1/3)
+failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).
+   + in.simple (2/3)
+failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).
+   + in.valtest (3/3)
+failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/momentum
+1 input script(s) to be tested: ['in.momentum']
+   + in.momentum (1/1)
+       failed, cannot find the reference log file for in.momentum with the expected format log.[date].momentum.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/mop
+1 input script(s) to be tested: ['in.compute_stress_mop']
+   + in.compute_stress_mop (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/neighbor-swap
+2 input script(s) to be tested: ['in.KMC_pulse_center', 'in.KMC_pulse_edge']
+   + in.KMC_pulse_center (1/2)
+     all 12 checks passed.
+   + in.KMC_pulse_edge (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/orient_eco
+1 input script(s) to be tested: ['in.orient_eco']
+   + in.orient_eco (1/1)
+       failed, cannot find the reference log file for in.orient_eco with the expected format log.[date].orient_eco.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pace/compute
+1 input script(s) to be tested: ['in.compute']
+   + in.compute (1/1)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pace
+2 input script(s) to be tested: ['in.pace.product', 'in.pace.recursive']
+   + in.pace.product (1/2)
+     all 6 checks passed.
+   + in.pace.recursive (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pafi
+1 input script(s) to be tested: ['in.pafi']
+   + in.pafi (1/1)
+     all 36 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pedone
+2 input script(s) to be tested: ['in.pedone.melt', 'in.pedone.relax']
+   + in.pedone.melt (1/2)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.pedone.relax (2/2)
+     mismatched num steps in the log files. Check both log files for more details.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/1-1D-mono
+2 input script(s) to be tested: ['in.Ana', 'in.disp']
+   + in.Ana (1/2)
+       failed, cannot find the reference log file for in.Ana with the expected format log.[date].Ana.*.[nprocs]
+   + in.disp (2/2): skipped as specified in tools/regression-tests/config_serial.yaml
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/2-1D-diatomic
+2 input script(s) to be tested: ['in.Ana', 'in.disp']
+   + in.Ana (1/2)
+     all 6 checks passed.
+   + in.disp (2/2): skipped as specified in tools/regression-tests/config_serial.yaml
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/3-3D-FCC-Cu-EAM
+4 input script(s) to be tested: ['in.EAM3D', 'in.disp', 'in.disp2', 'in.dos']
+   + in.EAM3D (1/4)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.EAM3D -cite none -log log.EAM3D.1 (180s expired)
+     failed, no Total wall time in the output.
+
+   + in.disp (2/4): skipped as specified in tools/regression-tests/config_serial.yaml
+   + in.disp2 (3/4): skipped as specified in tools/regression-tests/config_serial.yaml
+   + in.dos (4/4): skipped as specified in tools/regression-tests/config_serial.yaml
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/4-Graphene
+2 input script(s) to be tested: ['in.disp', 'in.graphene']
+   + in.disp (1/2): skipped as specified in tools/regression-tests/config_serial.yaml
+   + in.graphene (2/2)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.graphene -cite none -log log.graphene.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/dynamical_matrix_command/Silicon
+1 input script(s) to be tested: ['in.silicon']
+   + in.silicon (1/1)
+    completed, but no Step nor Loop in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/langevin_metal_units
+2 input script(s) to be tested: ['in.langevin.metal', 'in.pimd-langevin.metal']
+   + in.langevin.metal (1/2)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.pimd-langevin.metal (2/2)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/langevin_reduced_units
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+       failed, cannot find the reference log file for in.lmp with the expected format log.[date].lmp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/langevin_reduced_units_group
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+       failed, cannot find the reference log file for in.lmp with the expected format log.[date].lmp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/para-h2
+1 input script(s) to be tested: ['in.scp']
+   + in.scp (1/1)
+       failed, cannot find the reference log file for in.scp with the expected format log.[date].scp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/prot-hairpin
+1 input script(s) to be tested: ['in.scp']
+   + in.scp (1/1)
+       failed, cannot find the reference log file for in.scp with the expected format log.[date].scp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd_bosonic/harmonic_trap_langevin
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+       failed, cannot find the reference log file for in.lmp with the expected format log.[date].lmp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd_bosonic/harmonic_trap_nvt
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/plumed
+1 input script(s) to be tested: ['in.peptide-plumed']
+   + in.peptide-plumed (1/1)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'plumed' is part of the PLUMED package which is not enabled in this LAMMPS binary.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pod/InP
+2 input script(s) to be tested: ['in.fitpod', 'in.pod']
+   + in.fitpod (1/2)
+failed, ERROR: Cannot fit potential without data files. The data paths may not be valid. Please check the data paths in the POD data file. (src/ML-POD/fitpod_command.cpp:717).
+   + in.pod (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pod/Ta
+3 input script(s) to be tested: ['in.fitpod', 'in.pod', 'in.pod.compute']
+   + in.fitpod (1/3)
+    completed, but no Step nor Loop in the output.
+
+   + in.pod (2/3)
+     all 6 checks passed.
+   + in.pod.compute (3/3)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/ptm
+1 input script(s) to be tested: ['in.ptm']
+   + in.ptm (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/alpha_quartz_qbmsst
+1 input script(s) to be tested: ['in.alpha_quartz_qbmsst']
+   + in.alpha_quartz_qbmsst (1/1)
+     3 abs diff checks failed.
+     4 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/alpha_quartz_qtb
+1 input script(s) to be tested: ['in.alpha_quartz_qtb']
+   + in.alpha_quartz_qtb (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/methane_qbmsst
+1 input script(s) to be tested: ['in.methane_qbmsst']
+   + in.methane_qbmsst (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.methane_qbmsst -cite none -log log.methane_qbmsst.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/methane_qtb
+1 input script(s) to be tested: ['in.methane_qtb']
+   + in.methane_qtb (1/1)
+     3 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/quip
+3 input script(s) to be tested: ['in.gap', 'in.molecular', 'in.sw']
+   + in.gap (1/3)
+failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.
+   + in.molecular (2/3)
+failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.
+   + in.sw (3/3)
+failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/rann
+1 input script(s) to be tested: ['in.rann']
+   + in.rann (1/1)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/create_atoms_polystyrene
+1 input script(s) to be tested: ['in.grow_styrene']
+   + in.grow_styrene (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/nylon,6-6_melt
+1 input script(s) to be tested: ['in.large_nylon_melt']
+   + in.large_nylon_melt (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_epoxy
+1 input script(s) to be tested: ['in.tiny_epoxy.stabilized']
+   + in.tiny_epoxy.stabilized (1/1)
+     1 abs diff checks failed.
+     1 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_nylon
+3 input script(s) to be tested: ['in.tiny_nylon.stabilized', 'in.tiny_nylon.stabilized_variable_probability', 'in.tiny_nylon.unstabilized']
+   + in.tiny_nylon.stabilized (1/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.tiny_nylon.stabilized_variable_probability (2/3)
+failed, ERROR: Fix bond/react: Variable name prob1 does not exist (src/REACTION/fix_bond_react.cpp:3985).
+   + in.tiny_nylon.unstabilized (3/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_nylon_json
+1 input script(s) to be tested: ['in.tiny_nylon.stabilized']
+   + in.tiny_nylon.stabilized (1/1)
+       failed, cannot find the reference log file for in.tiny_nylon.stabilized with the expected format log.[date].tiny_nylon.stabilized.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_polystyrene
+1 input script(s) to be tested: ['in.tiny_polystyrene.stabilized']
+   + in.tiny_polystyrene.stabilized (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/rhok
+3 input script(s) to be tested: ['in.crystal', 'in.pinning', 'in.setup']
+   + in.crystal (1/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.pinning (2/3)
+failed, ERROR: Cannot open file data.halfhalf: No such file or directory (src/read_data.cpp:380).
+   + in.setup (3/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/scafacos
+12 input script(s) to be tested: ['in.scafacos', 'in.scafacos.cw.ewald', 'in.scafacos.cw.fmm', 'in.scafacos.cw.p2nfft', 'in.scafacos.cw.p3m', 'in.scafacos.ewald', 'in.scafacos.fmm', 'in.scafacos.hsph.direct', 'in.scafacos.hsph.fmm', 'in.scafacos.hsph.p2nfft', 'in.scafacos.p2nfft', 'in.scafacos.p3m']
+   + in.scafacos (1/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.ewald (2/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.fmm (3/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.p2nfft (4/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.p3m (5/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.ewald (6/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.fmm (7/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.hsph.direct (8/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.hsph.fmm (9/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.hsph.p2nfft (10/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.p2nfft (11/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.p3m (12/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/slater
+1 input script(s) to be tested: ['in.slater']
+   + in.slater (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.slater -cite none -log log.slater.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/smtbq
+5 input script(s) to be tested: ['in.smatbAgCuPancake', 'in.smatbBulkFCC', 'in.smtbq.Al', 'in.smtbq.Al2O3', 'in.smtbq.TiO2']
+   + in.smatbAgCuPancake (1/5)
+       failed, cannot find the reference log file for in.smatbAgCuPancake with the expected format log.[date].smatbAgCuPancake.*.[nprocs]
+   + in.smatbBulkFCC (2/5)
+       failed, cannot find the reference log file for in.smatbBulkFCC with the expected format log.[date].smatbBulkFCC.*.[nprocs]
+   + in.smtbq.Al (3/5)
+       failed, cannot find the reference log file for in.smtbq.Al with the expected format log.[date].smtbq.Al.*.[nprocs]
+   + in.smtbq.Al2O3 (4/5)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.smtbq.Al2O3 -cite none -log log.smtbq.Al2O3.1 (180s expired)
+     failed, no Total wall time in the output.
+
+   + in.smtbq.TiO2 (5/5)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.smtbq.TiO2 -cite none -log log.smtbq.TiO2.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/sna_nnn_slcsa
+1 input script(s) to be tested: ['in.slcsa']
+   + in.slcsa (1/1)
+failed, ERROR: Invalid compute slcsa/atom argument: slcsa (src/EXTRA-COMPUTE/compute_slcsa_atom.cpp:115).
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/srp
+1 input script(s) to be tested: ['in.srp']
+   + in.srp (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/srp_react
+1 input script(s) to be tested: ['in.srp_react']
+   + in.srp_react (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/stressprofile
+3 input script(s) to be tested: ['in.cylinder', 'in.flat', 'in.sphere']
+   + in.cylinder (1/3)
+     all 6 checks passed.
+   + in.flat (2/3)
+     all 6 checks passed.
+   + in.sphere (3/3)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/tally
+3 input script(s) to be tested: ['in.force', 'in.pe', 'in.stress']
+   + in.force (1/3)
+     all 6 checks passed.
+   + in.pe (2/3)
+     all 8 checks passed.
+   + in.stress (3/3)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/temper_npt
+1 input script(s) to be tested: ['in.temper_npt']
+   + in.temper_npt (1/1)
+failed, ERROR: World variable count 8 doesn't match # of partitions 1 (src/variable.cpp:259).
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/ti
+1 input script(s) to be tested: ['in.ti_spring']
+   + in.ti_spring (1/1)
+       failed, cannot find the reference log file for in.ti_spring with the expected format log.[date].ti_spring.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/tmd
+1 input script(s) to be tested: ['in.tmd']
+   + in.tmd (1/1)
+    Error parsing log.tmd.1 at line 3, column 13.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/uef/npt_biaxial
+1 input script(s) to be tested: ['in.npt_biaxial']
+   + in.npt_biaxial (1/1)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/uef/nvt_uniaxial
+1 input script(s) to be tested: ['in.nvt_uniaxial']
+   + in.nvt_uniaxial (1/1)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/uf3
+1 input script(s) to be tested: ['in.uf3.Nb']
+   + in.uf3.Nb (1/1)
+       failed, cannot find the reference log file for in.uf3.Nb with the expected format log.[date].uf3.Nb.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/vtk
+1 input script(s) to be tested: ['in.vtk']
+   + in.vtk (1/1)
+failed, unrecognized command, package not installed, ERROR: Unrecognized dump style 'vtk' is part of the VTK package which is not enabled in this LAMMPS binary.
+
+Summary:
+  Total number of input scripts: 96
+  - Skipped  : 6
+  - Error    : 34
+     - timeout  : 6
+  - Completed: 56
+     - failed   : 31
+     - numerical tests passed: 24
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-3.yaml
+  - Running log with screen output: run-3.log
+  - Testing result in JUnit XML   : output-3.xml
+
+[2026-01-12 17:57:54] [DONE] idx=3 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_3.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-3.tar
+[2026-01-12 18:07:47] [*] START idx=3 host=cn-e15.hpc.engr.oregonstate.edu
+[2026-01-12 18:07:47] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:07:47] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:07:47] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-3.log
+
+[2026-01-12 18:07:47] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3
+[2026-01-12 18:08:28] [*] Create venv + deps
+[2026-01-12 18:08:39] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:08:39] [*] ccache reset
+[2026-01-12 18:08:39] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: local: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 133: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: local: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 134: warning: end_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: warning: start_arr: circular name reference
+/nfs/stak/users/anklesan/hpc-share/lammps/lammps/workflow_energy_scripts/full_regression/full_regression_energy_onefile.sh: line 140: start_arr[$i]: unbound variable
+[2026-01-12 18:13:48] [*] START idx=3 host=cn-e12.hpc.engr.oregonstate.edu
+[2026-01-12 18:13:48] [*] Repo: /nfs/stak/users/anklesan/hpc-share/lammps/lammps
+[2026-01-12 18:13:48] [*] Out : /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression
+[2026-01-12 18:13:48] [*] Script log: /nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/logs/fullreg-idx-3.log
+
+[2026-01-12 18:13:50] [*] rsync repo -> /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3
+[2026-01-12 18:14:40] [*] Create venv + deps
+[2026-01-12 18:14:53] [*] RAPL packages:
+  - /sys/class/powercap/intel-rapl:0 (name=package-0) max_range_uj=262143328850
+  - /sys/class/powercap/intel-rapl:1 (name=package-1) max_range_uj=262143328850
+[2026-01-12 18:14:53] [*] ccache reset
+[2026-01-12 18:14:53] [*] BUILD (metered)
+loading initial cache file cmake/presets/gcc.cmake
+loading initial cache file cmake/presets/most.cmake
+CMake Error: The source "/scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/cmake/CMakeLists.txt" does not match the source "/nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.
+[0/2] Re-checking globbed directories...
+[1/8] Performing update step for 'spglib_build'
+[2/8] No patch step for 'spglib_build'
+[3/8] cd /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy && /nfs/stak/a1/rhel5apps/spack/opt-el8/spack/linux-sandybridge/cmake-3.31.8-63trq3jyfruewhi5wdjkab43vuk4rxla/bin/cmake -DLAMMPS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps" -DGIT_EXECUTABLE="/usr/bin/git" -DGIT_FOUND="TRUE" -DLAMMPS_STYLE_HEADERS_DIR="/nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/styles" -P /nfs/stak/users/anklesan/hpc-share/lammps/lammps/cmake/Modules/generate_lmpgitversion.cmake
+-- Git Directory: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/.git
+-- Generating lmpgitversion.h...
+[4/8] Performing configure step for 'spglib_build'
+-- Build type: RelWithDebInfo
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/src/spglib_build-build
+[5/8] Performing build step for 'spglib_build'
+ninja: no work to do.
+[6/7] Performing install step for 'spglib_build'
+-- Install configuration: "RelWithDebInfo"
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/lib/libsymspg.a
+-- Up-to-date: /nfs/stak/users/anklesan/hpc-share/lammps/lammps/build_quick_reg_energy/phana_build/spglib_build_ext/include/spglib.h
+[7/7] Completed 'spglib_build'
+[2026-01-12 18:14:56] [*] ANALYZE (metered)
+
+Top-level example folder:
+  examples
+
+There are 764 input scripts in total under the examples folder.
+[2026-01-12 18:15:00] [*] RUN idx=3 (metered)
+
+Input scripts to test as listed in the file:
+  input-list-3.txt
+
+There are 96 input scripts listed in input-list-3.txt.
+
+Regression test configuration file:
+  /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/tools/regression-tests/config_serial.yaml
+
+LAMMPS build info:
+  - OS: Linux "Rocky Linux 8.10 (Green Obsidian)" 4.18.0-477.27.1.el8_8.x86_64 x86_64
+  - Git info (develop / patch_10Dec2025-46-g97341a839f)
+  - Compiler: GNU C++ 12.4.0 with OpenMP 4.5
+  - Active compile flags:  -DLAMMPS_GZIP -DLAMMPS_PNG -DLAMMPS_JPEG -DLAMMPS_CURL -DLAMMPS_SMALLBIG
+  - List of 73 installed packages:
+AMOEBA ASPHERE BOCS BODY BPM BROWNIAN CG-DNA CG-SPICA CLASS2 COLLOID COLVARS COMPRESS CORESHELL DIELECTRIC DIFFRACTION DIPOLE DPD-BASIC DPD-MESO DPD-REACT DPD-SMOOTH DRUDE EFF ELECTRODE EXTRA-COMMAND EXTRA-COMPUTE EXTRA-DUMP EXTRA-FIX EXTRA-MOLECULE EXTRA-PAIR FEP GRANULAR INTERLAYER KSPACE LEPTON MACHDYN MANIFOLD MANYBODY MC MEAM MESONT MISC ML-IAP ML-PACE ML-POD ML-RANN ML-SNAP ML-UF3 MOFFF MOLECULE OPENMP OPT ORIENT PERI PHONON PLUGIN PTM PYTHON QEQ QTB REACTION REAXFF REPLICA RHEO RIGID SHOCK SMTBQ SPH SPIN SRD TALLY UEF VORONOI YAFF 
+
+Working directory: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/mofff
+2 input script(s) to be tested: ['in.hkust1', 'in.hkust1_long']
+   + in.hkust1 (1/2)
+     all 6 checks passed.
+   + in.hkust1_long (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/momb
+1 input script(s) to be tested: ['in.system']
+   + in.system (1/1)
+     all 14 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/moments
+3 input script(s) to be tested: ['in.converge', 'in.simple', 'in.valtest']
+   + in.converge (1/3)
+failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).
+   + in.simple (2/3)
+failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).
+   + in.valtest (3/3)
+failed, ERROR on proc 0: cannot open eam/alloy potential file AlCu.eam.alloy: No such file or directory (src/potential_file_reader.cpp:58).
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/momentum
+1 input script(s) to be tested: ['in.momentum']
+   + in.momentum (1/1)
+       failed, cannot find the reference log file for in.momentum with the expected format log.[date].momentum.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/mop
+1 input script(s) to be tested: ['in.compute_stress_mop']
+   + in.compute_stress_mop (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/neighbor-swap
+2 input script(s) to be tested: ['in.KMC_pulse_center', 'in.KMC_pulse_edge']
+   + in.KMC_pulse_center (1/2)
+     all 12 checks passed.
+   + in.KMC_pulse_edge (2/2)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/orient_eco
+1 input script(s) to be tested: ['in.orient_eco']
+   + in.orient_eco (1/1)
+       failed, cannot find the reference log file for in.orient_eco with the expected format log.[date].orient_eco.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pace/compute
+1 input script(s) to be tested: ['in.compute']
+   + in.compute (1/1)
+     all 2 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pace
+2 input script(s) to be tested: ['in.pace.product', 'in.pace.recursive']
+   + in.pace.product (1/2)
+     all 6 checks passed.
+   + in.pace.recursive (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pafi
+1 input script(s) to be tested: ['in.pafi']
+   + in.pafi (1/1)
+     all 36 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pedone
+2 input script(s) to be tested: ['in.pedone.melt', 'in.pedone.relax']
+   + in.pedone.melt (1/2)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+   + in.pedone.relax (2/2)
+     mismatched num steps in the log files. Check both log files for more details.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/1-1D-mono
+2 input script(s) to be tested: ['in.Ana', 'in.disp']
+   + in.Ana (1/2)
+       failed, cannot find the reference log file for in.Ana with the expected format log.[date].Ana.*.[nprocs]
+   + in.disp (2/2): skipped as specified in tools/regression-tests/config_serial.yaml
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/2-1D-diatomic
+2 input script(s) to be tested: ['in.Ana', 'in.disp']
+   + in.Ana (1/2)
+     all 6 checks passed.
+   + in.disp (2/2): skipped as specified in tools/regression-tests/config_serial.yaml
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/3-3D-FCC-Cu-EAM
+4 input script(s) to be tested: ['in.EAM3D', 'in.disp', 'in.disp2', 'in.dos']
+   + in.EAM3D (1/4)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.EAM3D -cite none -log log.EAM3D.1 (180s expired)
+     failed, no Total wall time in the output.
+
+   + in.disp (2/4): skipped as specified in tools/regression-tests/config_serial.yaml
+   + in.disp2 (3/4): skipped as specified in tools/regression-tests/config_serial.yaml
+   + in.dos (4/4): skipped as specified in tools/regression-tests/config_serial.yaml
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/4-Graphene
+2 input script(s) to be tested: ['in.disp', 'in.graphene']
+   + in.disp (1/2): skipped as specified in tools/regression-tests/config_serial.yaml
+   + in.graphene (2/2)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.graphene -cite none -log log.graphene.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/phonon/dynamical_matrix_command/Silicon
+1 input script(s) to be tested: ['in.silicon']
+   + in.silicon (1/1)
+    completed, but no Step nor Loop in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/langevin_metal_units
+2 input script(s) to be tested: ['in.langevin.metal', 'in.pimd-langevin.metal']
+   + in.langevin.metal (1/2)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.pimd-langevin.metal (2/2)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/langevin_reduced_units
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+       failed, cannot find the reference log file for in.lmp with the expected format log.[date].lmp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/langevin_reduced_units_group
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+       failed, cannot find the reference log file for in.lmp with the expected format log.[date].lmp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/para-h2
+1 input script(s) to be tested: ['in.scp']
+   + in.scp (1/1)
+       failed, cannot find the reference log file for in.scp with the expected format log.[date].scp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd/prot-hairpin
+1 input script(s) to be tested: ['in.scp']
+   + in.scp (1/1)
+       failed, cannot find the reference log file for in.scp with the expected format log.[date].scp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd_bosonic/harmonic_trap_langevin
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+       failed, cannot find the reference log file for in.lmp with the expected format log.[date].lmp.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pimd_bosonic/harmonic_trap_nvt
+1 input script(s) to be tested: ['in.lmp']
+   + in.lmp (1/1)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/plumed
+1 input script(s) to be tested: ['in.peptide-plumed']
+   + in.peptide-plumed (1/1)
+failed, unrecognized command, package not installed, ERROR: Unrecognized fix style 'plumed' is part of the PLUMED package which is not enabled in this LAMMPS binary.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pod/InP
+2 input script(s) to be tested: ['in.fitpod', 'in.pod']
+   + in.fitpod (1/2)
+failed, ERROR: Cannot fit potential without data files. The data paths may not be valid. Please check the data paths in the POD data file. (src/ML-POD/fitpod_command.cpp:717).
+   + in.pod (2/2)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/pod/Ta
+3 input script(s) to be tested: ['in.fitpod', 'in.pod', 'in.pod.compute']
+   + in.fitpod (1/3)
+    completed, but no Step nor Loop in the output.
+
+   + in.pod (2/3)
+     all 6 checks passed.
+   + in.pod.compute (3/3)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/ptm
+1 input script(s) to be tested: ['in.ptm']
+   + in.ptm (1/1)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/alpha_quartz_qbmsst
+1 input script(s) to be tested: ['in.alpha_quartz_qbmsst']
+   + in.alpha_quartz_qbmsst (1/1)
+     3 abs diff checks failed.
+     4 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/alpha_quartz_qtb
+1 input script(s) to be tested: ['in.alpha_quartz_qtb']
+   + in.alpha_quartz_qtb (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/methane_qbmsst
+1 input script(s) to be tested: ['in.methane_qbmsst']
+   + in.methane_qbmsst (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.methane_qbmsst -cite none -log log.methane_qbmsst.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/qtb/methane_qtb
+1 input script(s) to be tested: ['in.methane_qtb']
+   + in.methane_qtb (1/1)
+     3 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/quip
+3 input script(s) to be tested: ['in.gap', 'in.molecular', 'in.sw']
+   + in.gap (1/3)
+failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.
+   + in.molecular (2/3)
+failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.
+   + in.sw (3/3)
+failed, unrecognized command, package not installed, ERROR: Unrecognized pair style 'quip' is part of the ML-QUIP package which is not enabled in this LAMMPS binary.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/rann
+1 input script(s) to be tested: ['in.rann']
+   + in.rann (1/1)
+     all 12 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/create_atoms_polystyrene
+1 input script(s) to be tested: ['in.grow_styrene']
+   + in.grow_styrene (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/nylon,6-6_melt
+1 input script(s) to be tested: ['in.large_nylon_melt']
+   + in.large_nylon_melt (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_epoxy
+1 input script(s) to be tested: ['in.tiny_epoxy.stabilized']
+   + in.tiny_epoxy.stabilized (1/1)
+     1 abs diff checks failed.
+     1 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_nylon
+3 input script(s) to be tested: ['in.tiny_nylon.stabilized', 'in.tiny_nylon.stabilized_variable_probability', 'in.tiny_nylon.unstabilized']
+   + in.tiny_nylon.stabilized (1/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.tiny_nylon.stabilized_variable_probability (2/3)
+failed, ERROR: Fix bond/react: Variable name prob1 does not exist (src/REACTION/fix_bond_react.cpp:3985).
+   + in.tiny_nylon.unstabilized (3/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_nylon_json
+1 input script(s) to be tested: ['in.tiny_nylon.stabilized']
+   + in.tiny_nylon.stabilized (1/1)
+       failed, cannot find the reference log file for in.tiny_nylon.stabilized with the expected format log.[date].tiny_nylon.stabilized.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/reaction/tiny_polystyrene
+1 input script(s) to be tested: ['in.tiny_polystyrene.stabilized']
+   + in.tiny_polystyrene.stabilized (1/1)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/rhok
+3 input script(s) to be tested: ['in.crystal', 'in.pinning', 'in.setup']
+   + in.crystal (1/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+   + in.pinning (2/3)
+failed, ERROR: Cannot open file data.halfhalf: No such file or directory (src/read_data.cpp:380).
+   + in.setup (3/3)
+     2 abs diff checks failed.
+     2 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/scafacos
+12 input script(s) to be tested: ['in.scafacos', 'in.scafacos.cw.ewald', 'in.scafacos.cw.fmm', 'in.scafacos.cw.p2nfft', 'in.scafacos.cw.p3m', 'in.scafacos.ewald', 'in.scafacos.fmm', 'in.scafacos.hsph.direct', 'in.scafacos.hsph.fmm', 'in.scafacos.hsph.p2nfft', 'in.scafacos.p2nfft', 'in.scafacos.p3m']
+   + in.scafacos (1/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.ewald (2/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.fmm (3/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.p2nfft (4/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.cw.p3m (5/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.ewald (6/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.fmm (7/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.hsph.direct (8/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.hsph.fmm (9/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.hsph.p2nfft (10/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.p2nfft (11/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+   + in.scafacos.p3m (12/12)
+failed, unrecognized command, package not installed, ERROR: Unrecognized kspace style 'scafacos' is part of the SCAFACOS package which is not enabled in this LAMMPS binary.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/slater
+1 input script(s) to be tested: ['in.slater']
+   + in.slater (1/1)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.slater -cite none -log log.slater.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/smtbq
+5 input script(s) to be tested: ['in.smatbAgCuPancake', 'in.smatbBulkFCC', 'in.smtbq.Al', 'in.smtbq.Al2O3', 'in.smtbq.TiO2']
+   + in.smatbAgCuPancake (1/5)
+       failed, cannot find the reference log file for in.smatbAgCuPancake with the expected format log.[date].smatbAgCuPancake.*.[nprocs]
+   + in.smatbBulkFCC (2/5)
+       failed, cannot find the reference log file for in.smatbBulkFCC with the expected format log.[date].smatbBulkFCC.*.[nprocs]
+   + in.smtbq.Al (3/5)
+       failed, cannot find the reference log file for in.smtbq.Al with the expected format log.[date].smtbq.Al.*.[nprocs]
+   + in.smtbq.Al2O3 (4/5)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.smtbq.Al2O3 -cite none -log log.smtbq.Al2O3.1 (180s expired)
+     failed, no Total wall time in the output.
+
+   + in.smtbq.TiO2 (5/5)
+     Timeout for: /scratch/projects/anklesan/lammps/fullreg_energy_work/work_3/build/lmp -in in.smtbq.TiO2 -cite none -log log.smtbq.TiO2.1 (180s expired)
+     failed, no Total wall time in the output.
+
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/sna_nnn_slcsa
+1 input script(s) to be tested: ['in.slcsa']
+   + in.slcsa (1/1)
+failed, ERROR: Invalid compute slcsa/atom argument: slcsa (src/EXTRA-COMPUTE/compute_slcsa_atom.cpp:115).
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/srp
+1 input script(s) to be tested: ['in.srp']
+   + in.srp (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/srp_react
+1 input script(s) to be tested: ['in.srp_react']
+   + in.srp_react (1/1)
+     3 abs diff checks failed.
+     3 rel diff checks failed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/stressprofile
+3 input script(s) to be tested: ['in.cylinder', 'in.flat', 'in.sphere']
+   + in.cylinder (1/3)
+     all 6 checks passed.
+   + in.flat (2/3)
+     all 6 checks passed.
+   + in.sphere (3/3)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/tally
+3 input script(s) to be tested: ['in.force', 'in.pe', 'in.stress']
+   + in.force (1/3)
+     all 6 checks passed.
+   + in.pe (2/3)
+     all 8 checks passed.
+   + in.stress (3/3)
+     all 6 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/temper_npt
+1 input script(s) to be tested: ['in.temper_npt']
+   + in.temper_npt (1/1)
+failed, ERROR: World variable count 8 doesn't match # of partitions 1 (src/variable.cpp:259).
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/ti
+1 input script(s) to be tested: ['in.ti_spring']
+   + in.ti_spring (1/1)
+       failed, cannot find the reference log file for in.ti_spring with the expected format log.[date].ti_spring.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/tmd
+1 input script(s) to be tested: ['in.tmd']
+   + in.tmd (1/1)
+    Error parsing log.tmd.1 at line 3, column 13.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/uef/npt_biaxial
+1 input script(s) to be tested: ['in.npt_biaxial']
+   + in.npt_biaxial (1/1)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/uef/nvt_uniaxial
+1 input script(s) to be tested: ['in.nvt_uniaxial']
+   + in.nvt_uniaxial (1/1)
+     all 0 checks passed.
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/uf3
+1 input script(s) to be tested: ['in.uf3.Nb']
+   + in.uf3.Nb (1/1)
+       failed, cannot find the reference log file for in.uf3.Nb with the expected format log.[date].uf3.Nb.*.[nprocs]
+--------------------------------------------------------------------------------
+Entering examples/PACKAGES/vtk
+1 input script(s) to be tested: ['in.vtk']
+   + in.vtk (1/1)
+failed, unrecognized command, package not installed, ERROR: Unrecognized dump style 'vtk' is part of the VTK package which is not enabled in this LAMMPS binary.
+
+Summary:
+  Total number of input scripts: 96
+  - Skipped  : 6
+  - Error    : 34
+     - timeout  : 6
+  - Completed: 56
+     - failed   : 31
+     - numerical tests passed: 24
+
+Output:
+  - List of failed inputs         : failure.yaml
+  - Status of the tested inputs   : progress-3.yaml
+  - Running log with screen output: run-3.log
+  - Testing result in JUnit XML   : output-3.xml
+
+[2026-01-12 18:48:55] [DONE] idx=3 energy_csv=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/fullreg_energy_idx_3.csv artifacts=/nfs/stak/users/anklesan/hpc-share/lammps/energy_results/full_regression/full-regression-test-3.tar

@@ -1,0 +1,39 @@
+{ 'in.tad': { 'folder': 'examples/tad', 'status': 'failed, ERROR: Cannot use TAD with a single replica for NEB (src/REPLICA/tad.cpp:79).', 'walltime': '-1' } }
+{ 'in.efield-lepton': { 'folder': 'examples/LEPTON', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.dipole': { 'folder': 'examples/dipole', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.tableting.200': { 'folder': 'examples/granular', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '24.0', 'walltime_norm': '12.0' } }
+{ 'in.triaxial.compaction.12': { 'folder': 'examples/granular', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.bcc': { 'folder': 'examples/steinhardt', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.fcc': { 'folder': 'examples/steinhardt', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '0.0', 'walltime_norm': '0.0' } }
+{ 'in.icos': { 'folder': 'examples/steinhardt', 'status': 'thermo checks failed due to mismatched log files ', 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.reaxff.tatb': { 'folder': 'examples/reaxff', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '1', 'rel_diff_failed': '1'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.wall.flow': { 'folder': 'examples/wall', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '3.0', 'walltime_norm': '1.5' } }
+{ 'in.nemd.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '8', 'rel_diff_failed': '8'  }, 'walltime': '34.0', 'walltime_norm': '17.0' } }
+{ 'in.wall.2d': { 'folder': 'examples/VISCOSITY', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '4'  }, 'walltime': '15.0', 'walltime_norm': '7.5' } }
+{ 'in.lj.ehex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.lj.hex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.spce.ehex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.spce.hex': { 'folder': 'examples/HEAT', 'status': 'failed, no Total wall time in the output, timeout (120s expired)', 'walltime': '-1' } }
+{ 'in.ehex': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '61.0', 'walltime_norm': '30.5' } }
+{ 'in.heat': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '4', 'rel_diff_failed': '5'  }, 'walltime': '61.0', 'walltime_norm': '30.5' } }
+{ 'in.langevin': { 'folder': 'examples/KAPPA', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '5', 'rel_diff_failed': '5'  }, 'walltime': '64.0', 'walltime_norm': '32.0' } }
+{ 'in.cubes': { 'folder': 'examples/body', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.coreshell': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '9.0', 'walltime_norm': '4.5' } }
+{ 'in.coreshell.dsf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '15.0', 'walltime_norm': '7.5' } }
+{ 'in.coreshell.thermostats': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '15', 'rel_diff_failed': '15'  }, 'walltime': '13.0', 'walltime_norm': '6.5' } }
+{ 'in.coreshell.wolf': { 'folder': 'examples/coreshell', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '10', 'rel_diff_failed': '10'  }, 'walltime': '17.0', 'walltime_norm': '8.5' } }
+{ 'in.crack': { 'folder': 'examples/crack', 'status': 'completed', 'failed_checks': {  'status': 'passed', 'abs_diff_failed': '0', 'rel_diff_failed': '0'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.deposit.atom': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.deposit.molecule': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.deposit.molecule.shake': { 'folder': 'examples/deposit', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '7.0', 'walltime_norm': '3.5' } }
+{ 'in.ellipse.gayberne': { 'folder': 'examples/ellipse', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.ellipse.resquared': { 'folder': 'examples/ellipse', 'status': 'failed, ERROR: KOKKOS package requires a Kokkos-enabled atom_style (src/KOKKOS/atom_kokkos.cpp:421).', 'walltime': '-1' } }
+{ 'in.flow.couette': { 'folder': 'examples/flow', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '1.0', 'walltime_norm': '0.5' } }
+{ 'in.flow.pois': { 'folder': 'examples/flow', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '2.0', 'walltime_norm': '1.0' } }
+{ 'in.friction': { 'folder': 'examples/friction', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '5.0', 'walltime_norm': '2.5' } }
+{ 'in.indent': { 'folder': 'examples/indent', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '6', 'rel_diff_failed': '6'  }, 'walltime': '11.0', 'walltime_norm': '5.5' } }
+{ 'in.marble_race': { 'folder': 'examples/mesh', 'status': 'failed, ERROR: Cannot (yet) use cylinder-style region with fix addforce/kk (src/KOKKOS/fix_addforce_kokkos.cpp:101).', 'walltime': '-1' } }
+{ 'in.mesh_box': { 'folder': 'examples/mesh', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '3', 'rel_diff_failed': '3'  }, 'walltime': '6.0', 'walltime_norm': '3.0' } }
+{ 'in.obstacle': { 'folder': 'examples/obstacle', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '2', 'rel_diff_failed': '2'  }, 'walltime': '4.0', 'walltime_norm': '2.0' } }
+{ 'in.srd.mixture': { 'folder': 'examples/srd', 'status': 'failed, ERROR: KOKKOS package only supports 'bin' neighbor lists (src/KOKKOS/neighbor_kokkos.cpp:94).', 'walltime': '-1' } }
+{ 'in.stress_vcm': { 'folder': 'examples/stress_vcm', 'status': 'completed', 'failed_checks': {  'status': 'failed', 'abs_diff_failed': '7', 'rel_diff_failed': '7'  }, 'walltime': '7.0', 'walltime_norm': '3.5' } }
