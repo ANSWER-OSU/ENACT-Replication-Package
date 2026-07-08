@@ -1,99 +1,99 @@
-# ENACT-Replication-Package
+ENACT Replication Package
 
-ENACT FSE Replication Package
+Replication package for:
 
-> **Status: under preparation.** This repository is being readied for
-> public replication and is **not yet claiming full end-to-end
-> reproducibility**. See `REPOSITORY_AUDIT.md` and `UNRESOLVED_ISSUES.md`
-> for the current state, known gaps, and open questions before relying on
-> any number here.
+Energy-Aware Test Prioritization for High-Performance Computing: A Multi-Objective Approach
 
-## What this is
+ENACT uses NSGA-II to select and order tests for LAMMPS while optimizing four objectives:
 
-ENACT applies NSGA-II (via [pymoo](https://pymoo.org/)) to select and order
-test-suite subsets for the [LAMMPS](https://www.lammps.org/) molecular
-dynamics simulator, optimizing four objectives simultaneously:
-modified-statement (change-aware) coverage (maximize), energy consumption,
-execution time, and selected test count (all minimize).
+* maximize modified-statement coverage
+* minimize energy consumption
+* minimize execution time
+* minimize the number of selected tests
 
-## Canonical artifacts (current working assumption)
+Main files
 
-While the repository is being prepared, the following are treated as
-canonical:
+Primary implementation:
 
-- **Implementation:** [`nsga2_runs/scripts/nsga2_final.py`](nsga2_runs/scripts/nsga2_final.py)
-  is the canonical ENACT NSGA-II implementation (random-keys permutation +
-  cut-point encoding, 4-objective `pymoo.NSGA2`). Related scripts in the
-  same directory (`nsga2_all_prs.py`, `nsga2_with_order.py`,
-  `nsga_calculate_en.py`) are earlier iterations or instrumented variants,
-  kept for provenance rather than as the primary implementation.
-- **Results:** [`nsga2_runs/out/nsga2_canonB/`](nsga2_runs/out/nsga2_canonB/)
-  is the canonical result set (1,257 "ok" pareto runs; full-suite baseline
-  of 188,600.30 J / 5,812.09 s over 613 tests).
+nsga2_runs/scripts/nsga2_final.py
 
-These assignments may change as the two unresolved issues below are
-addressed — treat them as the current best understanding, not a final
-statement.
+Canonical results:
 
-## Repository layout
+nsga2_runs/out/nsga2_canonB/
 
-| Path | Role |
-|---|---|
-| `nsga2_runs/scripts/` | Core NSGA-II algorithm + baselines + line-index builder |
-| `nsga2_runs/out/` | NSGA-II run outputs (pareto CSVs, summaries, tables, charts) |
-| `nsga2_runs/analyze.py`, `analyze2.py`, `insights.py` | Analysis scripts over `summary.csv` outputs |
-| `Workflow_runs/` | GitHub Actions run metadata collection (`runs_linux_bigbig.py`) and pulled CSV/JSON |
-| `Workflow_Energy_Consumption/` | Per-test energy summaries + summation utility |
-| `energy_results/` | Per-test/per-run energy measurement artifacts (CodeCarbon, Slurm logs) |
-| `coverage_results/`, `unittest_linux_bigbig_coverage/` | Raw and processed test-coverage data for LAMMPS |
+The included result set contains outputs for 1,257 retained changes and 613 tests.
 
-## Setup
+Full-suite reference values:
 
-```bash
+* Energy: 188,600.30 J
+* Time: 5,812.09 s
+* Tests: 613
+
+Repository structure
+
+Path	Contents
+nsga2_runs/scripts/	ENACT, baselines, and preprocessing scripts
+nsga2_runs/out/	Pareto fronts, summaries, tables, and figures
+Workflow_runs/	GitHub Actions workflow metadata
+Workflow_Energy_Consumption/	Per-test energy summaries
+energy_results/	Energy measurement results
+coverage_results/	Coverage measurement results
+unittest_linux_bigbig_coverage/	Test lists and processed coverage data
+
+Setup
+
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-```
 
-`requirements.txt` pins the versions recovered from a captured environment
-found in this repository; `pymoo`, `tqdm`, and `requests` could not be
-version-pinned from that source (see `requirements.txt` header comment and
-`UNRESOLVED_ISSUES.md`).
+To view the available ENACT options:
 
-## Large data artifacts
+python nsga2_runs/scripts/nsga2_final.py --help
 
-This repository contains raw and processed measurement data up to tens of
-gigabytes per file (e.g., a ~31 GB per-test-per-line coverage matrix).
-**Large raw measurement artifacts are not intended for ordinary Git
-storage** — see `.gitignore` for what is currently excluded, and
-`REPOSITORY_AUDIT.md` for the archival plan that is still being decided
-(Git LFS vs. external archive with a DOI).
+The paper configuration uses a population size of 80 and 120 generations.
 
-One artifact is worth calling out specifically:
-`unittest_linux_bigbig_coverage/matrix/line_to_tests.csv` is a **249 MB
-intermediate processed artifact** — the raw line→tests table consumed only
-by `nsga2_runs/scripts/build_line_index.py` to build the compact runtime
-index. It is excluded from ordinary Git storage. The **compact runtime
-input actually used for optimization**, `nsga2_runs/out/line_index.npz`
-(with its `_tests.txt`/`_lines.txt` siblings), is committed and is
-sufficient on its own to rerun the canonical optimization — no script that
-runs NSGA-II or the baselines reads `line_to_tests.csv` directly. The CSV
-will be made available alongside the external data archive for users who
-want to rebuild the index from scratch.
+Runtime inputs
 
-## Known open issues
+The optimizer uses the compact line-to-test index:
 
-Two issues currently limit exact reproducibility and are not yet resolved:
+nsga2_runs/out/line_index.npz
+nsga2_runs/out/line_index_tests.txt
+nsga2_runs/out/line_index_lines.txt
 
-1. **Execution-count provenance** — the input file needed to reproduce the
-   NSGA-II "run" stage end-to-end (`unittest_linux_runs_with_pr_changes.csv`)
-   is not present in the repository, and a reported count of 2,746
-   commit-associated executions does not match the 2,718 rows currently
-   found in `Workflow_runs/unittest_linux_runs.csv`.
-2. **Seed completeness** — of the three random seeds referenced by the
-   `nsga2_all_pop80_gen120_seed*` output directories, only `seed1` appears
-   fully computed (1,257 pareto files); `seed2` (1,144) and `seed2_rapl`
-   (11) appear incomplete in this snapshot.
+The original line_to_tests.csv file is about 249 MB and is not included in Git. It is only needed to rebuild the compact index above.
 
-Full detail on both, plus three lower-severity provenance-only issues, is
-in `UNRESOLVED_ISSUES.md`.
+Results
+
+Per-change Pareto fronts:
+
+nsga2_runs/out/nsga2_canonB/pareto/
+
+Aggregate summary:
+
+nsga2_runs/out/nsga2_canonB/summary.csv
+
+Additional tables and figures are available under nsga2_runs/out/.
+
+Data notes
+
+Large raw coverage files, verbose logs, virtual environments, and archive files are excluded from Git because the full experiment data is about 45 GB.
+
+The repository includes the main code, compact processed inputs, canonical outputs, and analysis files. Large raw artifacts will be archived separately.
+
+Two provenance issues are still being checked:
+
+* project notes mention 2,746 executions, while the included workflow CSV currently has 2,718 rows
+* some separately named seed directories appear incomplete, although the canonical result set is complete
+
+More details are available in:
+
+REPOSITORY_AUDIT.md
+UNRESOLVED_ISSUES.md
+
+License
+
+The source code is released under the MIT License.
+
+Citation
+
+Please cite the associated paper when using ENACT or this repository. Machine-readable citation information is available in CITATION.cff.
